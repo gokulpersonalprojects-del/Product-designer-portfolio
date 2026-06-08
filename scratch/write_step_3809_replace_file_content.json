@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Adds the beta testing student quote as a styled nudge block between the flowchart section and the solution path tabs, matching the orange brand color and attribution style seen in the screenshot.\"",
+  "EndLine": "550",
+  "Instruction": "\"Insert a quote nudge block after the flowchart section closing tag and before the solution path section\"",
+  "ReplacementContent": "\"        </section>\\n\\n        <!-- Quote Nudge: Beta Testing Feedback -->\\n        <div class=\\\"text-nudge stagger-el\\\" style=\\\"font-size: clamp(1.1rem, 2.5vw, 1.6rem); line-height: 1.45; padding: 2.5rem 0; border-bottom: 1px solid var(--border-color);\\\">\\n          \\\"The new syllabus structure and interconnected topics helped me develop a stronger sense of grounding during preparation.\\\"\\n          <span class=\\\"quote-author\\\" style=\\\"display: block; margin-top: 0.75rem; font-size: 0.8rem; font-family: var(--font-sans); font-weight: 400; color: var(--text-muted); letter-spacing: 0;\\\">\u2014 Student feedback after beta testing</span>\\n        </div>\\n\\n        <!-- Solution Path Section Wrapper -->\\n        <div class=\\\"solution-path-section\\\">\\n\"",
+  "StartLine": "548",
+  "TargetContent": "\"        </section>\\n\\n        <!-- Solution Path Section Wrapper -->\\n        <div class=\\\"solution-path-section\\\">\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Adding student quote nudge\"",
+  "toolSummary": "\"Add quote nudge\""
+}

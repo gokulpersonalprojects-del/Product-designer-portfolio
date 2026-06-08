@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Remove specifications block from main content intro grid in Project 1\"",
+  "EndLine": "294",
+  "Instruction": "\"Replace the two-column intro grid with a full-width text container.\"",
+  "ReplacementContent": "\"      <div class=\\\"project-intro-grid stagger-el stagger-delay-2\\\" style=\\\"grid-template-columns: 1fr;\\\">\\n        <p class=\\\"project-intro-text\\\" style=\\\"max-width: 800px;\\\">\\n          UPSC civil service preparation in India is notorious for its overwhelming syllabus. Aspirants shuffle between hundreds of static subjects, current affairs updates, and mock tests. This case study details how we designed an AI-powered conversational learning platform to replace passive, siloed content with a connected, navigable syllabus universe and behavioral progress tracking.\\n        </p>\\n      </div>\"",
+  "StartLine": "274",
+  "TargetContent": "\"      <div class=\\\"project-intro-grid stagger-el stagger-delay-2\\\">\\n        <p class=\\\"project-intro-text\\\">\\n          UPSC civil service preparation in India is notorious for its overwhelming syllabus. Aspirants shuffle between hundreds of static subjects, current affairs updates, and mock tests. This case study details how we designed an AI-powered conversational learning platform to replace passive, siloed content with a connected, navigable syllabus universe and behavioral progress tracking.\\n        </p>\\n        <div class=\\\"project-specs\\\">\\n          <div class=\\\"spec-item\\\">\\n            <span class=\\\"spec-label\\\">ROLE</span>\\n            <span>Lead Product Designer</span>\\n          </div>\\n          <div class=\\\"spec-item\\\">\\n            <span class=\\\"spec-label\\\">TIMELINE</span>\\n            <span>4 Months (2024)</span>\\n          </div>\\n          <div class=\\\"spec-item\\\">\\n            <span class=\\\"spec-label\\\">CORE CONCEPTS</span>\\n            <span>Syllabus Mapping, Interactive Prototypes, Maze Usability Testing</span>\\n          </div>\\n        </div>\\n      </div>\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Removing body specs block\"",
+  "toolSummary": "\"Edit views.js main template\""
+}

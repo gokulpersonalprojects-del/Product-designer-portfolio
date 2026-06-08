@@ -1,0 +1,1 @@
+I will update the `views.js` file to move the interactive flowchart into the Yooki Case Study (Chapter 2) and remove it from the AI Workshop page, keeping the user's portfolio structured correctly.

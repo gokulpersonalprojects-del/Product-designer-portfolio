@@ -1,0 +1,1 @@
+I will view lines 1020 to 1080 of `views.js` to see the transition between `initProject3Sandbox` and the newly added `initProject4Sandbox`.

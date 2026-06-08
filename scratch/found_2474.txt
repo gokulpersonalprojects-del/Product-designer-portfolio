@@ -1,0 +1,1 @@
+I will view lines 660 to 695 of `views.js` to locate the `viewMounted` event listener hook.

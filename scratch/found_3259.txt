@@ -1,0 +1,1 @@
+I will search for `initProject1Sandbox` in `views.js` to see the current initialization logic for Project 1.

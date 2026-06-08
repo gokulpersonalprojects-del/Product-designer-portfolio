@@ -1,0 +1,1 @@
+I will search for `initProject1Sandbox` or similar initializers inside `views.js` to see where the flowchart interaction logic is handled.

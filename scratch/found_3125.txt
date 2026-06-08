@@ -1,0 +1,19 @@
+Created At: 2026-06-07T06:05:19Z
+Completed At: 2026-06-07T06:05:19Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/task.md`
+Total Lines: 11
+Total Bytes: 720
+Showing lines 1 to 11
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Checklist: Interactive Solution Path Tab Switchers
+2: 
+3: - `[x]` Implement Solution Path tab styles in [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+4: - `[x]` Refactor Case Study templates in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+5:   - `[x]` Wrap Yooki (Project 1) chapters in tabs layout
+6:   - `[x]` Wrap Cendrol (Project 2) chapters in tabs layout
+7:   - `[x]` Wrap BOP (Project 3) chapters in tabs layout
+8:   - `[x]` Wrap Aura AI (Project 4) chapters in tabs layout
+9: - `[x]` Implement tab click controller `initSolutionTabs()` and mount hooks in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+10: - `[x]` Verify local execution and check for console runtime logs
+11: 
+The above content shows the entire, complete file contents of the requested file.

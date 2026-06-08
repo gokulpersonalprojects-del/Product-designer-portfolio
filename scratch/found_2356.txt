@@ -1,0 +1,27 @@
+Created At: 2026-06-06T17:53:18Z
+Completed At: 2026-06-06T17:53:18Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/task.md`
+Total Lines: 19
+Total Bytes: 1484
+Showing lines 1 to 19
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Checklist: Add Fourth Case Study Card (Aura AI)
+2: 
+3: - `[x]` Generate `aura_thumbnail.png` cover asset using `generate_image` tool
+4: - `[x]` Update `renderHome()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+5:   - `[x]` Change Cendrol Card 3 from `col-span-3` to `col-span-2`
+6:   - `[x]` Append Aura AI Card 4 as `col-span-1` referencing `aura_thumbnail.png`
+7: - `[x]` Update `renderWork()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+8:   - `[x]` Append Aura AI row under the `ai` category
+9: - `[x]` Append `renderProject4()` details view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+10: - `[x]` Append `renderProject4Sidebar()` sidebar view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+11: - `[x]` Append `initProject4Sandbox()` controller in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+12: - `[x]` Update `viewMounted` event listener in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js) to initialize Project 4
+13: - `[x]` Update routes in [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js) to import and configure `/project-4`
+14: - `[x]` Verify local execution on port 8080:
+15:   - `[x]` Verify Home grid layout (2-1 and 2-1 layout)
+16:   - `[x]` Test navigation and sandbox switches for Project 4
+17: - `[x]` Update [walkthrough.md](file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/walkthrough.md) with implementation summary
+18: 
+19: 
+The above content shows the entire, complete file contents of the requested file.

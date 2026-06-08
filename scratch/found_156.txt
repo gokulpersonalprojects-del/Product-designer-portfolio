@@ -1,0 +1,1 @@
+I will modify [animation.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/animation.js) to implement the local time clock loop (`startLiveClock()`) and bind it to our page mount lifecycle. This ensures that the clock updates every second when the user is on the homepage, but pauses when they navigate away to optimize performance.

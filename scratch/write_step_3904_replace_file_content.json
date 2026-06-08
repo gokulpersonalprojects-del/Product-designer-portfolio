@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Adds a YouTube embed for the Yooki product video at the very start of the case study body, before the storyboard. Uses YouTube's privacy-enhanced embed URL with autoplay off, and styled as a full-width responsive player with a subtle border and rounded corners matching the design system.\"",
+  "EndLine": "313",
+  "Instruction": "\"Insert YouTube embed section before the storyboard section\"",
+  "ReplacementContent": "\"      <div class=\\\"project-body stagger-el stagger-delay-3\\\">\\n        \\n        <!-- Product Video -->\\n        <section class=\\\"body-chapter\\\" style=\\\"padding-top: 0; margin-bottom: 0;\\\">\\n          <div style=\\\"position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000;\\\">\\n            <iframe\\n              src=\\\"https://www.youtube-nocookie.com/embed/td9oc-DovoY?rel=0&modestbranding=1&color=white\\\"\\n              title=\\\"Yooki \u2014 AI Learning System Product Demo\\\"\\n              frameborder=\\\"0\\\"\\n              allow=\\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\\"\\n              allowfullscreen\\n              style=\\\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;\\\"\\n            ></iframe>\\n          </div>\\n        </section>\\n\\n        <!-- Storyboard Section -->\\n\"",
+  "StartLine": "311",
+  "TargetContent": "\"      <div class=\\\"project-body stagger-el stagger-delay-3\\\">\\n        \\n        <!-- Storyboard Section -->\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Adding YouTube embed to Yooki case study\"",
+  "toolSummary": "\"Add YouTube embed\""
+}

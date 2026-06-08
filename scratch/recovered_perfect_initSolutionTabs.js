@@ -1,0 +1,1 @@
+function initSolutionTabs\",\n        \"initWorkFilters\": \"function initWorkFilters\",\n        \"viewMounted\": \"document.addEventListener('viewMounted'\"\n    }\n    \n    best_matches = {name: (0, \"\", \"\") for name in signatures}

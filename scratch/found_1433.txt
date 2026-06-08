@@ -1,0 +1,1 @@
+Now add the cycling animation JS and the init call:

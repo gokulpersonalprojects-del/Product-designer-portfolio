@@ -1,0 +1,1 @@
+I will view lines 820 to 860 of `views.js` to see where to define the `initSolutionTabs` helper and where to call it.

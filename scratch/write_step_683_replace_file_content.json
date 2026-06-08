@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Add the landscape about-hero-image to the renderAbout template in views.js.\"",
+  "EndLine": "176",
+  "Instruction": "\"Add about-hero-image layout to views.js.\"",
+  "ReplacementContent": "\"export function renderAbout() {\\n  return `\\n    <h1 class=\\\"about-title font-serif\\\">Hi, I\u2019m Gokul, building in complex things.</h1>\\n    \\n    <!-- Hero Workspace Image -->\\n    <div class=\\\"about-hero-image fade-in-section\\\">\\n      <img src=\\\"./gokul_laptop.jpg\\\" alt=\\\"Gokul S Kaimal at work\\\">\\n    </div>\\n\\n    <div class=\\\"about-grid\\\">\\n      \\n      <div class=\\\"about-bio-detail\\\">\"",
+  "StartLine": "171",
+  "TargetContent": "\"export function renderAbout() {\\n  return `\\n    <h1 class=\\\"about-title font-serif\\\">Hi, I\u2019m Gokul, building in complex things.</h1>\\n    <div class=\\\"about-grid\\\">\\n      \\n      <div class=\\\"about-bio-detail\\\">\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Adding workspace image to About page in views.js\"",
+  "toolSummary": "\"Update views.js About page\""
+}

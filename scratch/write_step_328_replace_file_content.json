@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Add a structured header (Selected Work / Featured Case Studies) above the case studies grid in views.js.\"",
+  "EndLine": "13",
+  "Instruction": "\"Add the right-pane-header markup above the case-studies-grid wrapper in views.js.\"",
+  "ReplacementContent": "\"export function renderHome() {\\n  return `\\n    <div class=\\\"right-pane-header fade-in-section\\\" style=\\\"margin-bottom: 2.25rem;\\\">\\n      <span class=\\\"label font-mono\\\" style=\\\"font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.12em;\\\">SELECTED WORK</span>\\n      <h2 class=\\\"font-serif\\\" style=\\\"font-size: 2.5rem; margin-top: 0.25rem; font-weight: 400; line-height: 1.1; color: var(--text-primary);\\\">Featured Case Studies</h2>\\n    </div>\\n    \\n    <div class=\\\"case-studies-grid fade-in-section\\\">\"",
+  "StartLine": "9",
+  "TargetContent": "\"export function renderHome() {\\n  return `\\n    <div class=\\\"case-studies-grid fade-in-section\\\">\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Adding right pane header to home page in views.js\"",
+  "toolSummary": "\"views.js edit\""
+}

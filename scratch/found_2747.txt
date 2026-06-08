@@ -1,0 +1,1 @@
+I will update the task checklist to track our progress for implementing the interactive Solution Path tab switchers.

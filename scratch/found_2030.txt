@@ -1,0 +1,1 @@
+I will overwrite `task.md` with the new checklist to track the integration steps of Case Study 4.

@@ -1,0 +1,42 @@
+Created At: 2026-06-06T17:12:12Z
+Completed At: 2026-06-06T17:12:13Z
+The following changes were made by the replace_file_content tool to: C:\Users\ASUS\.gemini\antigravity\brain\457b6c1c-26cb-47b7-b7a7-886426f7451f\task.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1,18 +1,19 @@
+ # Checklist: Add Fourth Case Study Card (Aura AI)
+ 
+-- `[ ]` Generate `aura_thumbnail.png` cover asset using `generate_image` tool
+-- `[ ]` Update `renderHome()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+-  - `[ ]` Change Cendrol Card 3 from `col-span-3` to `col-span-2`
+-  - `[ ]` Append Aura AI Card 4 as `col-span-1` referencing `aura_thumbnail.png`
+-- `[ ]` Update `renderWork()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+-  - `[ ]` Append Aura AI row under the `ai` category
+-- `[ ]` Append `renderProject4()` details view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+-- `[ ]` Append `renderProject4Sidebar()` sidebar view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+-- `[ ]` Append `initProject4Sandbox()` controller in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+-- `[ ]` Update `viewMounted` event listener in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js) to initialize Project 4
+-- `[ ]` Update routes in [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js) to import and configure `/project-4`
+-- `[ ]` Verify local execution on port 8080:
+-  - `[ ]` Verify Home grid layout (2-1 and 2-1 layout)
+-  - `[ ]` Test navigation and sandbox switches for Project 4
+-- `[ ]` Update [walkthrough.md](file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/walkthrough.md) with implementation summary
++- `[x]` Generate `aura_thumbnail.png` cover asset using `generate_image` tool
++- `[x]` Update `renderHome()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
++  - `[x]` Change Cendrol Card 3 from `col-span-3` to `col-span-2`
++  - `[x]` Append Aura AI Card 4 as `col-span-1` referencing `aura_thumbnail.png`
++- `[x]` Update `renderWork()` in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
++  - `[x]` Append Aura AI row under the `ai` category
++- `[x]` Append `renderProject4()` details view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
++- `[x]` Append `renderProject4Sidebar()` sidebar view in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
++- `[x]` Append `initProject4Sandbox()` controller in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
++- `[x]` Update `viewMounted` event listener in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js) to initialize Project 4
++- `[x]` Update routes in [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js) to import and configure `/project-4`
++- `[x]` Verify local execution on port 8080:
++  - `[x]` Verify Home grid layout (2-1 and 2-1 layout)
++  - `[x]` Test navigation and sandbox switches for Project 4
++- `[x]` Update [walkthrough.md](file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/walkthrough.md) with implementation summary
++
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

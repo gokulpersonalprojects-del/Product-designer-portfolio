@@ -1,0 +1,1 @@
+I will view lines 900 to 1148 of `views.js` to see the end of the file, check how the existing sandboxes, sidebars, and `viewMounted` event listener are initialized.

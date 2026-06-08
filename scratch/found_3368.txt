@@ -1,0 +1,1 @@
+I will search for `initSolutionTabs` inside `views.js` to see its definition.

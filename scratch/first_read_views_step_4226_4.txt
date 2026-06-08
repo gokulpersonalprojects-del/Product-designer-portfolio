@@ -1,0 +1,70 @@
+Created At: 2026-06-07T17:10:14Z
+Completed At: 2026-06-07T17:10:14Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/definition_3262.js`
+Total Lines: 78
+Total Bytes: 4197
+Showing lines 1 to 78
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T06:20:47Z
+2: Completed At: 2026-06-07T06:20:48Z
+3: File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js`
+4: Total Lines: 2393
+5: Total Bytes: 146401
+6: Showing lines 1000 to 1100
+7: The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+8: 1000: 
+9: 1001: /**
+10: 1002:  * Project 1 (Yooki) Syllabus map and AI sandbox controls
+11: 1003:  */
+12: 1004: function initProject1Sandbox() {
+13: 1005:   // 1. Syllabus Node toggling & Connection line glowing
+14: 1006:   const nodes = document.querySelectorAll('.syllabus-node');
+15: 1007:   const statusMsg = document.getElementById('syllabus-status');
+16: 1008:   const linePolityEconomy = document.getElementById('line-polity-economy');
+17: 1009:   const lineEconomyEnv = document.getElementById('line-economy-env');
+18: 1010:   
+19: 1011:   nodes.forEach(node => {
+20: 1012:     node.addEventListener('click', () => {
+21: 1013:       const topic = node.getAttribute('data-node');
+22: 1014:       
+23: 1015:       // Reset active states
+24: 1016:       nodes.forEach(n => n.classList.remove('active'));
+25: 1017:       node.classList.add('active');
+26: 1018:       
+27: 1019:       // Reset connection lines stroke and glow
+28: 1020:       if (linePolityEconomy) {
+29: 1021:         linePolityEconomy.style.stroke = 'var(--border-color)';
+30: 1022:         linePolityEcono
+<truncated 939 bytes>
+
+49: 1073:         statusMsg.style.color = 'var(--color-brand)';
+50: 1074:         statusMsg.textContent = '📖 Environment: Biodiversity is 34% complete. It shares ecological-fiscal connections with Economy.';
+51: 1075:       }
+52: 1076:     });
+53: 1077:   });
+54: 1078: 
+55: 1079:   // 2. Chat Dialogue Typewriter/Streaming Effect
+56: 1080:   const promptChips = document.querySelectorAll('.ai-dialogue-sandbox .prompt-chip');
+57: 1081:   const userBubble = document.getElementById('ai-user-bubble');
+58: 1082:   const responseBubble = document.getElementById('ai-response-bubble');
+59: 1083:   
+60: 1084:   const responses = {
+61: 1085:     polity: {
+62: 1086:       question: '"I studied Panchayati Raj today. What should I review next?"',
+63: 1087:       answer: '"Polity is strong at 61% coverage. Since Panchayati Raj connects directly to <strong>Fiscal Federalism</strong> in Economy (where you have a 12% coverage gap), I recommend starting with Fiscal Federalism to bridge cross-subject concepts."'
+64: 1088:     },
+65: 1089:     exam: {
+66: 1090:       question: '"Which area should I revise before my mock exam next week?"',
+67: 1091:       answer: '"Environment is currently your most neglected area (last updated 18 days ago, 34% coverage). Given the recent mock exam weights, prioritize <strong>Biodiversity &amp; Conservation</strong> first to maximize score potential."'
+68: 1092:     }
+69: 1093:   };
+70: 1094:   
+71: 1095:   let isTyping = false;
+72: 1096:   promptChips.forEach(chip => {
+73: 1097:     chip.addEventListener('click', () => {
+74: 1098:       if (isTyping) return;
+75: 1099:       const type = chip.getAttribute('data-prompt');
+76: 1100:       const response = responses[type];
+77: The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+78: 
+The above content shows the entire, complete file contents of the requested file.

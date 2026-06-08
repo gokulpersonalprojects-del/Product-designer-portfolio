@@ -1,0 +1,1 @@
+I will view the function `initProject3Sandbox` in `views.js` to get its exact code block for replacement.

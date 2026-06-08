@@ -1,0 +1,3 @@
+I will update `scratch/test_yooki_flowchart.py` to:
+1. Fix the page title check to match the actual page title (`"Designing an AI Learning System"`).
+2. Add a step to scroll the flowchart container into view so that the scroll-reveal IntersectionObserver triggers and makes the elements visible (opacity 1) for Selenium to interact with.

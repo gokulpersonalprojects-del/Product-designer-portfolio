@@ -1,0 +1,120 @@
+Created At: 2026-06-07T06:22:45Z
+Completed At: 2026-06-07T06:22:45Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js`
+Total Lines: 151
+Total Bytes: 4313
+Showing lines 1 to 151
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import { 
+2:   renderHome, 
+3:   renderWork, 
+4:   renderAbout, 
+5:   renderAIWorkshop,
+6:   renderProject1, 
+7:   renderProject2, 
+8:   renderProject3,
+9:   renderProject4,
+10:   renderProject1Sidebar,
+11:   renderProject2Sidebar,
+12:   renderProject3Sidebar,
+13:   renderProject4Sidebar
+14: } from './views.js';
+15: 
+16: // Route configuration
+17: const routes = {
+18:   '/': { title: 'Gokul S Kaimal — Product Designer', render: renderHome, navId: 'nav-home' },
+19:   '/work': { title: 'Work — Gokul S Kaimal', render: renderWork, navId: 'nav-work' },
+20:   '/about': { title: 'About — Gokul S Kaimal', render: renderAbout, navId: 'nav-about' },
+21:   '/ai-workshop': { title: 'AI Workshop — Gokul S Kaimal', render: renderAIWorkshop, navId: 'nav-workshop' },
+22:   '/project-1': { 
+23:     title: 'Yooki: UPSC Conversational AI — Gokul S Kaimal', 
+24:     render: renderProject1, 
+25:     renderSidebar: renderProject1Sidebar,
+26:     navId: 'nav-work' 
+27:   },
+28:   '/project-2': { 
+29:     title: 'Cendrol: Operational Expense UX — Gokul S Kaimal', 
+30:     render: renderProject2, 
+31:     renderSidebar: renderProject2Sidebar,
+32:     navId: 'nav-work' 
+33:   },
+34:   '/project-3': { 
+35:     title: 'Bank of Palestine: KYC Simplification — Gokul S Kaimal', 
+36:     render: renderProject3, 
+37:     renderSidebar: renderProject3Sidebar,
+38:     navId: 'nav-work' 
+39:   },
+40:   '/project-4': { 
+41:     title: 'Aura AI: Prompt-to-Interface UX — Gokul S Kaimal', 
+42:     render: renderProject4, 
+43:     renderSidebar: renderProject4Sidebar,
+44:     navId: 'nav-work' 
+45:   }
+46
+<truncated 1384 bytes>
+Project) {
+88:       sidebarProject.style.display = 'none';
+89:       sidebarProject.innerHTML = '';
+90:     }
+91:     if (sidebarDefault) sidebarDefault.style.display = 'flex';
+92:   }
+93:   
+94:   // Reset scroll position
+95:   window.scrollTo(0, 0);
+96:   
+97:   // Update nav active states
+98:   updateActiveNavigation(route.navId);
+99:   
+100:   // Trigger any inline listeners/mount logic if present
+101:   triggerViewMount(path);
+102: 
+103:   // 3. Trigger Page Enter Animation
+104:   appView.classList.remove('page-exit');
+105:   appView.classList.add('page-enter');
+106:   
+107:   // Force a browser reflow/frame refresh before removing enter class
+108:   requestAnimationFrame(() => {
+109:     requestAnimationFrame(() => {
+110:       appView.classList.remove('page-enter');
+111:     });
+112:   });
+113: }
+114: 
+115: /**
+116:  * Highlight active menu items in header navigation
+117:  */
+118: function updateActiveNavigation(activeNavId) {
+119:   const navLinks = document.querySelectorAll('.nav-link');
+120:   navLinks.forEach(link => {
+121:     if (link.id === activeNavId) {
+122:       link.classList.add('active');
+123:       link.setAttribute('aria-current', 'page');
+124:     } else {
+125:       link.classList.remove('active');
+126:       link.removeAttribute('aria-current');
+127:     }
+128:   });
+129: }
+130: 
+131: /**
+132:  * Dispatches a custom event for script execution on dynamic pages
+133:  */
+134: function triggerViewMount(path) {
+135:   const event = new CustomEvent('viewMounted', { detail: { path } });
+136:   document.dispatchEvent(event);
+137: }
+138: 
+139: // Router Event Listeners
+140: window.addEventListener('hashchange', handleRouting);
+141: window.addEventListener('DOMContentLoaded', () => {
+142:   // If there's no hash on load, default to home page
+143:   if (!window.location.hash) {
+144:     window.location.hash = '#/';
+145:   } else {
+146:     handleRouting();
+147:   }
+148: });
+149: 
+150: export { getActivePath };
+151: 
+The above content shows the entire, complete file contents of the requested file.

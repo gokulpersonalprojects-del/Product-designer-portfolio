@@ -1,0 +1,56 @@
+g
+o
+k
+u
+l
+ s
+.
+k
+ABOUT ME
+CENDROL / 2025
+Streamlining Expense Workflows for On-Site Engineers
+Reimagining how on-site engineers track, submit, and manage reimbursement workflows across distributed construction sites through structured expense systems and simplified approval flows.
+more about company
+USER RESEARCH / PRODUCT FEATURE
+ROLE : UX Designer
+CHALLENGE : Automating Expense Reimbursements for a More Efficient Workplace 
+IMPACT : Reduced reimbursement delays and employee mental stress by streamlining the expense claim workflow, leading to a more efficient and supportive work environment.
+Resume
+LINKEDIN
+EMAIL
+MEDIUM
+BEHANCE
+/ Cendrol Construct is a construction and interior solutions company managing distributed on-site oper|
+/ THE OVERVIEW
+Cendrol Construct is a construction and interior solutions company managing distributed on-site operations.
+My contribution focused on redesigning the expense reimbursement experience to simplify tracking, approvals, and reimbursement workflows for on-site engineers.
+/ THE CHALLENGE
+Engineers found it difficult to track submitted expenses and understand reimbursement status across multiple project sites.
+The existing workflow lacked visibility, making approvals and reimbursements feel disconnected and difficult to follow.
+/ THE SOLUTION PATH
+Chapter 1: Simplifying expense tracking
+Making submissions easier to manage
+Expense submissions were spread across multiple stages, making tracking difficult during active site operations.
+The experience was redesigned to simplify submission flows and reduce operational friction during reimbursement requests.
+Designing for admin-side tracking and approvals
+Managing reimbursements across multiple projects required clearer visibility into request status, approval stages, and operational activity.
+The admin experience introduced structured tracking, request filtering, and approval visibility to help teams monitor reimbursement workflows more efficiently.
+Improving reimbursement visibility
+Engineers often struggled to understand approval status after submitting expenses. The system introduced clearer reimbursement states and approval visibility across the workflow.
+Chapter 2: Creating clearer reimbursement workflows
+Reducing confusion across approval stages
+The earlier workflow lacked clear progression between submission, approval, and reimbursement stages.
+We introduced structured workflow states that helped engineers understand where requests stood within the process.
+Making reimbursement progress easier to follow
+Managing reimbursements across distributed project sites often felt fragmented. The redesigned experience surfaced approval progress, reimbursement status, and pending actions more clearly.
+Chapter 3: Designing for faster operational clarity
+Reducing interpretation effort
+The interface focused on simplifying information hierarchy across expense tracking and approval flows.
+Clearer layouts, status visibility, and structured interaction patterns improved scanability during day-to-day operations.
+Improving usability across distributed operations
+Engineers frequently managed reimbursements while coordinating across active project sites.
+The experience was designed to support quicker tracking, easier navigation, and reduced workflow friction across operational environments.
+/ CONCLUSION
+The project transformed reimbursement tracking from a fragmented operational workflow into a clearer and more structured experience.
+By improving submission visibility, approval tracking, and reimbursement clarity, the system helped engineers manage operational expenses more confidently across distributed project sites.
+Create a free website with Framer, the website builder loved by startups, designers and agencies.

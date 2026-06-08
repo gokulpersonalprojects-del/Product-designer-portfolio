@@ -1,0 +1,1 @@
+I will update the `viewMounted` event listener in `views.js` to initialize the AI Workshop interactive sandbox whenever the `/ai-workshop` view is loaded.

@@ -1,0 +1,1 @@
+I will write a python script `scratch/dump_project1_sandbox_first_half.py` to see the first half of `initProject1Sandbox` where variables like `iaNodes`, `iaDots`, etc., are defined.

@@ -1,0 +1,1 @@
+I will update the `task.md` file to mark all the items on our accessibility and animations checklist as completed.

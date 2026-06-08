@@ -1,0 +1,84 @@
+Created At: 2026-06-07T17:13:34Z
+Completed At: 2026-06-07T17:13:34Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/definition_2848.js`
+Total Lines: 76
+Total Bytes: 2792
+Showing lines 1 to 76
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T05:45:12Z
+2: Completed At: 2026-06-07T05:45:12Z
+3: The following changes were made by the multi_replace_file_content tool to: c:\Users\ASUS\Desktop\new portfolio\views.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+4: [diff_block_start]
+5: @@ -863,12 +863,16 @@
+6:      initWorkFilters();
+7:    } else if (path === '/project-1') {
+8:      initProject1Sandbox();
+9: +    initSolutionTabs();
+10:    } else if (path === '/project-2') {
+11:      initProject2Sandbox();
+12: +    initSolutionTabs();
+13:    } else if (path === '/project-3') {
+14:      initProject3Sandbox();
+15: +    initSolutionTabs();
+16:    } else if (path === '/project-4') {
+17:      initProject4Sandbox();
+18: +    initSolutionTabs();
+19:    } else if (path === '/ai-workshop') {
+20:      initAIWorkshopSandbox();
+21:    }
+22: @@ -910,6 +910,51 @@
+23:  }
+24:  
+25:  /**
+26: + * Interactive Solution Path Tab Switcher for Project Case Studies
+27: + */
+28: +function initSolutionTabs() {
+29: +  const container = document.querySelector('.project-body');
+30: +  if (!container) return;
+31: +
+32: +  const tabBtns = container.querySelectorAll('.solution-tab-btn');
+33: +  const chapterContents = container.querySelectorAll('.solution-chapter-content');
+34: +
+35: +  tabBtns.forEach(btn => {
+36: +    btn.addEventListener('click', () => {
+37: +      const targetChapter = btn.getAttribute('data-chapter');
+38: +      if (!targetChapter) return;
+39: +
+40: +      // Update active state on buttons
+41: +      tabBtns.forEach(b => {
+42: +        if (b.getAttribute('data-chapter') === targetChapter) {
+43: +          b.classList.add('active');
+44: +        } else {
+45: +          b.classList.remove('active');
+46: +        }
+47: +      });
+48: +
+49: +      // Update active state on chapter contents
+50: +      chapterContents.forEach(content => {
+51: +        if (content.getAttribute('data-chapter-content') === targetChapter) {
+52: +          content.classList.add('active');
+53: +        } else {
+54: +          content.classList.remove('active');
+55: +        }
+56: +      });
+57: +
+58: +      // Smooth scroll back to tabs header if scrolled past
+59: +      const pathContainer = container.querySelector('.solution-path-container');
+60: +      if (pathContainer) {
+61: +        const rect = pathContainer.getBoundingClientRect();
+62: +        if (rect.top < 0) {
+63: +          pathContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+64: +        }
+65: +      }
+66: +    });
+67: +  });
+68: +}
+69: +
+70: +/**
+71:   * Project 1 (Yooki) Syllabus map and AI sandbox controls
+72:   */
+73:  function initProject1Sandbox() {
+74: [diff_block_end]
+75: 
+76: Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
+The above content shows the entire, complete file contents of the requested file.

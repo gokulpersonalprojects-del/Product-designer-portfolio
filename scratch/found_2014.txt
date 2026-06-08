@@ -1,0 +1,1 @@
+I will now apply the updates to `views.js` to modify the Home page card, the Work collection list row, the detail view (`renderProject3`), the interactive sandbox controller (`initProject3Sandbox`), and the sidebar (`renderProject3Sidebar`) to integrate the Bank of Palestine case study.

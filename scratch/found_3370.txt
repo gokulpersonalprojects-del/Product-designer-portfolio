@@ -1,0 +1,1 @@
+I will view the `initSolutionTabs` function in `views.js` to see how tab toggling is implemented.

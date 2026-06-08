@@ -1,0 +1,24 @@
+Created At: 2026-06-07T05:27:11Z
+Completed At: 2026-06-07T05:27:11Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/walkthrough.md`
+Total Lines: 65
+Total Bytes: 6909
+Showing lines 50 to 65
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+50: *   **Sequential Asset Download**: Downloaded frames `1.png` through `10.png` and placed them under the `./storyboard/` directory in the workspace.
+51: *   **Template Rendering ([views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js))**: Prepended a storyboard block to the beginning of the case study body. The block renders all 10 cards in chronological order with custom titles.
+52: *   **Rhetorical Text Nudge**: Inserted a prominent, large, orange-accented text breakout block (`.text-nudge`) reading *"Sometimes the best UX stories aren't about revolutionary interfaces or groundbreaking research"* between the Challenge Section and Chapter 1 to establish a strong storytelling pace and mirror Gokul's Framer website layout.
+53: *   **Sticky Card Stacking Layout ([index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css))**: Styled cards using `position: sticky` with staggered top offsets (from `80px` to `224px` on desktop) and a bottom margin offset. This lets succeeding cards scroll smoothly over preceding cards, forming a tabbed stacked folder look.
+54: *   **Scroll-Linked Scale & Fade Controller ([views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js))**: Added a window scroll event listener inside `initProject1Sandbox()`. The script tracks card overlap boundaries in real-time, applying subtle scaling (down to `0.96`), opacity fading (down to `0.65`), brightness dimming, and blur (up to `1.5px`) to cards as they get covered. Includes a DOM containment check to automatically clean up the event listener when navigating away.
+55: *   **Sidebar Spec Layout Updates**: Updated the project sidebar specifications block (`renderProject1Sidebar()`) in `views.js` to render Roles, Timeline, and Core Concepts in a stacked, uppercase, clean monospace label structure matching the website's grid specifications and user's requested layout.
+56: 
+57: ---
+58: 
+59: ## Verification & Manual Testing
+60: 1.  **Browser Log Scan**: Executed automated Chrome logs verification checking `http://localhost:8080/` and `http://localhost:8080/#/project-1`. Confirmed 100% clean console logs on routing, interaction, and scrolling, with no syntax or compiler runtime errors.
+61: 2.  **Navigation & Focus**: Tested the "AI Workshop" link and Project 1 routing. Checked that transition animations and active focus states resolve cleanly.
+62: 3.  **Card Stacking Overlap**: Verified that as cards scroll up, they stack sequentially with headers visible. Covered cards scale down, dim, and blur dynamically to highlight the active frame.
+63: 4.  **Compiler Sandboxes**: Confirmed compiler log streaming, SVG injection scaling, alert diagnostics tooltip toggling, and green success resolution flow.
+64: 
+65: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

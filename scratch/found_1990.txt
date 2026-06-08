@@ -1,0 +1,1 @@
+I will overwrite `task.md` with the new checklist for Case Study 3 (Bank of Palestine) to monitor execution.

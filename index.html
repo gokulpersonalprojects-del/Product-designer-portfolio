@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokul S Kaimal — Product Designer</title>
+  
+  <meta name="description" content="A problem-solving enthusiast turned product designer, creating end-to-end digital solutions through exceptional user experience and AI-driven collaboration.">
+  <meta name="keywords" content="Product Designer, UX Design, Interaction Design, AI Products, Kerala, India, Portfolio">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gokul S Kaimal — Product Designer">
+  <meta property="og:description" content="Product Designer with a focus on AI interaction systems, dynamic workflows, and information design.">
+  <meta property="og:image" content="https://gokulux.framer.website/logo.png">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gokul S Kaimal — Product Designer">
+  <meta name="twitter:description" content="Product Designer with a focus on AI interaction systems, dynamic workflows, and information design.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <!-- Theme spreading overlay -->
+  <div id="theme-overlay" class="theme-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" class="preloader" aria-live="polite" aria-label="Loading portfolio">
+    <div class="preloader-inner">
+
+      <!-- Logo mark — large morph animation -->
+      <div class="preloader-logo-wrap" id="preloader-logo">
+        <div class="preloader-logo">
+          <span class="pl-text-main">G</span>
+          <span class="pl-mark">
+            <img src="./prehistoric_rock.png" class="pl-rock" alt="" />
+            <img src="./sports_tyre.png" class="pl-tyre" alt="" />
+          </span>
+          <span class="pl-text-main">kul <span class="pl-text-serif">S</span> Kaimal<span class="pl-dot">.</span></span>
+        </div>
+      </div>
+
+      <!-- Quote — word-by-word reveal -->
+      <p class="preloader-quote" id="preloader-quote" aria-label="Design quote"></p>
+
+      <!-- Designed for — animated client logos -->
+      <div class="preloader-designed-for" id="preloader-designed-for">
+        <span class="designed-for-label">Designed for</span>
+        <div class="designed-for-logos">
+          <div class="logo-item"><img src="./logo_cendrol.png" alt="Cendrol" /></div>
+          <div class="logo-item"><img src="./logo_yooki.png" alt="Yooki" /></div>
+          <div class="logo-item"><img src="./logo_bop.png" alt="Bank of Palestine" /></div>
+          <div class="logo-item"><img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks" /></div>
+          <div class="logo-item logo-square"><img src="./logo_bento.png" alt="Bento" /></div>
+        </div>
+      </div>
+
+      <!-- Thin progress bar -->
+      <div class="preloader-progress" aria-hidden="true">
+        <div class="preloader-progress-fill" id="preloader-bar"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ==================== /PRELOADER ==================== -->
+
+  <!-- Main App Shell wrapper -->
+  <div class="app-shell">
+    
+    <!-- Sidebar column (Sticky on Desktop) -->
+    <aside class="sidebar" role="complementary">
+      <div id="sidebar-default" style="display: flex; flex-direction: column; height: 100%; width: 100%;">
+        <div class="sidebar-top">
+          <!-- Logo / Brand Mark -->
+          <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+            <h1 class="logo-text-wrapper" style="margin: 0; padding: 0; display: inline-flex; align-items: center;">
+              <svg class="logo-text-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" aria-label="Gokul S Kaimal Logo" style="height: 42px; width: auto; overflow: visible; display: inline-block;">
+                <defs>
+                  <!-- Brand gradient for the logo dot indicator -->
+                  <linearGradient id="logo-dot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="hsl(22, 100%, 57%)" />
+                    <stop offset="100%" stop-color="hsl(258, 100%, 70%)" />
+                  </linearGradient>
+                </defs>
+                
+                <!-- Segment 1: G character -->
+                <text x="4" y="26" class="logo-text-layer logo-text-main">G</text>
+                
+                <!-- Segment 2: Inline morphing Logo Mark (Rock/Tyre replacing 'o') -->
+                <g class="logo-image-group">
+                  <image href="./prehistoric_rock.png" class="logo-rock-svg" x="18" y="7" width="22" height="22" />
+                  <image href="./sports_tyre.png" class="logo-tyre-svg" x="18" y="7" width="22" height="22" />
+                </g>
+                
+                <!-- Segment 3: kul S Kaimal. with brand serif S initial -->
+                <g class="logo-text-rest-group">
+                  <text x="40" y="26" class="logo-text-layer logo-text-main">kul <tspan class="logo-text-serif-main">S</tspan> Kaimal<tspan class="logo-dot-main">.</tspan></text>
+                </g>
+              </svg>
+            </h1>
+          </a>
+
+          <!-- Hero Identity -->
+          <div class="intro-headline">
+            <h2 class="hero-title font-serif">
+              Designing <span id="typewriter">AI interaction systems.</span>
+            </h2>
+          </div>
+
+          <!-- Portrait photo -->
+          <div class="sidebar-portrait" aria-label="Photo of Gokul S Kaimal">
+            <img src="./gokul_edited.png" alt="Gokul S Kaimal — Product Designer" class="portrait-img" />
+            <div class="portrait-overlay"></div>
+            <div class="portrait-grain"></div>
+            <div class="portrait-badge font-mono">Product Designer</div>
+          </div>
+
+          <!-- Stat Strip -->
+          <div class="bio-stat-strip">
+            <div class="bio-stat-item">
+              <span class="bio-stat-num font-serif">3+</span>
+              <span class="bio-stat-label font-mono">Years Experience</span>
+            </div>
+            <div class="bio-stat-divider"></div>
+            <div class="bio-stat-item">
+              <span class="bio-stat-num font-serif">MBA</span>
+              <span class="bio-stat-label font-mono">Adv &amp; Branding</span>
+            </div>
+            <div class="bio-stat-divider"></div>
+            <div class="bio-stat-item">
+              <span class="bio-stat-num font-serif">BTech</span>
+              <span class="bio-stat-label font-mono">Computer Science</span>
+            </div>
+          </div>
+
+          <!-- Domain Tags -->
+          <div class="bio-domains">
+            <span class="bio-domain-label font-mono">Designs for</span>
+            <div class="bio-domain-tags">
+              <span class="bio-tag">AI Products</span>
+              <span class="bio-tag">HRTech</span>
+              <span class="bio-tag">SaaS</span>
+              <span class="bio-tag">FinTech</span>
+              <span class="bio-tag">BuildTech</span>
+            </div>
+          </div>
+
+          <!-- Skill summary line -->
+          <p class="bio-skill-line">
+            I blend <span class="cycling-skill-wrapper"><span id="cycling-skill">UX design</span></span> to create scalable digital experiences.
+          </p>
+
+          <!-- Status badge -->
+          <div class="status-badge" role="status" aria-label="Available for Product Design Opportunities">
+            <span class="status-dot-pulse"></span>
+            <span class="status-badge-text font-mono">Available for opportunities</span>
+          </div>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="sidebar-action-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; width: 100%;">
+            <a href="mailto:gokulskaimal@gmail.com" class="sidebar-action-card" aria-label="Send email" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+              <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">EMAIL</span>
+            </a>
+
+            <a href="https://linkedin.com/in/gokulskaimal" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+              <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">LINKEDIN</span>
+            </a>
+
+            <a href="resume.pdf" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="Download Resume" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--color-accent); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+              <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent);">RESUME</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project Sidebar Content (Injected dynamically) -->
+      <div id="sidebar-project" style="display: none; flex-direction: column; height: 100%; width: 100%; justify-content: space-between;"></div>
+    </aside>
+
+
+    <!-- Main scrollable column -->
+    <main class="main-content" id="main-content" tabindex="-1">
+      
+      <!-- Sticky Navigation Header -->
+      <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#/" class="nav-link" id="nav-home">Home</a></li>
+            <li><a href="#/work" class="nav-link" id="nav-work">Work</a></li>
+            <li><a href="#/about" class="nav-link" id="nav-about">About</a></li>
+            <li><a href="#/ai-workshop" class="nav-link" id="nav-workshop">AI Workshop</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Dynamic Page View Container -->
+      <div id="app-view" class="view-transition-container">
+        <!-- Rendered view content will be injected here -->
+      </div>
+      
+      <!-- Footer contact section -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+          <span class="font-mono label">GET IN TOUCH</span>
+          <h2 class="footer-title font-serif">Let's build something complex yet simple.</h2>
+          <p class="footer-copy font-mono">&copy; 2026 Gokul S Kaimal. Made in Kerala.</p>
+        </div>
+      </footer>
+      
+    </main>
+  </div>
+
+  <!-- Floating Dark Mode Toggle Switcher -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme">
+    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="views.js"></script>
+  <script type="module" src="router.js"></script>
+  <script type="module" src="animation.js"></script>
+
+</body>
+</html>

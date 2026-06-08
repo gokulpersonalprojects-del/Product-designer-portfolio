@@ -1,0 +1,1 @@
+I will view the `viewMounted` event listener in `views.js` around line 963.

@@ -1,0 +1,63 @@
+Created At: 2026-06-07T06:22:30Z
+Completed At: 2026-06-07T06:22:30Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/implementation_plan.md`
+Total Lines: 55
+Total Bytes: 3067
+Showing lines 1 to 55
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Interactive Solution Path Tab Switcher
+2: 
+3: This plan details the addition of an interactive **Solution Path** tab switcher for all case study pages (Projects 1 to 4) on the website. Instead of listing all three chapters statically one after another, this refactoring introduces a tabbed interface that lets users click between Chapter 1, Chapter 2, and Chapter 3, reducing page length and improving readability.
+4: 
+5: ## User Review Required
+6: 
+7: > [!IMPORTANT]
+8: > The Solution Path switcher will:
+9: > - Display after the Challenge Section on all four project pages.
+10: > - Group Chapter 1, 2, and 3 under interactive tab buttons styled to match the site's aesthetics.
+11: > - Show the first chapter by default, and transition smoothly when users click the other chapters using CSS fade and slide-up animations.
+12: 
+13: ---
+14: 
+15: ## Proposed Changes
+16: 
+17: ### 1. Styling Updates
+18: #### [MODIFY] [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+19: - Add styling for the interactive Solution Path layout:
+20:   - `.solution-path-container`: Container with top margin, bottom border, and spacing.
+21:   - `.solution-tabs`: Grid layout displaying three chapter buttons.
+22:   - `.solution-tab-btn`: Elegant card layout with hover effects, active border states (`var(--color-brand)`), monospace numbers, and serif/sans titles.
+23:   - `.solution-chapters-container`: Container for active chapter contents.
+24:   - `.solution-chapter-content`: Handles transition states (`display`, `opacity`, `transform`) for smooth switching animations.
+25:   - Responsive overrides for mobile screens (stacking buttons vertically).
+26: 
+27: ### 2. Template Refactoring
+28: #### [MODIFY] [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+29: - **Refactor `renderProject1()`, `renderProject2()`, `renderProject3()`, and `renderProject4()`**:
+30:   - Insert the `.solution-path-container` markup right after the Challenge Section.
+31:   - Wrap each chapter section in `.solution-chapter-content` containers, assigning `data-chapter-content="1"`, `"2"`, and `"3"`.
+32:   - Mark Chapter 1 button and content as `active` by default.
+33: 
+34: ### 3. Controller bindings
+35: #### [MODIFY] [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+36: - **Define `initSolutionTabs()`**:
+37:   - Implement the click behavior for `.solution-tab-btn` within the current project body.
+38:   - Switch active states on tab buttons and contents dynamically.
+39: - **Register Mount Hook**:
+40:   - Call `initSolutionTabs()` inside the `viewMounted` listener for all four project routes (`/project-1`, `/project-2`, `/project-3`, `/project-4`).
+41: 
+42: ---
+43: 
+44: ## Verification Plan
+45: 
+46: ### Automated Tests
+47: - Run browser console validation to verify that page routing works and clicking tab buttons does not trigger any runtime errors.
+48: 
+49: ### Manual Verification
+50: - Navigate through all case studies (`#/project-1`, `#/project-2`, etc.).
+51: - Confirm that:
+52:   - The "Solution Path" tab selector is visible after the Challenge.
+53:   - Clicking each chapter button reveals the correct chapter content and runs a smooth slide-fade animation.
+54:   - The layout displays cleanly on both desktop and mobile viewports.
+55: 
+The above content shows the entire, complete file contents of the requested file.

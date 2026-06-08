@@ -1,0 +1,98 @@
+Created At: 2026-06-07T17:10:12Z
+Completed At: 2026-06-07T17:10:12Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/definition_3668.js`
+Total Lines: 101
+Total Bytes: 4220
+Showing lines 1 to 101
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T06:45:53Z
+2: Completed At: 2026-06-07T06:45:58Z
+3: 
+4: 				The command completed successfully.
+5: 				Output:
+6: 				function initProject1Sandbox() {
+7:   // 1. UPSC Cognitive Pathing Flowchart logic
+8:   const btnIAPlay = document.getElementById('ws-ia-btn-play');
+9:   const btnIAReset = document.getElementById('ws-ia-btn-reset');
+10:   const btnIATopic = document.getElementById('ws-ia-btn-topic');
+11:   
+12:   const iaProgressBar = document.getElementById('ia-progress-bar');
+13:   const iaProgressText = document.getElementById('ia-progress-text');
+14:   const iaSearchBox = document.getElementById('ia-search-box');
+15:   const iaDetailsTitle = document.getElementById('ia-details-title');
+16:   const iaDetailsDesc = document.getElementById('ia-details-desc');
+17:   const iaNudgeList = document.getElementById('ia-nudge-list');
+18:   const iaJourneySteps = document.getElementById('ia-journey-steps');
+19:   
+20:   const iaNodes = document.querySelectorAll('.ia-node');
+21:   const iaDots = document.querySelectorAll('.ia-flow-dot');
+22:   const iaPaths = document.querySelectorAll('.ia-flow-path, .ia-flow-path-dashed');
+23: 
+24:   const iaTopicData = {
+25:     polity: {
+26:       search: 'Panchayati Raj',
+27:       detailsTitle: 'Relevant Details',
+28:       detailsDesc: '73rd Amendment, 3-tier local self-governance model.',
+29:       nudge: `
+30:         <span style="font-size: 0.58rem; padding: 0.12rem 0.25rem; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-
+<truncated 1058 bytes>
+) p1.classList.add('active');
+44:       if (p2) p2.classList.add('active');
+45:       if (p3) p3.classList.add('active');
+46:     } else if (activeNodeId === 'node-completion') {
+47:       iaPaths.forEach(path => path.classList.add('active'));
+48:     }
+49:   }
+50: 
+51:   if (iaNodes.length > 0) {
+52:     iaNodes.forEach(node => {
+53:       node.addEventListener('click', () => {
+54:         iaNodes.forEach(n => n.classList.remove('active'));
+55:         node.classList.add('active');
+56:         highlightFlowPaths(node.id);
+57:       });
+58:     });
+59:   }
+60: 
+61:   if (btnIAPlay) {
+62:     btnIAPlay.addEventListener('click', () => {
+63:       isLoopingPaused = !isLoopingPaused;
+64:       
+65:       const playIcon = document.getElementById('ws-ia-play-icon');
+66:       const playText = document.getElementById('ws-ia-play-text');
+67:       
+68:       iaDots.forEach(dot => {
+69:         if (isLoopingPaused) {
+70:           dot.classList.add('paused');
+71:         } else {
+72:           dot.classList.remove('paused');
+73:         }
+74:       });
+75:       
+76:       iaPaths.forEach(path => {
+77:         if (path.classList.contains('ia-flow-path-dashed')) {
+78:           if (isLoopingPaused) {
+79:             path.classList.remove('running');
+80:           } else {
+81:             path.classList.add('running');
+82:           }
+83:         }
+84:       });
+85: 
+86:       if (isLoopingPaused) {
+87:         if (playIcon) playIcon.textContent = '▶️';
+88:         if (playText) playText.textContent = 'Resume Loop';
+89:         btnIAPlay.classList.remove('active');
+90:       } else {
+91:         if (playIcon) playIcon.textContent = '⏸️';
+92:         if (playText) playText.textContent = 'Pause Loop';
+93:         btnIAPlay.classList.add('active');
+94:       }
+95:     });
+96:   }
+97: 
+98:   if (btnIAReset) {
+99: 
+100: 
+101: 
+The above content shows the entire, complete file contents of the requested file.

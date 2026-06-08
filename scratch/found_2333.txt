@@ -1,0 +1,1 @@
+I will print the event binding logic of `initProject3Sandbox` from `views.js`.

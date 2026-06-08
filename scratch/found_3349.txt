@@ -1,0 +1,1 @@
+I will update `task.md` to reflect the移 relocation of the flowchart, the deletion of the old test script, and the implementation of the new integration test targeting the Yooki Case Study.

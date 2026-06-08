@@ -1,0 +1,1 @@
+I will edit `views.js` to replace the hardcoded `rgba(255, 255, 255, 0.08)` line colors with `var(--border-color)`, so that the syllabus connection lines render nicely in both light and dark modes. I'll make two edits: one in the HTML template and one in the click handler's reset state. Since this is non-contiguous, I'll use the `multi_replace_file_content` tool.

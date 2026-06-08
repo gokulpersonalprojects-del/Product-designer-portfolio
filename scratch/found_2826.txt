@@ -1,0 +1,59 @@
+Created At: 2026-06-07T05:44:41Z
+Completed At: 2026-06-07T05:44:41Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js`
+Total Lines: 151
+Total Bytes: 4313
+Showing lines 101 to 151
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+101:   triggerViewMount(path);
+102: 
+103:   // 3. Trigger Page Enter Animation
+104:   appView.classList.remove('page-exit');
+105:   appView.classList.add('page-enter');
+106:   
+107:   // Force a browser reflow/frame refresh before removing enter class
+108:   requestAnimationFrame(() => {
+109:     requestAnimationFrame(() => {
+110:       appView.classList.remove('page-enter');
+111:     });
+112:   });
+113: }
+114: 
+115: /**
+116:  * Highlight active menu items in header navigation
+117:  */
+118: function updateActiveNavigation(activeNavId) {
+119:   const navLinks = document.querySelectorAll('.nav-link');
+120:   navLinks.forEach(link => {
+121:     if (link.id === activeNavId) {
+122:       link.classList.add('active');
+123:       link.setAttribute('aria-current', 'page');
+124:     } else {
+125:       link.classList.remove('active');
+126:       link.removeAttribute('aria-current');
+127:     }
+128:   });
+129: }
+130: 
+131: /**
+132:  * Dispatches a custom event for script execution on dynamic pages
+133:  */
+134: function triggerViewMount(path) {
+135:   const event = new CustomEvent('viewMounted', { detail: { path } });
+136:   document.dispatchEvent(event);
+137: }
+138: 
+139: // Router Event Listeners
+140: window.addEventListener('hashchange', handleRouting);
+141: window.addEventListener('DOMContentLoaded', () => {
+142:   // If there's no hash on load, default to home page
+143:   if (!window.location.hash) {
+144:     window.location.hash = '#/';
+145:   } else {
+146:     handleRouting();
+147:   }
+148: });
+149: 
+150: export { getActivePath };
+151: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

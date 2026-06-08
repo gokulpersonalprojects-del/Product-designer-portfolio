@@ -1,0 +1,65 @@
+Created At: 2026-06-07T17:13:57Z
+Completed At: 2026-06-07T17:13:57Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/best_initProject1Sandbox.js`
+Total Lines: 57
+Total Bytes: 2000
+Showing lines 1 to 57
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: function initProject1Sandbox() {
+2: 917:   // 1. Syllabus Node toggling & Connection line glowing
+3: 918:   const nodes = document.querySelectorAll('.syllabus-node');
+4: 919:   const statusMsg = document.getElementById('syllabus-status');
+5: 
+6: 
+7: MODEL
+8: RUN_COMMAND
+9: DONE
+10: 2026-06-07T05:44:01Z
+11: Created At: 2026-06-07T05:44:01Z
+12: Completed At: 2026-06-07T05:44:04Z
+13: 
+14: 				The command completed successfully.
+15: 				Output:
+16: 				880: function initWorkFilters() {
+17: 881:   const filterBtns = document.querySelectorAll('.filter-bar .filter-btn');
+18: 882:   const projectRows = document.querySelectorAll('.project-list-wrapper .project-row');
+19: 883:   
+20: 884:   filterBtns.forEach(btn => {
+21: 885:     btn.addEventListener('click', (e) => {
+22: 886:       // Manage active classes
+23: 887:       filterBtns.forEach(b => {
+24: 888:         b.classList.remove('active');
+25: 889:         b.setAttribute('aria-selected', 'false');
+26: 890:       });
+27: 891:       btn.classList.add('active');
+28: 892:       btn.setAttribute('aria-selected', 'true');
+29: 893:       
+30: 894:       const filterValue = btn.getAttribute('data-filter');
+31: 895:       
+32: 896:       // Filter list rows
+33: 897:       projectRows.forEach(row => {
+34: 898:         if (filterValue === 'all') {
+35: 899:           row.classList.remove('filtered-out');
+36: 900:         } else {
+37: 901:           const category = row.getAttribute('data-category');
+38: 902:           if (category === filterValue) {
+39: 903:             row.classList.remove('filtered-out');
+40: 904:           } else {
+41: 905:             row.classList.add('filtered-out');
+42: 906:           }
+43: 907:         }
+44: 908:       });
+45: 909:     });
+46: 910:   });
+47: 911: }
+48: 912: 
+49: 913: /**
+50: 914:  * Project 1 (Yooki) Syllabus map and AI sandbox controls
+51: 915:  */
+52: 916: function initProject1Sandbox() {
+53: 917:   // 1. Syllabus Node toggling & Connection line glowing
+54: 918:   const nodes = document.querySelectorAll('.syllabus-node');
+55: 919:   const statusMsg = document.getElementById('syllabus-status');
+56: 
+57: 
+The above content shows the entire, complete file contents of the requested file.

@@ -1,0 +1,113 @@
+Created At: 2026-06-05T18:22:35Z
+Completed At: 2026-06-05T18:22:35Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js`
+Total Lines: 105
+Total Bytes: 3105
+Showing lines 1 to 105
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import { 
+2:   renderHome, 
+3:   renderWork, 
+4:   renderAbout, 
+5:   renderProject1, 
+6:   renderProject2, 
+7:   renderProject3 
+8: } from './views.js';
+9: 
+10: // Route configuration
+11: const routes = {
+12:   '/': { title: 'Gokul S Kaimal — Product Designer', render: renderHome, navId: 'nav-home' },
+13:   '/work': { title: 'Work — Gokul S Kaimal', render: renderWork, navId: 'nav-work' },
+14:   '/about': { title: 'About — Gokul S Kaimal', render: renderAbout, navId: 'nav-about' },
+15:   '/project-1': { title: 'Yooki: UPSC Conversational AI — Gokul S Kaimal', render: renderProject1, navId: 'nav-work' },
+16:   '/project-2': { title: 'Cendrol: Operational Expense UX — Gokul S Kaimal', render: renderProject2, navId: 'nav-work' },
+17:   '/project-3': { title: 'Aura AI: Prompt-to-Interface UX — Gokul S Kaimal', render: renderProject3, navId: 'nav-work' }
+18: };
+19: 
+20: const appView = document.getElementById('app-view');
+21: 
+22: /**
+23:  * Clean up hash and get the matched route path
+24:  */
+25: function getActivePath() {
+26:   const hash = window.location.hash || '#/';
+27:   // Strip the hash symbol, keeping '/path'
+28:   return hash.substring(1) || '/';
+29: }
+30: 
+31: /**
+32:  * Handle route rendering with transitions and page state management
+33:  */
+34: async function handleRouting() {
+35:   const path = getActivePath();
+36:   const route = routes[path] || routes['/']; // Fallback to home
+37:   
+38:   // 1. Trigger Page Exit Animation
+39:   appView.classList.add('page-exit');
+40:   
+41:   // Wait for transition duration (300ms defined in CSS)
+42:   await new Promise(resolve => setTimeout(resolve, 180));
+43:   
+44:   // 2. Load View content and update document state
+45:   appView.innerHTML = route.render();
+46:   document.title = route.title;
+47:   
+48:   // Reset scroll position
+49:   window.scrollTo(0, 0);
+50:   
+51:   // Update nav active states
+52:   updateActiveNavigation(route.navId);
+53:   
+54:   // Trigger any inline listeners/mount logic if present
+55:   triggerViewMount(path);
+56: 
+57:   // 3. Trigger Page Enter Animation
+58:   appView.classList.remove('page-exit');
+59:   appView.classList.add('page-enter');
+60:   
+61:   // Force a browser reflow/frame refresh before removing enter class
+62:   requestAnimationFrame(() => {
+63:     requestAnimationFrame(() => {
+64:       appView.classList.remove('page-enter');
+65:     });
+66:   });
+67: }
+68: 
+69: /**
+70:  * Highlight active menu items in header navigation
+71:  */
+72: function updateActiveNavigation(activeNavId) {
+73:   const navLinks = document.querySelectorAll('.nav-link');
+74:   navLinks.forEach(link => {
+75:     if (link.id === activeNavId) {
+76:       link.classList.add('active');
+77:       link.setAttribute('aria-current', 'page');
+78:     } else {
+79:       link.classList.remove('active');
+80:       link.removeAttribute('aria-current');
+81:     }
+82:   });
+83: }
+84: 
+85: /**
+86:  * Dispatches a custom event for script execution on dynamic pages
+87:  */
+88: function triggerViewMount(path) {
+89:   const event = new CustomEvent('viewMounted', { detail: { path } });
+90:   document.dispatchEvent(event);
+91: }
+92: 
+93: // Router Event Listeners
+94: window.addEventListener('hashchange', handleRouting);
+95: window.addEventListener('DOMContentLoaded', () => {
+96:   // If there's no hash on load, default to home page
+97:   if (!window.location.hash) {
+98:     window.location.hash = '#/';
+99:   } else {
+100:     handleRouting();
+101:   }
+102: });
+103: 
+104: export { getActivePath };
+105: 
+The above content shows the entire, complete file contents of the requested file.

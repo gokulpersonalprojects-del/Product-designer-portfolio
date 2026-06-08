@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Changes the Yooki sidebar button text from \\\"more about company \u2192\\\" to \\\"view it live \u2192\\\".\"",
+  "EndLine": "1858",
+  "Instruction": "\"Replace button text with \\\"view it live\\\"\"",
+  "ReplacementContent": "\"        view it live <span style=\\\"font-size: 1.1rem; line-height: 1;\\\">&rarr;</span>\\n\"",
+  "StartLine": "1858",
+  "TargetContent": "\"        more about company <span style=\\\"font-size: 1.1rem; line-height: 1;\\\">&rarr;</span>\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Updating button text to view it live\"",
+  "toolSummary": "\"Update button text\""
+}

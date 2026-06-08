@@ -1,0 +1,1 @@
+I need to understand why the IA flowchart isn't visible. Let me check how `initProject1Sandbox` is called and what's happening with the sandbox initialization.

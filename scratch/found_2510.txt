@@ -1,0 +1,78 @@
+Created At: 2026-06-07T05:15:58Z
+Completed At: 2026-06-07T05:15:58Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/implementation_plan.md`
+Total Lines: 70
+Total Bytes: 3161
+Showing lines 1 to 70
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Feature Addition: My AI Workshop Page
+2: 
+3: This plan details the addition of a new interactive page, **My AI Workshop**, which acts as a playground showcasing Gokul's experimental AI interaction patterns, Generative UI schemas, and micro-interaction prototypes.
+4: 
+5: ## Proposed Changes
+6: 
+7: ### 1. Navigation & Routing Updates
+8: 
+9: #### [MODIFY] [index.html](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.html)
+10: - Add a navigation link to the sticky header list for `/ai-workshop`:
+11:   ```html
+12:   <li><a href="#/ai-workshop" class="nav-link" id="nav-workshop">AI Workshop</a></li>
+13:   ```
+14: 
+15: #### [MODIFY] [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js)
+16: - Import `renderAIWorkshop` from `views.js`.
+17: - Register the route `/ai-workshop` in the `routes` configuration:
+18:   ```javascript
+19:   '/ai-workshop': { 
+20:     title: 'AI Workshop — Gokul S Kaimal', 
+21:     render: renderAIWorkshop, 
+22:     navId: 'nav-workshop' 
+23:   }
+24:   ```
+25: 
+26: ---
+27: 
+28: ### 2. View Template & Controller Creation
+29: 
+30: #### [MODIFY] [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+31: - **Define `renderAIWorkshop()`**:
+32:   - Render a gorgeous, staggered title block and introductory statement.
+33:   - Design a dual-column layout detailing experimental concepts:
+34:     - **Experiment 1: SVG Layout Generator Sandbox**:
+35:       - A visual code-editor/sandbox where users select templates (e.g. "Bento Grid", "Analytics Chart", "Settings Panel") and watch the interface compile live via animated shell logs.
+36:     - **Experiment 2: Dynamic Glassmorphic AI Helper**:
+37:       - An interactive card mock-up displaying simulated metrics (like conversion drop-off). Users hover or click pulsing alert indicators to reveal floating AI suggestion tooltips.
+38:   - Wrap columns and elements with `.stagger-el` and delay classes to trigger staggered entrance sequences on page load.
+39: - **Define `initAIWorkshopSandbox()`**:
+40:   - Implement logic for the SVG template switcher:
+41:     - Triggers simulated code terminal streams.
+42:     - Swaps output SVG mock-ups using opacity and scale animations.
+43:   - Implement tooltip hover/click bindings.
+44: - **Register Mount Hook**:
+45:   - Update the `viewMounted` event listener to run `initAIWorkshopSandbox()` when the `/ai-workshop` route loads.
+46: 
+47: ---
+48: 
+49: ### 3. Styling Enhancements
+50: 
+51: #### [MODIFY] [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+52: - Add styling rules for AI Workshop components:
+53:   - `.terminal-window`: A dark, monospace coding console look.
+54:   - `.terminal-log-line`: Styles for animated typing text.
+55:   - `.workshop-tooltip`: A glassmorphic tooltip styling with subtle backdrop-blur.
+56:   - `.pulsing-glow-dot`: An animated pulsing orange alert circle.
+57: 
+58: ---
+59: 
+60: ## Verification Plan
+61: 
+62: ### Automated Verification
+63: - Run selenium checks to verify compile/load integrity and check for console errors.
+64: 
+65: ### Manual Verification
+66: - Confirm the new "AI Workshop" link appears in the header navigation list.
+67: - Confirm click navigation leads to `#/ai-workshop` and the active page tab highlights properly.
+68: - Verify staggered animations display smoothly.
+69: - Test both the SVG generator sandbox and tooltip helpers to confirm they update cleanly and run fluid micro-animations.
+70: 
+The above content shows the entire, complete file contents of the requested file.

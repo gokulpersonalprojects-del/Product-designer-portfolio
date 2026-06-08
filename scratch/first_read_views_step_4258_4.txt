@@ -1,0 +1,100 @@
+Created At: 2026-06-07T17:12:36Z
+Completed At: 2026-06-07T17:12:37Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/recovered_initSolutionTabs.txt`
+Total Lines: 125
+Total Bytes: 4244
+Showing lines 1 to 125
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T17:07:47Z
+2: Completed At: 2026-06-07T17:07:50Z
+3: 
+4: 				The command completed successfully.
+5: 				Output:
+6: 				<truncated 16 lines>
+7:    Total Lines: 1148
+8:    Total Bytes: 72851
+9:    Showing lines 650 to 800
+10:    The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+11:    650:         b.classList.remove('active');
+12:    651:         b.setAttribute('aria-selected', 'false');
+13:    652:       });
+14: ------------------------------
+15: definition_2557.js size: 504
+16:    Created At: 2026-06-07T05:17:58Z
+17:    Completed At: 2026-06-07T05:17:59Z
+18:    
+19:    				The command completed successfully.
+20:    				Output:
+21:    				Line 666: document.addEventListener('viewMounted', (event) => {
+22:    
+23:    Line 672: initProject1Sandbox();
+24:    
+25:    Line 674: initProject2Sandbox();
+26: ------------------------------
+27: definition_2561.js size: 4110
+28:    Created At: 2026-06-07T05:18:03Z
+29:    Completed At: 2026-06-07T05:18:05Z
+30:    
+31:    				The command completed successfully.
+32:    				Output:
+33:    				720: /**
+34:    
+35:    721:  * Project 1 (Yooki) Syllabus map and AI sandbox controls
+36:    
+37:    722:  */
+38: ------------------------------
+39: definition_2585.js size: 1271
+40:    Created At: 2026-06-07T05:18:59Z
+41:    Completed At: 2026-06-0
+<truncated 1214 bytes>
+definition_3660.js size: 286
+77:    Created At: 2026-06-07T06:45:37Z
+78:    Completed At: 2026-06-07T06:45:39Z
+79:    
+80:    				The command completed successfully.
+81:    				Output:
+82:    				1069: function initProject1Sandbox() {
+83:    
+84:    1368: function initProject2Sandbox() {
+85:    
+86:    1403: function initProject3Sandbox() {
+87: ------------------------------
+88: definition_3668.js size: 4105
+89:    Created At: 2026-06-07T06:45:53Z
+90:    Completed At: 2026-06-07T06:45:58Z
+91:    
+92:    				The command completed successfully.
+93:    				Output:
+94:    				function initProject1Sandbox() {
+95:    
+96:      // 1. UPSC Cognitive Pathing Flowchart logic
+97:    
+98:      const btnIAPlay = document.getElementById('ws-ia-btn-play');
+99: ------------------------------
+100: definition_3737.js size: 264
+101:    Created At: 2026-06-07T06:51:13Z
+102:    Completed At: 2026-06-07T06:51:16Z
+103:    
+104:    				The command completed successfully.
+105:    				Output:
+106:    				969: initProject1Sandbox();
+107:    
+108:    972: initProject2Sandbox();
+109:    
+110:    1069: function initProject1Sandbox() {
+111: ------------------------------
+112: definition_3743.js size: 2455
+113:    Created At: 2026-06-07T06:51:47Z
+114:    Completed At: 2026-06-07T06:51:47Z
+115:    File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js`
+116:    Total Lines: 2289
+117:    Total Bytes: 140213
+118:    Showing lines 1024 to 1070
+119:    The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+120:    1024: function initSolutionTabs() {
+121:    
+122:    1025:   const container = document.querySelector('.project-body');
+123: ------------------------------
+124: 
+125: 
+The above content shows the entire, complete file contents of the requested file.

@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+upsc_thumbnail.mp4 !text !filter !merge !diff
+cendrol_thumbnail.mp4 !text !filter !merge !diff
+cendrol_video1.mp4 !text !filter !merge !diff
+cendrol_video2.mp4 !text !filter !merge !diff
+cendrol_video3.mp4 !text !filter !merge !diff
+cendrol_video4.mp4 !text !filter !merge !diff
+cendrol_video5.mp4 !text !filter !merge !diff
+cendrol_video6.mp4 !text !filter !merge !diff
+fluteboxers_promo.mp4 !text !filter !merge !diff

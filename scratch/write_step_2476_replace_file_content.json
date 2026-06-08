@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Register AI Workshop mount controller inside viewMounted listener in views.js.\"",
+  "EndLine": "681",
+  "Instruction": "\"Add conditional block to check path === '/ai-workshop' and run initAIWorkshopSandbox().\"",
+  "ReplacementContent": "\"document.addEventListener('viewMounted', (event) => {\\n  const path = event.detail.path;\\n  \\n  if (path === '/work') {\\n    initWorkFilters();\\n  } else if (path === '/project-1') {\\n    initProject1Sandbox();\\n  } else if (path === '/project-2') {\\n    initProject2Sandbox();\\n  } else if (path === '/project-3') {\\n    initProject3Sandbox();\\n  } else if (path === '/project-4') {\\n    initProject4Sandbox();\\n  } else if (path === '/ai-workshop') {\\n    initAIWorkshopSandbox();\\n  }\\n});\"",
+  "StartLine": "665",
+  "TargetContent": "\"document.addEventListener('viewMounted', (event) => {\\n  const path = event.detail.path;\\n  \\n  if (path === '/work') {\\n    initWorkFilters();\\n  } else if (path === '/project-1') {\\n    initProject1Sandbox();\\n  } else if (path === '/project-2') {\\n    initProject2Sandbox();\\n  } else if (path === '/project-3') {\\n    initProject3Sandbox();\\n  } else if (path === '/project-4') {\\n    initProject4Sandbox();\\n  }\\n});\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Hooking AI Workshop controller to viewMounted event\"",
+  "toolSummary": "\"Hooking AI Workshop controller to viewMounted event\""
+}

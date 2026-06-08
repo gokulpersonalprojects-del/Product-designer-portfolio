@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Removes the INTERACTIVE AI PROMPT SANDBOX label from above the chat sandbox.\"",
+  "EndLine": "680",
+  "Instruction": "\"Delete the label span line\"",
+  "ReplacementContent": "\"\"",
+  "StartLine": "680",
+  "TargetContent": "\"                  <span class=\\\"font-mono label\\\" style=\\\"font-size: 0.65rem;\\\">INTERACTIVE AI PROMPT SANDBOX</span>\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Removing AI sandbox label\"",
+  "toolSummary": "\"Remove AI sandbox label\""
+}

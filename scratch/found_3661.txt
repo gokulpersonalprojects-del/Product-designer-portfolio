@@ -1,0 +1,1 @@
+I will write a python script `scratch/dump_project1_sandbox.py` to inspect the contents of `initProject1Sandbox` in `views.js` to see how the flowchart and sandbox interactions are wired up.

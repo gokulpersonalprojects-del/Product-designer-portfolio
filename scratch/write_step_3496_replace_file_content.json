@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Reduce search box font size to ensure Panchayati Raj fits fully without ellipsis\"",
+  "EndLine": "555",
+  "Instruction": "\"Change font-size of ia-search-box to 0.55rem.\"",
+  "ReplacementContent": "\"                        <div id=\\\"ia-search-box\\\" style=\\\"font-size: 0.55rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-mono); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center;\\\">Panchayati Raj</div>\"",
+  "StartLine": "548",
+  "TargetContent": "\"                        <div id=\\\"ia-search-box\\\" style=\\\"font-size: 0.6rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-mono); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center;\\\">Panchayati Raj</div>\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Reducing search box font size\"",
+  "toolSummary": "\"Replace file content\""
+}

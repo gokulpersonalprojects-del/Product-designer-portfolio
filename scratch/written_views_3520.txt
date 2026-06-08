@@ -1,0 +1,1 @@
+"                        <div id=\"ia-search-box\" style=\"font-size: 0.65rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem 0.35rem; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-weight: 500; white-space: normal; word-break: break-word; line-height: 1.2; text-align: center;\">Panchayati Raj</div>"

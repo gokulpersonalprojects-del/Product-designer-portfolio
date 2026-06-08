@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Replace Card 1 placeholder with upsc_thumbnail.png.\"",
+  "EndLine": "26",
+  "Instruction": "\"Replace the .card-img-placeholder wrapper in renderHome with an img tag pointing to ./upsc_thumbnail.png.\"",
+  "ReplacementContent": "\"      <article class=\\\"work-card col-span-2\\\" data-project=\\\"yooki\\\" onclick=\\\"window.location.hash='#/project-1'\\\" role=\\\"link\\\" tabindex=\\\"0\\\" aria-label=\\\"View UPSC AI case study\\\">\\n        <div class=\\\"work-card-media yooki\\\" style=\\\"height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden;\\\">\\n          <div class=\\\"card-img-placeholder\\\" style=\\\"background: none;\\\">\\n            <img src=\\\"./upsc_thumbnail.png\\\" alt=\\\"upsc.ai case study thumbnail\\\" style=\\\"width: 100%; height: 100%; object-fit: cover;\\\" />\\n          </div>\\n        </div>\"",
+  "StartLine": "19",
+  "TargetContent": "\"      <article class=\\\"work-card col-span-2\\\" data-project=\\\"yooki\\\" onclick=\\\"window.location.hash='#/project-1'\\\" role=\\\"link\\\" tabindex=\\\"0\\\" aria-label=\\\"View UPSC AI case study\\\">\\n        <div class=\\\"work-card-media yooki\\\" style=\\\"height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0;\\\">\\n          <div class=\\\"card-img-placeholder\\\">\\n            <div class=\\\"placeholder-glow\\\"></div>\\n            <span class=\\\"placeholder-text\\\">upsc.ai</span>\\n          </div>\\n        </div>\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Adding thumbnail to yooki card\"",
+  "toolSummary": "\"Edit views.js home card\""
+}

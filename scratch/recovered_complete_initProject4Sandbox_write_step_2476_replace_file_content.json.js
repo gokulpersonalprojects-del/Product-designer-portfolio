@@ -1,0 +1,1 @@
+initProject4Sandbox();\n  } else if (path === '/ai-workshop') {\n    initAIWorkshopSandbox();\n  }

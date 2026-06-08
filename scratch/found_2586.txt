@@ -1,0 +1,1 @@
+I will update our search helper script to print lines 945 to 975 of `views.js` so we can see the exact end of `initProject1Sandbox`.

@@ -1,0 +1,1 @@
+I will run a python command to see if `initProject3Sandbox` is still present in `views.js` and where it is.

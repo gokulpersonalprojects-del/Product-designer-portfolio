@@ -1,0 +1,25 @@
+Created At: 2026-06-07T05:16:02Z
+Completed At: 2026-06-07T05:16:02Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/task.md`
+Total Lines: 17
+Total Bytes: 1225
+Showing lines 1 to 17
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Checklist: Add My AI Workshop Page
+2: 
+3: - `[x]` Add Navigation link in [index.html](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.html)
+4: - `[x]` Add Route configuration in [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js)
+5: - `[x]` Add styling rules in [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+6:   - `[x]` Define `.terminal-window` and terminal text rules
+7:   - `[x]` Define `.workshop-tooltip` glassmorphic styling
+8:   - `[x]` Define `.pulsing-glow-dot` keyframes and classes
+9: - `[x]` Implement View templates and controllers in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+10:   - `[x]` Define `renderAIWorkshop()` template with staggered layout classes
+11:   - `[x]` Define `initAIWorkshopSandbox()` logic (mock SVG compiler and helper tooltip)
+12:   - `[x]` Register hook in `viewMounted` event listener to run `initAIWorkshopSandbox()`
+13: - `[x]` Verify local execution and review browser console logs
+14:   - `[x]` Run automated selenium log check script
+15:   - `[x]` Check manual transitions and sandbox animations
+16: - `[x]` Document implementation progress in [walkthrough.md](file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/walkthrough.md)
+17: 
+The above content shows the entire, complete file contents of the requested file.

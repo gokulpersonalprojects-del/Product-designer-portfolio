@@ -1,0 +1,1 @@
+I will update the search helper script to print the contents of `initProject1Sandbox` (lines 720-800) in `views.js`.

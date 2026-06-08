@@ -1,0 +1,1 @@
+I will mark the checklist items for the AI Workshop page as completed in `task.md`.

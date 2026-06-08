@@ -1,0 +1,1 @@
+I will write a python script `scratch/update_views.py` to automate all of these modifications in `views.js`, verifying each replacement step.

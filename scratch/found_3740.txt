@@ -1,0 +1,1 @@
+Good — `initProject1Sandbox()` IS being called when `/project-1` mounts. Now let me look at the `initSolutionTabs` function to understand why the chapter tab switching may not work, and check what Chapter content is visible by default.

@@ -1,0 +1,1 @@
+I will search for `initProject1Sandbox` in the `views.js` file to understand the HTML structure and logic we wrote for Case Study 1's sandboxes.

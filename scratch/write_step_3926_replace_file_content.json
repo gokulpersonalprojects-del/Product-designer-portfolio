@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Adds the Bank of Palestine YouTube video embed at the very start of the case study body, before the solution path chapters.\"",
+  "EndLine": "1019",
+  "Instruction": "\"Insert YouTube embed at the beginning of project3 body\"",
+  "ReplacementContent": "\"      <div class=\\\"project-body stagger-el stagger-delay-3\\\">\\n        \\n        <!-- Product Video -->\\n        <section class=\\\"body-chapter\\\" style=\\\"padding-top: 0; margin-bottom: 0;\\\">\\n          <div style=\\\"position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000;\\\">\\n            <iframe\\n              src=\\\"https://www.youtube-nocookie.com/embed/60vHCVEFNEg?rel=0&modestbranding=1&color=white\\\"\\n              title=\\\"Bank of Palestine \u2014 KYC Simplification Case Study\\\"\\n              frameborder=\\\"0\\\"\\n              allow=\\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\\"\\n              allowfullscreen\\n              style=\\\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;\\\"\\n            ></iframe>\\n          </div>\\n        </section>\\n\\n        <!-- Solution Path Section Wrapper -->\\n\"",
+  "StartLine": "1017",
+  "TargetContent": "\"      <div class=\\\"project-body stagger-el stagger-delay-3\\\">\\n        \\n        <!-- Solution Path Section Wrapper -->\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Adding YouTube embed to Bank of Palestine case study\"",
+  "toolSummary": "\"Add video to project3\""
+}

@@ -1,0 +1,1 @@
+I will run a python command to see where the `viewMounted` event listener is defined inside `views.js`.

@@ -1,0 +1,64 @@
+Created At: 2026-06-07T17:09:47Z
+Completed At: 2026-06-07T17:09:47Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/definition_3743.js`
+Total Lines: 56
+Total Bytes: 2510
+Showing lines 1 to 56
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: Created At: 2026-06-07T06:51:47Z
+2: Completed At: 2026-06-07T06:51:47Z
+3: File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js`
+4: Total Lines: 2289
+5: Total Bytes: 140213
+6: Showing lines 1024 to 1070
+7: The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+8: 1024: function initSolutionTabs() {
+9: 1025:   const container = document.querySelector('.project-body');
+10: 1026:   if (!container) return;
+11: 1027: 
+12: 1028:   const tabBtns = container.querySelectorAll('.solution-tab-btn');
+13: 1029:   const chapterContents = container.querySelectorAll('.solution-chapter-content');
+14: 1030: 
+15: 1031:   tabBtns.forEach(btn => {
+16: 1032:     btn.addEventListener('click', () => {
+17: 1033:       const targetChapter = btn.getAttribute('data-chapter');
+18: 1034:       if (!targetChapter) return;
+19: 1035: 
+20: 1036:       // Update active state on buttons
+21: 1037:       tabBtns.forEach(b => {
+22: 1038:         if (b.getAttribute('data-chapter') === targetChapter) {
+23: 1039:           b.classList.add('active');
+24: 1040:         } else {
+25: 1041:           b.classList.remove('active');
+26: 1042:         }
+27: 1043:       });
+28: 1044: 
+29: 1045:       // Update active state on chapter contents
+30: 1046:       chapterContents.forEach(content => {
+31: 1047:         if (content.getAttribute('data-chapter-content') === targetChapter) {
+32: 1048:           content.classList.add('active');
+33: 1049:         } else {
+34: 1050:           content.classList.remove('active');
+35: 1051:         }
+36: 1052:       });
+37: 1053: 
+38: 1054:       // Smooth scroll back to tabs header if scrolled past
+39: 1055:       const pathContainer = container.querySelector('.solution-path-container');
+40: 1056:       if (pathContainer) {
+41: 1057:         const rect = pathContainer.getBoundingClientRect();
+42: 1058:         if (rect.top < 0) {
+43: 1059:           pathContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+44: 1060:         }
+45: 1061:       }
+46: 1062:     });
+47: 1063:   });
+48: 1064: }
+49: 1065: 
+50: 1066: /**
+51: 1067:  * Project 1 (Yooki) Syllabus map and AI sandbox controls
+52: 1068:  */
+53: 1069: function initProject1Sandbox() {
+54: 1070:   // 1. UPSC Cognitive Pathing Flowchart logic
+55: The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+56: 
+The above content shows the entire, complete file contents of the requested file.

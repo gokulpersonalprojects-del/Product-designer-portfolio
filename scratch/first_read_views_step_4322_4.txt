@@ -1,0 +1,31 @@
+Created At: 2026-06-07T17:15:42Z
+Completed At: 2026-06-07T17:15:42Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/best_scratch_initProject1Sandbox.js`
+Total Lines: 49
+Total Bytes: 6121
+Showing lines 1 to 49
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: function initProject1Sandbox() {  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+2:   // 1. Syllabus Node toggling & Connection line glowing  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+3:   const nodes = document.querySelectorAll('.syllabus-node');  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+4:   const statusMsg = document.getElementById('syllabus-status');  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+5:   const linePolityEconomy = document.getElementById('line-polity-economy');  // Source: definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+6:   const lineEconomyEnv = document.getElementById('line-economy-env');  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+7:     // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+8:   nodes.forEach(node => {  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found
+<truncated 2764 bytes>
+.js, found_2589.txt, found_3320.txt, found_3739.txt
+37:               responseBubble.innerHTML = words.slice(0, index + 1).join(' ');  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+38:               index++;  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+39:               setTimeout(printNextWord, 45); // 45ms per word  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+40:             } else {  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+41:               responseBubble.innerHTML = response.answer; // restore full HTML  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+42:               isTyping = false;  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+43:             }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+44:           }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+45:           printNextWord();  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+46:         }, 850);  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+47:       }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+48:     });  // Source: definition_2589.js, definition_3318.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3318.txt, found_3320.txt, found_3739.txt
+49:   }
+The above content shows the entire, complete file contents of the requested file.

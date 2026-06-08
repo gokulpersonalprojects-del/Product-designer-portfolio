@@ -1,0 +1,1 @@
+I will update the `task.md` file to list the actions required for both the accessibility contrast changes and page transition animations.

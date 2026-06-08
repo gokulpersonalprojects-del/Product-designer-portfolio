@@ -1,0 +1,1 @@
+I will print the next section of `initProject3Sandbox` in `views.js` to see how the rendering and click events are handled.

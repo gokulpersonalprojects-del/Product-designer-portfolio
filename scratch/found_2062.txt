@@ -1,0 +1,1 @@
+I will view lines 450 to 600 of `views.js` to inspect the implementation of `renderProject3` and understand the style guidelines of the project details views.

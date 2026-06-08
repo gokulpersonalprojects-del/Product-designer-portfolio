@@ -1,0 +1,1 @@
+I will modify the `initProject1Sandbox` function in `views.js` to implement the scroll-linked scale, opacity, and blur animations for the storyboard stack.

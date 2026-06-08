@@ -1,0 +1,1 @@
+initWorkFilters();\n  } else if (path === '/project-1') {\n    initProject1Sandbox();\n  }

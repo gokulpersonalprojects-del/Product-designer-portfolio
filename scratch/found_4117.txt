@@ -1,0 +1,1 @@
+I will run a python command to search for `viewMounted` in `views.js` to find its line number and see what the project 3 mount hook looks like now.

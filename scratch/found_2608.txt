@@ -1,0 +1,1 @@
+I will update the `walkthrough.md` artifact to document the storyboard sticky stacking card implementation and verification details.

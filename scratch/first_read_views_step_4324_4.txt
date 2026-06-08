@@ -1,0 +1,94 @@
+Created At: 2026-06-07T17:15:48Z
+Completed At: 2026-06-07T17:15:48Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/extracted_p1_line_3648_4.js`
+Total Lines: 96
+Total Bytes: 4090
+Showing lines 1 to 96
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: function initProject1Sandbox() {
+2:   // 1. UPSC Cognitive Pathing Flowchart logic
+3:   const btnIAPlay = document.getElementById('ws-ia-btn-play');
+4:   const btnIAReset = document.getElementById('ws-ia-btn-reset');
+5:   const btnIATopic = document.getElementById('ws-ia-btn-topic');
+6:   
+7:   const iaProgressBar = document.getElementById('ia-progress-bar');
+8:   const iaProgressText = document.getElementById('ia-progress-text');
+9:   const iaSearchBox = document.getElementById('ia-search-box');
+10:   const iaDetailsTitle = document.getElementById('ia-details-title');
+11:   const iaDetailsDesc = document.getElementById('ia-details-desc');
+12:   const iaNudgeList = document.getElementById('ia-nudge-list');
+13:   const iaJourneySteps = document.getElementById('ia-journey-steps');
+14:   
+15:   const iaNodes = document.querySelectorAll('.ia-node');
+16:   const iaDots = document.querySelectorAll('.ia-flow-dot');
+17:   const iaPaths = document.querySelectorAll('.ia-flow-path, .ia-flow-path-dashed');
+18: 
+19:   const iaTopicData = {
+20:     polity: {
+21:       search: 'Panchayati Raj',
+22:       detailsTitle: 'Relevant Details',
+23:       detailsDesc: '73rd Amendment, 3-tier local self-governance model.',
+24:       nudge: `
+25:         <span style="font-size: 0.58rem; padding: 0.12rem 0.25rem; background: var(--bg-secondary); border-radius: 4px; border: 1px solid var(--border-color); color: var(--color-brand); font-family: var(--font-mono); font-weight: 500;">Fiscal Federalism ↗</span>
+26:         <span style="fo
+<truncated 913 bytes>
+p1) p1.classList.add('active');
+39:       if (p2) p2.classList.add('active');
+40:       if (p3) p3.classList.add('active');
+41:     } else if (activeNodeId === 'node-completion') {
+42:       iaPaths.forEach(path => path.classList.add('active'));
+43:     }
+44:   }
+45: 
+46:   if (iaNodes.length > 0) {
+47:     iaNodes.forEach(node => {
+48:       node.addEventListener('click', () => {
+49:         iaNodes.forEach(n => n.classList.remove('active'));
+50:         node.classList.add('active');
+51:         highlightFlowPaths(node.id);
+52:       });
+53:     });
+54:   }
+55: 
+56:   if (btnIAPlay) {
+57:     btnIAPlay.addEventListener('click', () => {
+58:       isLoopingPaused = !isLoopingPaused;
+59:       
+60:       const playIcon = document.getElementById('ws-ia-play-icon');
+61:       const playText = document.getElementById('ws-ia-play-text');
+62:       
+63:       iaDots.forEach(dot => {
+64:         if (isLoopingPaused) {
+65:           dot.classList.add('paused');
+66:         } else {
+67:           dot.classList.remove('paused');
+68:         }
+69:       });
+70:       
+71:       iaPaths.forEach(path => {
+72:         if (path.classList.contains('ia-flow-path-dashed')) {
+73:           if (isLoopingPaused) {
+74:             path.classList.remove('running');
+75:           } else {
+76:             path.classList.add('running');
+77:           }
+78:         }
+79:       });
+80: 
+81:       if (isLoopingPaused) {
+82:         if (playIcon) playIcon.textContent = '▶️';
+83:         if (playText) playText.textContent = 'Resume Loop';
+84:         btnIAPlay.classList.remove('active');
+85:       } else {
+86:         if (playIcon) playIcon.textContent = '⏸️';
+87:         if (playText) playText.textContent = 'Pause Loop';
+88:         btnIAPlay.classList.add('active');
+89:       }
+90:     });
+91:   }
+92: 
+93:   if (btnIAReset) {
+94: 
+95: 
+96: 
+The above content shows the entire, complete file contents of the requested file.

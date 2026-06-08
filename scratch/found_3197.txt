@@ -1,0 +1,1 @@
+I will update the `walkthrough.md` artifact to document the spacing consistency changes we made to the right panel.

@@ -1,0 +1,1 @@
+initProject2Sandbox();\n  } else if (path === '/project-3') {\n    initProject3Sandbox();\n  }

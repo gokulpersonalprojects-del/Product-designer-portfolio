@@ -1,0 +1,1 @@
+I will search for `ws-ia` in `views.js` to locate the flowchart elements in the AI Workshop page for removal.

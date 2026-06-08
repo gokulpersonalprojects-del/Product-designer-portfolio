@@ -1,0 +1,16 @@
+Created At: 2026-06-07T04:50:01Z
+Completed At: 2026-06-07T04:50:02Z
+The following changes were made by the replace_file_content tool to: c:\Users\ASUS\Desktop\new portfolio\views.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -676,6 +676,8 @@
+     initProject3Sandbox();
+   } else if (path === '/project-4') {
+     initProject4Sandbox();
++  } else if (path === '/ai-workshop') {
++    initAIWorkshopSandbox();
+   }
+ });
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

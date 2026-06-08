@@ -1,0 +1,1 @@
+I will read the next segment of the KYC simulator function in `views.js`.

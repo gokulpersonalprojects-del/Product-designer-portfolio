@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Change search box font-family to proportional sans-serif to fit long queries\"",
+  "EndLine": "551",
+  "Instruction": "\"Change search box font-family to var(--font-sans) and adjust styles.\"",
+  "ReplacementContent": "\"                        <div id=\\\"ia-search-box\\\" style=\\\"font-size: 0.65rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem 0.35rem; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-weight: 500; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center;\\\">Panchayati Raj</div>\"",
+  "StartLine": "548",
+  "TargetContent": "\"                        <div id=\\\"ia-search-box\\\" style=\\\"font-size: 0.55rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.25rem; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-mono); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center;\\\">Panchayati Raj</div>\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Changing search box font family\"",
+  "toolSummary": "\"Replace file content\""
+}

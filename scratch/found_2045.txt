@@ -1,0 +1,76 @@
+Created At: 2026-06-06T17:09:47Z
+Completed At: 2026-06-06T17:09:48Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/implementation_plan.md`
+Total Lines: 70
+Total Bytes: 3556
+Showing lines 1 to 70
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Add Fourth Case Study Card (Aura AI)
+2: 
+3: This plan details the addition of a fourth case study card on the portfolio. We will restore the **Aura AI** project as Project 4 (`#/project-4`) to create a perfectly balanced, symmetrical 3-column grid layout on the Home page. We will generate a matching dark-themed interface illustration (`aura_thumbnail.png`) as its featured card cover.
+4: 
+5: ## Proposed Changes
+6: 
+7: ### 1. Image Asset Generation
+8: We will use the `generate_image` tool to create a premium interface showcase graphic (`aura_thumbnail.png`) representing the modular canvas of Aura AI.
+9: - **Prompt**: `"A sleek dark UI dashboard mockup showing node-based visual interface layout editor with orange and purple ambient glowing accents on a black background, premium product design asset"`
+10: - **Save As**: `c:\Users\ASUS\Desktop\new portfolio\aura_thumbnail.png`
+11: 
+12: ---
+13: 
+14: ### 2. Views & Content Update
+15: 
+16: #### [MODIFY] [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+17: - **Home View Layout (`renderHome`)**:
+18:   - Update Card 3 (Cendrol) grid column span from `col-span-3` to `col-span-2` and height to `270px` (matching other cards).
+19:   - Add Card 4 (Aura AI) as a `col-span-1` card.
+20:   - Set Card 4 title to `"Aura AI: Prompt-to-Interface Editor"` and description to `"Reimagining prompt-to-interface design workflows by grounding AI generation loops within design tokens."`
+21:   - Configure Card 4 metrics: `"210ms"` (Gen Speed), `"Pass (AA)"` (WCAG Contrast), `"95%"` (Retention).
+
+<truncated 301 bytes>
+ the Aura AI case study. It will include its specs table, 3 chapters, and HTML template blocks.
+27: - **Project Sidebar Page (`renderProject4Sidebar`)**:
+28:   - Add the `renderProject4Sidebar()` function rendering Aura AI credentials.
+29:   - Spec list:
+30:     - **ROLE**: `Interaction & Design Systems Lead`
+31:     - **CHALLENGE**: `Maintaining layout context and user trust during AI generation loops`
+32:     - **IMPACT**: `Achieved 95% user retention rates and 210ms modular component generation latency`
+33: - **Modular Canvas Controller (`initProject4Sandbox`)**:
+34:   - Add the `initProject4Sandbox()` controller to manage component choices (Login Card, Analytics Grid, Product Card) and update the sandbox canvas preview.
+35: - **View Mount Listener**:
+36:   - Append check in `viewMounted` event listener to initialize the sandbox:
+37:     ```javascript
+38:     } else if (path === '/project-4') {
+39:       initProject4Sandbox();
+40:     }
+41:     ```
+42: 
+43: ---
+44: 
+45: ### 3. Routing Update
+46: 
+47: #### [MODIFY] [router.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/router.js)
+48: - Import `renderProject4` and `renderProject4Sidebar` from `views.js`.
+49: - Add route definition for `/project-4`:
+50:   ```javascript
+51:   '/project-4': { 
+52:     title: 'Aura AI: Prompt-to-Interface UX — Gokul S Kaimal', 
+53:     render: renderProject4, 
+54:     renderSidebar: renderProject4Sidebar,
+55:     navId: 'nav-work' 
+56:   }
+57:   ```
+58: 
+59: ---
+60: 
+61: ## Verification Plan
+62: 
+63: ### Automated Tests
+64: - Serve the portfolio locally and verify browser logs for missing components.
+65: 
+66: ### Manual Verification
+67: - Navigate to the Home page and check that Row 2 displays Cendrol (2 cols) and Aura AI (1 col) in a balanced grid.
+68: - Click Aura AI on the grid to verify navigation to `#/project-4`.
+69: - Check that the Aura AI detail view sidebar loads specs correctly, and verify the interactive component switcher works.
+70: 
+The above content shows the entire, complete file contents of the requested file.

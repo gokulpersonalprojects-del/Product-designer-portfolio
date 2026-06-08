@@ -1,0 +1,385 @@
+900:     `,  // Source: definition_2057.js, definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2057.txt, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+901:       node.classList.add('active');  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+902:         // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+903:       // Reset connection lines stroke and glow  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+904:       if (linePolityEconomy) {  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+905:         linePolityEconomy.style.stroke = 'var(--border-color)';  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+906:         linePolityEconomy.style.strokeWidth = '2px';  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+907:         linePolityEconomy.style.strokeDasharray = '4 4';  // Source: definition_2770.js, definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2770.txt, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+908:       });  // Source: definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+909:     });  // Source: definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+910:   });  // Source: definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+911: }  // Source: definition_2800.js, definition_2816.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2846.txt, found_3137.txt
+912:   // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+913: /**  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+914:  * Project 1 (Yooki) Syllabus map and AI sandbox controls  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+915:  */  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+916: function initProject1Sandbox() {  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+917:   // 1. Syllabus Node toggling & Connection line glowing  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+918:   const nodes = document.querySelectorAll('.syllabus-node');  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+919:   const statusMsg = document.getElementById('syllabus-status');  // Source: definition_2800.js, definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2800.txt, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+920:   const linePolityEconomy = document.getElementById('line-polity-economy');  // Source: definition_2816.js, definition_2828.js, definition_2846.js, definition_3137.js, found_2816.txt, found_2828.txt, found_2846.txt, found_3137.txt
+921:   const lineEconomyEnv = document.getElementById('line-economy-env');  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+922:     // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+923:   nodes.forEach(node => {  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+924:     node.addEventListener('click', () => {  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+925:       const topic = node.getAttribute('data-node');  // Source: definition_2828.js, definition_2846.js, found_2828.txt, found_2846.txt
+926:         // Source: definition_2828.js, found_2828.txt
+927:       // Reset active states  // Source: definition_2828.js, found_2828.txt
+928:       nodes.forEach(n => n.classList.remove('active'));  // Source: definition_2828.js, found_2828.txt
+929:       node.classList.add('active');  // Source: definition_2828.js, found_2828.txt
+930:         // Source: definition_2828.js, found_2828.txt
+931:       // Reset connection lines stroke and glow  // Source: definition_2828.js, found_2828.txt
+932:       if (linePolityEconomy) {  // Source: definition_2828.js, found_2828.txt
+933:         linePolityEconomy.style.stroke = 'var(--border-color)';  // Source: definition_2828.js, found_2828.txt
+934:         linePolityEconomy.style.strokeWidth = '2px';  // Source: definition_2828.js, found_2828.txt
+935:         linePolityEconomy.style.strokeDasharray = '4 4';  // Source: definition_2828.js, found_2828.txt
+936:         linePolityEconomy.style.filter = 'none';  // Source: definition_2828.js, found_2828.txt
+937:       }  // Source: definition_2828.js, found_2828.txt
+938:       if (lineEconomyEnv) {  // Source: definition_2828.js, found_2828.txt
+939:         lineEconomyEnv.style.stroke = 'var(--border-color)';  // Source: definition_2828.js, found_2828.txt
+940:         lineEconomyEnv.style.strokeWidth = '2px';  // Source: definition_2828.js, found_2828.txt
+941:         lineEconomyEnv.style.strokeDasharray = '4 4';  // Source: definition_2828.js, found_2828.txt
+942:         lineEconomyEnv.style.filter = 'none';  // Source: definition_2828.js, found_2828.txt
+943:       }  // Source: definition_2828.js, found_2828.txt
+944:         // Source: definition_2828.js, found_2828.txt
+945:         setTimeout(() => {  // Source: definition_2589.js, definition_2828.js, found_2589.txt, found_2828.txt
+946:           responseBubble.innerHTML = '';  // Source: definition_2589.js, definition_2828.js, found_2589.txt, found_2828.txt
+947:           const words = response.answer.split(' ');  // Source: definition_2589.js, definition_2828.js, found_2589.txt, found_2828.txt
+948:           let index = 0;  // Source: definition_2589.js, found_2589.txt
+949:             // Source: definition_2589.js, found_2589.txt
+950:           function printNextWord() {  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+951:             if (index < words.length) {  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+952:               responseBubble.innerHTML = words.slice(0, index + 1).join(' ');  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+953:               index++;  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+954:               setTimeout(printNextWord, 45); // 45ms per word  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+955:             } else {  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+956:               responseBubble.innerHTML = response.answer; // restore full HTML  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+957:               isTyping = false;  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+958:             }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+959:           }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+960:           printNextWord();  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+961:         }, 850);  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+962:       }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+963:     });  // Source: definition_2589.js, definition_3318.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3318.txt, found_3320.txt, found_3739.txt
+964:   });  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+965: }  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+966:   // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+967: /**  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+968:  * Project 2 (Cendrol) State flow timeline controls  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt
+969:  */  // Source: definition_2589.js, definition_3292.js, definition_3320.js, definition_3737.js, definition_3739.js, found_2589.txt, found_3292.txt, found_3320.txt, found_3737.txt, found_3739.txt
+970: function initProject2Sandbox() {  // Source: definition_2589.js, definition_3320.js, definition_3739.js, found_2589.txt, found_3320.txt, found_3739.txt, found_3741.txt
+971:   const steps = document.querySelectorAll('#state-sandbox .state-step');  // Source: definition_2589.js, definition_2828.js, definition_3320.js, definition_3739.js, found_2589.txt, found_2828.txt, found_3320.txt, found_3739.txt
+972:   const statusMsg = document.getElementById('state-status-msg');  // Source: definition_2589.js, definition_2828.js, definition_3320.js, definition_3737.js, definition_3739.js, found_2589.txt, found_2828.txt, found_3320.txt, found_3737.txt, found_3739.txt
+973:     // Source: definition_2589.js, definition_2828.js, definition_3320.js, definition_3739.js, found_2589.txt, found_2828.txt, found_3320.txt, found_3739.txt, found_3741.txt
+974:   const stepMsgs = {  // Source: definition_2589.js, definition_2828.js, definition_3320.js, definition_3739.js, found_2589.txt, found_2828.txt, found_3320.txt, found_3739.txt
+975:     '1': 'Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.',  // Source: definition_2589.js, definition_2828.js, definition_3320.js, definition_3739.js, found_2589.txt, found_2828.txt, found_3320.txt, found_3739.txt
+976:         statusMsg.textContent = '📚 Polity: Panchayati Raj is strong. It connects to Economy (Fiscal Federalism) via federal governance structure.';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt, found_3741.txt
+977:       } else {  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+978:         // Glow right connection  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+979:         if (lineEconomyEnv) {  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt, found_3741.txt
+980:           lineEconomyEnv.style.stroke = 'var(--color-brand)';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+981:           lineEconomyEnv.style.strokeWidth = '3px';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+982:           lineEconomyEnv.style.strokeDasharray = 'none';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+983:           lineEconomyEnv.style.filter = 'drop-shadow(0 0 5px hsla(258, 100%, 70%, 0.5))';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+984:         }  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+985:         statusMsg.style.color = 'var(--color-brand)';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+986:         statusMsg.textContent = '📖 Environment: Biodiversity is 34% complete. It shares ecological-fiscal connections with Economy.';  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+987:       }  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+988:     });  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+989:   });  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+990:   // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+991:   // 2. Chat Dialogue Typewriter/Streaming Effect  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+992:   const promptChips = document.querySelectorAll('.ai-dialogue-sandbox .prompt-chip');  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+993:   const userBubble = document.getElementById('ai-user-bubble');  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+994:   const responseBubble = document.getElementById('ai-response-bubble');  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+995:     // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+996:   const responses = {  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+997:     polity: {  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+998:       question: '"I studied Panchayati Raj today. What should I review next?"',  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+999:       answer: '"Polity is strong at 61% coverage. Since Panchayati Raj connects directly to <strong>Fiscal Federalism</strong> in Economy (where you have a 12% coverage gap), I recommend starting with Fiscal Federalism to bridge cross-subject concepts."'  // Source: definition_2828.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3320.txt, found_3739.txt
+1000:     },  // Source: definition_2828.js, definition_3262.js, definition_3320.js, definition_3739.js, found_2828.txt, found_3262.txt, found_3320.txt, found_3739.txt
+1001: /**  // Source: definition_3262.js, found_3262.txt
+1002:  * Project 1 (Yooki) Syllabus map and AI sandbox controls  // Source: definition_3262.js, found_3262.txt
+1003:  */  // Source: definition_3262.js, found_3262.txt
+1004: function initProject1Sandbox() {  // Source: definition_3262.js, found_3262.txt
+1005:   // 1. Syllabus Node toggling & Connection line glowing  // Source: definition_3262.js, found_3262.txt
+1006:   const nodes = document.querySelectorAll('.syllabus-node');  // Source: definition_3262.js, found_3262.txt
+1007:   const statusMsg = document.getElementById('syllabus-status');  // Source: definition_3262.js, found_3262.txt
+1008:   const linePolityEconomy = document.getElementById('line-polity-economy');  // Source: definition_3262.js, found_3262.txt
+1009:   const lineEconomyEnv = document.getElementById('line-economy-env');  // Source: definition_3262.js, found_3262.txt
+1010:     // Source: definition_3262.js, found_3262.txt
+1011:   nodes.forEach(node => {  // Source: definition_3262.js, found_3262.txt
+1012:     node.addEventListener('click', () => {  // Source: definition_3262.js, found_3262.txt
+1013:       const topic = node.getAttribute('data-node');  // Source: definition_3262.js, found_3262.txt
+1014:         // Source: definition_3262.js, found_3262.txt
+1015:       // Reset active states  // Source: definition_3262.js, found_3262.txt
+1016:       nodes.forEach(n => n.classList.remove('active'));  // Source: definition_3262.js, found_3262.txt
+1017:       node.classList.add('active');  // Source: definition_3262.js, found_3262.txt
+1018:         // Source: definition_3262.js, found_3262.txt
+1019:       // Reset connection lines stroke and glow  // Source: definition_3262.js, found_3262.txt
+1020:     if (currentStep === 4) {  // Source: definition_2107.js, definition_3262.js, found_2107.txt, found_3262.txt
+1021:       const currentCard = document.getElementById('choice-current');  // Source: definition_2107.js, definition_3262.js, found_2107.txt, found_3262.txt
+1022:       const savingCard = document.getElementById('choice-saving');  // Source: definition_2107.js, definition_3262.js, found_2107.txt, found_3262.txt
+1023:         // Source: definition_2107.js, definition_3262.js, found_2107.txt, found_3262.txt
+1024:       if (currentCard && savingCard) {  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3369.txt, found_3371.txt, found_3741.txt, found_3743.txt
+1025:         currentCard.addEventListener('click', () => {  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1026:           selectedAccount = 'current';  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1027:           updateView();  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1028:         });  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1029:         savingCard.addEventListener('click', () => {  // Source: definition_2107.js, definition_3262.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1030:           selectedAccount = 'saving';  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1031:           updateView();  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1032:         });  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1033:       }  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1034:     }  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1035:   }  // Source: definition_2107.js, definition_2393.js, definition_3262.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3262.txt, found_3371.txt, found_3743.txt
+1036:     // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1037:   updateView();  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1038: }  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1039:   // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1040: /**  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1041:  * Project 4 (Aura AI) Component compiler generative canvas controls  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1042:  */  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1043: function initProject4Sandbox() {  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1044:   const btnLogin = document.getElementById('aura-btn-login');  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1045:   const btnAnalytics = document.getElementById('aura-btn-analytics');  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1046:   const btnProduct = document.getElementById('aura-btn-product');  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1047:   const canvasPreview = document.getElementById('aura-canvas-preview');  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1048:   const statusMsg = document.getElementById('aura-sandbox-status');  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1049:     // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1050:   if (!canvasPreview) return;  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1051:     // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1052:   const components = {  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1053:     login: `  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1054:       <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow-sm); text-align: left;">  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1055:         <div style="display: flex; flex-direction: column; gap: 0.25rem;">  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1056:           <h4 class="fo  // Source: definition_2107.js, definition_2393.js, definition_3743.js, found_2107.txt, found_2393.txt, found_3371.txt, found_3743.txt
+1057:  */  // Source: definition_2393.js, definition_3743.js, found_2393.txt, found_3371.txt, found_3743.txt
+1058: function initProject4Sandbox() {  // Source: definition_2393.js, definition_3743.js, found_2393.txt, found_3371.txt, found_3743.txt
+1059:   const btnLogin = document.getElementById('aura-btn-login');  // Source: definition_2393.js, definition_3743.js, found_2393.txt, found_3371.txt, found_3743.txt
+1060:   const btnAnalytics = document.getElementById('aura-btn-analytics');  // Source: definition_2393.js, definition_3294.js, definition_3743.js, found_2393.txt, found_3294.txt, found_3371.txt, found_3743.txt
+1061:       }  // Source: definition_3294.js, definition_3743.js, found_3294.txt, found_3371.txt, found_3743.txt
+1062:     });  // Source: definition_3294.js, definition_3743.js, found_3294.txt, found_3371.txt, found_3743.txt
+1063:   });  // Source: definition_3294.js, definition_3743.js, found_3294.txt, found_3371.txt, found_3743.txt
+1064:       </div>  // Source: definition_2107.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3294.txt, found_3371.txt, found_3743.txt
+1065:     `,  // Source: definition_2107.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3294.txt, found_3371.txt, found_3743.txt
+1066:     analytics: `  // Source: definition_2107.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3294.txt, found_3743.txt
+1067:       <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 12px; display: flex; flex-direction: column; gap: 0.75rem; box-shadow: var(--shadow-sm); text-align: left;">  // Source: definition_2107.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3294.txt, found_3743.txt
+1068:         <div style="display: flex; justify-content: space-between; align-items: center;">  // Source: definition_2107.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3294.txt, found_3743.txt
+1069:           <h4 class="font-serif" style="margin: 0; font-size: 1rem; color: var(--text-primary); font-weight: 500;">Performance Metrics</h4>  // Source: definition_2107.js, definition_3292.js, definition_3294.js, definition_3660.js, definition_3737.js, definition_3743.js, found_2107.txt, found_3292.txt, found_3294.txt, found_3660.txt, found_3737.txt, found_3743.txt
+1070:           <span style="font-size: 0.65rem; padding: 0.2rem 0.4rem; background: rgba(52, 199, 89, 0.1); color: #34c759; border-radius: 4px; font-weight: 600; font-family: var(--font-mono);">LIVE</span>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, definition_3743.js, found_2107.txt, found_3262.txt, found_3294.txt, found_3743.txt
+1071:         </div>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1072:         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.25rem;">  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1073:           <div style="padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1074:             <span class="font-sans" style="font-size: 0.65rem; color: var(--text-secondary);">Conversion Rate</span>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1075:             <div class="font-mono" style="font-size: 1.25rem; font-weight: bold; color: var(--text-primary); margin-top: 0.25rem;">3.42%</div>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1076:           </div>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1077:           <div style="padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1078:             <span class="font-sans" style="font-size: 0.65rem; color: var(--text-secondary);">Avg. Latency</span>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1079:             <div class="font-mono" style="font-size: 1.25rem; font-weight: bold; color: var(--color-accent); margin-top: 0.25rem;">210ms</div>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1080:           </div>  // Source: definition_2107.js, definition_3262.js, definition_3294.js, found_2107.txt, found_3262.txt, found_3294.txt
+1081:   const userBubble = document.getElementById('ai-user-bubble');  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1082:   const responseBubble = document.getElementById('ai-response-bubble');  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1083:     // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1084:   const responses = {  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1085:     polity: {  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1086:       question: '"I studied Panchayati Raj today. What should I review next?"',  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1087:       answer: '"Polity is strong at 61% coverage. Since Panchayati Raj connects directly to <strong>Fiscal Federalism</strong> in Economy (where you have a 12% coverage gap), I recommend starting with Fiscal Federalism to bridge cross-subject concepts."'  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1088:     },  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1089:     exam: {  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1090:       question: '"Which area should I revise before my mock exam next week?"',  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1091:       answer: '"Environment is currently your most neglected area (last updated 18 days ago, 34% coverage). Given the recent mock exam weights, prioritize <strong>Biodiversity &amp; Conservation</strong> first to maximize score potential."'  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1092:     }  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1093:   };  // Source: definition_3262.js, definition_3294.js, found_3262.txt, found_3294.txt
+1094:     // Source: definition_3262.js, found_3262.txt
+1095:   let isTyping = false;  // Source: definition_3262.js, found_3262.txt
+1096:   promptChips.forEach(chip => {  // Source: definition_3262.js, found_3262.txt
+1097:     chip.addEventListener('click', () => {  // Source: definition_3262.js, found_3262.txt
+1098:       if (isTyping) return;  // Source: definition_3262.js, found_3262.txt
+1099:       const type = chip.getAttribute('data-prompt');  // Source: definition_3262.js, found_3262.txt
+1100:  * Project 2 (Cendrol) State flow timeline controls  // Source: definition_2832.js, definition_3262.js, found_2832.txt, found_3262.txt
+1101:  */  // Source: definition_2832.js, found_2832.txt
+1102: function initProject2Sandbox() {  // Source: definition_2832.js, found_2832.txt
+1103:   const steps = document.querySelectorAll('#state-sandbox .state-step');  // Source: definition_2832.js, found_2832.txt
+1104:   const statusMsg = document.getElementById('state-status-msg');  // Source: definition_2832.js, found_2832.txt
+1105:     // Source: definition_2832.js, found_2832.txt
+1106:   const stepMsgs = {  // Source: definition_2832.js, found_2832.txt
+1107:     '1': 'Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.',  // Source: definition_2832.js, found_2832.txt
+1108:     '2': 'Stage 2 (Audited): Receipt details have been parsed by OCR and validated by our finance automation team.',  // Source: definition_2832.js, found_2832.txt
+1109:     '3': 'Stage 3 (Approved): CFO has signed off on the expense audit. Disbursement is scheduled.',  // Source: definition_2832.js, found_2832.txt
+1110:     '4': 'Stage 4 (Reimbursed): Funds have been dispatched to your corporate wallet. Transaction complete!'  // Source: definition_2832.js, found_2832.txt
+1111:   };  // Source: definition_2832.js, found_2832.txt
+1112:     // Source: definition_2832.js, found_2832.txt
+1113:   steps.forEach(step => {  // Source: definition_2832.js, found_2832.txt
+1114:     step.addEventListener('click', () => {  // Source: definition_2832.js, found_2832.txt
+1115:       const stepNum = step.getAttribute('data-step');  // Source: definition_2832.js, found_2832.txt
+1116:         // Source: definition_2832.js, found_2832.txt
+1117:       // Update active states  // Source: definition_2832.js, found_2832.txt
+1118:       steps.forEach(s => s.classList.remove('active'));  // Source: definition_2832.js, found_2832.txt
+1119:       step.classList.add('active');  // Source: definition_2832.js, found_2832.txt
+1120:         // Source: definition_2832.js, found_2832.txt
+1121:       // Update message with colors  // Source: definition_2832.js, found_2832.txt
+1122:       if (stepNum === '4') {  // Source: definition_2832.js, found_2832.txt
+1123:         statusMsg.style.color = 'var(--color-success)'; // Success green  // Source: definition_2832.js, found_2832.txt
+1124:       } else if (stepNum === '1') {  // Source: definition_2832.js, found_2832.txt
+1125:         statusMsg.style.color = 'var(--color-accent)'; // Orange  // Source: definition_2832.js, found_2832.txt
+1126:       } else {  // Source: definition_2832.js, found_2832.txt
+1127:         statusMsg.style.color = 'var(--color-brand)'; // Purple  // Source: definition_2832.js, found_2832.txt
+1128:       }  // Source: definition_2832.js, found_2832.txt
+1129:       statusMsg.textContent = stepMsgs[stepNum];  // Source: definition_2832.js, found_2832.txt
+1130:     });  // Source: definition_2832.js, found_2832.txt
+1131:   });  // Source: definition_2832.js, found_2832.txt
+1132: }  // Source: definition_2832.js, found_2832.txt
+1133:   // Source: definition_2832.js, found_2832.txt
+1134: /*  // Source: definition_2832.js, found_2832.txt
+1136: initProject3Sandbox();  // Source: definition_3998.js, found_3998.txt
+1152:           // Source: definition_2832.js, found_2832.txt
+1153:         <div style="display: flex; flex-direction: column; gap: 0.6rem; margin: 0.5rem 0;">  // Source: definition_2832.js, found_2832.txt
+1154:           <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-primary);">  // Source: definition_2832.js, found_2832.txt
+1155:             <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--color-bop); color: white; font-size: 0.6rem; font-weight: bold;">1</span>  // Source: definition_2832.js, found_2832.txt
+1156:             <span>Phone Number &amp; Email</span>  // Source: definition_2832.js, found_2832.txt
+1157:           </div>  // Source: definition_2832.js, found_2832.txt
+1158:           <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-primary);">  // Source: definition_2832.js, found_2832.txt
+1159:             <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--color-bop); color: white; font-size: 0.6rem; font-weight: bold;">2</span>  // Source: definition_2832.js, found_2832.txt
+1160:             <span>Palestinian ID Proof</span>  // Source: definition_2832.js, found_2832.txt
+1161:           </div>  // Source: definition_2832.js, found_2832.txt
+1162:           <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-primary);">  // Source: definition_2832.js, found_2832.txt
+1163:             <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--color-bop); color: white; font-size: 0.6rem; font-weight: bold;">3</span>  // Source: definition_2832.js, found_2832.txt
+1164:             <span>Selfie Capture</span>  // Source: definition_2832.js, found_2832.txt
+1165:           </div>  // Source: definition_2832.js, found_2832.txt
+1166:         </div>  // Source: definition_2832.js, found_2832.txt
+1167:       </div>  // Source: definition_2832.js, found_2832.txt
+1168:       <button id="kyc-next-btn" style="width: 100%; padding: 0.75rem; border: none; border-radius: 8px; background: var(--color-bop); color: white; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; margin-top: 1rem;">Get Started</button>  // Source: definition_2832.js, found_2832.txt
+1169:     `,  // Source: definition_2832.js, found_2832.txt
+1170:     2: () => `  // Source: definition_2832.js, found_2832.txt
+1209:       iaDots.forEach(dot => {  // Source: definition_3294.js, found_3294.txt
+1210:         // Force reflow to restart animation  // Source: definition_3294.js, found_3294.txt
+1211:         const style = dot.style.animation;  // Source: definition_3294.js, found_3294.txt
+1212:         dot.style.animation = 'none';  // Source: definition_3294.js, found_3294.txt
+1213:         dot.offsetHeight; // trigger reflow  // Source: definition_3294.js, found_3294.txt
+1214:         dot.style.animation = '';  // Source: definition_3294.js, found_3294.txt
+1215:           // Source: definition_3294.js, found_3294.txt
+1216:         if (isLoopingPaused) {  // Source: definition_3294.js, found_3294.txt
+1217:           dot.classList.add('paused');  // Source: definition_3294.js, found_3294.txt
+1218:         }  // Source: definition_3294.js, found_3294.txt
+1219:       });  // Source: definition_3294.js, found_3294.txt
+1220:   // Source: definition_3294.js, found_3294.txt
+1221:       // Update progress bar  // Source: definition_3294.js, found_3294.txt
+1222:       if (iaProgressBar) {  // Source: definition_3294.js, found_3294.txt
+1223:         iaProgressBar.style.width = '12%';  // Source: definition_3294.js, found_3294.txt
+1224:         setTimeout(() => {  // Source: definition_3294.js, found_3294.txt
+1225:           iaProgressBar.style.width = iaTopicData[currentIATopic].progressWidth;  // Source: definition_3294.js, found_3294.txt
+1226:         }, 100);  // Source: definition_3294.js, found_3294.txt
+1227:       }  // Source: definition_3294.js, found_3294.txt
+1228:     });  // Source: definition_3294.js, found_3294.txt
+1229:   }  // Source: definition_3294.js, found_3294.txt
+1230:   // Source: definition_3294.js, found_3294.txt
+1231:   if (btnIATopic) {  // Source: definition_3294.js, found_3294.txt
+1232:     btnIATopic.addEventListener('click', () => {  // Source: definition_3294.js, found_3294.txt
+1233:       currentIATopic = currentIATopic === 'polity' ? 'history' : 'polity';  // Source: definition_3294.js, found_3294.txt
+1234:       const data = iaTopicData[currentIATopic];  // Source: definition_3294.js, found_3294.txt
+1235:         // Source: definition_3294.js, found_3294.txt
+1236:       // Update HTML content  // Source: definition_3294.js, found_3294.txt
+1237:       if (iaSearchBox) iaSearchBox.textContent = data.search;  // Source: definition_3294.js, found_3294.txt
+1238:       if (iaDetailsTitle) iaDetailsTitle.textContent = data.detailsTitle;  // Source: definition_3294.js, found_3294.txt
+1239:       if (iaDetailsDesc) iaDetailsDesc.textContent = data.detailsDesc;  // Source: definition_3294.js, found_3294.txt
+1240:       if (iaNudgeList) iaNudgeList.innerHTML = data.nudge;  // Source: definition_3294.js, found_3294.txt
+1241:       if (iaJourneySteps) iaJourneySteps.innerHTML = data.journey;  // Source: definition_3294.js, found_3294.txt
+1242:       if (iaProgressText) iaProgressText.textContent = data.progressText;  // Source: definition_3294.js, found_3294.txt
+1243:       if (iaProgressBar) iaProgressBar.style.width = data.progressWidth;  // Source: definition_3294.js, found_3294.txt
+1244:         // Source: definition_3294.js, found_3294.txt
+1245:       // Reset active state  // Source: definition_3294.js, found_3294.txt
+1246:       iaNodes.forEach(n => n.classList.remove('active'));  // Source: definition_3294.js, found_3294.txt
+1247:       const nodeSearch = document.getElementById('node-search');  // Source: definition_3294.js, found_3294.txt
+1248:       if (nodeSearch) nodeSearch.classList.add('active');  // Source: definition_3294.js, found_3294.txt
+1249:       highlightFlowPaths('node-search');  // Source: definition_3294.js, found_3294.txt
+1250:     });  // Source: definition_3294.js, found_3294.txt
+1300:         }  // Source: definition_2836.js, found_2836.txt
+1301:       }  // Source: definition_2836.js, found_2836.txt
+1302:     }, 220);  // Source: definition_2836.js, found_2836.txt
+1303:   }  // Source: definition_2836.js, found_2836.txt
+1304:     // Source: definition_2836.js, found_2836.txt
+1305:   updateView();  // Source: definition_2836.js, found_2836.txt
+1306: }  // Source: definition_2836.js, found_2836.txt
+1307:   // Source: definition_2836.js, found_2836.txt
+1308: /**  // Source: definition_2836.js, found_2836.txt
+1309:  * Project 4 (Aura AI) Component compiler generative canvas controls  // Source: definition_2836.js, found_2836.txt
+1310:  */  // Source: definition_2836.js, found_2836.txt
+1311: function initProject4Sandbox() {  // Source: definition_2836.js, found_2836.txt
+1312:   const btnLogin = document.getElementById('aura-btn-login');  // Source: definition_2836.js, found_2836.txt
+1313:   const btnAnalytics = document.getElementById('aura-btn-analytics');  // Source: definition_2836.js, found_2836.txt
+1314:   const btnProduct = document.getElementById('aura-btn-product');  // Source: definition_2836.js, found_2836.txt
+1315:   const canvasPreview = document.getElementById('aura-canvas-preview');  // Source: definition_2836.js, found_2836.txt
+1316:   const statusMsg = document.getElementById('aura-sandbox-status');  // Source: definition_2836.js, found_2836.txt
+1317:     // Source: definition_2836.js, found_2836.txt
+1318:   if (!canvasPreview) return;  // Source: definition_2836.js, found_2836.txt
+1319:     // Source: definition_2836.js, found_2836.txt
+1320:   const components = {  // Source: definition_2836.js, found_2836.txt
+1321:     login: `  // Source: definition_2836.js, found_2836.txt
+1322:       <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow-sm); text-align: left;">  // Source: definition_2836.js, found_2836.txt
+1323:         <div style="display: flex; flex-direction: column; gap: 0.25rem;">  // Source: definition_2836.js, found_2836.txt
+1324:           <h4 class="font-serif" style="margin: 0; font-size: 1.15rem; color: var(--text-primary); font-weight: 500;">Welcome back</h4>  // Source: definition_2836.js, found_2836.txt
+1325:           <p class="font-sans" style="margin: 0; font-size: 0.75rem; color: var(--text-secondary);">Enter your credentials to access your workspace</p>  // Source: definition_2836.js, found_2836.txt
+1326:         </div>  // Source: definition_2836.js, found_2836.txt
+1327:         <div style="display: flex; flex-direction: column; gap: 0.75rem;">  // Source: definition_2836.js, found_2836.txt
+1328:           <input type="text" placeholder="name@company.com" disabled style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.8rem;" />  // Source: definition_2836.js, found_2836.txt
+1329:           <input type="password" placeholder="••••••••" disabled style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.8rem;" />  // Source: definition_2836.js, found_2836.txt
+1330:         </div>  // Source: definition_2836.js, found_2836.txt
+1331:         <button style="padding: 0.6rem; border: none; border-radius: 6px; background: var(--color-brand); color: white; font-weight: 600; font-size: 0.8rem; cursor: not-allowed;">Sign In</button>  // Source: definition_2836.js, found_2836.txt
+1332:       </div>  // Source: definition_2836.js, found_2836.txt
+1333:     `,  // Source: definition_2836.js, found_2836.txt
+1334:     analytics: `  // Source: definition_2836.js, found_2836.txt
+1335:       <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 12px; display: flex; flex-direction: column; gap: 0.75rem; box-shadow: var(--shadow-sm); text-align: left;">  // Source: definition_2836.js, found_2836.txt
+1336:         <div style="display: flex; justify-content: space-between; align-items: center;">  // Source: definition_2836.js, found_2836.txt
+1337:           <h4 class="font-serif" style="margin: 0; font-size: 1rem; color: var(--text-primary); font-weight: 500;">Performance Metrics</h4>  // Source: definition_2836.js, found_2836.txt
+1338:           <span style="font-size: 0.65rem; padding: 0.2rem 0.4rem; background: var(--color-success-light); color: var(--color-success); border-radius: 4px; font-weight: 600; font-family: var(--font-mono);">LIVE</span>  // Source: definition_2836.js, found_2836.txt
+1339:         </div>  // Source: definition_2836.js, found_2836.txt
+1340:         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.25rem;">  // Source: definition_2836.js, found_2836.txt
+1368: function initProject2Sandbox() {  // Source: definition_3660.js, definition_3737.js, found_3660.txt, found_3737.txt
+1403: function initProject3Sandbox() {  // Source: definition_3660.js, found_3660.txt
+1560:   // Source: definition_4000.js, found_4000.txt
+1561: /**  // Source: definition_4000.js, found_4000.txt
+1562:  * Project 3 (Aura AI) Component generative canvas controls  // Source: definition_4000.js, found_4000.txt
+1563:  */  // Source: definition_4000.js, found_4000.txt
+1564: function initProject3Sandbox() {  // Source: definition_3998.js, definition_4000.js, found_3998.txt, found_4000.txt
+1565:   const container = document.getElementById('kyc-screen-content');  // Source: definition_4000.js, found_4000.txt
+1566:   const statusMsg = document.getElementById('kyc-simulator-status');  // Source: definition_4000.js, found_4000.txt
+1567:     // Source: definition_4000.js, found_4000.txt
+1568:   if (!container) return;  // Source: definition_4000.js, found_4000.txt
+1569:     // Source: definition_4000.js, found_4000.txt
+1570:   let currentStep = 1;  // Source: definition_4000.js, found_4000.txt
+1571:   let selectedAccount = 'current'; // 'current' or 'saving'  // Source: definition_4000.js, found_4000.txt
+1572:     // Source: definition_4000.js, found_4000.txt
+1573:   const screens = {  // Source: definition_4000.js, found_4000.txt
+1574:     1: () => `  // Source: definition_4000.js, found_4000.txt
+1575:       <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">  // Source: definition_4000.js, found_4000.txt
+1576:         <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-accent);">STEP 01 / 04</span>  // Source: definition_4000.js, found_4000.txt
+1577: function initProject4Sandbox() {  // Source: definition_3660.js, definition_4000.js, found_3660.txt, found_4000.txt
+1578:         <p class="font-sans" style="font-size: 0.8rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">A smarter way to manage your money in Palestine.</p>  // Source: definition_4000.js, found_4000.txt
+1579:           // Source: definition_4000.js, found_4000.txt
+1580:         <div style="display: flex; flex-direction: column; gap: 0.6rem; margin: 0.5rem 0;">  // Source: definition_4000.js, found_4000.txt
+1581:           <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-primary);">  // Source: definition_4000.js, found_4000.txt
+1582:             <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--color-bop); color: white; font-size: 0.6rem; font-weight: bold;">1</span>  // Source: definition_4000.js, found_4000.txt
+1583:             <span>Phone Number &amp; Email</span>  // Source: definition_4000.js, found_4000.txt
+1584:           </div>  // Source: definition_4000.js, found_4000.txt
+1585:    // Source: definition_4000.js, found_4000.txt
+1782:           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" y2="12"/></svg>  // Source: definition_4000.js, found_4000.txt
+1783:         </div>  // Source: definition_4000.js, found_4000.txt
+1784:         <div style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">  // Source: definition_4000.js, found_4000.txt
+1785:           <div style="display: flex; justify-content: space-between; align-items: center;">  // Source: definition_4000.js, found_4000.txt
+1786:             <h4 class="font-serif" style="margin: 0; font-size: 1rem; color: var(--text-primary); font-weight: 500;">Aura Pro Engine</h4>  // Source: definition_4000.js, found_4000.txt
+1787:             <span class="font-mono" style="font-size: 0.8rem; font-weight: bold; color: var(--color-accent);">$49/mo</span>  // Source: definition_4000.js, found_4000.txt
+1788:           </div>  // Source: definition_4000.js, found_4000.txt
+1789:           <p class="font-sans" style="margin: 0; font-size: 0.7rem; color: var(--text-secondary); line-height: 1.3;">Fully integrated layout compiling engine with local LLM schema alignment.</p>  // Source: definition_4000.js, found_4000.txt
+1790:           <button style="width: 100%; padding: 0.5rem; border: 1px solid var(--color-brand); border-radius: 6px; background: transparent; color: var(--color-brand); font-weight: 600; font-size: 0.75rem; cursor: not-allowed; margin-top: 0.25rem;">Deploy Instance</button>  // Source: definition_4000.js, found_4000.txt
+1791:         </div>  // Source: definition_4000.js, found_4000.txt
+1792:       </div>  // Source: definition_4000.js, found_4000.txt
+1793:     `  // Source: definition_4000.js, found_4000.txt
+1794:   };  // Source: definition_4000.js, found_4000.txt
+1795:     // Source: definition_4000.js, found_4000.txt
+1796:   function updateComponent(compType) {  // Source: definition_4000.js, found_4000.txt
+1797:     // Reset button active classes and attributes  // Source: definition_4000.js, found_4000.txt
+1798:     [btnLogin, btnAnalytics, btnProduct].forEach(btn => {  // Source: definition_4000.js, found_4000.txt
+1799:       if (btn) {  // Source: definition_4000.js, found_4000.txt
+1800:         btn.classList.remove('active');  // Source: definition_4000.js, found_4000.txt

@@ -1,0 +1,1 @@
+I will search `views.js` for the `initWorkFilters` function to inspect the category filter click logic on the Work page and check if it uses animations.

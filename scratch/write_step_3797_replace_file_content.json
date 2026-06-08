@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Removes the \\\"INTERACTIVE FLOWCHART\\\" label row and the Pause Loop / Reset Flow / Switch Topic buttons above the flowchart.\"",
+  "EndLine": "482",
+  "Instruction": "\"Remove the label and buttons header div, keeping only the flow container\"",
+  "ReplacementContent": "\"          <div class=\\\"interactive-flow-sandbox\\\" style=\\\"margin-top: 1.5rem;\\\">\\n\"",
+  "StartLine": "468",
+  "TargetContent": "\"          <div class=\\\"interactive-flow-sandbox\\\" style=\\\"margin-top: 1.5rem;\\\">\\n            <div style=\\\"display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;\\\">\\n              <div>\\n                <span class=\\\"font-mono label\\\" style=\\\"font-size: 0.65rem;\\\">INTERACTIVE FLOWCHART: SYLLABUS COGNITIVE PATHING</span>\\n              </div>\\n              <!-- Selector Controls -->\\n              <div style=\\\"display: flex; gap: 0.4rem; flex-wrap: wrap;\\\" class=\\\"filter-bar\\\">\\n                <button class=\\\"filter-btn active\\\" id=\\\"ws-ia-btn-play\\\" style=\\\"display: flex; align-items: center; gap: 0.25rem; font-size: 0.68rem; padding: 0.25rem 0.5rem;\\\">\\n                  <span id=\\\"ws-ia-play-icon\\\">\u23f8\ufe0f</span> <span id=\\\"ws-ia-play-text\\\">Pause Loop</span>\\n                </button>\\n                <button class=\\\"filter-btn\\\" id=\\\"ws-ia-btn-reset\\\" style=\\\"font-size: 0.68rem; padding: 0.25rem 0.5rem;\\\">Reset Flow</button>\\n                <button class=\\\"filter-btn\\\" id=\\\"ws-ia-btn-topic\\\" style=\\\"border-color: var(--color-brand); color: var(--color-brand); font-size: 0.68rem; padding: 0.25rem 0.5rem;\\\">Switch Topic</button>\\n              </div>\\n            </div>\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Removing flowchart label and buttons\"",
+  "toolSummary": "\"Remove label and buttons\""
+}

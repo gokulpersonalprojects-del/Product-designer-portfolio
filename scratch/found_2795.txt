@@ -1,0 +1,1 @@
+I will print lines 855 to 885 of `views.js` to see the complete `viewMounted` event listener and its mappings.

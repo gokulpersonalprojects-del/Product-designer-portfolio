@@ -1,0 +1,1 @@
+I will view lines 980 to 1020 of `views.js` to verify that `initProject4Sandbox()` was successfully inserted and that there are no overlapping syntax issues in this section.

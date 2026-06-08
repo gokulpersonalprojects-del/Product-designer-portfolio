@@ -1,0 +1,1 @@
+I will view the `walkthrough.md` artifact to review the documentation of our changes and verify if it needs any updates.

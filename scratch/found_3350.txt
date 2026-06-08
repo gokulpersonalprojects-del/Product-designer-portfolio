@@ -1,0 +1,31 @@
+Created At: 2026-06-07T06:23:56Z
+Completed At: 2026-06-07T06:23:56Z
+The following changes were made by the replace_file_content tool to: C:\Users\ASUS\.gemini\antigravity\brain\457b6c1c-26cb-47b7-b7a7-886426f7451f\task.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1,4 +1,4 @@
+-# Checklist: Interactive Solution Path Tab Switchers
++# Checklist: Interactive Solution Path Tab Switchers & Flowchart Relocation
+ 
+ - `[x]` Implement Solution Path tab styles in [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+ - `[x]` Refactor Case Study templates in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+@@ -7,10 +7,12 @@
+   - `[x]` Wrap Aura AI (Project 4) chapters in tabs layout
+ - `[x]` Implement tab click controller `initSolutionTabs()` and mount hooks in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+ - `[x]` Verify local execution and check for console runtime logs
+-- `[x]` Implement UPSC Cognitive Pathing Engine (Experiment 3) in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js) and [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css):
+-  - `[x]` Renders nodes for Search, Relevant Details, Related Topics Nudge, Learning Journey, and Syllabus Progress.
+-  - `[x]` Loops animated light pulses and dash-offset paths between nodes.
+-  - `[x]` Supports pausing/resuming loop, switching topics, and interactive node highlights.
+-- `[x]` Verify using Selenium validation test script [test_ai_workshop_flowchart.py](file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/test_ai_workshop_flowchart.py).
++- `[x]` Relocate UPSC Cognitive Pathing Engine flowchart to Yooki Case Study:
++  - `[x]` Remove flowchart markup and sandbox controller logic from AI Workshop view (`renderAIWorkshop` and `initAIWorkshopSandbox`).
++  - `[x]` Embed flowchart markup into Chapter 2 of the Yooki Case Study (`renderProject1`).
++  - `[x]` Initialize flowchart controls and event handlers in Yooki Case Study sandbox (`initProject1Sandbox`).
++- `[x]` Clean up old test script `scratch/test_ai_workshop_flowchart.py`.
++- `[x]` Create and run new Selenium validation test script [test_yooki_flowchart.py](file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/test_yooki_flowchart.py) targeting the Yooki Case Study.
++
+ 
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

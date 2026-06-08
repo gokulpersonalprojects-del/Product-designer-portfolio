@@ -1,0 +1,1 @@
+I will update our search helper script to find the new line numbers of `initProject1Sandbox` in the updated `views.js`.

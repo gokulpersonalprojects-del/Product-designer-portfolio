@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Remove syntax error literal \\\\n from views.js.\"",
+  "EndLine": "1293",
+  "Instruction": "\"Remove literal \\\\n characters after the closing brace of renderProject3Sidebar.\"",
+  "ReplacementContent": "\"      ${sidebarActionGrid}\\n    </div>\\n  `;\\n}\\n\\n// ==========================================================================\"",
+  "StartLine": "1286",
+  "TargetContent": "\"      ${sidebarActionGrid}\\n    </div>\\n  `;\\n}\\\\n\\n\\n// ==========================================================================\"",
+  "TargetFile": "\"c:\\\\Users\\\\ASUS\\\\Desktop\\\\new portfolio\\\\views.js\"",
+  "toolAction": "\"Removing syntax error from views.js\"",
+  "toolSummary": "\"views.js code fix\""
+}

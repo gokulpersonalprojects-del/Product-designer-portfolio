@@ -1,0 +1,12 @@
+{
+  "AllowMultiple": "false",
+  "Description": "\"Fix the missing closing div for Chapter 1 and fix the misindented Chapter 2 comment.\"",
+  "EndLine": "603",
+  "Instruction": "\"Add the missing closing div for Chapter 1 and fix the comment indentation for Chapter 2.\"",
+  "ReplacementContent": "\"                </div>\\n              </section>\\n            </div>\\n\\n            <!-- Chapter 2 -->\\n            <div class=\\\"solution-chapter-content\\\" data-chapter-content=\\\"2\\\">\\n\"",
+  "StartLine": "600",
+  "TargetContent": "\"                </div>\\n              </section>\\n                  <!-- Chapter 2 -->\\n            <div class=\\\"solution-chapter-content\\\" data-chapter-content=\\\"2\\\">\\n\"",
+  "TargetFile": "\"c:/Users/ASUS/Desktop/new portfolio/views.js\"",
+  "toolAction": "\"Fixing Chapter 1 closing div and Chapter 2 comment\"",
+  "toolSummary": "\"Fix Chapter 1 div close\""
+}

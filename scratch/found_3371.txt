@@ -1,0 +1,50 @@
+Created At: 2026-06-07T06:24:33Z
+Completed At: 2026-06-07T06:24:33Z
+File Path: `file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js`
+Total Lines: 2289
+Total Bytes: 140182
+Showing lines 1024 to 1065
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1024: function initSolutionTabs() {
+1025:   const container = document.querySelector('.project-body');
+1026:   if (!container) return;
+1027: 
+1028:   const tabBtns = container.querySelectorAll('.solution-tab-btn');
+1029:   const chapterContents = container.querySelectorAll('.solution-chapter-content');
+1030: 
+1031:   tabBtns.forEach(btn => {
+1032:     btn.addEventListener('click', () => {
+1033:       const targetChapter = btn.getAttribute('data-chapter');
+1034:       if (!targetChapter) return;
+1035: 
+1036:       // Update active state on buttons
+1037:       tabBtns.forEach(b => {
+1038:         if (b.getAttribute('data-chapter') === targetChapter) {
+1039:           b.classList.add('active');
+1040:         } else {
+1041:           b.classList.remove('active');
+1042:         }
+1043:       });
+1044: 
+1045:       // Update active state on chapter contents
+1046:       chapterContents.forEach(content => {
+1047:         if (content.getAttribute('data-chapter-content') === targetChapter) {
+1048:           content.classList.add('active');
+1049:         } else {
+1050:           content.classList.remove('active');
+1051:         }
+1052:       });
+1053: 
+1054:       // Smooth scroll back to tabs header if scrolled past
+1055:       const pathContainer = container.querySelector('.solution-path-container');
+1056:       if (pathContainer) {
+1057:         const rect = pathContainer.getBoundingClientRect();
+1058:         if (rect.top < 0) {
+1059:           pathContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+1060:         }
+1061:       }
+1062:     });
+1063:   });
+1064: }
+1065: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

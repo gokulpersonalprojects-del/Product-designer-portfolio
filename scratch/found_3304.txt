@@ -1,0 +1,25 @@
+Created At: 2026-06-07T06:22:28Z
+Completed At: 2026-06-07T06:22:28Z
+File Path: `file:///C:/Users/ASUS/.gemini/antigravity/brain/457b6c1c-26cb-47b7-b7a7-886426f7451f/task.md`
+Total Lines: 17
+Total Bytes: 1384
+Showing lines 1 to 17
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Checklist: Interactive Solution Path Tab Switchers
+2: 
+3: - `[x]` Implement Solution Path tab styles in [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css)
+4: - `[x]` Refactor Case Study templates in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js):
+5:   - `[x]` Wrap Yooki (Project 1) chapters in tabs layout
+6:   - `[x]` Wrap Cendrol (Project 2) chapters in tabs layout
+7:   - `[x]` Wrap BOP (Project 3) chapters in tabs layout
+8:   - `[x]` Wrap Aura AI (Project 4) chapters in tabs layout
+9: - `[x]` Implement tab click controller `initSolutionTabs()` and mount hooks in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js)
+10: - `[x]` Verify local execution and check for console runtime logs
+11: - `[x]` Implement UPSC Cognitive Pathing Engine (Experiment 3) in [views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js) and [index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css):
+12:   - `[x]` Renders nodes for Search, Relevant Details, Related Topics Nudge, Learning Journey, and Syllabus Progress.
+13:   - `[x]` Loops animated light pulses and dash-offset paths between nodes.
+14:   - `[x]` Supports pausing/resuming loop, switching topics, and interactive node highlights.
+15: - `[x]` Verify using Selenium validation test script [test_ai_workshop_flowchart.py](file:///c:/Users/ASUS/Desktop/new%20portfolio/scratch/test_ai_workshop_flowchart.py).
+16: 
+17: 
+The above content shows the entire, complete file contents of the requested file.

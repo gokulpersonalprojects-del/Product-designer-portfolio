@@ -1,0 +1,1 @@
+I will update `task.md` using `replace_file_content` to mark all tasks in the checklist as completed.

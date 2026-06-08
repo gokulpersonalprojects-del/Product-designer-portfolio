@@ -1,0 +1,1 @@
+I will update `walkthrough.md` to document the sidebar spec layout updates.

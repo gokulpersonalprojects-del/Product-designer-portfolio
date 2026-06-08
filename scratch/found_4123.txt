@@ -1,0 +1,1 @@
+I will run a python command to search for `viewMounted` or `addEventListener` in `views.js`.

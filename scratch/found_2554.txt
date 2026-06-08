@@ -1,0 +1,1 @@
+I will update our search helper script to find how dynamic view mounting/initialization is handled in `views.js`.

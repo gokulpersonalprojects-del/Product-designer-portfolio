@@ -1,0 +1,1 @@
+I will run a corrected python command to print the end of `initProject3Sandbox` safely without encoding issues.

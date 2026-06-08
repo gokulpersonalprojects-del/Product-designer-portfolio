@@ -1,0 +1,1 @@
+I will run a python command to find the definition of `initProject3Sandbox` in `views.js`.

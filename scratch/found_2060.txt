@@ -1,0 +1,1 @@
+I will view lines 600 to 650 of `views.js` to see how event listeners like `viewMounted` are structured and where they register sandbox actions.

@@ -1,0 +1,31 @@
+Created At: 2026-06-07T05:19:48Z
+Completed At: 2026-06-07T05:19:48Z
+The following changes were made by the replace_file_content tool to: C:\Users\ASUS\.gemini\antigravity\brain\457b6c1c-26cb-47b7-b7a7-886426f7451f\walkthrough.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -44,8 +44,20 @@
+ 
+ ---
+ 
++## 4. Yooki Case Study: Storyboard Sticky Card Stack
++
++We added a 10-frame visual storyboard depicting the UPSC student's journey (from problem to Yooki solution) to the top of the Yooki Case Study (`#/project-1`):
++*   **Sequential Asset Download**: Downloaded frames `1.png` through `10.png` and placed them under the `./storyboard/` directory in the workspace.
++*   **Template Rendering ([views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js))**: Prepended a storyboard block to the beginning of the case study body. The block renders all 10 cards in chronological order with custom titles depicting key stages (e.g. "The Struggle Begins", "Passive Reading & Retention Gaps", "Introducing Yooki Conversational AI", and "Bridging Gaps & Enabling Flow").
++*   **Sticky Card Stacking Layout ([index.css](file:///c:/Users/ASUS/Desktop/new%20portfolio/index.css))**: Styled cards using `position: sticky` with staggered top offsets (from `80px` to `224px` on desktop) and a bottom margin offset. This lets succeeding cards scroll smoothly over preceding cards, forming a tabbed stacked folder look.
++*   **Scroll-Linked Scale & Fade Controller ([views.js](file:///c:/Users/ASUS/Desktop/new%20portfolio/views.js))**: Added a window scroll event listener inside `initProject1Sandbox()`. The script tracks card overlap boundaries in real-time, applying subtle scaling (down to `0.96`), opacity fading (down to `0.65`), brightness dimming, and blur (up to `1.5px`) to cards as they get covered. Includes a DOM containment check to automatically clean up the event listener when navigating away.
++
++---
++
+ ## Verification & Manual Testing
+-1.  **Browser Log Scan**: Executed automated chrome-logs verification checking `http://localhost:8080/`. Confirmed 100% clean logs with no syntax or compiler runtime errors.
+-2.  **Navigation & Focus**: Tested the "AI Workshop" link. Routing works, and active nav states reflect selection correctly.
+-3.  **Compiler Sandboxes**: Confirmed compiler log streaming, SVG injection scaling, alert diagnostics tooltip toggling, and green success resolution flow.
++1.  **Browser Log Scan**: Executed automated Chrome logs verification checking `http://localhost:8080/` and `http://localhost:8080/#/project-1`. Confirmed 100% clean console logs on routing, interaction, and scrolling, with no syntax or compiler runtime errors.
++2.  **Navigation & Focus**: Tested the "AI Workshop" link and Project 1 routing. Checked that transition animations and active focus states resolve cleanly.
++3.  **Card Stacking Overlap**: Verified that as cards scroll up, they stack sequentially with headers visible. Covered cards scale down, dim, and blur dynamically to highlight the active frame.
++4.  **Compiler Sandboxes**: Confirmed compiler log streaming, SVG injection scaling, alert diagnostics tooltip toggling, and green success resolution flow.
++
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.
