@@ -435,6 +435,57 @@ function initBioCredentialsInteraction() {
 }
 
 // ==========================================================================
+// PHONE CONTACT POPUP
+// ==========================================================================
+function initPhonePopup() {
+  const popup = document.getElementById('phone-popup');
+  if (!popup) return;
+
+  let lastTrigger = null;
+
+  function openPopup(trigger) {
+    lastTrigger = trigger;
+    popup.classList.add('is-open');
+    popup.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('phone-popup-open');
+
+    const closeBtn = popup.querySelector('[data-phone-close]');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closePopup() {
+    if (!popup.classList.contains('is-open')) return;
+
+    popup.classList.remove('is-open');
+    popup.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('phone-popup-open');
+
+    if (lastTrigger && typeof lastTrigger.focus === 'function') {
+      lastTrigger.focus();
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    const openTrigger = event.target.closest('[data-phone-open]');
+    if (openTrigger) {
+      event.preventDefault();
+      openPopup(openTrigger);
+      return;
+    }
+
+    if (event.target.closest('[data-phone-close]')) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closePopup();
+    }
+  });
+}
+
+// ==========================================================================
 // MODULE LIFECYCLE INITIALIZATION
 // ==========================================================================
 initPreloader(); // Must run first — locks scroll and shows preloader
@@ -445,6 +496,7 @@ initScrollReveal();
 initFocusDeck();
 initBioCredentialsInteraction();
 initCyclingSkill();
+initPhonePopup();
 
 // Re-observe scroll reveals on route changes
 document.addEventListener('viewMounted', () => {

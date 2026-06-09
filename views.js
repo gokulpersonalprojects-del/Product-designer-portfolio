@@ -1895,21 +1895,27 @@ const brandLogoMark = `
 const sidebarActionGrid = `
       <!-- 3-Box Action Row -->
       <div class="sidebar-action-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; width: 100%; padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
-        <a href="mailto:gokulskaimal@gmail.com" class="sidebar-action-card" aria-label="Send email" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+        <a href="mailto:gokulskcmadom@gmail.com" class="sidebar-action-card" aria-label="Send email" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">EMAIL</span>
         </a>
 
-        <a href="https://linkedin.com/in/gokulskaimal" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+        <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">LINKEDIN</span>
         </a>
 
-        <a href="resume.pdf" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="Download Resume" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--color-accent); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+        <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=drive_link" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="View Resume" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--color-accent); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent);">RESUME</span>
         </a>
       </div>
+      <button type="button" class="sidebar-phone-card" data-phone-open aria-haspopup="dialog" aria-controls="phone-popup">
+        <span class="phone-card-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="phone-card-text font-mono">PHONE</span>
+      </button>
 `;
 
 export function renderProject1Sidebar() {
