@@ -1905,7 +1905,7 @@ const sidebarActionGrid = `
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">LINKEDIN</span>
         </a>
 
-        <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=drive_link" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="View Resume" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--color-accent); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+        <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="View Resume" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--color-accent); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent);">RESUME</span>
         </a>
