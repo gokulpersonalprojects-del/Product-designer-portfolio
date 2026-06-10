@@ -167,10 +167,10 @@
 
         <div class="sidebar-bottom">
           <div class="sidebar-action-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; width: 100%;">
-            <a href="mailto:gokulskcmadom@gmail.com" class="sidebar-action-card" aria-label="Send email" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+            <button type="button" class="sidebar-action-card" data-email-open aria-haspopup="dialog" aria-controls="email-popup" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease; cursor: pointer; color: var(--text-secondary); width: 100%;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
               <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">EMAIL</span>
-            </a>
+            </button>
 
             <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
@@ -255,6 +255,23 @@
       <h2 id="phone-popup-title" class="phone-popup-title font-serif">Phone number</h2>
       <p class="phone-popup-number font-mono">+91 6238933002</p>
       <a href="tel:+916238933002" class="phone-popup-call font-mono">Call now</a>
+    </div>
+  </div>
+
+  <div id="email-popup" class="email-popup" role="dialog" aria-modal="true" aria-labelledby="email-popup-title" aria-hidden="true">
+    <div class="email-popup-backdrop" data-email-close></div>
+    <div class="email-popup-panel" role="document">
+      <button type="button" class="email-popup-close" data-email-close aria-label="Close email popup">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <span class="email-popup-kicker font-mono">EMAIL CONTACT</span>
+      <h2 id="email-popup-title" class="email-popup-title font-serif" style="font-size: 1.45rem; line-height: 1.25; margin-bottom: 0.85rem;">spark a conversation to start something meaninglful NOW</h2>
+      <p class="email-popup-address font-mono" style="user-select: all; background: var(--bg-secondary); padding: 0.6rem; border-radius: 8px; border: 1px dashed var(--border-color); text-align: center; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; letter-spacing: 0.04em;">gokulskcmadom@gmail.com</p>
+      <button type="button" class="email-popup-copy-btn font-mono" id="email-copy-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <span style="vertical-align: middle; margin-left: 4px;">Copy email</span>
+      </button>
+      <p class="email-popup-caption font-mono" style="margin-top: 0.6rem; font-size: 0.625rem; color: var(--text-muted); text-align: center;">click the button to copy me email id</p>
     </div>
   </div>
 

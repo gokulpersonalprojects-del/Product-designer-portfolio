@@ -1894,10 +1894,10 @@ const brandLogoMark = `
 
 const sidebarActionGrid = `
       <div class="sidebar-action-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; width: 100%; padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
-        <a href="mailto:gokulskcmadom@gmail.com" class="sidebar-action-card" aria-label="Send email" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
+        <button type="button" class="sidebar-action-card" data-email-open aria-haspopup="dialog" aria-controls="email-popup" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease; cursor: pointer; color: var(--text-secondary); width: 100%;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">EMAIL</span>
-        </a>
+        </button>
 
         <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 0.25rem; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-card); text-decoration: none; transition: all 0.2s ease;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>

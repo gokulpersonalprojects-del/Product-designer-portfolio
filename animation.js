@@ -485,6 +485,86 @@ function initPhonePopup() {
   });
 }
 
+function initEmailPopup() {
+  const popup = document.getElementById('email-popup');
+  if (!popup) return;
+
+  let lastTrigger = null;
+
+  function openPopup(trigger) {
+    lastTrigger = trigger;
+    popup.classList.add('is-open');
+    popup.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('email-popup-open');
+
+    const closeBtn = popup.querySelector('[data-email-close]');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closePopup() {
+    if (!popup.classList.contains('is-open')) return;
+
+    popup.classList.remove('is-open');
+    popup.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('email-popup-open');
+
+    if (lastTrigger && typeof lastTrigger.focus === 'function') {
+      lastTrigger.focus();
+    }
+
+    // Reset copy button state on close
+    const copyBtn = document.getElementById('email-copy-btn');
+    if (copyBtn) {
+      copyBtn.classList.remove('copied');
+      const textSpan = copyBtn.querySelector('span');
+      if (textSpan) textSpan.textContent = 'Copy email';
+      const svg = copyBtn.querySelector('svg');
+      if (svg) {
+        svg.innerHTML = '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"/>';
+      }
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    const openTrigger = event.target.closest('[data-email-open]');
+    if (openTrigger) {
+      event.preventDefault();
+      openPopup(openTrigger);
+      return;
+    }
+
+    if (event.target.closest('[data-email-close]')) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closePopup();
+    }
+  });
+
+  // Copy button logic
+  const copyBtn = document.getElementById('email-copy-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const email = 'gokulskcmadom@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        copyBtn.classList.add('copied');
+        const textSpan = copyBtn.querySelector('span');
+        if (textSpan) textSpan.textContent = 'Copied!';
+        const svg = copyBtn.querySelector('svg');
+        if (svg) {
+          // Checkmark icon
+          svg.innerHTML = '<polyline points="20 6 9 17 4 12"/>';
+        }
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    });
+  }
+}
+
 // ==========================================================================
 // MODULE LIFECYCLE INITIALIZATION
 // ==========================================================================
@@ -497,6 +577,7 @@ initFocusDeck();
 initBioCredentialsInteraction();
 initCyclingSkill();
 initPhonePopup();
+initEmailPopup();
 
 // Re-observe scroll reveals on route changes
 document.addEventListener('viewMounted', () => {
