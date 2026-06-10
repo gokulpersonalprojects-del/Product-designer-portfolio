@@ -107,8 +107,9 @@ export function renderHome() {
       </article>
 
       <!-- Card 4: Aura AI Case Study (spans 1 col) -->
-      <article class="work-card col-span-1 stagger-el stagger-delay-5" data-project="aura" onclick="window.location.hash='#/project-4'" role="link" tabindex="0" aria-label="View Aura AI case study">
-        <div class="work-card-media aura" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden;">
+      <article class="work-card col-span-1 stagger-el stagger-delay-5 inactive" data-project="aura">
+        <div class="work-card-media aura" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden; position: relative;">
+          <div class="coming-soon-badge font-mono">Coming Soon</div>
           <div class="card-img-placeholder" style="background: none;">
             <img src="./aura_thumbnail.png" alt="Aura AI Prompt-to-Interface Editor Showcase" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
@@ -195,16 +196,16 @@ export function renderWork() {
       </a>
 
       <!-- Project 4 Row -->
-      <a href="#/project-4" class="project-row stagger-el stagger-delay-6" data-category="ai" aria-label="Aura AI Case Study">
+      <div class="project-row inactive stagger-el stagger-delay-6" data-category="ai" aria-label="Aura AI Case Study (Coming Soon)">
         <div class="project-meta-left">
           <span class="project-tag-pill font-mono">AI Systems</span>
-          <h3 class="project-row-title font-serif">Aura AI: Prompt-to-Interface Editor</h3>
+          <h3 class="project-row-title font-serif">Aura AI: Prompt-to-Interface Editor <span class="coming-soon-tag font-mono" style="font-size: 0.65rem; padding: 0.15rem 0.4rem; border: 1px solid var(--border-color); border-radius: 4px; margin-left: 0.75rem; color: var(--text-muted); font-weight: normal; vertical-align: middle;">Coming Soon</span></h3>
         </div>
         <div class="project-meta-right">
           <span>Interaction Design</span>
           <span>2024</span>
         </div>
-      </a>
+      </div>
 
     </div>
   `;

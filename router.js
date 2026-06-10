@@ -37,12 +37,12 @@ const routes = {
     renderSidebar: renderProject3Sidebar,
     navId: 'nav-work' 
   },
-  '/project-4': { 
-    title: 'Aura AI: Prompt-to-Interface UX — Gokul S Kaimal', 
-    render: renderProject4, 
-    renderSidebar: renderProject4Sidebar,
-    navId: 'nav-work' 
-  }
+  // '/project-4': { 
+  //   title: 'Aura AI: Prompt-to-Interface UX — Gokul S Kaimal', 
+  //   render: renderProject4, 
+  //   renderSidebar: renderProject4Sidebar,
+  //   navId: 'nav-work' 
+  // }
 };
 
 const appView = document.getElementById('app-view');
