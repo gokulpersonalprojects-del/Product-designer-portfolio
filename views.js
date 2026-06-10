@@ -155,6 +155,7 @@ export function renderWork() {
       <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Projects</button>
       <button class="filter-btn" role="tab" aria-selected="false" data-filter="ai">AI Systems</button>
       <button class="filter-btn" role="tab" aria-selected="false" data-filter="ops">Operations</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="product">Product Design</button>
     </div>
 
     <div class="project-list-wrapper">
@@ -206,6 +207,66 @@ export function renderWork() {
           <span>2024</span>
         </div>
       </div>
+
+      <!-- Project 5 Row -->
+      <a href="#/project-5" class="project-row stagger-el stagger-delay-7" data-category="product" aria-label="Attendance Management Case Study">
+        <div class="project-meta-left">
+          <span class="project-tag-pill font-mono">Product Design</span>
+          <h3 class="project-row-title font-serif">Attendance Management App: iOS App UX Case Study</h3>
+        </div>
+        <div class="project-meta-right">
+          <span>Product Design</span>
+          <span>2024</span>
+        </div>
+      </a>
+
+      <!-- Project 6 Row -->
+      <a href="#/project-6" class="project-row stagger-el stagger-delay-8" data-category="product" aria-label="Netflix E-Shopping Case Study">
+        <div class="project-meta-left">
+          <span class="project-tag-pill font-mono">Product Design</span>
+          <h3 class="project-row-title font-serif">Netflix E-Shopping: iOS UX Design Showcase</h3>
+        </div>
+        <div class="project-meta-right">
+          <span>Product Design</span>
+          <span>2024</span>
+        </div>
+      </a>
+
+      <!-- Project 7 Row -->
+      <a href="#/project-7" class="project-row stagger-el stagger-delay-8" data-category="product" aria-label="TimeSync Case Study">
+        <div class="project-meta-left">
+          <span class="project-tag-pill font-mono">Product Design</span>
+          <h3 class="project-row-title font-serif">TimeSync: Appointment Scheduling App UX Case Study</h3>
+        </div>
+        <div class="project-meta-right">
+          <span>Product Design</span>
+          <span>2024</span>
+        </div>
+      </a>
+
+      <!-- Project 8 Row -->
+      <a href="#/project-8" class="project-row stagger-el stagger-delay-8" data-category="product" aria-label="Fashion Factory Showcase">
+        <div class="project-meta-left">
+          <span class="project-tag-pill font-mono">Product Design</span>
+          <h3 class="project-row-title font-serif">Fashion Factory: E-Commerce iOS UI Design Showcase</h3>
+        </div>
+        <div class="project-meta-right">
+          <span>Product Design</span>
+          <span>2024</span>
+        </div>
+      </a>
+
+      <!-- Project 9 Row -->
+      <a href="#/project-9" class="project-row stagger-el stagger-delay-8" data-category="product" aria-label="Designergram Unified Case Study">
+        <div class="project-meta-left">
+          <span class="project-tag-pill font-mono">Product Design</span>
+          <h3 class="project-row-title font-serif">Designergram | Design Connect: Unified Case Study</h3>
+        </div>
+        <div class="project-meta-right">
+          <span>Product Design</span>
+          <span>2023</span>
+        </div>
+      </a>
 
     </div>
   `;
@@ -3603,3 +3664,336 @@ document.addEventListener('viewMounted', (event) => {
     initProject4Sandbox();
   }
 });
+
+
+// ==========================================================================
+// BEHANCE IMPORTED PROJECTS (5 - 9)
+// ==========================================================================
+
+export function renderProject5Sidebar() {
+  return `
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">ROLE</span>
+      <p class="sidebar-spec-value">UI/UX Designer</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TIMELINE</span>
+      <p class="sidebar-spec-value">2024</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TOOLS</span>
+      <p class="sidebar-spec-value">Figma, Adobe Illustrator, Adobe Photoshop, Adobe After Effects</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TAGS</span>
+      <p class="sidebar-spec-value" style="font-size: 0.75rem; text-transform: none; font-family: var(--font-sans); font-weight: normal; color: var(--text-muted); line-height: 1.4;">UI/UX, ui design, user interface, Mobile app</p>
+    </div>
+  `;
+}
+
+
+export function renderProject5() {
+  return `
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-accent)">PRODUCT DESIGN / INTERACTION</span>
+        <h1 class="project-headline font-serif">Attendance Mangement App | IOS App UX Case study</h1>
+      </header>
+
+      <div class="project-body stagger-el stagger-delay-2" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/0daa15201125275.666ebc39ad4ef.png" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/08a17e201125275.666ebc39ab5c2.png" alt="Image may contain: screenshot and abstract" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5c175f201125275.666ebc39ad008.png" alt="Image may contain: screenshot and abstract" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/823067201125275.666ebc39ae963.png" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/fb6075201125275.666ebc39ab0c7.png" alt="Image may contain: screenshot and abstract" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/3f20cd201125275.666ebc39acb02.png" alt="Image may contain: screenshot and abstract" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e30241201125275.666ebc39aaaea.png" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/f001aa201125275.666ebc39adc73.gif" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e09c11201125275.666ebc39ac3b7.png" alt="Image may contain: screenshot" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/791c7a201125275.666ebc39ae45b.png" alt="Image may contain: abstract and screenshot" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/29d801201125275.666ebc39af0de.png" alt="Image may contain: screenshot" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/68fb54201125275.666ebc39aa206.png" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/c90390201125275.666ebc39abc37.gif" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/dc733e201125275.666ebc39a9ce4.png" alt="Attendance Mangement App" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- Interactive Prototype -->
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-top: 2.5rem; font-weight: 500;">Interactive Figma Prototype</h3>
+        <div class="figma-embed-container" style="margin-top: 1.5rem;">
+          <div class="embed-dimensions" style="max-width: 800px; max-height: 450px; margin: 0 auto;">
+                 <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0;">
+                   <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQgdCOscKSMaZ60baAN5y5M%2Fcendrol%3Fpage-id%3D0%253A1%26node-id%3D1-4615%26viewport%3D1452%252C170%252C0.19%26t%3DamWLQ9ngHPykDDye-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox" class="embed-content"></iframe>
+                 </div>
+               </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+
+export function renderProject6Sidebar() {
+  return `
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">ROLE</span>
+      <p class="sidebar-spec-value">UI/UX Designer</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TIMELINE</span>
+      <p class="sidebar-spec-value">2024</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TOOLS</span>
+      <p class="sidebar-spec-value">Figma, Adobe Illustrator, Adobe Photoshop</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TAGS</span>
+      <p class="sidebar-spec-value" style="font-size: 0.75rem; text-transform: none; font-family: var(--font-sans); font-weight: normal; color: var(--text-muted); line-height: 1.4;">Netflix, Ecommerce, ui design, UX design</p>
+    </div>
+  `;
+}
+
+
+export function renderProject6() {
+  return `
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-accent)">PRODUCT DESIGN / CASE STUDY</span>
+        <h1 class="project-headline font-serif">Netflix E-Shopping UX Casestudy | UI Design</h1>
+      </header>
+
+      <div class="project-body stagger-el stagger-delay-2" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/6b1a36191765225.65d1085899e97.png" alt="Netflix E-Shopping UX Casestudy" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- Interactive Prototype -->
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-top: 2.5rem; font-weight: 500;">Interactive Figma Prototype</h3>
+        <div class="figma-embed-container" style="margin-top: 1.5rem;">
+          <div class="embed-dimensions" style="max-width: 800px; max-height: 450px; margin: 0 auto;">
+                 <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0;">
+                   <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvQCGfU9G9ETS97J9UpUUIb%2FDesign-Challenge_1%3Fpage-id%3D273%253A2118%26type%3Ddesign%26node-id%3D273-3120%26viewport%3D1461%252C278%252C0.18%26t%3Dx5CiHHv1QnEC62T8-1%26scaling%3Dscale-down%26starting-point-node-id%3D273%253A2151%26mode%3Ddesign" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox" class="embed-content"></iframe>
+                 </div>
+               </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+
+export function renderProject7Sidebar() {
+  return `
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">ROLE</span>
+      <p class="sidebar-spec-value">UI/UX Designer</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TIMELINE</span>
+      <p class="sidebar-spec-value">2024</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TOOLS</span>
+      <p class="sidebar-spec-value">Figma, Adobe Photoshop, Adobe Illustrator</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TAGS</span>
+      <p class="sidebar-spec-value" style="font-size: 0.75rem; text-transform: none; font-family: var(--font-sans); font-weight: normal; color: var(--text-muted); line-height: 1.4;">ux, UI/UX, Mobile app, user experience</p>
+    </div>
+  `;
+}
+
+
+export function renderProject7() {
+  return `
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-accent)">PRODUCT DESIGN / CASE STUDY</span>
+        <h1 class="project-headline font-serif">TimeSync | Appointment scheduling App UX Case Study</h1>
+      </header>
+
+      <div class="project-body stagger-el stagger-delay-2" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/9e30bd190322787.65b9311d558d0.jpg" alt="TimeSync" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- Interactive Prototype -->
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-top: 2.5rem; font-weight: 500;">Interactive Figma Prototype</h3>
+        <div class="figma-embed-container" style="margin-top: 1.5rem;">
+          <div class="embed-dimensions" style="max-width: 800px; max-height: 450px; margin: 0 auto;">
+                 <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0;">
+                   <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FP3CDgtOdUcFbUwLeKiyMqN%2FTimesync-Project%3Fpage-id%3D73%253A640%26type%3Ddesign%26node-id%3D175-449%26viewport%3D825%252C537%252C0.14%26t%3DEWTmpoxTAHqB4l6l-1%26scaling%3Dscale-down%26starting-point-node-id%3D175%253A449%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox" class="embed-content"></iframe>
+                 </div>
+               </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+
+export function renderProject8Sidebar() {
+  return `
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">ROLE</span>
+      <p class="sidebar-spec-value">UI/UX Designer</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TIMELINE</span>
+      <p class="sidebar-spec-value">2024</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TOOLS</span>
+      <p class="sidebar-spec-value">Figma, Adobe Illustrator, Adobe Photoshop</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TAGS</span>
+      <p class="sidebar-spec-value" style="font-size: 0.75rem; text-transform: none; font-family: var(--font-sans); font-weight: normal; color: var(--text-muted); line-height: 1.4;">ecommerce app, Ecommerce, ios, Mobile app</p>
+    </div>
+  `;
+}
+
+
+export function renderProject8() {
+  return `
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-accent)">PRODUCT DESIGN / INTERACTION</span>
+        <h1 class="project-headline font-serif">Fashion factory | E-Commerce iOS UI Design</h1>
+      </header>
+
+      <div class="project-body stagger-el stagger-delay-2" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+        <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/7700ec187890535.65930af54a42b.jpg" alt="Image may contain: cartoon" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- Interactive Prototype -->
+        <h3 class="font-serif" style="font-size: 1.5rem; margin-top: 2.5rem; font-weight: 500;">Interactive Figma Prototype</h3>
+        <div class="figma-embed-container" style="margin-top: 1.5rem;">
+          <div class="embed-dimensions" style="max-width: 800px; max-height: 450px; margin: 0 auto;">
+                 <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0;">
+                   <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F43NxmOh2HF0AeRJd9LtE98%2Ftextile_app%3Fpage-id%3D57%253A2%26type%3Ddesign%26node-id%3D59-116%26viewport%3D163%252C579%252C0.06%26t%3DxImyOhwQCCAWvWZL-1%26scaling%3Dscale-down%26starting-point-node-id%3D59%253A116%26mode%3Ddesign" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox" class="embed-content"></iframe>
+                 </div>
+               </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+
+export function renderProject9Sidebar() {
+  return `
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">ROLE</span>
+      <p class="sidebar-spec-value">UI/UX Designer</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TIMELINE</span>
+      <p class="sidebar-spec-value">2023</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TOOLS</span>
+      <p class="sidebar-spec-value">Adobe Illustrator, Figma, Adobe Photoshop</p>
+    </div>
+    <div class="sidebar-spec-group">
+      <span class="font-mono label">TAGS</span>
+      <p class="sidebar-spec-value" style="font-size: 0.75rem; text-transform: none; font-family: var(--font-sans); font-weight: normal; color: var(--text-muted); line-height: 1.4;">wireframe, marketing website design, user interface, ux</p>
+    </div>
+  `;
+}
+
+
+export function renderProject9() {
+  return `
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-brand)">UNIFIED PORTFOLIO / CASE STUDY</span>
+        <h1 class="project-headline font-serif">Designergram | Design Connect: Unified Case Study</h1>
+      </header>
+
+      <div class="project-body stagger-el stagger-delay-2" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-xl);">
+        
+        <!-- Tabbed Navigation using solution switcher styles -->
+        <div class="solution-path-container" style="margin-bottom: 1rem;">
+          <div class="solution-tabs" style="grid-template-columns: repeat(4, 1fr); gap: 0.55rem; width: 100%;">
+            <button class="solution-tab-btn active" data-chapter="1" style="padding: 0.65rem 0.25rem;">
+              <span class="tab-num">CHAPTER 01</span>
+              <span class="tab-title" style="font-size: 0.8rem;">UX Case Study</span>
+            </button>
+            <button class="solution-tab-btn" data-chapter="2" style="padding: 0.65rem 0.25rem;">
+              <span class="tab-num">CHAPTER 02</span>
+              <span class="tab-title" style="font-size: 0.8rem;">iOS UI Design</span>
+            </button>
+            <button class="solution-tab-btn" data-chapter="3" style="padding: 0.65rem 0.25rem;">
+              <span class="tab-num">CHAPTER 03</span>
+              <span class="tab-title" style="font-size: 0.8rem;">Android UI Design</span>
+            </button>
+            <button class="solution-tab-btn" data-chapter="4" style="padding: 0.65rem 0.25rem;">
+              <span class="tab-num">CHAPTER 04</span>
+              <span class="tab-title" style="font-size: 0.8rem;">Marketing Site</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="solution-chapters-container" style="width: 100%;">
+        <!-- Chapter 1: UX Case Study -->
+        <div class="solution-chapter-content active" data-chapter-content="1" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/add0d4186524603.657744c10dbd7.jpg" alt="UX Case Study" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Chapter 2: iOS UI -->
+        <div class="solution-chapter-content" data-chapter-content="2" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e42ee3186522961.65773f68e012c.jpg" alt="iOS UI" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Chapter 3: Android UI -->
+        <div class="solution-chapter-content" data-chapter-content="3" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/ae96ec186522635.65773e5d25044.jpg" alt="Image may contain: screenshot, abstract and cartoon" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Chapter 4: Marketing Website -->
+        <div class="solution-chapter-content" data-chapter-content="4" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <div class="case-study-visual" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); background: var(--bg-secondary);">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c4c7da186521263.65773a1c4e4d2.jpg" alt="Image may contain: screenshot, abstract and cartoon" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+        </div>
+        </div>
+
+      </div>
+    </article>
+  `;
+}

@@ -7,10 +7,20 @@ import {
   renderProject2, 
   renderProject3,
   renderProject4,
+  renderProject5,
+  renderProject6,
+  renderProject7,
+  renderProject8,
+  renderProject9,
   renderProject1Sidebar,
   renderProject2Sidebar,
   renderProject3Sidebar,
-  renderProject4Sidebar
+  renderProject4Sidebar,
+  renderProject5Sidebar,
+  renderProject6Sidebar,
+  renderProject7Sidebar,
+  renderProject8Sidebar,
+  renderProject9Sidebar
 } from './views.js';
 
 // Route configuration
@@ -42,7 +52,37 @@ const routes = {
   //   render: renderProject4, 
   //   renderSidebar: renderProject4Sidebar,
   //   navId: 'nav-work' 
-  // }
+  // },
+  '/project-5': { 
+    title: 'Attendance Management UX Case Study — Gokul S Kaimal', 
+    render: renderProject5, 
+    renderSidebar: renderProject5Sidebar,
+    navId: 'nav-work' 
+  },
+  '/project-6': { 
+    title: 'Netflix E-Shopping UX Case Study — Gokul S Kaimal', 
+    render: renderProject6, 
+    renderSidebar: renderProject6Sidebar,
+    navId: 'nav-work' 
+  },
+  '/project-7': { 
+    title: 'TimeSync UX Case Study — Gokul S Kaimal', 
+    render: renderProject7, 
+    renderSidebar: renderProject7Sidebar,
+    navId: 'nav-work' 
+  },
+  '/project-8': { 
+    title: 'Fashion Factory UI Design Showcase — Gokul S Kaimal', 
+    render: renderProject8, 
+    renderSidebar: renderProject8Sidebar,
+    navId: 'nav-work' 
+  },
+  '/project-9': { 
+    title: 'Designergram | Design Connect Unified Case Study — Gokul S Kaimal', 
+    render: renderProject9, 
+    renderSidebar: renderProject9Sidebar,
+    navId: 'nav-work' 
+  }
 };
 
 const appView = document.getElementById('app-view');
