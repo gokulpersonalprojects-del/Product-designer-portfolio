@@ -1914,7 +1914,7 @@ const sidebarActionGrid = `
           <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">PHONE</span>
         </button>
       </div>
-`;`;
+`;
 
 export function renderProject1Sidebar() {
   return `
