@@ -5105,3 +5105,28 @@ body.phone-popup-open {
   box-shadow: var(--shadow-md);
   border-color: var(--color-brand) !important;
 }
+
+/* ── Sidebar Height-Based Responsiveness ────────────────── */
+@media (max-height: 880px) {
+  .sidebar {
+    padding: 0.85rem 1.15rem;
+    gap: 0.45rem;
+  }
+  .sidebar-portrait {
+    height: 180px;
+  }
+}
+
+@media (max-height: 750px) {
+  .sidebar {
+    padding: 0.65rem 0.95rem;
+    gap: 0.35rem;
+  }
+  .sidebar-portrait {
+    height: 120px;
+  }
+  .hero-title {
+    font-size: 1.6rem;
+  }
+}
+
