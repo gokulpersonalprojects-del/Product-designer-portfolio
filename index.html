@@ -79,89 +79,101 @@
     <aside class="sidebar" role="complementary">
       <div id="sidebar-default" style="display: flex; flex-direction: column; height: 100%; width: 100%;">
         <div class="sidebar-top">
-          <!-- Logo / Brand Mark -->
-          <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
-            <h1 class="logo-text-wrapper" style="margin: 0; padding: 0; display: inline-flex; align-items: center;">
-              <svg class="logo-text-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" aria-label="Gokul S Kaimal Logo" style="height: 42px; width: auto; overflow: visible; display: inline-block;">
-                <defs>
-                  <!-- Brand gradient for the logo dot indicator -->
-                  <linearGradient id="logo-dot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="hsl(22, 100%, 57%)" />
-                    <stop offset="100%" stop-color="hsl(258, 100%, 70%)" />
-                  </linearGradient>
-                </defs>
-                
-                <!-- Segment 1: G character -->
-                <text x="4" y="26" class="logo-text-layer logo-text-main">G</text>
-                
-                <!-- Segment 2: Inline morphing Logo Mark (Rock/Tyre replacing 'o') -->
-                <g class="logo-image-group">
-                  <image href="./prehistoric_rock.png" class="logo-rock-svg" x="18" y="7" width="22" height="22" />
-                  <image href="./sports_tyre.png" class="logo-tyre-svg" x="18" y="7" width="22" height="22" />
-                </g>
-                
-                <!-- Segment 3: kul S Kaimal. with brand serif S initial -->
-                <g class="logo-text-rest-group">
-                  <text x="40" y="26" class="logo-text-layer logo-text-main">kul <tspan class="logo-text-serif-main">S</tspan> Kaimal<tspan class="logo-dot-main">.</tspan></text>
-                </g>
-              </svg>
-            </h1>
-          </a>
+          <!-- Group 1: Header & Value Prop -->
+          <div class="sidebar-group sidebar-group--hero">
+            <!-- Logo / Brand Mark -->
+            <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+              <h1 class="logo-text-wrapper" style="margin: 0; padding: 0; display: inline-flex; align-items: center;">
+                <svg class="logo-text-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" aria-label="Gokul S Kaimal Logo" style="height: 42px; width: auto; overflow: visible; display: inline-block;">
+                  <defs>
+                    <!-- Brand gradient for the logo dot indicator -->
+                    <linearGradient id="logo-dot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="hsl(22, 100%, 57%)" />
+                      <stop offset="100%" stop-color="hsl(258, 100%, 70%)" />
+                    </linearGradient>
+                  </defs>
+                  
+                  <!-- Segment 1: G character -->
+                  <text x="4" y="26" class="logo-text-layer logo-text-main">G</text>
+                  
+                  <!-- Segment 2: Inline morphing Logo Mark (Rock/Tyre replacing 'o') -->
+                  <g class="logo-image-group">
+                    <image href="./prehistoric_rock.png" class="logo-rock-svg" x="18" y="7" width="22" height="22" />
+                    <image href="./sports_tyre.png" class="logo-tyre-svg" x="18" y="7" width="22" height="22" />
+                  </g>
+                  
+                  <!-- Segment 3: kul S Kaimal. with brand serif S initial -->
+                  <g class="logo-text-rest-group">
+                    <text x="40" y="26" class="logo-text-layer logo-text-main">kul <tspan class="logo-text-serif-main">S</tspan> Kaimal<tspan class="logo-dot-main">.</tspan></text>
+                  </g>
+                </svg>
+              </h1>
+            </a>
 
-          <!-- Hero Identity -->
-          <div class="intro-headline">
-            <h2 class="hero-title font-serif">
-              Designing <span id="typewriter">AI interaction systems.</span>
-            </h2>
+            <!-- Hero Identity -->
+            <div class="intro-headline">
+              <h2 class="hero-title font-serif">
+                Designing <span id="typewriter">AI interaction systems.</span>
+              </h2>
+            </div>
+
+            <!-- Skill summary line -->
+            <p class="bio-skill-line">
+              I blend <span class="cycling-skill-wrapper"><span id="cycling-skill">UX design</span></span> to create scalable digital experiences.
+            </p>
           </div>
 
-          <!-- Portrait photo -->
-          <div class="sidebar-portrait" aria-label="Photo of Gokul S Kaimal">
-            <img src="./gokul_edited.png" alt="Gokul S Kaimal — Product Designer" class="portrait-img" />
-            <div class="portrait-overlay"></div>
-            <div class="portrait-grain"></div>
-            <div class="portrait-badge font-mono">Product Designer</div>
-          </div>
+          <!-- Group 2: Portrait & Status -->
+          <div class="sidebar-group sidebar-group--identity">
+            <!-- Portrait photo -->
+            <div class="sidebar-portrait" aria-label="Photo of Gokul S Kaimal">
+              <img src="./gokul_edited.png" alt="Gokul S Kaimal — Product Designer" class="portrait-img" />
+              <div class="portrait-overlay"></div>
+              <div class="portrait-grain"></div>
+              <div class="portrait-badge font-mono">Product Designer</div>
+            </div>
 
-          <!-- Stat Strip -->
-          <div class="bio-stat-strip">
-            <div class="bio-stat-item">
-              <span class="bio-stat-num font-serif">3+</span>
-              <span class="bio-stat-label font-mono">Years Experience</span>
-            </div>
-            <div class="bio-stat-divider"></div>
-            <div class="bio-stat-item">
-              <span class="bio-stat-num font-serif">MBA</span>
-              <span class="bio-stat-label font-mono">Adv &amp; Branding</span>
-            </div>
-            <div class="bio-stat-divider"></div>
-            <div class="bio-stat-item">
-              <span class="bio-stat-num font-serif">BTech</span>
-              <span class="bio-stat-label font-mono">Computer Science</span>
-            </div>
-          </div>
-
-          <!-- Domain Tags -->
-          <div class="bio-domains">
-            <span class="bio-domain-label font-mono">Designs for</span>
-            <div class="bio-domain-tags">
-              <span class="bio-tag">AI Products</span>
-              <span class="bio-tag">HRTech</span>
-              <span class="bio-tag">SaaS</span>
-              <span class="bio-tag">FinTech</span>
-              <span class="bio-tag">BuildTech</span>
+            <!-- Status badge -->
+            <div class="status-badge recruiter" role="status" aria-label="Available for Product Design Opportunities">
+              <span class="status-dot-pulse"></span>
+              <span class="status-badge-text font-mono">Available for opportunities</span>
             </div>
           </div>
 
-          <!-- Skill summary line -->
-          <p class="bio-skill-line">
-            I blend <span class="cycling-skill-wrapper"><span id="cycling-skill">UX design</span></span> to create scalable digital experiences.
-          </p>
+          <!-- Group 3: Stats -->
+          <div class="sidebar-group sidebar-group--stats">
+            <!-- Stat Strip -->
+            <div class="bio-stat-strip">
+              <div class="bio-stat-item">
+                <span class="bio-stat-num font-serif">3+</span>
+                <span class="bio-stat-label font-mono">Years Experience</span>
+              </div>
+              <div class="bio-stat-divider"></div>
+              <div class="bio-stat-item">
+                <span class="bio-stat-num font-serif">MBA</span>
+                <span class="bio-stat-label font-mono">Adv &amp; Branding</span>
+              </div>
+              <div class="bio-stat-divider"></div>
+              <div class="bio-stat-item">
+                <span class="bio-stat-num font-serif">BTech</span>
+                <span class="bio-stat-label font-mono">Computer Science</span>
+              </div>
+            </div>
+          </div>
 
-          <!-- Status badge -->
-          <div class="status-badge recruiter" role="status" aria-label="Available for Product Design Opportunities">
-            <span class="status-dot-pulse"></span>
-            <span class="status-badge-text font-mono">Available for opportunities</span>
+          <!-- Group 4: Domains -->
+          <div class="sidebar-group sidebar-group--domains">
+            <!-- Domain Tags -->
+            <div class="bio-domains">
+              <span class="bio-domain-label font-mono">Designs for</span>
+              <div class="bio-domain-tags">
+                <span class="bio-tag">AI Products</span>
+                <span class="bio-tag">HRTech</span>
+                <span class="bio-tag">SaaS</span>
+                <span class="bio-tag">FinTech</span>
+                <span class="bio-tag">BuildTech</span>
+              </div>
+            </div>
           </div>
         </div>
 
