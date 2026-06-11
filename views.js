@@ -4053,11 +4053,11 @@ export function renderBrandStack() {
             </div>
             <div class="video-project-info">
               <div class="video-card-meta">
-                <span class="video-tag font-mono">MOTION GRAPHICS</span>
-                <span class="video-metrics font-mono">72% Retention</span>
+                <span class="video-tag font-mono">PACE / EDITING</span>
+                <span class="video-metrics font-mono">Elegant Motion</span>
               </div>
-              <h3 class="video-card-title font-serif">SaaS Workflow Interactive Motion</h3>
-              <p class="video-card-desc font-sans">High-energy motion typography showcasing complex cloud infrastructure operations and analytics platforms.</p>
+              <h3 class="video-card-title font-serif">Ayushi Goyal Designs Reel</h3>
+              <p class="video-card-desc font-sans">Sophisticated post-production pacing showcasing high-end interior and fashion design spaces, emphasizing light and texture details.</p>
             </div>
           </div>
 
@@ -4071,11 +4071,11 @@ export function renderBrandStack() {
             </div>
             <div class="video-project-info">
               <div class="video-card-meta">
-                <span class="video-tag font-mono">EXPLAINER / A-ROLL</span>
-                <span class="video-metrics font-mono">+45% CTR</span>
+                <span class="video-tag font-mono">SOUND DESIGN / BEAT</span>
+                <span class="video-metrics font-mono">Dynamic Pacing</span>
               </div>
-              <h3 class="video-card-title font-serif">Cendrol SaaS Demo</h3>
-              <p class="video-card-desc font-sans">Explainer video combining character-driven narratives with clean product interfaces to drive user conversion.</p>
+              <h3 class="video-card-title font-serif">Fluteboxers Performance Promo</h3>
+              <p class="video-card-desc font-sans">High-energy showreel syncing fast rhythmic cuts and custom typography to beatboxing and live woodwind melodies.</p>
             </div>
           </div>
 
@@ -4089,11 +4089,11 @@ export function renderBrandStack() {
             </div>
             <div class="video-project-info">
               <div class="video-card-meta">
-                <span class="video-tag font-mono">SOUND DESIGN / BRAND</span>
+                <span class="video-tag font-mono">CINEMATIC / COLOR</span>
                 <span class="video-metrics font-mono">1.2M Views</span>
               </div>
               <h3 class="video-card-title font-serif">Mahalekshmi Brand Narrative</h3>
-              <p class="video-card-desc font-sans">Cinematic storytelling film with custom audio design and mood-specific grading for luxury fashion retail.</p>
+              <p class="video-card-desc font-sans">Cinematic storytelling film with custom ambient audio design and mood-specific grading for luxury fashion retail.</p>
             </div>
           </div>
 
@@ -4107,11 +4107,29 @@ export function renderBrandStack() {
             </div>
             <div class="video-project-info">
               <div class="video-card-meta">
-                <span class="video-tag font-mono">PROMO / 3D ANIMATION</span>
-                <span class="video-metrics font-mono">3.4x Engagement</span>
+                <span class="video-tag font-mono">NARRATIVE / TEASER</span>
+                <span class="video-metrics font-mono">Creative Direction</span>
               </div>
-              <h3 class="video-card-title font-serif">Aura AI Motion Reveal</h3>
-              <p class="video-card-desc font-sans">Abstract 3D-assisted visual narrative introducing the brand vision and user engagement loop.</p>
+              <h3 class="video-card-title font-serif">Vaidurya Cinematic Teaser</h3>
+              <p class="video-card-desc font-sans">Documentary-style sequence with structured interview dialogue pacing, b-roll layering, and dramatic color conversions.</p>
+            </div>
+          </div>
+
+          <!-- Video Card 5 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./cendrol_video5.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">STORYTELLING / TRANSITIONS</span>
+                <span class="video-metrics font-mono">High Retention</span>
+              </div>
+              <h3 class="video-card-title font-serif">Partypies Weddings Film Cut</h3>
+              <p class="video-card-desc font-sans">Heartwarming storytelling edit blending emotional dialogue bytes, chronological pacing, and custom warm color palettes.</p>
             </div>
           </div>
         </div>
@@ -4122,34 +4140,30 @@ export function renderBrandStack() {
         <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
           <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">PARTNERSHIPS</span>
           <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Brands & Collaborators</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Providing custom visual content for companies and global content creators.</p>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Providing custom visual content for companies and global content creators. Click to view profiles.</p>
         </div>
 
         <div class="brands-logo-grid">
-          <div class="brand-logo-card">
-            <img src="./logo_cendrol.png" alt="Cendrol" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">Cendrol</span>
-          </div>
-          <div class="brand-logo-card">
-            <img src="./logo_yooki.png" alt="Yooki" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">Yooki</span>
-          </div>
-          <div class="brand-logo-card">
-            <img src="./logo_bop.png" alt="Bank of Palestine" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">BOP</span>
-          </div>
-          <div class="brand-logo-card">
+          <a href="https://www.instagram.com/mahalekshmisilks/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
             <img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">Mahalekshmi</span>
-          </div>
-          <div class="brand-logo-card">
-            <img src="./logo_bento.png" alt="Bento" class="brand-logo-img" style="filter: invert(var(--logo-invert));">
-            <span class="brand-logo-name font-mono">Bento</span>
-          </div>
-          <div class="brand-logo-card">
-            <div class="brand-logo-placeholder font-serif">SaaS</div>
-            <span class="brand-logo-name font-mono">SaaS Agency</span>
-          </div>
+            <span class="brand-logo-name font-mono">@mahalekshmisilks</span>
+          </a>
+          <a href="https://www.instagram.com/ayushi.goyal.designs/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
+            <div class="brand-logo-placeholder font-serif" style="color: var(--color-accent); margin-bottom: 0.2rem; font-size: 1.65rem;">AGD</div>
+            <span class="brand-logo-name font-mono">@ayushi.goyal.designs</span>
+          </a>
+          <a href="https://www.instagram.com/fluteboxers/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
+            <div class="brand-logo-placeholder font-serif" style="color: var(--color-brand); margin-bottom: 0.2rem; font-size: 1.65rem;">FBX</div>
+            <span class="brand-logo-name font-mono">@fluteboxers</span>
+          </a>
+          <a href="https://www.instagram.com/vaiduryafilms/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
+            <div class="brand-logo-placeholder font-serif" style="color: hsl(340, 90%, 50%); margin-bottom: 0.2rem; font-size: 1.65rem;">VDF</div>
+            <span class="brand-logo-name font-mono">@vaiduryafilms</span>
+          </a>
+          <a href="https://www.instagram.com/partypiesweddings/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
+            <div class="brand-logo-placeholder font-serif" style="color: hsl(200, 95%, 45%); margin-bottom: 0.2rem; font-size: 1.65rem;">PPW</div>
+            <span class="brand-logo-name font-mono">@partypiesweddings</span>
+          </a>
         </div>
       </section>
 
@@ -4158,45 +4172,45 @@ export function renderBrandStack() {
         <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
           <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">FEEDBACK</span>
           <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Client Testimonials</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">What founders and marketing directors say about the work.</p>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">What founders and creative directors say about the work.</p>
         </div>
 
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <p class="testimonial-quote font-sans">
-              "Gokul has an exceptional eye for pace and narrative. The explainer video he created for our product launch had our audience fully engaged from start to finish, leading to a direct bump in signup conversions."
+              "Gokul has a rare gift for matching the rhythm of live music to visual transitions. His edits for our performance clips captured our energy perfectly, driving a significant spike in our audience engagement."
             </p>
             <div class="testimonial-footer">
-              <div class="testimonial-avatar font-mono">AK</div>
+              <div class="testimonial-avatar font-mono" style="color: var(--color-brand);">FB</div>
               <div class="testimonial-info">
-                <span class="testimonial-author font-serif">Arjun Krishnan</span>
-                <span class="testimonial-role font-mono">Product Lead, Cendrol</span>
+                <span class="testimonial-author font-serif">Fluteboxers</span>
+                <span class="testimonial-role font-mono">Performance Duo</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <p class="testimonial-quote font-sans">
-              "The brand storytelling film he crafted was simply breathtaking. His meticulous attention to sound cues and color palettes gave our campaign the premium aesthetic we were aiming for."
+              "The pacing and atmosphere Gokul brings to our cinematic footage is top-tier. He understands film structure, respects dynamic audio ranges, and elevates our color grading palettes to a premium commercial standard."
             </p>
             <div class="testimonial-footer">
-              <div class="testimonial-avatar font-mono">SM</div>
+              <div class="testimonial-avatar font-mono" style="color: hsl(340, 90%, 50%);">VF</div>
               <div class="testimonial-info">
-                <span class="testimonial-author font-serif">Sarah Matthew</span>
-                <span class="testimonial-role font-mono">CMO, Mahalekshmi Silks</span>
+                <span class="testimonial-author font-serif">Vaidurya Films</span>
+                <span class="testimonial-role font-mono">Production House</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <p class="testimonial-quote font-sans">
-              "Working with Gokul was seamless. He not only brought technical video skills but also shared product thinking to structure the onboarding demo videos logically and cleanly."
+              "From complex brand films to short social edits, Gokul delivers narratives that capture our retail essence. His attention to sound sync and color transitions is meticulous."
             </p>
             <div class="testimonial-footer">
-              <div class="testimonial-avatar font-mono">TN</div>
+              <div class="testimonial-avatar font-mono" style="color: var(--color-brand);">MS</div>
               <div class="testimonial-info">
-                <span class="testimonial-author font-serif">Tariq Naim</span>
-                <span class="testimonial-role font-mono">Co-Founder, Yooki AI</span>
+                <span class="testimonial-author font-serif">Mahalekshmi Silks</span>
+                <span class="testimonial-role font-mono">Retail Brand</span>
               </div>
             </div>
           </div>
