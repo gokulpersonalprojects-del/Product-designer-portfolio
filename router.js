@@ -115,17 +115,25 @@ async function handleRouting() {
   const sidebarProject = document.getElementById('sidebar-project');
   
   if (route.renderSidebar) {
-    if (sidebarDefault) sidebarDefault.style.display = 'none';
+    if (sidebarDefault) {
+      sidebarDefault.style.display = 'none';
+      sidebarDefault.classList.add('hidden');
+    }
     if (sidebarProject) {
       sidebarProject.innerHTML = route.renderSidebar();
       sidebarProject.style.display = 'flex';
+      sidebarProject.classList.remove('hidden');
     }
   } else {
     if (sidebarProject) {
       sidebarProject.style.display = 'none';
       sidebarProject.innerHTML = '';
+      sidebarProject.classList.add('hidden');
     }
-    if (sidebarDefault) sidebarDefault.style.display = 'flex';
+    if (sidebarDefault) {
+      sidebarDefault.style.display = 'flex';
+      sidebarDefault.classList.remove('hidden');
+    }
   }
   
   // Reset scroll position

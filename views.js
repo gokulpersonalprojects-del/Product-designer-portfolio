@@ -1955,26 +1955,23 @@ const brandLogoMark = `
 `;
 
 const sidebarActionGrid = `
-      <div class="sidebar-action-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; width: 100%; padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
-        <button type="button" class="sidebar-action-card" data-email-open aria-haspopup="dialog" aria-controls="email-popup">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-          <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">EMAIL</span>
+      <div class="sidebar-actions-block" style="width: 100%; display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+        <button type="button" class="primary-cta-btn font-sans" data-email-open style="width: 100%;">
+          <span>Let's collaborate</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
-
-        <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-action-card" target="_blank" rel="noopener" aria-label="View LinkedIn profile">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
-          <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">LINKEDIN</span>
-        </a>
-
-        <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="sidebar-action-card primary-action" target="_blank" rel="noopener" aria-label="View Resume">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-          <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent);">RESUME</span>
-        </a>
-
-        <button type="button" class="sidebar-action-card" data-phone-open aria-haspopup="dialog" aria-controls="phone-popup">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="transition: stroke 0.2s;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="font-mono" style="font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; color: var(--text-secondary); transition: color 0.2s;">PHONE</span>
-        </button>
+        
+        <div class="secondary-actions-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; width: 100%;">
+          <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-secondary-btn" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+          </a>
+          <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="sidebar-secondary-btn highlight-accent" target="_blank" rel="noopener" aria-label="View Resume">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+          </a>
+          <button type="button" class="sidebar-secondary-btn" data-phone-open aria-label="Call Phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </button>
+        </div>
       </div>
 `;
 
@@ -4047,7 +4044,7 @@ export function renderBrandStack() {
           <div class="video-project-card" tabindex="0">
             <div class="video-container">
               <video muted playsinline loop preload="metadata">
-                <source src="./cendrol_video1.mp4" type="video/mp4">
+                <source src="./ayushi_goyal_tour.mp4" type="video/mp4">
               </video>
               <div class="play-indicator font-mono">HOVER TO PLAY</div>
             </div>
@@ -4065,7 +4062,7 @@ export function renderBrandStack() {
           <div class="video-project-card" tabindex="0">
             <div class="video-container">
               <video muted playsinline loop preload="metadata">
-                <source src="./cendrol_video2.mp4" type="video/mp4">
+                <source src="./fluteboxers_promo.mp4" type="video/mp4">
               </video>
               <div class="play-indicator font-mono">HOVER TO PLAY</div>
             </div>
@@ -4119,7 +4116,7 @@ export function renderBrandStack() {
           <div class="video-project-card" tabindex="0">
             <div class="video-container">
               <video muted playsinline loop preload="metadata">
-                <source src="./cendrol_video5.mp4" type="video/mp4">
+                <source src="./partypies_weddings.mp4" type="video/mp4">
               </video>
               <div class="play-indicator font-mono">HOVER TO PLAY</div>
             </div>
@@ -4130,6 +4127,24 @@ export function renderBrandStack() {
               </div>
               <h3 class="video-card-title font-serif">Partypies Weddings Film Cut</h3>
               <p class="video-card-desc font-sans">Heartwarming storytelling edit blending emotional dialogue bytes, chronological pacing, and custom warm color palettes.</p>
+            </div>
+          </div>
+
+          <!-- Video Card 6 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./ashes_trailer.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">NARRATIVE / CINEMATIC</span>
+                <span class="video-metrics font-mono">Ashes Trailer</span>
+              </div>
+              <h3 class="video-card-title font-serif">Ashes Short Film Trailer</h3>
+              <p class="video-card-desc font-sans">Dramatic editing pacing, creative typography overlays, and custom cinematic grading for a fiction short film teaser.</p>
             </div>
           </div>
         </div>
@@ -4149,23 +4164,23 @@ export function renderBrandStack() {
             <span class="brand-logo-name font-mono">@mahalekshmisilks</span>
           </a>
           <a href="https://www.instagram.com/ayushi.goyal.designs/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <div class="brand-logo-placeholder font-serif" style="color: var(--color-accent); margin-bottom: 0.2rem; font-size: 1.65rem;">AGD</div>
+            <img src="./logo_ayushi.png" alt="Ayushi Goyal Designs" class="brand-logo-img">
             <span class="brand-logo-name font-mono">@ayushi.goyal.designs</span>
           </a>
           <a href="https://www.instagram.com/fluteboxers/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <div class="brand-logo-placeholder font-serif" style="color: var(--color-brand); margin-bottom: 0.2rem; font-size: 1.65rem;">FBX</div>
+            <img src="./logo_fluteboxers.png" alt="Fluteboxers" class="brand-logo-img">
             <span class="brand-logo-name font-mono">@fluteboxers</span>
           </a>
           <a href="https://www.instagram.com/vaiduryafilms/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <div class="brand-logo-placeholder font-serif" style="color: hsl(340, 90%, 50%); margin-bottom: 0.2rem; font-size: 1.65rem;">VDF</div>
+            <img src="./logo_vaidurya.png" alt="Vaidurya Films" class="brand-logo-img">
             <span class="brand-logo-name font-mono">@vaiduryafilms</span>
           </a>
           <a href="https://www.instagram.com/partypiesweddings/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <div class="brand-logo-placeholder font-serif" style="color: hsl(200, 95%, 45%); margin-bottom: 0.2rem; font-size: 1.65rem;">PPW</div>
+            <img src="./logo_partypies.png" alt="Partypies Weddings" class="brand-logo-img">
             <span class="brand-logo-name font-mono">@partypiesweddings</span>
           </a>
           <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" class="brand-logo-card roots-card" style="text-decoration: none;">
-            <div class="brand-logo-placeholder font-serif" style="margin-bottom: 0.2rem; font-size: 1.65rem;">KCM</div>
+            <img src="./logo_kcm.png" alt="KCM Roots" class="brand-logo-img" style="filter: none; opacity: 1;">
             <span class="brand-logo-name font-mono">@kcm.mp4 (Roots)</span>
           </a>
         </div>
@@ -4222,7 +4237,7 @@ export function renderBrandStack() {
       </section>
 
       <!-- Section: Toolkit & Capabilities -->
-      <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem; margin-bottom: var(--spacing-xl);">
+      <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem;">
         <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
           <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CAPABILITIES</span>
           <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Toolkit &amp; Software Stack</h2>
@@ -4264,6 +4279,107 @@ export function renderBrandStack() {
             </div>
             <p class="toolkit-desc font-sans">Noise reduction, audio mastering, dynamic range compression, environmental soundscape design, and high-fidelity mixing.</p>
             <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 75%;"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Accreditation & Certificates -->
+      <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem;">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CREDENTIALS</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Accreditation &amp; Certificates</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Verified professional qualifications and achievements.</p>
+        </div>
+
+        <div class="credentials-container">
+          <a href="./certificate.pdf" target="_blank" rel="noopener" class="certificate-card" style="text-decoration: none;">
+            <div class="certificate-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="certificate-svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="certificate-info">
+              <div class="certificate-meta font-mono">
+                <span class="cert-authority">AWARDS & CREDENTIALS</span>
+                <span class="cert-status">VERIFIED PDF</span>
+              </div>
+              <h3 class="certificate-title font-serif">Video Editing Professional Certificate</h3>
+              <p class="certificate-desc font-sans">Formal accreditation confirming mastery of professional video editing systems, advanced timeline workflows, and audio engineering principles.</p>
+            </div>
+            <div class="certificate-action font-mono">
+              <span>VIEW CERTIFICATE</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section: Production Timeline -->
+      <section class="brand-stack-section timeline-section stagger-el stagger-delay-6" style="margin-top: 4rem; margin-bottom: var(--spacing-xl);">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CHRONOLOGY</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Production Timeline</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Milestones of Gokul's video editing and post-production journey.</p>
+        </div>
+
+        <div class="editorial-timeline">
+          <div class="timeline-line"></div>
+          
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year font-mono">2023</span>
+              <h3 class="timeline-title font-serif">The Genesis &amp; @kcm.mp4</h3>
+              <p class="timeline-desc font-sans">Launched editing operations on Instagram under <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" style="color: var(--color-brand); text-decoration: underline;">@kcm.mp4</a>, building high-energy reels and experimenting with visual sound design to establish foundational editing patterns.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year font-mono">LATE 2023</span>
+              <h3 class="timeline-title font-serif">First Freelance Commissions</h3>
+              <p class="timeline-desc font-sans">Secured first commercial engagements with local agencies. Successfully delivered promotional video packages and performance promos, refining A/B pacing and audio mixing workflows.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year font-mono">2024</span>
+              <h3 class="timeline-title font-serif">Collaborating with Premium Brands</h3>
+              <p class="timeline-desc font-sans">Expanded service footprint to premium brands including Mahalekshmi Silks, Ayushi Goyal Designs, Fluteboxers, and Vaidurya Films, achieving over 10M+ collective impressions with high-retention post-production pacing.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year font-mono">2025</span>
+              <h3 class="timeline-title font-serif">Creative Direction &amp; Certification</h3>
+              <p class="timeline-desc font-sans">Transitioned to advanced storyboarding and creative direction. Completed formal Professional Video Editing certification, standardizing high-end color grading and multi-track audio engineering workflows.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year font-mono">2026 (PRESENT)</span>
+              <h3 class="timeline-title font-serif">UX Designer at Designday</h3>
+              <p class="timeline-desc font-sans">Currently working as a UX Designer &amp; Video Editor at Designday, merging user experience principles with dynamic media pacing to craft immersive, high-conversion visual platforms.</p>
+            </div>
           </div>
         </div>
       </section>
