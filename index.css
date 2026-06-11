@@ -5204,7 +5204,7 @@ body.phone-popup-open {
   .sidebar {
     height: 100vh !important;
     padding: clamp(0.65rem, 1.5vh, 1.25rem) 1.4rem !important;
-    gap: clamp(0.3rem, 0.8vh, 0.6rem) !important;
+    gap: clamp(0.35rem, 0.8vh, 0.6rem) !important;
     overflow-y: hidden !important; /* Ensure the entire left panel is visible at once, no scroll */
     overflow-x: hidden !important;
     box-sizing: border-box !important;
@@ -5231,9 +5231,16 @@ body.phone-popup-open {
     gap: clamp(0.35rem, 1vh, 0.75rem) !important;
   }
   .sidebar-portrait {
-    height: clamp(120px, 21vh, 250px) !important;
+    width: clamp(110px, 20vh, 200px) !important;
+    height: clamp(110px, 20vh, 200px) !important;
+    border-radius: var(--border-radius-lg) !important;
+    margin: 0 auto !important;
   }
   .sidebar-group--identity {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     gap: clamp(0.35rem, 0.8vh, 0.5rem) !important;
   }
   .sidebar-action-card {
@@ -5267,7 +5274,8 @@ body.phone-popup-open {
     gap: 0.45rem !important;
   }
   .sidebar-portrait {
-    height: clamp(110px, 18vh, 170px) !important;
+    width: 170px !important;
+    height: 170px !important;
   }
   .sidebar-group--identity {
     gap: 0.45rem !important;
@@ -5301,7 +5309,8 @@ body.phone-popup-open {
     gap: 0.35rem !important;
   }
   .sidebar-portrait {
-    height: clamp(90px, 14vh, 110px) !important;
+    width: 135px !important;
+    height: 135px !important;
   }
   .sidebar-group--identity {
     gap: 0.35rem !important;
@@ -5357,7 +5366,8 @@ body.phone-popup-open {
     gap: 0.25rem !important;
   }
   .sidebar-portrait {
-    height: clamp(80px, 11vh, 90px) !important;
+    width: 110px !important;
+    height: 110px !important;
   }
   .sidebar-group--identity {
     gap: 0.25rem !important;
