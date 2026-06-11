@@ -4010,7 +4010,7 @@ export function renderBrandStack() {
         <span class="label font-mono text-brand" style="color: var(--color-brand); letter-spacing: 0.12em;">POST-PRODUCTION & VIDEO EDITING</span>
         <h1 class="brand-stack-headline font-serif" style="font-size: 3rem; margin-top: 0.25rem; font-weight: 400; line-height: 1.1; color: var(--text-primary);">Brand Stack</h1>
         <p class="brand-stack-subtitle font-sans" style="font-size: 1.1rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.5; max-width: 600px;">
-          Helping companies, creators, and agencies tell their stories through dynamic edits, motion graphics, and high-retention pacing.
+          Helping companies, creators, and agencies tell their stories through dynamic edits, motion graphics, and high-retention pacing—a visual journey that began at <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: underline; font-weight: 500;">@kcm.mp4</a>.
         </p>
 
         <!-- Stats Overview Row -->
@@ -4163,6 +4163,10 @@ export function renderBrandStack() {
           <a href="https://www.instagram.com/partypiesweddings/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
             <div class="brand-logo-placeholder font-serif" style="color: hsl(200, 95%, 45%); margin-bottom: 0.2rem; font-size: 1.65rem;">PPW</div>
             <span class="brand-logo-name font-mono">@partypiesweddings</span>
+          </a>
+          <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" class="brand-logo-card roots-card" style="text-decoration: none;">
+            <div class="brand-logo-placeholder font-serif" style="margin-bottom: 0.2rem; font-size: 1.65rem;">KCM</div>
+            <span class="brand-logo-name font-mono">@kcm.mp4 (Roots)</span>
           </a>
         </div>
       </section>

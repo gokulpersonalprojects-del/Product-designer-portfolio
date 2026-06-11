@@ -5527,7 +5527,7 @@ html.dark .video-metrics {
 /* Brands Grid Styles */
 .brands-logo-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--spacing-sm);
   margin-top: var(--spacing-sm);
 }
@@ -5604,6 +5604,29 @@ html.dark {
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* Highlighted roots card styling */
+.brand-logo-card.roots-card {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.brand-logo-card.roots-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 12px var(--color-accent-light);
+}
+
+.brand-logo-card.roots-card .brand-logo-placeholder {
+  color: var(--color-accent);
+  font-style: italic;
+  opacity: 1;
+}
+
+.brand-logo-card.roots-card .brand-logo-name {
+  color: var(--color-accent);
+  font-weight: 600;
+  opacity: 0.95;
 }
 
 /* Testimonials Styles */
