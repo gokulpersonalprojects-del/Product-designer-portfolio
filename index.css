@@ -5319,4 +5319,423 @@ body.email-popup-open {
   overflow: hidden;
 }
 
+/* ==========================================================================
+   BRAND STACK VIEW STYLES
+   ========================================================================== */
+
+.brand-stack-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm) var(--spacing-xl);
+}
+
+.brand-stack-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.brand-stats-row {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.brand-stat-card {
+  flex: 1 1 180px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.brand-stat-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.brand-stat-card .stat-num {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.brand-stat-card .stat-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Video Grid Styles */
+.video-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .video-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+  cursor: pointer;
+  outline: none;
+}
+
+.video-project-card:hover,
+.video-project-card:focus-within {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.video-project-card:focus-visible {
+  box-shadow: var(--shadow-focus);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.video-project-card:hover .video-container video,
+.video-project-card.playing .video-container video {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.play-indicator {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  transition: opacity var(--transition-fast) ease;
+}
+
+.video-project-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.video-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.video-tag {
+  font-size: 0.65rem;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.video-metrics {
+  font-size: 0.65rem;
+  color: var(--color-success, hsl(142, 95%, 22%));
+  background: var(--color-success-light, hsla(142, 95%, 22%, 0.08));
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Ensure success colors are visible in dark mode too */
+html.dark .video-metrics {
+  color: hsl(142, 100%, 70%);
+  background: hsla(142, 100%, 70%, 0.12);
+}
+
+.video-card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.1rem 0 0 0;
+  line-height: 1.2;
+}
+
+.video-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Brands Grid Styles */
+.brands-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 900px) {
+  .brands-logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.brand-logo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  text-align: center;
+  min-height: 100px;
+}
+
+.brand-logo-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.brand-logo-img {
+  max-height: 32px;
+  max-width: 85%;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.7);
+  transition: filter var(--transition-fast);
+}
+
+.brand-logo-card:hover .brand-logo-img {
+  filter: grayscale(0) opacity(1);
+}
+
+html.dark .brand-logo-img {
+  filter: grayscale(1) invert(0.8) opacity(0.7);
+}
+
+html.dark .brand-logo-card:hover .brand-logo-img {
+  filter: grayscale(0) invert(0.8) opacity(1);
+}
+
+/* Specifically for Bento and others, define variable for custom invert */
+:root {
+  --logo-invert: 0;
+}
+html.dark {
+  --logo-invert: 1;
+}
+
+.brand-logo-placeholder {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.brand-logo-name {
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Testimonials Styles */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+}
+
+.testimonial-quote {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0;
+  position: relative;
+  font-style: italic;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.testimonial-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-brand);
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.testimonial-role {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+/* Toolkit Styles */
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 600px) {
+  .toolkit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toolkit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color var(--transition-fast);
+}
+
+.toolkit-card:hover {
+  border-color: var(--border-hover);
+}
+
+.toolkit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolkit-name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.toolkit-badge {
+  font-size: 0.65rem;
+  color: var(--color-accent);
+  background: var(--color-accent-light, hsla(22, 95%, 32%, 0.08));
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+html.dark .toolkit-badge {
+  color: hsl(var(--orange-accent));
+  background: hsla(var(--orange-accent), 0.12);
+}
+
+.toolkit-desc {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.toolkit-bar-container {
+  width: 100%;
+  height: 4px;
+  background: var(--bg-tertiary);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.toolkit-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-brand), var(--color-accent));
+  border-radius: 2px;
+  transition: width 1s ease-out;
+}
+
+
 

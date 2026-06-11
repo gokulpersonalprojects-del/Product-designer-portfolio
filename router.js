@@ -3,6 +3,7 @@ import {
   renderWork, 
   renderAbout, 
   renderAIWorkshop,
+  renderBrandStack,
   renderProject1, 
   renderProject2, 
   renderProject3,
@@ -29,6 +30,7 @@ const routes = {
   '/work': { title: 'Work — Gokul S Kaimal', render: renderWork, navId: 'nav-work' },
   '/about': { title: 'About — Gokul S Kaimal', render: renderAbout, navId: 'nav-about' },
   '/ai-workshop': { title: 'AI Workshop — Gokul S Kaimal', render: renderAIWorkshop, navId: 'nav-workshop' },
+  '/brand-stack': { title: 'Brand Stack — Gokul S Kaimal', render: renderBrandStack, navId: 'nav-brand-stack' },
   '/project-1': { 
     title: 'Yooki: UPSC Conversational AI — Gokul S Kaimal', 
     render: renderProject1, 

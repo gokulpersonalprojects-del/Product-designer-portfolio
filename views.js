@@ -3651,6 +3651,8 @@ document.addEventListener('viewMounted', (event) => {
   
   if (path === '/work') {
     initWorkFilters();
+  } else if (path === '/brand-stack') {
+    initBrandStack();
   } else if (path === '/project-1') {
     initProject1Sandbox();
   } else if (path === '/project-2') {
@@ -3997,3 +3999,318 @@ export function renderProject9() {
     </article>
   `;
 }
+
+// ==========================================================================
+// BRAND STACK VIEW
+// ==========================================================================
+export function renderBrandStack() {
+  return `
+    <article class="brand-stack-page">
+      <header class="brand-stack-header stagger-el stagger-delay-1">
+        <span class="label font-mono text-brand" style="color: var(--color-brand); letter-spacing: 0.12em;">POST-PRODUCTION & VIDEO EDITING</span>
+        <h1 class="brand-stack-headline font-serif" style="font-size: 3rem; margin-top: 0.25rem; font-weight: 400; line-height: 1.1; color: var(--text-primary);">Brand Stack</h1>
+        <p class="brand-stack-subtitle font-sans" style="font-size: 1.1rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.5; max-width: 600px;">
+          Helping companies, creators, and agencies tell their stories through dynamic edits, motion graphics, and high-retention pacing.
+        </p>
+
+        <!-- Stats Overview Row -->
+        <div class="brand-stats-row font-mono" style="display: flex; gap: var(--spacing-md); margin-top: 1.75rem; flex-wrap: wrap;">
+          <div class="brand-stat-card">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Edits Delivered</span>
+          </div>
+          <div class="brand-stat-card">
+            <span class="stat-num">10M+</span>
+            <span class="stat-label">Total Views</span>
+          </div>
+          <div class="brand-stat-card">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Global Partners</span>
+          </div>
+          <div class="brand-stat-card">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Audience Retention</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section: Featured Edits (Video Grid) -->
+      <section class="brand-stack-section stagger-el stagger-delay-2" style="margin-top: 3.5rem;">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">FEATURED PROJECTS</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Interactive Video Grid</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Hover over any card to play a snippet of the edit.</p>
+        </div>
+
+        <div class="video-projects-grid">
+          <!-- Video Card 1 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./cendrol_video1.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">MOTION GRAPHICS</span>
+                <span class="video-metrics font-mono">72% Retention</span>
+              </div>
+              <h3 class="video-card-title font-serif">SaaS Workflow Interactive Motion</h3>
+              <p class="video-card-desc font-sans">High-energy motion typography showcasing complex cloud infrastructure operations and analytics platforms.</p>
+            </div>
+          </div>
+
+          <!-- Video Card 2 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./cendrol_video2.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">EXPLAINER / A-ROLL</span>
+                <span class="video-metrics font-mono">+45% CTR</span>
+              </div>
+              <h3 class="video-card-title font-serif">Cendrol SaaS Demo</h3>
+              <p class="video-card-desc font-sans">Explainer video combining character-driven narratives with clean product interfaces to drive user conversion.</p>
+            </div>
+          </div>
+
+          <!-- Video Card 3 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./cendrol_video3.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">SOUND DESIGN / BRAND</span>
+                <span class="video-metrics font-mono">1.2M Views</span>
+              </div>
+              <h3 class="video-card-title font-serif">Mahalekshmi Brand Narrative</h3>
+              <p class="video-card-desc font-sans">Cinematic storytelling film with custom audio design and mood-specific grading for luxury fashion retail.</p>
+            </div>
+          </div>
+
+          <!-- Video Card 4 -->
+          <div class="video-project-card" tabindex="0">
+            <div class="video-container">
+              <video muted playsinline loop preload="metadata">
+                <source src="./cendrol_video4.mp4" type="video/mp4">
+              </video>
+              <div class="play-indicator font-mono">HOVER TO PLAY</div>
+            </div>
+            <div class="video-project-info">
+              <div class="video-card-meta">
+                <span class="video-tag font-mono">PROMO / 3D ANIMATION</span>
+                <span class="video-metrics font-mono">3.4x Engagement</span>
+              </div>
+              <h3 class="video-card-title font-serif">Aura AI Motion Reveal</h3>
+              <p class="video-card-desc font-sans">Abstract 3D-assisted visual narrative introducing the brand vision and user engagement loop.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Collaborating Brands -->
+      <section class="brand-stack-section stagger-el stagger-delay-3" style="margin-top: 4rem;">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">PARTNERSHIPS</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Brands & Collaborators</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Providing custom visual content for companies and global content creators.</p>
+        </div>
+
+        <div class="brands-logo-grid">
+          <div class="brand-logo-card">
+            <img src="./logo_cendrol.png" alt="Cendrol" class="brand-logo-img">
+            <span class="brand-logo-name font-mono">Cendrol</span>
+          </div>
+          <div class="brand-logo-card">
+            <img src="./logo_yooki.png" alt="Yooki" class="brand-logo-img">
+            <span class="brand-logo-name font-mono">Yooki</span>
+          </div>
+          <div class="brand-logo-card">
+            <img src="./logo_bop.png" alt="Bank of Palestine" class="brand-logo-img">
+            <span class="brand-logo-name font-mono">BOP</span>
+          </div>
+          <div class="brand-logo-card">
+            <img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks" class="brand-logo-img">
+            <span class="brand-logo-name font-mono">Mahalekshmi</span>
+          </div>
+          <div class="brand-logo-card">
+            <img src="./logo_bento.png" alt="Bento" class="brand-logo-img" style="filter: invert(var(--logo-invert));">
+            <span class="brand-logo-name font-mono">Bento</span>
+          </div>
+          <div class="brand-logo-card">
+            <div class="brand-logo-placeholder font-serif">SaaS</div>
+            <span class="brand-logo-name font-mono">SaaS Agency</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Client Testimonials -->
+      <section class="brand-stack-section stagger-el stagger-delay-4" style="margin-top: 4rem;">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">FEEDBACK</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Client Testimonials</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">What founders and marketing directors say about the work.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote font-sans">
+              "Gokul has an exceptional eye for pace and narrative. The explainer video he created for our product launch had our audience fully engaged from start to finish, leading to a direct bump in signup conversions."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar font-mono">AK</div>
+              <div class="testimonial-info">
+                <span class="testimonial-author font-serif">Arjun Krishnan</span>
+                <span class="testimonial-role font-mono">Product Lead, Cendrol</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote font-sans">
+              "The brand storytelling film he crafted was simply breathtaking. His meticulous attention to sound cues and color palettes gave our campaign the premium aesthetic we were aiming for."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar font-mono">SM</div>
+              <div class="testimonial-info">
+                <span class="testimonial-author font-serif">Sarah Matthew</span>
+                <span class="testimonial-role font-mono">CMO, Mahalekshmi Silks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote font-sans">
+              "Working with Gokul was seamless. He not only brought technical video skills but also shared product thinking to structure the onboarding demo videos logically and cleanly."
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-avatar font-mono">TN</div>
+              <div class="testimonial-info">
+                <span class="testimonial-author font-serif">Tariq Naim</span>
+                <span class="testimonial-role font-mono">Co-Founder, Yooki AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Toolkit & Capabilities -->
+      <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem; margin-bottom: var(--spacing-xl);">
+        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
+          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CAPABILITIES</span>
+          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Toolkit &amp; Software Stack</h2>
+          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Modern post-production pipelines and specialized editing techniques.</p>
+        </div>
+
+        <div class="toolkit-grid">
+          <div class="toolkit-card">
+            <div class="toolkit-header">
+              <h3 class="toolkit-name font-serif">Adobe Premiere Pro</h3>
+              <span class="toolkit-badge font-mono">Expert</span>
+            </div>
+            <p class="toolkit-desc font-sans">Advanced A/B pacing, audio multi-tracking, speed-ramping presets, dynamic sequence nesting, and hardware-accelerated rendering pipelines.</p>
+            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="toolkit-card">
+            <div class="toolkit-header">
+              <h3 class="toolkit-name font-serif">Adobe After Effects</h3>
+              <span class="toolkit-badge font-mono">Advanced</span>
+            </div>
+            <p class="toolkit-desc font-sans">Keyframe interpolation, kinetic typography, shape layers, motion tracking, masking, rotoscoping, and complex overlay rendering.</p>
+            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 85%;"></div></div>
+          </div>
+
+          <div class="toolkit-card">
+            <div class="toolkit-header">
+              <h3 class="toolkit-name font-serif">DaVinci Resolve</h3>
+              <span class="toolkit-badge font-mono">Advanced</span>
+            </div>
+            <p class="toolkit-desc font-sans">Color grading with node structures, log profile conversions, HSL qualifiers, primary/secondary wheels, and clean workspace export.</p>
+            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 80%;"></div></div>
+          </div>
+
+          <div class="toolkit-card">
+            <div class="toolkit-header">
+              <h3 class="toolkit-name font-serif">Audition &amp; Sound Design</h3>
+              <span class="toolkit-badge font-mono">Intermediate</span>
+            </div>
+            <p class="toolkit-desc font-sans">Noise reduction, audio mastering, dynamic range compression, environmental soundscape design, and high-fidelity mixing.</p>
+            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 75%;"></div></div>
+          </div>
+        </div>
+      </section>
+    </article>
+  `;
+}
+
+export function initBrandStack() {
+  const videoCards = document.querySelectorAll('.video-project-card');
+  videoCards.forEach(card => {
+    const video = card.querySelector('video');
+    const playIndicator = card.querySelector('.play-indicator');
+    if (!video) return;
+
+    let playPromise = null;
+
+    const playVideo = () => {
+      card.classList.add('playing');
+      if (playIndicator) playIndicator.style.opacity = '0';
+      playPromise = video.play();
+    };
+
+    const pauseVideo = () => {
+      card.classList.remove('playing');
+      if (playIndicator) playIndicator.style.opacity = '1';
+      if (playPromise !== null) {
+        playPromise.then(() => {
+          video.pause();
+          video.currentTime = 0;
+        }).catch(err => {
+          video.pause();
+          video.currentTime = 0;
+        });
+      } else {
+        video.pause();
+        video.currentTime = 0;
+      }
+    };
+
+    card.addEventListener('mouseenter', playVideo);
+    card.addEventListener('mouseleave', pauseVideo);
+    card.addEventListener('focus', playVideo);
+    card.addEventListener('blur', pauseVideo);
+
+    card.addEventListener('touchstart', (e) => {
+      if (video.paused) {
+        e.preventDefault();
+        document.querySelectorAll('.video-project-card video').forEach(otherVideo => {
+          if (otherVideo !== video) {
+            otherVideo.pause();
+            otherVideo.currentTime = 0;
+            const otherCard = otherVideo.closest('.video-project-card');
+            if (otherCard) {
+              otherCard.classList.remove('playing');
+              const otherIndicator = otherCard.querySelector('.play-indicator');
+              if (otherIndicator) otherIndicator.style.opacity = '1';
+            }
+          }
+        });
+        playVideo();
+      } else {
+        e.preventDefault();
+        pauseVideo();
+      }
+    }, { passive: false });
+  });
+}
+
