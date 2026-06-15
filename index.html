@@ -77,106 +77,169 @@
     
     <!-- Sidebar column (Sticky on Desktop) -->
     <aside class="sidebar" role="complementary">
-      <div id="sidebar-default" style="display: flex; flex-direction: column; height: 100%; width: 100%;">
-        <div class="sidebar-top">
-          <!-- Logo / Brand Mark -->
+      <div id="sidebar-default" style="display: flex; flex-direction: column; height: 100%; width: 100%; gap: 1.5rem;">
+        <!-- Header Row -->
+        <div class="sidebar-header-row">
           <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
-            <h1 class="logo-text-wrapper" style="margin: 0; padding: 0; display: inline-flex; align-items: center;">
-              <svg class="logo-text-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" aria-label="Gokul S Kaimal Logo" style="height: 42px; width: auto; overflow: visible; display: inline-block;">
-                <defs>
-                  <!-- Brand gradient for the logo dot indicator -->
-                  <linearGradient id="logo-dot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="hsl(22, 100%, 57%)" />
-                    <stop offset="100%" stop-color="hsl(258, 100%, 70%)" />
-                  </linearGradient>
-                </defs>
-                
-                <!-- Segment 1: G character -->
-                <text x="4" y="26" class="logo-text-layer logo-text-main">G</text>
-                
-                <!-- Segment 2: Inline morphing Logo Mark (Rock/Tyre replacing 'o') -->
-                <g class="logo-image-group">
-                  <image href="./prehistoric_rock.png" class="logo-rock-svg" x="18" y="7" width="22" height="22" />
-                  <image href="./sports_tyre.png" class="logo-tyre-svg" x="18" y="7" width="22" height="22" />
-                </g>
-                
-                <!-- Segment 3: kul S Kaimal. with brand serif S initial -->
-                <g class="logo-text-rest-group">
-                  <text x="40" y="26" class="logo-text-layer logo-text-main">kul <tspan class="logo-text-serif-main">S</tspan> Kaimal<tspan class="logo-dot-main">.</tspan></text>
-                </g>
-              </svg>
-            </h1>
+            <span class="logo-gsk">GSK<span class="logo-orange-dot">.</span></span>
           </a>
-
-          <!-- Profile / Avatar Card -->
-          <div class="sidebar-profile-card">
-            <div class="profile-avatar-container">
-              <img src="./gokul_edited.png" alt="Gokul S Kaimal — UX Designer" class="profile-avatar-img" />
-            </div>
-            <div class="profile-meta-info">
-              <div class="profile-company-row">
-                <img src="./logo_designday.png" alt="Designday Logo" class="profile-company-logo" />
-                <span class="profile-title font-mono">UX designer at Designday</span>
-              </div>
-              <div class="profile-status-wrapper">
-                <span class="profile-status-dot-inline"></span>
-                <span class="profile-availability font-sans">Available for opportunities</span>
-              </div>
-            </div>
+          <div class="availability-status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text font-mono">Available for opportunities</span>
           </div>
-
-          <!-- Hero Pitch -->
-          <div class="sidebar-hero-pitch">
-            <h2 class="hero-title font-serif">
-              Designing <span id="typewriter">AI interaction systems.</span>
-            </h2>
-          </div>
-
-          <!-- Credentials Table-style Monospace list -->
-          <div class="sidebar-credentials-list">
-            <span class="credentials-section-header font-mono">Background</span>
-            <div class="credentials-rows">
-              <div class="cred-row">
-                <span class="cred-label font-mono">EXP</span>
-                <span class="cred-value font-sans">3+ Years</span>
-              </div>
-              <div class="cred-row">
-                <span class="cred-label font-mono">EDU</span>
-                <span class="cred-value font-sans">MBA (Branding), BTech (CS)</span>
-              </div>
-              <div class="cred-row">
-                <span class="cred-label font-mono">FOCUS</span>
-                <span class="cred-value font-sans">AI, SaaS, FinTech, BuildTech</span>
-              </div>
-            </div>
-          </div>
-
-          <p class="bio-skill-line">
-            I blend <span class="cycling-skill-wrapper"><span id="cycling-skill">UX design</span></span> to create scalable digital experiences.
-          </p>
         </div>
 
-        <div class="sidebar-bottom">
-          <!-- CTAs & Action buttons -->
-          <div class="sidebar-actions-block">
-            <button type="button" class="primary-cta-btn font-sans" data-email-open>
-              <span>Let's collaborate</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </button>
-            
-            <div class="secondary-actions-grid">
-              <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-secondary-btn" target="_blank" rel="noopener" aria-label="View LinkedIn profile">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
-              </a>
-
-              <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="sidebar-secondary-btn highlight-accent" target="_blank" rel="noopener" aria-label="View Resume">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-              </a>
-
-              <button type="button" class="sidebar-secondary-btn" data-phone-open aria-label="Open phone number contact information">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </button>
+        <!-- Profile Hero Image Block -->
+        <div class="profile-hero-image-block">
+          <div class="wireframe-decor border-outline-1"></div>
+          <div class="wireframe-decor border-outline-2"></div>
+          <div class="grid-decor-dots"></div>
+          <div class="avatar-image-wrapper">
+            <img src="./gokul_edited.png" alt="Gokul S Kaimal" class="sidebar-avatar-img" />
+          </div>
+          <!-- Rotating Sticker Badge -->
+          <div class="rotating-sticker-badge">
+            <svg viewBox="0 0 100 100" class="badge-svg">
+              <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+              <text class="badge-text">
+                <textPath href="#circlePath" startOffset="0%">
+                  PRODUCT EXPERIENCE DESIGNER • PRODUCT EXPERIENCE DESIGNER •
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
             </div>
+          </div>
+        </div>
+
+        <!-- Intro / Description Area -->
+        <div class="sidebar-intro-section">
+          <div class="designer-title-row">
+            <span class="designer-title-line"></span>
+            <span class="designer-title-text font-mono">PRODUCT &amp; BRAND EXPERIENCE DESIGNER</span>
+          </div>
+          <h2 class="hero-title font-sans">
+            Designing <span id="typewriter">AI interaction systems.</span>
+          </h2>
+          <p class="bio-description-text font-sans">
+            I blend UX thinking, product strategy and brand storytelling to create digital experiences that are intuitive, scalable and impactful.
+          </p>
+          <div class="collaborate-avatars-row">
+            <div class="avatars-overlap-group">
+              <img src="./gokul_edited.png" alt="Avatar 1" class="overlap-avatar" />
+              <img src="./gokul_portrait.png" alt="Avatar 2" class="overlap-avatar" />
+              <img src="./gokul_laptop.jpg" alt="Avatar 3" class="overlap-avatar" />
+            </div>
+            <span class="collaborate-text font-sans">Open to collaborate with creative teams and forward-thinking builders.</span>
+          </div>
+        </div>
+
+        <!-- Metrics Grid (2x2) -->
+        <div class="sidebar-metrics-grid">
+          <div class="metric-card">
+            <span class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </span>
+            <span class="metric-number font-sans">3+</span>
+            <span class="metric-desc font-sans">Years of experience</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </span>
+            <span class="metric-number font-sans">10+</span>
+            <span class="metric-desc font-sans">Projects delivered</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </span>
+            <span class="metric-number font-sans">5+</span>
+            <span class="metric-desc font-sans">Cross-functional collaborations</span>
+          </div>
+          <div class="metric-card focus-metric-card">
+            <span class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </span>
+            <span class="metric-text-desc font-sans">Focused on AI, SaaS, FinTech &amp; BuildTech</span>
+          </div>
+        </div>
+
+        <!-- Background Card with Square Icons -->
+        <div class="sidebar-background-card">
+          <span class="background-card-title font-mono">BACKGROUND</span>
+          
+          <div class="background-list-items">
+            <!-- Item 1 -->
+            <div class="bg-list-item">
+              <div class="bg-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+              </div>
+              <div class="bg-item-content">
+                <span class="bg-item-label font-sans">Education</span>
+                <span class="bg-item-value font-sans">MBA (Branding) <span class="bullet-sep">•</span> B.Tech (Computer Science)</span>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-list-item">
+              <div class="bg-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div class="bg-item-content">
+                <span class="bg-item-label font-sans">Focus Areas</span>
+                <span class="bg-item-value font-sans">AI, SaaS, FinTech, BuildTech</span>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="bg-list-item">
+              <div class="bg-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="bg-item-content">
+                <span class="bg-item-label font-sans">What I Do</span>
+                <span class="bg-item-value font-sans">End-to-end UX design for scalable digital products</span>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="bg-list-item">
+              <div class="bg-icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              </div>
+              <div class="bg-item-content">
+                <span class="bg-item-label font-sans">Mindset</span>
+                <span class="bg-item-value font-sans">User first. Impact always.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branded CTA Footer Card -->
+        <div class="sidebar-cta-card">
+          <div class="cta-card-header">
+            <h3 class="cta-card-title font-sans">Let's build impactful <span class="highlight-text-orange">experiences.</span></h3>
+            <p class="cta-card-desc font-sans">I'm currently open to full-time opportunities where design and technology create real impact.</p>
+          </div>
+          
+          <div class="cta-buttons-grid">
+            <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="cta-action-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span class="cta-btn-label font-mono">LinkedIn</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="cta-action-btn" target="_blank" rel="noopener" aria-label="View Resume">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span class="cta-btn-label font-mono">View Resume</span>
+            </a>
+            <button type="button" class="cta-action-btn" data-email-open aria-label="Contact Me">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span class="cta-btn-label font-mono">Contact Me</span>
+            </button>
           </div>
         </div>
       </div>

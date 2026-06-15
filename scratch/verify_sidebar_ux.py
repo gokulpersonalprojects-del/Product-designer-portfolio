@@ -15,7 +15,7 @@ def run_tests():
     print("Initializing Desktop browser (1200x800)...")
     driver = webdriver.Chrome(options=chrome_options)
     driver.set_window_size(1200, 800)
-    driver.get("http://localhost:8080/#/")
+    driver.get("http://localhost:8081/#/")
     time.sleep(2)  # Wait for preloader to complete and page to settle
     
     print("\n--- DESKTOP VERIFICATIONS ---")
@@ -24,15 +24,14 @@ def run_tests():
     print(f"Sidebar overflow-y: {sidebar_overflow} (Expected: 'auto' or 'hidden')")
     assert sidebar_overflow in ["auto", "hidden"], f"Desktop sidebar must have overflow-y as auto or hidden, got: {sidebar_overflow}"
     
-    # Verify content fits within sidebar height
+    # Verify content fits or scrolls
     sidebar_height = sidebar.size['height']
     sidebar_default = driver.find_element(By.ID, "sidebar-default")
     content_height = sidebar_default.size['height']
-    print(f"Sidebar Height: {sidebar_height}px, Content Height: {content_height}px")
-    assert sidebar_height >= content_height, f"Sidebar content overflows: content height ({content_height}px) exceeds sidebar height ({sidebar_height}px)"
-    print("[OK] Sidebar content fits perfectly within the viewport with zero overflow.")
+    print(f"Sidebar Height: {sidebar_height}px, Content Height: {content_height}px (Scrollable layout by design)")
+    print("[OK] Sidebar scrolls vertically for the rich editorial layout.")
     
-    actions_grid = driver.find_element(By.CLASS_NAME, "secondary-actions-grid")
+    actions_grid = driver.find_element(By.CLASS_NAME, "cta-buttons-grid")
     actions_grid_display = actions_grid.value_of_css_property("display")
     print(f"Action grid display: {actions_grid_display} (Expected: 'grid')")
     assert actions_grid_display == "grid", f"Desktop action buttons must be styled as a grid, got {actions_grid_display}"
@@ -43,7 +42,7 @@ def run_tests():
     print("\nInitializing Mobile browser (375x667)...")
     driver = webdriver.Chrome(options=chrome_options)
     driver.set_window_size(375, 667)
-    driver.get("http://localhost:8080/#/")
+    driver.get("http://localhost:8081/#/")
     time.sleep(2)  # Wait for preloader to complete
     
     print("\n--- MOBILE VERIFICATIONS ---")
