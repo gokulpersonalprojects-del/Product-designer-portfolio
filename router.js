@@ -145,6 +145,14 @@ async function handleRouting() {
   // Trigger any inline listeners/mount logic if present
   triggerViewMount(path);
 
+  // Send virtual pageview to Google Analytics if loaded
+  if (typeof gtag === 'function') {
+    gtag('config', 'G-ZNMD6HBDFX', {
+      'page_path': path,
+      'page_title': route.title
+    });
+  }
+
   // 3. Trigger Page Enter Animation
   appView.classList.remove('page-exit');
   appView.classList.add('page-enter');
