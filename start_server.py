@@ -6,6 +6,8 @@ import subprocess
 import time
 
 PORT = 8080
+if len(sys.argv) > 1 and sys.argv[1].isdigit():
+    PORT = int(sys.argv[1])
 
 def kill_port_owners(port):
     """
