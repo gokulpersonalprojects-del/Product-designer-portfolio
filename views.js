@@ -399,7 +399,10 @@ export function renderProject1() {
                 <span class="frame-title">The Struggle Begins: Finding Grounding</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/1.png" alt="Storyboard Frame 1: Finding Grounding" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/1.webp" type="image/webp">
+                  <img src="./storyboard/1.jpg" alt="Storyboard Frame 1: Finding Grounding" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -410,7 +413,10 @@ export function renderProject1() {
                 <span class="frame-title">Passive Reading &amp; Retention Gaps</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/2.png" alt="Storyboard Frame 2: Retention Gaps" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/2.webp" type="image/webp">
+                  <img src="./storyboard/2.jpg" alt="Storyboard Frame 2: Retention Gaps" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -421,7 +427,10 @@ export function renderProject1() {
                 <span class="frame-title">Managing the Overwhelming Syllabus</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/3.png" alt="Storyboard Frame 3: Managing the Syllabus" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/3.webp" type="image/webp">
+                  <img src="./storyboard/3.jpg" alt="Storyboard Frame 3: Managing the Syllabus" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -432,7 +441,10 @@ export function renderProject1() {
                 <span class="frame-title">Tracking Real Preparation Progress</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/4.png" alt="Storyboard Frame 4: Tracking Progress" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/4.webp" type="image/webp">
+                  <img src="./storyboard/4.jpg" alt="Storyboard Frame 4: Tracking Progress" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -443,7 +455,10 @@ export function renderProject1() {
                 <span class="frame-title">Identifying Weak &amp; Neglected Areas</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/5.png" alt="Storyboard Frame 5: Weak Areas" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/5.webp" type="image/webp">
+                  <img src="./storyboard/5.jpg" alt="Storyboard Frame 5: Weak Areas" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -454,7 +469,10 @@ export function renderProject1() {
                 <span class="frame-title">Unifying Static &amp; Associative Topics</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/6.png" alt="Storyboard Frame 6: Unifying Topics" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/6.webp" type="image/webp">
+                  <img src="./storyboard/6.jpg" alt="Storyboard Frame 6: Unifying Topics" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -465,7 +483,10 @@ export function renderProject1() {
                 <span class="frame-title">Connecting History with Current Affairs</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/7.png" alt="Storyboard Frame 7: Connecting Topics" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/7.webp" type="image/webp">
+                  <img src="./storyboard/7.jpg" alt="Storyboard Frame 7: Connecting Topics" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -476,7 +497,10 @@ export function renderProject1() {
                 <span class="frame-title">Introducing Yooki Conversational AI</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/8.png" alt="Storyboard Frame 8: Yooki AI" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/8.webp" type="image/webp">
+                  <img src="./storyboard/8.jpg" alt="Storyboard Frame 8: Yooki AI" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -487,7 +511,10 @@ export function renderProject1() {
                 <span class="frame-title">Dynamic Grounded AI Conversations</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/9.png" alt="Storyboard Frame 9: Conversational AI" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/9.webp" type="image/webp">
+                  <img src="./storyboard/9.jpg" alt="Storyboard Frame 9: Conversational AI" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
             
@@ -498,10 +525,14 @@ export function renderProject1() {
                 <span class="frame-title">Bridging Gaps &amp; Enabling Flow</span>
               </div>
               <div class="storyboard-image-wrapper">
-                <img src="./storyboard/10.png" alt="Storyboard Frame 10: Enabling Flow" loading="lazy">
+                <picture>
+                  <source srcset="./storyboard/10.webp" type="image/webp">
+                  <img src="./storyboard/10.jpg" alt="Storyboard Frame 10: Enabling Flow" loading="lazy" decoding="async">
+                </picture>
               </div>
             </div>
           </div>
+
         </section>
         
         <!-- Challenge Section -->
