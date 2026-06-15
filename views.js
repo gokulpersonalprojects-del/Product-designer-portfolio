@@ -1955,21 +1955,24 @@ const brandLogoMark = `
 `;
 
 const sidebarActionGrid = `
-      <div class="sidebar-actions-block" style="width: 100%; display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-        <button type="button" class="primary-cta-btn font-sans" data-email-open style="width: 100%;">
-          <span>Let's collaborate</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-        
-        <div class="secondary-actions-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; width: 100%;">
-          <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="sidebar-secondary-btn" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+      <!-- Branded CTA Footer Card (matches homepage style) -->
+      <div class="sidebar-cta-card">
+        <div class="cta-card-header">
+          <h3 class="cta-card-title font-sans">Let's build impactful <span class="highlight-text-orange">experiences.</span></h3>
+          <p class="cta-card-desc font-sans">I'm currently open to full-time opportunities where design and technology create real impact.</p>
+        </div>
+        <div class="cta-buttons-grid">
+          <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="cta-action-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span class="cta-btn-label font-mono">LinkedIn</span>
           </a>
-          <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="sidebar-secondary-btn highlight-accent" target="_blank" rel="noopener" aria-label="View Resume">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+          <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="cta-action-btn" target="_blank" rel="noopener" aria-label="View Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span class="cta-btn-label font-mono">View Resume</span>
           </a>
-          <button type="button" class="sidebar-secondary-btn" data-phone-open aria-label="Call Phone">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <button type="button" class="cta-action-btn" data-email-open aria-label="Contact Me">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span class="cta-btn-label font-mono">Contact Me</span>
           </button>
         </div>
       </div>
@@ -1977,57 +1980,99 @@ const sidebarActionGrid = `
 
 export function renderProject1Sidebar() {
   return `
-    <!-- Top Section -->
-    <div class="project-sidebar-top sidebar-fade-in" style="display: flex; flex-direction: column; gap: 0.55rem;">
-      ${brandLogoMark}
-      <div class="project-sidebar-meta font-mono" style="font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 500;">
-        YOOKI / 2025
+    <!-- Header Row -->
+    <div class="sidebar-header-row">
+      <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+        <span class="logo-gsk">GSK<span class="logo-orange-dot">.</span></span>
+      </a>
+      <div class="availability-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-text font-mono">Available for opportunities</span>
       </div>
-      <h2 class="project-sidebar-title font-serif" style="font-size: 2rem; font-weight: 400; line-height: 1.15; color: var(--text-primary); margin-top: 0.25rem; margin-bottom: 0.5rem;">
+    </div>
+
+    <!-- Project Identity Block -->
+    <div class="proj-sidebar-identity sidebar-fade-in">
+      <div class="designer-title-row">
+        <span class="designer-title-line"></span>
+        <span class="designer-title-text font-mono">YOOKI / 2025</span>
+      </div>
+      <h2 class="proj-sidebar-title font-sans">
         Designing an AI Learning System for Navigating UPSC Complexity
       </h2>
-      <p class="project-sidebar-desc font-sans" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 1rem;">
-        But most competitive learning platforms still rely on static interfaces built around passive content consumption.
+      <p class="proj-sidebar-desc font-sans">
+        Most competitive learning platforms still rely on static interfaces built around passive content consumption.
       </p>
       <a href="https://blog.askyooki.com/" target="_blank" rel="noopener" class="project-sidebar-btn project-1-btn">
         see what yooki is <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
       </a>
     </div>
 
-    <!-- Bottom Section -->
-    <div class="project-sidebar-bottom sidebar-fade-in" style="margin-top: auto; display: flex; flex-direction: column; gap: 1.25rem;">
-      <div class="project-sidebar-tags font-sans" style="font-size: 0.72rem; letter-spacing: 0.05em; font-weight: 600; color: var(--color-accent);">
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">ROLE</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem;">Product Designer</span>
+    <!-- Specs as Background-Card List -->
+    <div class="sidebar-background-card sidebar-fade-in">
+      <span class="background-card-title font-mono">PROJECT SPECS</span>
+      <div class="background-list-items">
+        <!-- Role -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Role</span>
+            <span class="bg-item-value font-sans">Product Designer</span>
+          </div>
         </div>
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">TIMELINE</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem;">6 Months (2025)</span>
+        <!-- Timeline -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Timeline</span>
+            <span class="bg-item-value font-sans">6 Months (2025)</span>
+          </div>
         </div>
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">CORE CONCEPTS</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem; line-height: 1.45;">Syllabus Mapping, Interactive Prototypes, Maze Usability Testing</span>
+        <!-- Core Concepts -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Core Concepts</span>
+            <span class="bg-item-value font-sans">Syllabus Mapping <span class="bullet-sep">•</span> Interactive Prototypes <span class="bullet-sep">•</span> Maze Usability Testing</span>
+          </div>
         </div>
       </div>
-      
-      ${sidebarActionGrid}
     </div>
+
+    <!-- Branded CTA Card -->
+    ${sidebarActionGrid}
   `;
 }
 
 export function renderProject2Sidebar() {
   return `
-    <!-- Top Section -->
-    <div class="project-sidebar-top sidebar-fade-in" style="display: flex; flex-direction: column; gap: 0.55rem;">
-      ${brandLogoMark}
-      <div class="project-sidebar-meta font-mono" style="font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 500;">
-        CENDROL / 2023
+    <!-- Header Row -->
+    <div class="sidebar-header-row">
+      <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+        <span class="logo-gsk">GSK<span class="logo-orange-dot">.</span></span>
+      </a>
+      <div class="availability-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-text font-mono">Available for opportunities</span>
       </div>
-      <h2 class="project-sidebar-title font-serif" style="font-size: 2rem; font-weight: 400; line-height: 1.15; color: var(--text-primary); margin-top: 0.25rem; margin-bottom: 0.5rem;">
+    </div>
+
+    <!-- Project Identity Block -->
+    <div class="proj-sidebar-identity sidebar-fade-in">
+      <div class="designer-title-row">
+        <span class="designer-title-line"></span>
+        <span class="designer-title-text font-mono">CENDROL / 2023</span>
+      </div>
+      <h2 class="proj-sidebar-title font-sans">
         Cendrol: Streamlining expense workflows for field engineers
       </h2>
-      <p class="project-sidebar-desc font-sans" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 1rem;">
+      <p class="proj-sidebar-desc font-sans">
         Field operations require real-time clarity. Legacy invoice submissions delay reimbursement and stall project timelines.
       </p>
       <a href="https://gokulux.framer.website/project-2" target="_blank" rel="noopener" class="project-sidebar-btn project-2-btn">
@@ -2035,57 +2080,117 @@ export function renderProject2Sidebar() {
       </a>
     </div>
 
-    <!-- Bottom Section -->
-    <div class="project-sidebar-bottom sidebar-fade-in" style="margin-top: auto; display: flex; flex-direction: column; gap: 1.25rem;">
-      <div class="project-sidebar-tags font-sans" style="font-size: 0.72rem; letter-spacing: 0.05em; font-weight: 600; color: var(--color-brand); display: flex; flex-direction: column; gap: 1.25rem;">
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">ROLE</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem;">Lead Product Researcher &amp; Designer</span>
+    <!-- Specs as Background-Card List -->
+    <div class="sidebar-background-card sidebar-fade-in">
+      <span class="background-card-title font-mono">PROJECT SPECS</span>
+      <div class="background-list-items">
+        <!-- Role -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Role</span>
+            <span class="bg-item-value font-sans">Lead Product Researcher &amp; Designer</span>
+          </div>
         </div>
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">TIMELINE</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem;">3 Months (2023)</span>
+        <!-- Timeline -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Timeline</span>
+            <span class="bg-item-value font-sans">3 Months (2023)</span>
+          </div>
         </div>
-        <div class="spec-item">
-          <span class="spec-label" style="text-transform: uppercase;">CONTEXT</span>
-          <span style="color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem; line-height: 1.45;">Field Operations, Construction FinTech</span>
+        <!-- Context -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Context</span>
+            <span class="bg-item-value font-sans">Field Operations <span class="bullet-sep">•</span> Construction FinTech</span>
+          </div>
         </div>
       </div>
-      
-      ${sidebarActionGrid}
     </div>
+
+    <!-- Branded CTA Card -->
+    ${sidebarActionGrid}
   `;
 }
 
 export function renderProject3Sidebar() {
   return `
-    <!-- Top Section -->
-    <div class="project-sidebar-top sidebar-fade-in" style="display: flex; flex-direction: column; gap: 0.55rem;">
-      ${brandLogoMark}
-      <div class="project-sidebar-meta font-mono" style="font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 500;">
-        BOP / 2025
+    <!-- Header Row -->
+    <div class="sidebar-header-row">
+      <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+        <span class="logo-gsk">GSK<span class="logo-orange-dot">.</span></span>
+      </a>
+      <div class="availability-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-text font-mono">Available for opportunities</span>
       </div>
-      <h2 class="project-sidebar-title font-serif" style="font-size: 2rem; font-weight: 400; line-height: 1.15; color: var(--text-primary); margin-top: 0.25rem; margin-bottom: 0.5rem;">
+    </div>
+
+    <!-- Project Identity Block -->
+    <div class="proj-sidebar-identity sidebar-fade-in">
+      <div class="designer-title-row">
+        <span class="designer-title-line"></span>
+        <span class="designer-title-text font-mono">BOP / 2025</span>
+      </div>
+      <h2 class="proj-sidebar-title font-sans">
         Bank of Palestine: Simplifying Complex KYC Process
       </h2>
-      <p class="project-sidebar-desc font-sans" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 1rem;">
-        Opening a bank account is historically a high-friction operational workflow. Reimagining identity verification through Progressive Disclosures.
+      <p class="proj-sidebar-desc font-sans">
+        Opening a bank account is historically a high-friction workflow. Reimagining identity verification through Progressive Disclosures.
       </p>
       <a href="https://www.bop.ps/en/personal" target="_blank" rel="noopener" class="project-sidebar-btn project-3-btn">
         more about bank <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
       </a>
     </div>
 
-    <!-- Bottom Section -->
-    <div class="project-sidebar-bottom sidebar-fade-in" style="margin-top: auto; display: flex; flex-direction: column; gap: 1.25rem;">
-      <div class="project-sidebar-specs" style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); font-family: var(--font-sans);">
-        <div><strong style="color: var(--text-primary); font-weight: 600; font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.03em;">ROLE :</strong> UX Designer</div>
-        <div><strong style="color: var(--text-primary); font-weight: 600; font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.03em;">TIMELINE :</strong> 4 Months (2025)</div>
-        <div><strong style="color: var(--text-primary); font-weight: 600; font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.03em;">CONTEXT :</strong> Mobile Banking, Identity Verification (KYC), FinTech</div>
+    <!-- Specs as Background-Card List -->
+    <div class="sidebar-background-card sidebar-fade-in">
+      <span class="background-card-title font-mono">PROJECT SPECS</span>
+      <div class="background-list-items">
+        <!-- Role -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Role</span>
+            <span class="bg-item-value font-sans">UX Designer</span>
+          </div>
+        </div>
+        <!-- Timeline -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Timeline</span>
+            <span class="bg-item-value font-sans">4 Months (2025)</span>
+          </div>
+        </div>
+        <!-- Context -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Context</span>
+            <span class="bg-item-value font-sans">Mobile Banking <span class="bullet-sep">•</span> Identity Verification (KYC) <span class="bullet-sep">•</span> FinTech</span>
+          </div>
+        </div>
       </div>
-      
-      ${sidebarActionGrid}
     </div>
+
+    <!-- Branded CTA Card -->
+    ${sidebarActionGrid}
   `;
 }
 
