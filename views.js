@@ -4140,44 +4140,20 @@ export function renderBrandStack() {
   return `
     <article class="brand-stack-page">
       <header class="brand-stack-header stagger-el stagger-delay-1">
-        <span class="label font-mono text-brand" style="color: var(--color-brand); letter-spacing: 0.12em;">POST-PRODUCTION & VIDEO EDITING</span>
-        <h1 class="brand-stack-headline font-serif" style="font-size: 3rem; margin-top: 0.25rem; font-weight: 400; line-height: 1.1; color: var(--text-primary);">Brand Stack</h1>
-        <p class="brand-stack-subtitle font-sans" style="font-size: 1.1rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.5; max-width: 600px;">
-          Helping companies, creators, and agencies tell their stories through dynamic edits, motion graphics, and high-retention pacing—a visual journey that began at <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: underline; font-weight: 500;">@kcm.mp4</a>.
-        </p>
-
-        <!-- Stats Overview Row -->
-        <div class="brand-stats-row font-mono" style="display: flex; gap: var(--spacing-md); margin-top: 1.75rem; flex-wrap: wrap;">
-          <div class="brand-stat-card">
-            <span class="stat-num">50+</span>
-            <span class="stat-label">Edits Delivered</span>
-          </div>
-          <div class="brand-stat-card">
-            <span class="stat-num">10M+</span>
-            <span class="stat-label">Total Views</span>
-          </div>
-          <div class="brand-stat-card">
-            <span class="stat-num">15+</span>
-            <span class="stat-label">Global Partners</span>
-          </div>
-          <div class="brand-stat-card">
-            <span class="stat-num">98%</span>
-            <span class="stat-label">Audience Retention</span>
-          </div>
+        <div class="brand-header-top">
+          <span class="label font-mono brand-kicker">FEATURED WORK</span>
+          <a href="#/work" class="view-all-link font-mono">VIEW ALL PROJECTS &rarr;</a>
         </div>
+        <h1 class="brand-stack-headline font-serif" style="font-size: 3rem; font-weight: 400; line-height: 1.1; color: var(--text-primary); margin-top: 0.5rem; margin-bottom: 0;">
+          Crafted for <em>Impact</em><span class="orange-dot">.</span>
+        </h1>
       </header>
 
-      <!-- Section: Featured Edits (Video Grid) -->
-      <section class="brand-stack-section stagger-el stagger-delay-2" style="margin-top: 3.5rem;">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">FEATURED PROJECTS</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Interactive Video Grid</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Hover over any card to play a snippet of the edit.</p>
-        </div>
-
-        <div class="video-projects-grid">
-          <!-- Video Card 1 -->
-          <div class="video-project-card" tabindex="0">
+      <!-- Section: Custom Grid Layout -->
+      <section class="brand-stack-section stagger-el stagger-delay-2" style="margin-top: 2rem;">
+        <div class="brand-custom-grid">
+          <!-- Card 1 (Tall, Left) -->
+          <div class="video-project-card tall-card" tabindex="0">
             <div class="video-container">
               <video muted playsinline loop preload="metadata">
                 <source src="./ayushi_goyal_tour.mp4" type="video/mp4">
@@ -4187,156 +4163,179 @@ export function renderBrandStack() {
             <div class="video-project-info">
               <div class="video-card-meta">
                 <span class="video-tag font-mono">PACE / EDITING</span>
-                <span class="video-metrics font-mono">Elegant Motion</span>
               </div>
-              <h3 class="video-card-title font-serif">Ayushi Goyal Designs Reel</h3>
-              <p class="video-card-desc font-sans">Sophisticated post-production pacing showcasing high-end interior and fashion design spaces, emphasizing light and texture details.</p>
+              <h3 class="video-card-title font-serif">KOMMA CLUB MEDIA</h3>
+              <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">Luxury real estate cinematic edit with smooth pacing and visual elegance.</p>
+              <div class="video-card-footer">
+                <span class="video-views font-mono">1.2M VIEWS</span>
+                <span class="arrow-icon-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </span>
+              </div>
             </div>
           </div>
 
-          <!-- Video Card 2 -->
-          <div class="video-project-card" tabindex="0">
-            <div class="video-container">
-              <video muted playsinline loop preload="metadata">
-                <source src="./fluteboxers_promo.mp4" type="video/mp4">
-              </video>
-              <div class="play-indicator font-mono">HOVER TO PLAY</div>
-            </div>
-            <div class="video-project-info">
-              <div class="video-card-meta">
-                <span class="video-tag font-mono">SOUND DESIGN / BEAT</span>
-                <span class="video-metrics font-mono">Dynamic Pacing</span>
+          <!-- Right Column -->
+          <div class="grid-right-col">
+            <!-- Top Row (2 Cards) -->
+            <div class="grid-top-row">
+              <!-- Card 2 -->
+              <div class="video-project-card" tabindex="0">
+                <div class="video-container">
+                  <video muted playsinline loop preload="metadata">
+                    <source src="./fluteboxers_promo.mp4" type="video/mp4">
+                  </video>
+                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+                </div>
+                <div class="video-project-info">
+                  <div class="video-card-meta">
+                    <span class="video-tag font-mono">SOUND DESIGN / BEAT</span>
+                  </div>
+                  <h3 class="video-card-title font-serif">THE GENESIS &amp; @KCM.MP4</h3>
+                  <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">High-energy edit with dynamic beat sync and custom sound design.</p>
+                  <div class="video-card-footer">
+                    <span class="video-views font-mono">2.1M VIEWS</span>
+                    <span class="arrow-icon-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 class="video-card-title font-serif">Fluteboxers Performance Promo</h3>
-              <p class="video-card-desc font-sans">High-energy showreel syncing fast rhythmic cuts and custom typography to beatboxing and live woodwind melodies.</p>
-            </div>
-          </div>
 
-          <!-- Video Card 3 -->
-          <div class="video-project-card" tabindex="0">
-            <div class="video-container">
-              <video muted playsinline loop preload="metadata">
-                <source src="./cendrol_video3.mp4" type="video/mp4">
-              </video>
-              <div class="play-indicator font-mono">HOVER TO PLAY</div>
-            </div>
-            <div class="video-project-info">
-              <div class="video-card-meta">
-                <span class="video-tag font-mono">CINEMATIC / COLOR</span>
-                <span class="video-metrics font-mono">1.2M Views</span>
+              <!-- Card 3 -->
+              <div class="video-project-card" tabindex="0">
+                <div class="video-container">
+                  <video muted playsinline loop preload="metadata">
+                    <source src="./cendrol_video3.mp4" type="video/mp4">
+                  </video>
+                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+                </div>
+                <div class="video-project-info">
+                  <div class="video-card-meta">
+                    <span class="video-tag font-mono">CINEMATIC / COLOR</span>
+                  </div>
+                  <h3 class="video-card-title font-serif">LUXURY RETAIL CAMPAIGN</h3>
+                  <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">Cinematic brand edit with rich grading and refined transitions.</p>
+                  <div class="video-card-footer">
+                    <span class="video-views font-mono">2.2M VIEWS</span>
+                    <span class="arrow-icon-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 class="video-card-title font-serif">Mahalekshmi Brand Narrative</h3>
-              <p class="video-card-desc font-sans">Cinematic storytelling film with custom ambient audio design and mood-specific grading for luxury fashion retail.</p>
             </div>
-          </div>
 
-          <!-- Video Card 4 -->
-          <div class="video-project-card" tabindex="0">
-            <div class="video-container">
-              <video muted playsinline loop preload="metadata">
-                <source src="./cendrol_video4.mp4" type="video/mp4">
-              </video>
-              <div class="play-indicator font-mono">HOVER TO PLAY</div>
-            </div>
-            <div class="video-project-info">
-              <div class="video-card-meta">
-                <span class="video-tag font-mono">NARRATIVE / TEASER</span>
-                <span class="video-metrics font-mono">Creative Direction</span>
+            <!-- Bottom Row (3 Cards) -->
+            <div class="grid-bottom-row">
+              <!-- Card 4 -->
+              <div class="video-project-card short-card" tabindex="0">
+                <div class="video-container">
+                  <video muted playsinline loop preload="metadata">
+                    <source src="./cendrol_video4.mp4" type="video/mp4">
+                  </video>
+                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+                </div>
+                <div class="video-project-info">
+                  <div class="video-card-meta">
+                    <span class="video-tag font-mono">NARRATIVE / TEASER</span>
+                  </div>
+                  <h3 class="video-card-title font-serif" style="font-size: 1.05rem;">VAIDURYA CINEMATIC TEASER</h3>
+                  <div class="video-card-footer" style="padding-top: 0.25rem;">
+                    <span class="video-views font-mono">900K VIEWS</span>
+                    <span class="arrow-icon-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 class="video-card-title font-serif">Vaidurya Cinematic Teaser</h3>
-              <p class="video-card-desc font-sans">Documentary-style sequence with structured interview dialogue pacing, b-roll layering, and dramatic color conversions.</p>
-            </div>
-          </div>
 
-          <!-- Video Card 5 -->
-          <div class="video-project-card" tabindex="0">
-            <div class="video-container">
-              <video muted playsinline loop preload="metadata">
-                <source src="./partypies_weddings.mp4" type="video/mp4">
-              </video>
-              <div class="play-indicator font-mono">HOVER TO PLAY</div>
-            </div>
-            <div class="video-project-info">
-              <div class="video-card-meta">
-                <span class="video-tag font-mono">STORYTELLING / TRANSITIONS</span>
-                <span class="video-metrics font-mono">High Retention</span>
+              <!-- Card 5 -->
+              <div class="video-project-card short-card" tabindex="0">
+                <div class="video-container">
+                  <video muted playsinline loop preload="metadata">
+                    <source src="./partypies_weddings.mp4" type="video/mp4">
+                  </video>
+                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+                </div>
+                <div class="video-project-info">
+                  <div class="video-card-meta">
+                    <span class="video-tag font-mono">STORYTELLING / TRANSITIONS</span>
+                  </div>
+                  <h3 class="video-card-title font-serif" style="font-size: 1.05rem;">PARTYPIES WEDDINGS FILM CUT</h3>
+                  <div class="video-card-footer" style="padding-top: 0.25rem;">
+                    <span class="video-views font-mono">2.3M VIEWS</span>
+                    <span class="arrow-icon-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 class="video-card-title font-serif">Partypies Weddings Film Cut</h3>
-              <p class="video-card-desc font-sans">Heartwarming storytelling edit blending emotional dialogue bytes, chronological pacing, and custom warm color palettes.</p>
-            </div>
-          </div>
 
-          <!-- Video Card 6 -->
-          <div class="video-project-card" tabindex="0">
-            <div class="video-container">
-              <video muted playsinline loop preload="metadata">
-                <source src="./ashes_trailer.mp4" type="video/mp4">
-              </video>
-              <div class="play-indicator font-mono">HOVER TO PLAY</div>
-            </div>
-            <div class="video-project-info">
-              <div class="video-card-meta">
-                <span class="video-tag font-mono">NARRATIVE / CINEMATIC</span>
-                <span class="video-metrics font-mono">Ashes Trailer</span>
+              <!-- Card 6 -->
+              <div class="video-project-card short-card" tabindex="0">
+                <div class="video-container">
+                  <video muted playsinline loop preload="metadata">
+                    <source src="./ashes_trailer.mp4" type="video/mp4">
+                  </video>
+                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+                </div>
+                <div class="video-project-info">
+                  <div class="video-card-meta">
+                    <span class="video-tag font-mono">NARRATIVE / CINEMATIC</span>
+                  </div>
+                  <h3 class="video-card-title font-serif" style="font-size: 1.05rem;">ASHES SHORT FILM TRAILER</h3>
+                  <div class="video-card-footer" style="padding-top: 0.25rem;">
+                    <span class="video-views font-mono">1.2M VIEWS</span>
+                    <span class="arrow-icon-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <h3 class="video-card-title font-serif">Ashes Short Film Trailer</h3>
-              <p class="video-card-desc font-sans">Dramatic editing pacing, creative typography overlays, and custom cinematic grading for a fiction short film teaser.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section: Collaborating Brands -->
-      <section class="brand-stack-section stagger-el stagger-delay-3" style="margin-top: 4rem;">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">PARTNERSHIPS</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Brands & Collaborators</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Providing custom visual content for companies and global content creators. Click to view profiles.</p>
-        </div>
-
-        <div class="brands-logo-grid">
-          <a href="https://www.instagram.com/mahalekshmisilks/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">@mahalekshmisilks</span>
-          </a>
-          <a href="https://www.instagram.com/ayushi.goyal.designs/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <img src="./logo_ayushi.png" alt="Ayushi Goyal Designs" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">@ayushi.goyal.designs</span>
-          </a>
-          <a href="https://www.instagram.com/fluteboxers/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <img src="./logo_fluteboxers.png" alt="Fluteboxers" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">@fluteboxers</span>
-          </a>
-          <a href="https://www.instagram.com/vaiduryafilms/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <img src="./logo_vaidurya.png" alt="Vaidurya Films" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">@vaiduryafilms</span>
-          </a>
-          <a href="https://www.instagram.com/partypiesweddings/" target="_blank" rel="noopener" class="brand-logo-card" style="text-decoration: none;">
-            <img src="./logo_partypies.png" alt="Partypies Weddings" class="brand-logo-img">
-            <span class="brand-logo-name font-mono">@partypiesweddings</span>
-          </a>
-          <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" class="brand-logo-card roots-card" style="text-decoration: none;">
-            <img src="./logo_kcm.png" alt="KCM Roots" class="brand-logo-img" style="filter: none; opacity: 1;">
-            <span class="brand-logo-name font-mono">@kcm.mp4 (Roots)</span>
-          </a>
+      <!-- Section: Trusted By -->
+      <section class="brand-stack-section stagger-el stagger-delay-3" style="margin-top: 3rem;">
+        <span class="label font-mono text-brand-orange" style="font-size: 0.65rem; display: block; margin-bottom: 0.5rem;">TRUSTED BY</span>
+        <div class="trusted-brands-row">
+          <div class="trusted-logo"><img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks"></div>
+          <div class="trusted-logo"><img src="./logo_ayushi.png" alt="Ayushi Goyal Designs"></div>
+          <div class="trusted-logo"><img src="./logo_fluteboxers.png" alt="Fluteboxers"></div>
+          <div class="trusted-logo"><img src="./logo_vaidurya.png" alt="Vaidurya Films"></div>
+          <div class="trusted-logo"><img src="./logo_partypies.png" alt="PartyPies Weddings"></div>
+          <div class="trusted-logo" style="background: none;"><img src="./logo_kcm.png" alt="KCM" style="filter: none; opacity: 1;"></div>
         </div>
       </section>
 
-      <!-- Section: Client Testimonials -->
+      <!-- Section: Kind Words -->
       <section class="brand-stack-section stagger-el stagger-delay-4" style="margin-top: 4rem;">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">FEEDBACK</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Client Testimonials</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">What founders and creative directors say about the work.</p>
+        <div class="section-title-with-controls">
+          <div>
+            <span class="label font-mono text-brand-orange" style="font-size: 0.65rem;">KIND WORDS</span>
+            <h2 class="section-heading font-serif" style="font-size: 2rem; margin-top: 0.25rem;">What They Say</h2>
+          </div>
+          <div class="carousel-nav-arrows">
+            <button type="button" class="carousel-arrow prev" aria-label="Previous testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button type="button" class="carousel-arrow next" aria-label="Next testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
         </div>
 
-        <div class="testimonials-grid">
+        <div class="testimonials-grid brand-testimonials">
           <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
             <p class="testimonial-quote font-sans">
               "Gokul has a rare gift for matching the rhythm of live music to visual transitions. His edits for our performance clips captured our energy perfectly, driving a significant spike in our audience engagement."
             </p>
             <div class="testimonial-footer">
-              <div class="testimonial-avatar font-mono" style="color: var(--color-brand);">FB</div>
+              <div class="testimonial-avatar font-mono">FB</div>
               <div class="testimonial-info">
                 <span class="testimonial-author font-serif">Fluteboxers</span>
                 <span class="testimonial-role font-mono">Performance Duo</span>
@@ -4345,6 +4344,7 @@ export function renderBrandStack() {
           </div>
 
           <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
             <p class="testimonial-quote font-sans">
               "The pacing and atmosphere Gokul brings to our cinematic footage is top-tier. He understands film structure, respects dynamic audio ranges, and elevates our color grading palettes to a premium commercial standard."
             </p>
@@ -4358,11 +4358,12 @@ export function renderBrandStack() {
           </div>
 
           <div class="testimonial-card">
+            <span class="quote-mark">&ldquo;</span>
             <p class="testimonial-quote font-sans">
               "From complex brand films to short social edits, Gokul delivers narratives that capture our retail essence. His attention to sound sync and color transitions is meticulous."
             </p>
             <div class="testimonial-footer">
-              <div class="testimonial-avatar font-mono" style="color: var(--color-brand);">MS</div>
+              <div class="testimonial-avatar font-mono">MS</div>
               <div class="testimonial-info">
                 <span class="testimonial-author font-serif">Mahalekshmi Silks</span>
                 <span class="testimonial-role font-mono">Retail Brand</span>
@@ -4372,153 +4373,194 @@ export function renderBrandStack() {
         </div>
       </section>
 
-      <!-- Section: Toolkit & Capabilities -->
+      <!-- Section: Toolkit & Software Stack -->
       <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem;">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CAPABILITIES</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Toolkit &amp; Software Stack</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Modern post-production pipelines and specialized editing techniques.</p>
-        </div>
-
-        <div class="toolkit-grid">
-          <div class="toolkit-card">
-            <div class="toolkit-header">
-              <h3 class="toolkit-name font-serif">Adobe Premiere Pro</h3>
-              <span class="toolkit-badge font-mono">Expert</span>
+        <span class="label font-mono text-brand-orange" style="font-size: 0.65rem;">TOOLKIT &amp; SOFTWARE STACK</span>
+        <h2 class="section-heading font-serif" style="font-size: 2rem; margin-top: 0.25rem; margin-bottom: 1.5rem;">Tools That Power the Process</h2>
+        
+        <div class="toolkit-grid brand-toolkit-grid">
+          <!-- Premiere Pro -->
+          <div class="toolkit-card-new">
+            <div class="toolkit-top-row">
+              <div class="toolkit-icon-box pr-box">Pr</div>
+              <div class="toolkit-meta">
+                <h3 class="toolkit-title font-serif">Adobe Premiere Pro</h3>
+                <span class="toolkit-badge expert font-mono">Expert</span>
+              </div>
             </div>
-            <p class="toolkit-desc font-sans">Advanced A/B pacing, audio multi-tracking, speed-ramping presets, dynamic sequence nesting, and hardware-accelerated rendering pipelines.</p>
-            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 95%;"></div></div>
+            <p class="toolkit-desc font-sans">Advanced A/B pacing, audio multi-tracking, speed-ramping, dynamic nesting, and hardware-accelerated rendering.</p>
+            <div class="toolkit-progress-wrapper">
+              <div class="progress-info font-mono">
+                <span>93%</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 93%;"></div></div>
+            </div>
           </div>
 
-          <div class="toolkit-card">
-            <div class="toolkit-header">
-              <h3 class="toolkit-name font-serif">Adobe After Effects</h3>
-              <span class="toolkit-badge font-mono">Advanced</span>
+          <!-- After Effects -->
+          <div class="toolkit-card-new">
+            <div class="toolkit-top-row">
+              <div class="toolkit-icon-box ae-box">Ae</div>
+              <div class="toolkit-meta">
+                <h3 class="toolkit-title font-serif">Adobe After Effects</h3>
+                <span class="toolkit-badge advanced font-mono">Advanced</span>
+              </div>
             </div>
             <p class="toolkit-desc font-sans">Keyframe interpolation, kinetic typography, shape layers, motion tracking, masking, rotoscoping, and complex overlay rendering.</p>
-            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 85%;"></div></div>
-          </div>
-
-          <div class="toolkit-card">
-            <div class="toolkit-header">
-              <h3 class="toolkit-name font-serif">DaVinci Resolve</h3>
-              <span class="toolkit-badge font-mono">Advanced</span>
-            </div>
-            <p class="toolkit-desc font-sans">Color grading with node structures, log profile conversions, HSL qualifiers, primary/secondary wheels, and clean workspace export.</p>
-            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 80%;"></div></div>
-          </div>
-
-          <div class="toolkit-card">
-            <div class="toolkit-header">
-              <h3 class="toolkit-name font-serif">Audition &amp; Sound Design</h3>
-              <span class="toolkit-badge font-mono">Intermediate</span>
-            </div>
-            <p class="toolkit-desc font-sans">Noise reduction, audio mastering, dynamic range compression, environmental soundscape design, and high-fidelity mixing.</p>
-            <div class="toolkit-bar-container"><div class="toolkit-bar-fill" style="width: 75%;"></div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Accreditation & Certificates -->
-      <section class="brand-stack-section stagger-el stagger-delay-5" style="margin-top: 4rem;">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CREDENTIALS</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Accreditation &amp; Certificates</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Verified professional qualifications and achievements.</p>
-        </div>
-
-        <div class="credentials-container">
-          <a href="./certificate.pdf" target="_blank" rel="noopener" class="certificate-card" style="text-decoration: none;">
-            <div class="certificate-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="certificate-svg">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-            </div>
-            <div class="certificate-info">
-              <div class="certificate-meta font-mono">
-                <span class="cert-authority">AWARDS & CREDENTIALS</span>
-                <span class="cert-status">VERIFIED PDF</span>
+            <div class="toolkit-progress-wrapper">
+              <div class="progress-info font-mono">
+                <span>90%</span>
               </div>
-              <h3 class="certificate-title font-serif">Video Editing Professional Certificate</h3>
-              <p class="certificate-desc font-sans">Formal accreditation confirming mastery of professional video editing systems, advanced timeline workflows, and audio engineering principles.</p>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
             </div>
-            <div class="certificate-action font-mono">
-              <span>VIEW CERTIFICATE</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
+          </div>
+
+          <!-- DaVinci Resolve -->
+          <div class="toolkit-card-new">
+            <div class="toolkit-top-row">
+              <div class="toolkit-icon-box dv-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #8AE6FF;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="toolkit-meta">
+                <h3 class="toolkit-title font-serif">DaVinci Resolve</h3>
+                <span class="toolkit-badge advanced font-mono">Advanced</span>
+              </div>
             </div>
-          </a>
+            <p class="toolkit-desc font-sans">Color grading with node structures, log profile conversions, HSL qualifiers, primary/secondary wheels, and clean export.</p>
+            <div class="toolkit-progress-wrapper">
+              <div class="progress-info font-mono">
+                <span>92%</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 92%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Audition -->
+          <div class="toolkit-card-new">
+            <div class="toolkit-top-row">
+              <div class="toolkit-icon-box au-box">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="color: #7BFFE4;">
+                  <line x1="4" y1="12" x2="20" y2="12"></line>
+                  <line x1="12" y1="4" x2="12" y2="20"></line>
+                  <line x1="8" y1="8" x2="16" y2="16"></line>
+                  <line x1="16" y1="8" x2="8" y2="16"></line>
+                </svg>
+              </div>
+              <div class="toolkit-meta">
+                <h3 class="toolkit-title font-serif">Audition &amp; Sound Design</h3>
+                <span class="toolkit-badge intermediate font-mono">Intermediate</span>
+              </div>
+            </div>
+            <p class="toolkit-desc font-sans">Noise reduction, dynamic range compression, soundscape design, and high-fidelity mixing.</p>
+            <div class="toolkit-progress-wrapper">
+              <div class="progress-info font-mono">
+                <span>85%</span>
+              </div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Section: Production Timeline -->
-      <section class="brand-stack-section timeline-section stagger-el stagger-delay-6" style="margin-top: 4rem; margin-bottom: var(--spacing-xl);">
-        <div class="section-title-group" style="margin-bottom: var(--spacing-sm);">
-          <span class="label font-mono" style="color: var(--color-accent); font-size: 0.7rem;">CHRONOLOGY</span>
-          <h2 class="section-heading font-serif" style="font-size: 1.85rem; font-weight: 400; margin-top: 0.15rem;">Production Timeline</h2>
-          <p class="section-desc font-sans" style="font-size: 0.9rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Milestones of Gokul's video editing and post-production journey.</p>
-        </div>
-
-        <div class="editorial-timeline">
-          <div class="timeline-line"></div>
+      <!-- Side-by-Side: Credentials & Timeline -->
+      <div class="brand-footer-grid stagger-el stagger-delay-6" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <!-- Column 1: Credentials -->
+        <section class="brand-footer-col">
+          <span class="label font-mono text-brand-orange" style="font-size: 0.65rem;">CREDENTIALS</span>
+          <h2 class="section-heading font-serif" style="font-size: 2rem; margin-top: 0.25rem; margin-bottom: 1.5rem;">Accreditation &amp; Certificates</h2>
           
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-year font-mono">2023</span>
-              <h3 class="timeline-title font-serif">The Genesis &amp; @kcm.mp4</h3>
-              <p class="timeline-desc font-sans">Launched editing operations on Instagram under <a href="https://www.instagram.com/kcm.mp4/" target="_blank" rel="noopener" style="color: var(--color-brand); text-decoration: underline;">@kcm.mp4</a>, building high-energy reels and experimenting with visual sound design to establish foundational editing patterns.</p>
+          <div class="credentials-box-card">
+            <div class="cert-card-header-row">
+              <div class="cert-icon-wrapper-new">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="cert-title-meta">
+                <h3 class="cert-title font-serif">Video Editing Professional Certificate</h3>
+                <span class="cert-badge font-mono">VERIFIED PDF</span>
+              </div>
             </div>
+            <p class="cert-desc font-sans">Formal accreditation confirming mastery of professional video editing systems, advanced timeline workflows, and audio engineering principles.</p>
+            <a href="./certificate.pdf" target="_blank" rel="noopener" class="cert-action-link font-mono">VIEW CERTIFICATE &rarr;</a>
           </div>
+        </section>
 
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-year font-mono">LATE 2023</span>
-              <h3 class="timeline-title font-serif">First Freelance Commissions</h3>
-              <p class="timeline-desc font-sans">Secured first commercial engagements with local agencies. Successfully delivered promotional video packages and performance promos, refining A/B pacing and audio mixing workflows.</p>
+        <!-- Column 2: Timeline -->
+        <section class="brand-footer-col">
+          <span class="label font-mono text-brand-orange" style="font-size: 0.65rem;">JOURNEY SO FAR</span>
+          <h2 class="section-heading font-serif" style="font-size: 2rem; margin-top: 0.25rem; margin-bottom: 1.5rem;">Production Timeline</h2>
+          
+          <div class="brand-timeline-vertical">
+            <!-- Item 1 -->
+            <div class="timeline-node-new">
+              <div class="timeline-dot-new"></div>
+              <div class="timeline-text-new">
+                <div class="timeline-header-row-new">
+                  <span class="timeline-year-new font-mono">2023</span>
+                  <h4 class="timeline-title-new font-sans">The Genesis &amp; @kcm.mp4</h4>
+                </div>
+                <p class="timeline-desc-new font-sans">Launched editing operations on Instagram building high-energy reels and experimenting with visual sound design.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Timeline Item 3 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-year font-mono">2024</span>
-              <h3 class="timeline-title font-serif">Collaborating with Premium Brands</h3>
-              <p class="timeline-desc font-sans">Expanded service footprint to premium brands including Mahalekshmi Silks, Ayushi Goyal Designs, Fluteboxers, and Vaidurya Films, achieving over 10M+ collective impressions with high-retention post-production pacing.</p>
+            <!-- Item 2 -->
+            <div class="timeline-node-new">
+              <div class="timeline-dot-new"></div>
+              <div class="timeline-text-new">
+                <div class="timeline-header-row-new">
+                  <span class="timeline-year-new font-mono">Late 2023</span>
+                  <h4 class="timeline-title-new font-sans">First Freelance Commissions</h4>
+                </div>
+                <p class="timeline-desc-new font-sans">Secured first commercial engagements and delivered promotional video packages and performance promos.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Timeline Item 4 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-year font-mono">2025</span>
-              <h3 class="timeline-title font-serif">Creative Direction &amp; Certification</h3>
-              <p class="timeline-desc font-sans">Transitioned to advanced storyboarding and creative direction. Completed formal Professional Video Editing certification, standardizing high-end color grading and multi-track audio engineering workflows.</p>
+            <!-- Item 3 -->
+            <div class="timeline-node-new">
+              <div class="timeline-dot-new"></div>
+              <div class="timeline-text-new">
+                <div class="timeline-header-row-new">
+                  <span class="timeline-year-new font-mono">2024</span>
+                  <h4 class="timeline-title-new font-sans">Collaborating with Premium Brands</h4>
+                </div>
+                <p class="timeline-desc-new font-sans">Expanded service footprint to premium brands and creators, achieving 10M+ collective impressions.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Timeline Item 5 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-year font-mono">2026 (PRESENT)</span>
-              <h3 class="timeline-title font-serif">UX Designer at Designday</h3>
-              <p class="timeline-desc font-sans">Currently working as a UX Designer &amp; Video Editor at Designday, merging user experience principles with dynamic media pacing to craft immersive, high-conversion visual platforms.</p>
+            <!-- Item 4 -->
+            <div class="timeline-node-new">
+              <div class="timeline-dot-new"></div>
+              <div class="timeline-text-new">
+                <div class="timeline-header-row-new">
+                  <span class="timeline-year-new font-mono">2025</span>
+                  <h4 class="timeline-title-new font-sans">Creative Direction &amp; Certification</h4>
+                </div>
+                <p class="timeline-desc-new font-sans">Completed professional video editing certification and standardized high-end color grading and audio workflows.</p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="timeline-node-new">
+              <div class="timeline-dot-new"></div>
+              <div class="timeline-text-new">
+                <div class="timeline-header-row-new">
+                  <span class="timeline-year-new font-mono">2026 (Present)</span>
+                  <h4 class="timeline-title-new font-sans">UX Designer at Designday</h4>
+                </div>
+                <p class="timeline-desc-new font-sans">Merging user experience principles with dynamic media pacing to craft immersive, high-conversion visual platforms.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </article>
   `;
 }

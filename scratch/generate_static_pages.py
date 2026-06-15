@@ -70,27 +70,26 @@ def build_pages():
         return
         
     projects = [
-        {"id": 1, "filename": "yooki.html", "title": "Yooki: UPSC Conversational AI — Gokul S Kaimal", "has_sidebar": True},
-        {"id": 2, "filename": "cendrol.html", "title": "Cendrol: Operational Expense UX — Gokul S Kaimal", "has_sidebar": True},
-        {"id": 3, "filename": "bop.html", "title": "Bank of Palestine: KYC Simplification — Gokul S Kaimal", "has_sidebar": True},
-        {"id": 5, "filename": "project-5.html", "title": "Attendance Management UX Case Study — Gokul S Kaimal", "has_sidebar": False},
-        {"id": 6, "filename": "project-6.html", "title": "Netflix E-Shopping UX Case Study — Gokul S Kaimal", "has_sidebar": False},
-        {"id": 7, "filename": "project-7.html", "title": "TimeSync UX Case Study — Gokul S Kaimal", "has_sidebar": False},
-        {"id": 8, "filename": "project-8.html", "title": "Fashion Factory UI Design Showcase — Gokul S Kaimal", "has_sidebar": False},
-        {"id": 9, "filename": "project-9.html", "title": "Designergram | Design Connect Unified Case Study — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderProject1", "sidebar_func": "renderProject1Sidebar", "filename": "yooki.html", "title": "Yooki: UPSC Conversational AI — Gokul S Kaimal", "has_sidebar": True},
+        {"func_name": "renderProject2", "sidebar_func": "renderProject2Sidebar", "filename": "cendrol.html", "title": "Cendrol: Operational Expense UX — Gokul S Kaimal", "has_sidebar": True},
+        {"func_name": "renderProject3", "sidebar_func": "renderProject3Sidebar", "filename": "bop.html", "title": "Bank of Palestine: KYC Simplification — Gokul S Kaimal", "has_sidebar": True},
+        {"func_name": "renderProject5", "sidebar_func": None, "filename": "project-5.html", "title": "Attendance Management UX Case Study — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderProject6", "sidebar_func": None, "filename": "project-6.html", "title": "Netflix E-Shopping UX Case Study — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderProject7", "sidebar_func": None, "filename": "project-7.html", "title": "TimeSync UX Case Study — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderProject8", "sidebar_func": None, "filename": "project-8.html", "title": "Fashion Factory UI Design Showcase — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderProject9", "sidebar_func": None, "filename": "project-9.html", "title": "Designergram | Design Connect Unified Case Study — Gokul S Kaimal", "has_sidebar": False},
+        {"func_name": "renderBrandStack", "sidebar_func": None, "filename": "brand-stack.html", "title": "Brand Stack — Gokul S Kaimal", "has_sidebar": False},
     ]
     
     for p in projects:
-        p_id = p["id"]
-        # Extract main body
-        body_func = f"renderProject{p_id}"
+        body_func = p["func_name"]
         body_html = extract_template_literal(views_content, body_func)
         if not body_html:
-            print(f"Failed to extract body for project {p_id}")
+            print(f"Failed to extract body for {body_func}")
             continue
             
         # Clean up some specific project 3 interpolations if present
-        if p_id == 3:
+        if body_func == "renderProject3":
             # Replace digit loop mapping
             bop_digits = ""
             for i in range(1, 7):
@@ -105,10 +104,10 @@ def build_pages():
             
         # Prepare sidebar
         if p["has_sidebar"]:
-            sidebar_func = f"renderProject{p_id}Sidebar"
+            sidebar_func = p["sidebar_func"]
             sidebar_html = extract_template_literal(views_content, sidebar_func)
             if not sidebar_html:
-                print(f"Failed to extract sidebar for project {p_id}")
+                print(f"Failed to extract sidebar for {sidebar_func}")
                 continue
             # Replace interpolation
             sidebar_html = sidebar_html.replace("${sidebarActionGrid}", sidebar_action_grid)
@@ -120,12 +119,6 @@ def build_pages():
         page_html = re.sub(r"<title>.*?</title>", f"<title>{p['title']}</title>", index_template)
         
         # 2. Main content view replacement
-        # Find <div id="app-view" class="view-transition-container">...</div>
-        # Note: index.html has:
-        #       <!-- Dynamic Page View Container -->
-        #       <div id="app-view" class="view-transition-container">
-        #         <!-- Rendered view content will be injected here -->
-        #       </div>
         target_view = """      <div id="app-view" class="view-transition-container">
         <!-- Rendered view content will be injected here -->
       </div>"""
@@ -138,17 +131,6 @@ def build_pages():
         
         # 3. Sidebar replacement
         if p["has_sidebar"]:
-            # Default sidebar needs to be hidden, project sidebar needs to be shown
-            # Template has:
-            #     <aside class="sidebar" role="complementary">
-            #       <div id="sidebar-default" style="display: flex; flex-direction: column; height: 100%; width: 100%; gap: 1.5rem;">
-            #          ...
-            #       </div>
-            #       
-            #       <!-- Project Sidebar Content (Injected dynamically) -->
-            #       <div id="sidebar-project" class="hidden" style="display: none; flex-direction: column; height: 100%; width: 100%; justify-content: space-between;"></div>
-            #     </aside>
-            
             # Let's find the aside block
             aside_start = page_html.find('<aside class="sidebar"')
             if aside_start != -1:
@@ -167,11 +149,7 @@ def build_pages():
             # Default sidebar remains, project sidebar hidden. No changes needed to aside block.
             pass
             
-        # 4. We want to remove the preloader so it doesn't wait/animate for static crawlers
-        # We can either keep it or remove it. For a crawler, it's better if it doesn't block layout or rendering, 
-        # but wait, the preloader in index.html is styled with CSS. Crawlers ignore CSS display/opacity transitions.
-        # But wait! To make it render instantly, we can add a style to the head to hide preloader on these static pages.
-        # Let's inject a small CSS snippet right before </head> to hide preloader and show app-shell immediately.
+        # 4. Hide preloader and show app-shell immediately for instant static load
         preloader_override = """
   <style>
     .preloader { display: none !important; }
