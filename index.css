@@ -6520,14 +6520,9 @@ html.dark .cert-status {
   flex-direction: column;
   gap: var(--spacing-md);
 }
-.grid-top-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-md);
-}
 .grid-bottom-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-md);
 }
 

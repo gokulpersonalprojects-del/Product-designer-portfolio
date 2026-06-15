@@ -4177,79 +4177,31 @@ export function renderBrandStack() {
 
           <!-- Right Column -->
           <div class="grid-right-col">
-            <!-- Top Row (2 Cards) -->
-            <div class="grid-top-row">
-              <!-- Card 2 -->
-              <div class="video-project-card" tabindex="0">
-                <div class="video-container">
-                  <video muted playsinline loop preload="metadata">
-                    <source src="./fluteboxers_promo.mp4" type="video/mp4">
-                  </video>
-                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
-                </div>
-                <div class="video-project-info">
-                  <div class="video-card-meta">
-                    <span class="video-tag font-mono">SOUND DESIGN / BEAT</span>
-                  </div>
-                  <h3 class="video-card-title font-serif">THE GENESIS &amp; @KCM.MP4</h3>
-                  <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">High-energy edit with dynamic beat sync and custom sound design.</p>
-                  <div class="video-card-footer">
-                    <span class="video-views font-mono">2.1M VIEWS</span>
-                    <span class="arrow-icon-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                    </span>
-                  </div>
-                </div>
+            <!-- Card 2 -->
+            <div class="video-project-card" tabindex="0">
+              <div class="video-container">
+                <video muted playsinline loop preload="metadata">
+                  <source src="./fluteboxers_promo.mp4" type="video/mp4">
+                </video>
+                <div class="play-indicator font-mono">HOVER TO PLAY</div>
               </div>
-
-              <!-- Card 3 -->
-              <div class="video-project-card" tabindex="0">
-                <div class="video-container">
-                  <video muted playsinline loop preload="metadata">
-                    <source src="./cendrol_video3.mp4" type="video/mp4">
-                  </video>
-                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
+              <div class="video-project-info">
+                <div class="video-card-meta">
+                  <span class="video-tag font-mono">SOUND DESIGN / BEAT</span>
                 </div>
-                <div class="video-project-info">
-                  <div class="video-card-meta">
-                    <span class="video-tag font-mono">CINEMATIC / COLOR</span>
-                  </div>
-                  <h3 class="video-card-title font-serif">LUXURY RETAIL CAMPAIGN</h3>
-                  <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">Cinematic brand edit with rich grading and refined transitions.</p>
-                  <div class="video-card-footer">
-                    <span class="video-views font-mono">2.2M VIEWS</span>
-                    <span class="arrow-icon-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                    </span>
-                  </div>
+                <h3 class="video-card-title font-serif">THE GENESIS &amp; @KCM.MP4</h3>
+                <p class="video-card-desc font-sans" style="margin-top: 0.2rem;">High-energy edit with dynamic beat sync and custom sound design.</p>
+                <div class="video-card-footer">
+                  <span class="video-views font-mono">2.1M VIEWS</span>
+                  <span class="arrow-icon-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </span>
                 </div>
               </div>
             </div>
 
-            <!-- Bottom Row (3 Cards) -->
+            <!-- Bottom Row (2 Cards) -->
             <div class="grid-bottom-row">
-              <!-- Card 4 -->
-              <div class="video-project-card short-card" tabindex="0">
-                <div class="video-container">
-                  <video muted playsinline loop preload="metadata">
-                    <source src="./cendrol_video4.mp4" type="video/mp4">
-                  </video>
-                  <div class="play-indicator font-mono">HOVER TO PLAY</div>
-                </div>
-                <div class="video-project-info">
-                  <div class="video-card-meta">
-                    <span class="video-tag font-mono">NARRATIVE / TEASER</span>
-                  </div>
-                  <h3 class="video-card-title font-serif" style="font-size: 1.05rem;">VAIDURYA CINEMATIC TEASER</h3>
-                  <div class="video-card-footer" style="padding-top: 0.25rem;">
-                    <span class="video-views font-mono">900K VIEWS</span>
-                    <span class="arrow-icon-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
               <!-- Card 5 -->
               <div class="video-project-card short-card" tabindex="0">
                 <div class="video-container">
