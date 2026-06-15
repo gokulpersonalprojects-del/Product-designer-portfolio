@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cendrol: Operational Expense UX — Gokul S Kaimal</title>
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Gokul S Kaimal is a Product Designer with 3+ years of experience crafting AI-driven digital products across B2B, B2C, and C2C models. Case studies include Yooki (AI Learning), Cendrol (FinTech), and Bank of Palestine (KYC Redesign).">
+  <meta name="keywords" content="Product Designer, UX Designer, Interaction Design, AI Products, Yooki, Cendrol, Bank of Palestine, KYC, Kerala, India, Portfolio, Gokul Kaimal">
+  <meta name="author" content="Gokul S Kaimal">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://design.gokulsk.co.in/">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, ChatGPT link previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gokul S Kaimal Portfolio">
+  <meta property="og:url" content="https://design.gokulsk.co.in/">
+  <meta property="og:title" content="Gokul S Kaimal — Product Designer">
+  <meta property="og:description" content="Product Designer crafting AI interaction systems, fintech workflows, and identity-verification experiences. 3+ years across B2B, B2C &amp; C2C products.">
+  <meta property="og:image" content="https://design.gokulsk.co.in/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gokulskaimal">
+  <meta name="twitter:title" content="Gokul S Kaimal — Product Designer">
+  <meta name="twitter:description" content="Product Designer crafting AI interaction systems, fintech workflows, and identity-verification experiences.">
+  <meta name="twitter:image" content="https://design.gokulsk.co.in/og-cover.png">
+
+  <!-- JSON-LD Structured Data (readable by Google, ChatGPT, AI scrapers) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gokul S Kaimal",
+    "jobTitle": "Product Designer",
+    "description": "Product Designer with 3+ years of experience designing AI learning systems, fintech workflows, and mobile banking experiences across B2B, B2C, and C2C models.",
+    "url": "https://design.gokulsk.co.in/",
+    "email": "gokulskaimal@gmail.com",
+    "image": "https://design.gokulsk.co.in/og-cover.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/"
+    ],
+    "knowsAbout": [
+      "Product Design",
+      "UX Research",
+      "Interaction Design",
+      "AI Systems Design",
+      "Design Systems",
+      "Figma",
+      "Usability Testing",
+      "Information Architecture",
+      "Brand Design"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Product Designer",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "Yooki — AI Learning System for UPSC",
+        "description": "Designed an AI-powered adaptive learning platform for UPSC aspirants using syllabus mapping, interactive prototypes, and Maze usability testing. Role: Product Designer. Duration: 6 months.",
+        "url": "https://design.gokulsk.co.in/#/project-1"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Cendrol — Expense Workflow for Field Engineers",
+        "description": "Streamlined invoice submission and reimbursement workflows for field engineers in a construction FinTech company. Role: Lead Product Researcher & Designer. Duration: 3 months.",
+        "url": "https://design.gokulsk.co.in/#/project-2"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Bank of Palestine — Remote KYC Redesign",
+        "description": "Redesigned the remote identity verification (KYC) flow for Bank of Palestine's mobile banking app using progressive disclosure and biometric liveness checks. Role: UX Designer. Duration: 4 months.",
+        "url": "https://design.gokulsk.co.in/#/project-3"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    .preloader { display: none !important; }
+    .app-shell { opacity: 1 !important; visibility: visible !important; }
+    .sidebar { transform: none !important; opacity: 1 !important; }
+    .main-content { transform: none !important; opacity: 1 !important; }
+  </style>
+</head>
+<body>
+  
+  <!-- Theme spreading overlay -->
+  <div id="theme-overlay" class="theme-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" class="preloader" aria-live="polite" aria-label="Loading portfolio">
+    <div class="preloader-inner">
+
+      <!-- Logo mark — large morph animation -->
+      <div class="preloader-logo-wrap" id="preloader-logo">
+        <div class="preloader-logo">
+          <span class="pl-text-main">G</span>
+          <span class="pl-mark">
+            <img src="./prehistoric_rock.png" class="pl-rock" alt="" />
+            <img src="./sports_tyre.png" class="pl-tyre" alt="" />
+          </span>
+          <span class="pl-text-main">kul <span class="pl-text-serif">S</span> Kaimal<span class="pl-dot">.</span></span>
+        </div>
+      </div>
+
+      <!-- Quote — word-by-word reveal -->
+      <p class="preloader-quote" id="preloader-quote" aria-label="Design quote"></p>
+
+      <!-- Designed for — animated client logos -->
+      <div class="preloader-designed-for" id="preloader-designed-for">
+        <span class="designed-for-label">Designed for</span>
+        <div class="designed-for-logos">
+          <div class="logo-item"><img src="./logo_cendrol.png" alt="Cendrol" /></div>
+          <div class="logo-item"><img src="./logo_yooki.png" alt="Yooki" /></div>
+          <div class="logo-item"><img src="./logo_bop.png" alt="Bank of Palestine" /></div>
+          <div class="logo-item"><img src="./logo_mahalekshmi.png" alt="Mahalekshmi Silks" /></div>
+          <div class="logo-item logo-square"><img src="./logo_bento.png" alt="Bento" /></div>
+        </div>
+      </div>
+
+      <!-- Thin progress bar -->
+      <div class="preloader-progress" aria-hidden="true">
+        <div class="preloader-progress-fill" id="preloader-bar"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ==================== /PRELOADER ==================== -->
+
+  <!-- Main App Shell wrapper -->
+  <div class="app-shell">
+    
+    <!-- Sidebar column (Sticky on Desktop) -->
+    <aside class="sidebar" role="complementary">
+      <div id="sidebar-default" class="hidden" style="display: none; flex-direction: column; height: 100%; width: 100%; gap: 1.5rem;">
+      </div>
+      <div id="sidebar-project" style="display: flex; flex-direction: column; height: 100%; width: 100%; justify-content: space-between;">
+
+    <!-- Header Row -->
+    <div class="sidebar-header-row">
+      <a href="#/" class="logo-link" aria-label="Gokul S Kaimal Home">
+        <span class="logo-gsk">GSK<span class="logo-orange-dot">.</span></span>
+      </a>
+      <div class="availability-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-text font-mono">Available for opportunities</span>
+      </div>
+    </div>
+
+    <!-- Project Identity Block -->
+    <div class="proj-sidebar-identity sidebar-fade-in">
+      <div class="designer-title-row">
+        <span class="designer-title-line"></span>
+        <span class="designer-title-text font-mono">CENDROL / 2023</span>
+      </div>
+      <h2 class="proj-sidebar-title font-sans">
+        Cendrol: Streamlining expense workflows for field engineers
+      </h2>
+      <p class="proj-sidebar-desc font-sans">
+        Field operations require real-time clarity. Legacy invoice submissions delay reimbursement and stall project timelines.
+      </p>
+      <a href="https://gokulux.framer.website/project-2" target="_blank" rel="noopener" class="project-sidebar-btn project-2-btn">
+        more about company <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
+      </a>
+    </div>
+
+    <!-- Specs as Background-Card List -->
+    <div class="sidebar-background-card sidebar-fade-in">
+      <span class="background-card-title font-mono">PROJECT SPECS</span>
+      <div class="background-list-items">
+        <!-- Role -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Role</span>
+            <span class="bg-item-value font-sans">Lead Product Researcher &amp; Designer</span>
+          </div>
+        </div>
+        <!-- Timeline -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Timeline</span>
+            <span class="bg-item-value font-sans">3 Months (2023)</span>
+          </div>
+        </div>
+        <!-- Context -->
+        <div class="bg-list-item">
+          <div class="bg-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="bg-item-content">
+            <span class="bg-item-label font-sans">Context</span>
+            <span class="bg-item-value font-sans">Field Operations <span class="bullet-sep">•</span> Construction FinTech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branded CTA Card -->
+    
+      <!-- Branded CTA Footer Card (matches homepage style) -->
+      <div class="sidebar-cta-card">
+        <div class="cta-card-header">
+          <h3 class="cta-card-title font-sans">Let's build impactful <span class="highlight-text-orange">experiences.</span></h3>
+          <p class="cta-card-desc font-sans">I'm currently open to full-time opportunities where design and technology create real impact.</p>
+        </div>
+        <div class="cta-buttons-grid">
+          <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" class="cta-action-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span class="cta-btn-label font-mono">LinkedIn</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="cta-action-btn" target="_blank" rel="noopener" aria-label="View Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span class="cta-btn-label font-mono">View Resume</span>
+          </a>
+          <button type="button" class="cta-action-btn" data-email-open aria-label="Contact Me">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span class="cta-btn-label font-mono">Contact Me</span>
+          </button>
+        </div>
+      </div>
+
+  
+      </div>
+    </aside>
+
+
+    <!-- Main scrollable column -->
+    <main class="main-content" id="main-content" tabindex="-1">
+      
+      <!-- Sticky Navigation Header -->
+      <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#/" class="nav-link" id="nav-home">Home</a></li>
+            <li><a href="#/work" class="nav-link" id="nav-work">Work</a></li>
+            <li><a href="#/about" class="nav-link" id="nav-about">About</a></li>
+            <li><a href="#/ai-workshop" class="nav-link" id="nav-workshop">AI Workshop</a></li>
+            <li><a href="#/brand-stack" class="nav-link" id="nav-brand-stack">Brand Stack</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Dynamic Page View Container -->
+      <div id="app-view" class="view-transition-container">
+
+    <article class="project-detail">
+      <header class="project-header stagger-el stagger-delay-1">
+        <span class="label font-mono project-tag" style="color: var(--color-brand)">FIELD OPERATIONS / WORKFLOW DESIGN</span>
+        <h1 class="project-headline font-serif">Cendrol: Streamlining expense workflows for field engineers</h1>
+      </header>
+
+      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; border-bottom: none; margin-bottom: 1rem; padding-bottom: 0;">
+        <p class="project-intro-text" style="max-width: 800px;">
+          Cendrol Construct manages distributed on-site building operations. Site engineers submit hundreds of expense claims weekly for local materials. The existing workflow was chaotic, filled with illegible receipts, missing invoices, and prolonged approval lag that stalled site work.
+        </p>
+      </div>
+
+      <div class="project-body stagger-el stagger-delay-3">
+        
+        <!-- The Legacy Chaos Sticky Scroll Section -->
+        <section class="cendrol-scroll-section">
+          <div class="cendrol-scroll-sticky">
+            <!-- Left Side: Sticky Visuals Card -->
+            <div class="cendrol-visuals-container">
+              <div class="cendrol-visual-item active">
+                <img src="./cendrol_c1.png" alt="Frame 1: Engineer spends money" loading="eager">
+              </div>
+              <div class="cendrol-visual-item">
+                <img src="./cendrol_c2.png" alt="Frame 2: Receipts pile up" loading="lazy">
+              </div>
+              <div class="cendrol-visual-item">
+                <img src="./cendrol_c3.png" alt="Frame 3: Submission becomes confusing" loading="lazy">
+              </div>
+              <div class="cendrol-visual-item">
+                <img src="./cendrol_c4.png" alt="Frame 4: Finance team struggles" loading="lazy">
+              </div>
+              <div class="cendrol-visual-item">
+                <img src="./cendrol_c5.png" alt="Frame 5: Reimbursement gets delayed" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Scrolling Narrative Steps -->
+          <div class="cendrol-narrative-container">
+            <div class="cendrol-narrative-step active">
+              <span class="cendrol-step-badge">STAGE 01 / THE SPEND</span>
+              <h3 class="cendrol-step-title">Engineer spends money</h3>
+              <p class="cendrol-step-desc">Site engineers purchase local construction materials directly in the field to prevent project delays.</p>
+            </div>
+            <div class="cendrol-narrative-step">
+              <span class="cendrol-step-badge">STAGE 02 / THE ACCUMULATION</span>
+              <h3 class="cendrol-step-title">Receipts pile up</h3>
+              <p class="cendrol-step-desc">Dozens of paper receipts and handwritten merchant invoices build up rapidly throughout the week.</p>
+            </div>
+            <div class="cendrol-narrative-step">
+              <span class="cendrol-step-badge">STAGE 03 / THE SUBMISSION</span>
+              <h3 class="cendrol-step-title">Submission becomes confusing</h3>
+              <p class="cendrol-step-desc">Sharing low-quality, blurry receipt captures over chat channels results in lost records and details.</p>
+            </div>
+            <div class="cendrol-narrative-step">
+              <span class="cendrol-step-badge">STAGE 04 / THE RECONCILIATION</span>
+              <h3 class="cendrol-step-title">Finance team struggles</h3>
+              <p class="cendrol-step-desc">The central billing team manually cross-checks, validates, and key-enters details from fragmented sources.</p>
+            </div>
+            <div class="cendrol-narrative-step">
+              <span class="cendrol-step-badge">STAGE 05 / THE DELAY</span>
+              <h3 class="cendrol-step-title">Reimbursement gets delayed</h3>
+              <p class="cendrol-step-desc">Prolonged validation cycles and manual processing bottlenecks leave site engineers waiting weeks for refunds.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Design Reality Check / Operating Environment Section -->
+        <section class="body-chapter stagger-el" style="border-top: 1px solid var(--border-color); padding-top: 3.5rem; margin-top: 0; margin-bottom: 2.5rem;">
+          <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.08em;">/ OPERATING ENVIRONMENT</span>
+          <h2 class="chapter-title font-serif" style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1rem;">Design Reality Check</h2>
+          <p class="chapter-desc" style="max-width: 640px; margin-bottom: 2.5rem;">
+            Designing for construction operations required shifting from clean laboratory assumptions to the messy, high-friction reality of on-site building environments. We had to design around six unyielding operational constraints:
+          </p>
+
+          <div class="cendrol-reality-grid">
+            <!-- Constraint 1: Connectivity -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_network_offline.png" alt="Inconsistent Connectivity" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">01 / CONNECTIVITY</div>
+                <h3 class="reality-card-title font-serif">Dust &amp; Dead Zones</h3>
+                <p class="reality-card-desc">Engineers operated across 50+ remote construction sites with highly inconsistent internet connectivity. Offline-first resilience was a functional mandate.</p>
+              </div>
+            </div>
+
+            <!-- Constraint 2: Approval Stakeholders -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_approval_chain.png" alt="Stakeholder Approvals" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">02 / STAKEHOLDERS</div>
+                <h3 class="reality-card-title font-serif">Departmental Matrix</h3>
+                <p class="reality-card-desc">Expense approvals spanned site managers, central billing desk audits, and CFO sign-offs. The design needed to coordinate multi-departmental approvals.</p>
+              </div>
+            </div>
+
+            <!-- Constraint 3: Legacy Processes -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_legacy_paperwork.png" alt="Legacy Paperwork" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">03 / LEGACY FLOWS</div>
+                <h3 class="reality-card-title font-serif">Paperwork &amp; Chats</h3>
+                <p class="reality-card-desc">Site operations were heavily reliant on physical receipts, handwritten invoices, and messy WhatsApp threads. Reconstructing this required capturing unstructured data.</p>
+              </div>
+            </div>
+
+            <!-- Constraint 4: Digital Literacy -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_digital_literacy.png" alt="Digital Literacy" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">04 / LITERACY</div>
+                <h3 class="reality-card-title font-serif">Varying Skill Levels</h3>
+                <p class="reality-card-desc">On-site engineers had diverse technical backgrounds. The interface required ultra-simple capture states, large buttons, and high-visibility guides.</p>
+              </div>
+            </div>
+
+            <!-- Constraint 5: System Integration -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_system_integration.png" alt="System Integration" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">05 / INTEGRATION</div>
+                <h3 class="reality-card-title font-serif">Legacy ERP Bindings</h3>
+                <p class="reality-card-desc">All expense claims had to flow directly into the company's pre-existing ERP and accounting database systems, maintaining operational consistency.</p>
+              </div>
+            </div>
+
+            <!-- Constraint 6: Timelines & Resources -->
+            <div class="cendrol-reality-card">
+              <div class="reality-card-media">
+                <img src="./cendrol_limited_timeline.png" alt="Timelines & Resources" loading="lazy">
+              </div>
+              <div class="reality-card-content">
+                <div class="reality-card-badge font-mono">06 / TIMELINES</div>
+                <h3 class="reality-card-title font-serif">3-Month Launch Window</h3>
+                <p class="reality-card-desc">With limited developer hours and a tight 3-month release timeline, design concepts had to prioritize high-leverage UX patterns that were quick to build.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solution Path Section Wrapper -->
+        <div class="solution-path-section">
+          <!-- Solution Path Tabs -->
+          <div class="solution-path-container">
+            <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.05em;">/ THE SOLUTION PATH</span>
+            <div class="solution-tabs">
+              <button class="solution-tab-btn active" data-chapter="1">
+                <span class="tab-num">CHAPTER 01</span>
+                <span class="tab-title">Simplifying expense tracking</span>
+              </button>
+              <button class="solution-tab-btn" data-chapter="2">
+                <span class="tab-num">CHAPTER 02</span>
+                <span class="tab-title">Creating clearer reimbursement workflows</span>
+              </button>
+              <button class="solution-tab-btn" data-chapter="3">
+                <span class="tab-num">CHAPTER 03</span>
+                <span class="tab-title">Designing for faster operational clarity</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solution Chapters -->
+          <div class="solution-chapters-container">
+            <!-- Chapter 1 -->
+            <div class="solution-chapter-content active" data-chapter-content="1">
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 1</span>
+                <h2 class="chapter-title font-serif">Simplifying expense tracking</h2>
+                
+                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Making submissions easier to manage</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    Expense submissions were spread across multiple stages, making tracking difficult during active site operations. The experience was redesigned to simplify submission flows and reduce operational friction during reimbursement requests.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+                <div class="chapter-sub-section" style="margin-top: 2.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Designing for admin-side tracking and approvals</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    Managing reimbursements across distributed project sites often felt fragmented. The redesigned experience surfaced approval progress, reimbursement status, and pending actions more clearly.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+                <div class="chapter-sub-section" style="margin-top: 2.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Improving reimbursement visibility</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    Engineers often struggled to understand approval status after submitting expenses. The system introduced clearer reimbursement states and approval visibility across the workflow.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video3.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+                <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 2.5rem;">
+                  “Engineers struggled to track where reimbursements were getting delayed.”
+                  <span class="quote-author">— Founder (Pooja Seth)</span>
+                </div>
+              </section>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="solution-chapter-content" data-chapter-content="2">
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 2</span>
+                <h2 class="chapter-title font-serif">Creating clearer reimbursement workflows</h2>
+
+                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Reducing confusion across approval stages</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    The earlier workflow lacked clear progression between submission, approval, and reimbursement stages. We introduced structured workflow states that helped engineers understand where requests stood within the process.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video4.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+                <!-- Interactive Sandbox state flow timeline widget -->
+                <div class="interactive-flow-sandbox" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
+                  <span class="font-mono label" style="font-size: 0.65rem;">INTERACTIVE SANDBOX: STATE TIMELINE</span>
+                  <div class="state-flow-sandbox" id="state-sandbox">
+                    <div class="state-step active" data-step="1">Submitted</div>
+                    <div class="state-step" data-step="2">Audited</div>
+                    <div class="state-step" data-step="3">Approved</div>
+                    <div class="state-step" data-step="4">Reimbursed</div>
+                  </div>
+                  <p id="state-status-msg" class="font-mono" style="font-size: 0.825rem; margin-top: 1.25rem; color: var(--color-brand); text-align: center;">
+                    Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.
+                  </p>
+                </div>
+
+                <div class="chapter-sub-section" style="margin-top: 2.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Making reimbursement progress easier to follow</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    Managing reimbursements across distributed project sites often felt fragmented. The redesigned experience surfaced approval progress, reimbursement status, and pending actions more clearly.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video5.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+
+                <div class="user-quote-callout" style="border-left: 4px solid var(--color-accent); margin-top: 2.5rem;">
+                  "but when we can't read the amount or the vendor name, what can we do?"
+                  <span class="quote-author">— Site Engineer feedback after beta testing</span>
+                </div>
+              </section>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="solution-chapter-content" data-chapter-content="3">
+              <section class="body-chapter" style="padding-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 3</span>
+                <h2 class="chapter-title font-serif">Designing for faster operational clarity</h2>
+
+                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
+                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Improving usability across distributed operations</h3>
+                  <p class="chapter-desc" style="margin-top: 0.5rem;">
+                    The experience was designed to support quicker tracking, easier navigation, and reduced workflow friction across operational environments. Clearer layouts, status visibility, and structured interaction patterns improved scannability during day-to-day operations.
+                  </p>
+                  <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+                      <source src="./cendrol_video6.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion Section -->
+        <section class="body-chapter stagger-el" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 0; margin-bottom: 1.5rem;">
+          <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.08em;">/ CONCLUSION</span>
+          <p class="chapter-desc" style="margin-top: 0.75rem; margin-bottom: 2.5rem; max-width: 600px;">
+            The Cendrol expense claims redesign successfully transformed a slow, chaotic accounting loop into a streamlined, high-efficiency operational tool.
+          </p>
+
+          <!-- Insight Cards Grid -->
+          <div class="cendrol-reality-grid">
+
+            <!-- Card 1 -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); overflow: hidden; display: flex; flex-direction: column;" class="conclusion-card-hover">
+              <div style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="./cendrol_conclusion_offline.png" alt="Offline Resilience" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; justify-content: center;">
+                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">01 / OFFLINE RESILIENCE</span>
+                <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--color-brand); line-height: 1.35; font-family: var(--font-serif);">Offline-first is a functional mandate.</p>
+                <p style="margin: 0; font-size: 0.825rem; color: var(--text-secondary); line-height: 1.55;">Local caching and database synchronization allowed supervisors to capture expenses instantly in network dead zones, batch-uploading queue files once back online.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); overflow: hidden; display: flex; flex-direction: column;" class="conclusion-card-hover">
+              <div style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="./cendrol_conclusion_literacy.png" alt="Accessible Interface" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; justify-content: center;">
+                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">02 / ACCESSIBILITY</span>
+                <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--color-brand); line-height: 1.35; font-family: var(--font-serif);">Design for low literacy and high stress.</p>
+                <p style="margin: 0; font-size: 0.825rem; color: var(--text-secondary); line-height: 1.55;">Replacing dense text fields with prominent visual camera triggers, guided outlines, and automated receipt OCR scans enabled frictionless use with minimal training.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); overflow: hidden; display: flex; flex-direction: column;" class="conclusion-card-hover">
+              <div style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="./cendrol_conclusion_approval.png" alt="Timeline Transparency" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; justify-content: center;">
+                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">03 / TRANSPARENCY</span>
+                <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--color-brand); line-height: 1.35; font-family: var(--font-serif);">Transparent workflows eliminate communication lag.</p>
+                <p style="margin: 0; font-size: 0.825rem; color: var(--text-secondary); line-height: 1.55;">Exposing real-time tracking states stopped repetitive status inquiries via calls and chats, reducing friction between central accounting and on-site crews.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); overflow: hidden; display: flex; flex-direction: column;" class="conclusion-card-hover">
+              <div style="width: 100%; height: 160px; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="./cendrol_conclusion_integration.png" alt="ERP Integration" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+              <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; justify-content: center;">
+                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">04 / SYSTEM INTEGRATION</span>
+                <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--color-brand); line-height: 1.35; font-family: var(--font-serif);">Preserve downstream developer habits.</p>
+                <p style="margin: 0; font-size: 0.825rem; color: var(--text-secondary); line-height: 1.55;">Seamless integration with the company's legacy ERP dashboard prevented database fragmentation, ensuring rapid adoption by accounting teams.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card 5 - Full width -->
+          <div style="margin-top: 1.5rem; padding: 1.75rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%); border: 1px solid var(--color-brand); border-radius: var(--border-radius-lg); display: flex; gap: 1.5rem; align-items: flex-start;">
+            <span style="font-size: 1.8rem; line-height: 1; flex-shrink: 0; margin-top: 0.15rem;">📈</span>
+            <div>
+              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); letter-spacing: 0.08em;">05 / OUTCOMES</span>
+              <p style="margin: 0.4rem 0 0.5rem; font-size: 0.97rem; font-weight: 600; color: var(--color-brand); line-height: 1.45;">Scaling operational throughput across regions.</p>
+              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">Relieving receipt reconciliation overhead and workflow lag allowed Cendrol to shrink operational expense processing cycles from 18 days to 3 days, reducing inventory delays by 60%.</p>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </article>
+  
+      </div>
+      
+      <!-- Footer contact section -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+          <span class="font-mono label">GET IN TOUCH</span>
+          <h2 class="footer-title font-serif">Let's build something complex yet simple.</h2>
+          <p class="footer-copy font-mono">&copy; 2026 Gokul S Kaimal. Made in Kerala.</p>
+        </div>
+      </footer>
+      
+    </main>
+  </div>
+
+  <!-- Floating Dark Mode Toggle Switcher -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme">
+    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
+  <div id="phone-popup" class="phone-popup" role="dialog" aria-modal="true" aria-labelledby="phone-popup-title" aria-hidden="true">
+    <div class="phone-popup-backdrop" data-phone-close></div>
+    <div class="phone-popup-panel" role="document">
+      <button type="button" class="phone-popup-close" data-phone-close aria-label="Close phone popup">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <span class="phone-popup-kicker font-mono">DIRECT CONTACT</span>
+      <h2 id="phone-popup-title" class="phone-popup-title font-serif">Phone number</h2>
+      <p class="phone-popup-number font-mono">+91 6238933002</p>
+      <a href="tel:+916238933002" class="phone-popup-call font-mono">Call now</a>
+    </div>
+  </div>
+
+  <div id="email-popup" class="email-popup" role="dialog" aria-modal="true" aria-labelledby="email-popup-title" aria-hidden="true">
+    <div class="email-popup-backdrop" data-email-close></div>
+    <div class="email-popup-panel" role="document">
+      <button type="button" class="email-popup-close" data-email-close aria-label="Close email popup">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <span class="email-popup-kicker font-mono">EMAIL CONTACT</span>
+      <h2 id="email-popup-title" class="email-popup-title font-serif" style="font-size: 1.45rem; line-height: 1.25; margin-bottom: 0.85rem;">spark a conversation to start something meaninglful NOW</h2>
+      <p class="email-popup-address font-mono" style="user-select: all; background: var(--bg-secondary); padding: 0.6rem; border-radius: 8px; border: 1px dashed var(--border-color); text-align: center; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; letter-spacing: 0.04em;">gokulskcmadom@gmail.com</p>
+      <button type="button" class="email-popup-copy-btn font-mono" id="email-copy-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <span style="vertical-align: middle; margin-left: 4px;">Copy email</span>
+      </button>
+      <p class="email-popup-caption font-mono" style="margin-top: 0.6rem; font-size: 0.625rem; color: var(--text-muted); text-align: center;">click the button to copy me email id</p>
+    </div>
+  </div>
+
+  <!-- Fallback content for crawlers, AI tools, and users with JS disabled -->
+  <noscript>
+    <style>
+      .noscript-fallback { font-family: system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 2rem; line-height: 1.6; color: #111; }
+      .noscript-fallback h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+      .noscript-fallback h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.4rem; }
+      .noscript-fallback a { color: #e05a00; }
+      .noscript-fallback ul { padding-left: 1.25rem; }
+      .noscript-fallback li { margin-bottom: 0.5rem; }
+    </style>
+    <div class="noscript-fallback">
+      <h1>Gokul S Kaimal — Product Designer</h1>
+      <p>Product Designer with 3+ years of experience crafting AI-driven digital products across B2B, B2C, and C2C models. I blend product thinking and brand storytelling to create meaningful, impactful user experiences.</p>
+      <p><strong>Contact:</strong> <a href="mailto:gokulskaimal@gmail.com">gokulskaimal@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" target="_blank">LinkedIn</a></p>
+
+      <h2>Case Studies</h2>
+      <ul>
+        <li>
+          <strong>Yooki — AI Learning System for UPSC</strong><br>
+          Designed an AI-powered adaptive learning platform for UPSC aspirants. Covers syllabus mapping, interactive prototypes, and usability testing via Maze.<br>
+          Role: Product Designer &nbsp;|&nbsp; Duration: 6 Months (2025)
+        </li>
+        <li>
+          <strong>Cendrol — Expense Workflow for Field Engineers</strong><br>
+          Streamlined invoice submission and reimbursement flows for field engineers at a construction FinTech company.<br>
+          Role: Lead Product Researcher &amp; Designer &nbsp;|&nbsp; Duration: 3 Months (2023)
+        </li>
+        <li>
+          <strong>Bank of Palestine — Remote KYC Redesign</strong><br>
+          Redesigned the remote identity verification (KYC) onboarding flow using progressive disclosure and biometric liveness checks. Led to ADGM IPA CAT1 regulatory approval.<br>
+          Role: UX Designer &nbsp;|&nbsp; Duration: 4 Months (2025)
+        </li>
+      </ul>
+
+      <h2>Skills &amp; Background</h2>
+      <ul>
+        <li>Product Design, Interaction Design, UX Research</li>
+        <li>AI Systems Design, Design Systems, Figma</li>
+        <li>Product + Brand Design background</li>
+        <li>Worked across B2B, B2C, and C2C business models</li>
+      </ul>
+
+      <h2>About</h2>
+      <p>From studying prehistoric rock art (the first human design system) to building intelligent digital systems — design has always been my way of making sense of the world. I'm currently open to full-time opportunities where design and technology create real impact.</p>
+
+      <p><a href="https://design.gokulsk.co.in/" style="font-weight:600;">Enable JavaScript to view the full interactive portfolio →</a></p>
+    </div>
+  </noscript>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="views.js"></script>
+  <script type="module" src="router.js"></script>
+  <script type="module" src="animation.js"></script>
+
+</body>
+</html>
