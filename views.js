@@ -164,7 +164,7 @@ export function renderWork() {
       <a href="#/project-1" class="project-row stagger-el stagger-delay-3" data-category="ai" aria-label="UPSC AI Case Study">
         <div class="project-meta-left">
           <span class="project-tag-pill font-mono">AI Systems</span>
-          <h3 class="project-row-title font-serif">Designing an AI Learning System for Navigating UPSC Complexity</h3>
+          <h3 class="project-row-title font-serif">Turning Yooki from a Backup Tool into a Daily Learning Companion</h3>
         </div>
         <div class="project-meta-right">
           <span>Interaction Design</span>
@@ -1895,10 +1895,10 @@ export function renderProject1Sidebar() {
         <span class="designer-title-text font-mono">YOOKI / 2025</span>
       </div>
       <h2 class="proj-sidebar-title font-sans">
-        Designing an AI Learning System for Navigating UPSC Complexity
+        Turning Yooki from a Backup Tool into a Daily Learning Companion
       </h2>
       <p class="proj-sidebar-desc font-sans">
-        Most competitive learning platforms still rely on static interfaces built around passive content consumption.
+        Redesigning a doubt-solving chatbot into an associative learning ecosystem that connects answers to syllabus, drives feature discovery, and builds daily study habits.
       </p>
       <a href="https://blog.askyooki.com/" target="_blank" rel="noopener" class="project-sidebar-btn project-1-btn">
         see what yooki is <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
