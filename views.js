@@ -26,8 +26,8 @@ export function renderHome() {
         </div>
         <div class="work-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem;">
           <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-accent);">AI INTERACTION DESIGN / CASE STUDY</span>
-          <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Designing Yooki: Doubt-Solving Chatbot to Daily Learning Companion</h3>
-          <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Redesigning a doubt-solving chatbot into an associative learning ecosystem, increasing feature discovery and encouraging UPSC aspirants to build daily learning habits.</p>
+          <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Turning Yooki from a Backup Tool into a Daily Learning Companion</h3>
+          <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Redesigning a doubt-solving chatbot into an associative learning ecosystem that connects answers to syllabus, drives feature discovery, and builds daily study habits.</p>
           
           <div class="card-metrics-row" style="margin-top: 0.25rem;">
             <div class="card-metric-item">
