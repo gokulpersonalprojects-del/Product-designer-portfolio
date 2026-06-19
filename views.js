@@ -1343,7 +1343,16 @@ export function renderProject3() {
         </div>
       </div>
 
-
+      <!-- PDF Link Section -->
+      <div class="bop-pdf-link-container stagger-el stagger-delay-2">
+        <a href="https://drive.google.com/file/d/1Mgmw6rmp3gLvQAerRXD4vjDMVxn5vQWk/view?usp=drive_link" 
+           target="_blank" 
+           rel="noopener" 
+           class="bop-pdf-link">
+          <span>Read Full Case Study PDF</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
 
       <!-- Core Statement Nudge -->
       <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
