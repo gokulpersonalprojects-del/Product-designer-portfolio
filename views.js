@@ -564,6 +564,45 @@ export function renderProject1() {
           </div>
         </section>
 
+        <!-- Understanding the Root Cause -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ ROOT CAUSE</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Understanding the Root Cause</h2>
+          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
+            While users were engaging with the chatbot, the problem wasn't a lack of information. The deeper issue was that users viewed Yooki as a transactional tool rather than a preparation platform.
+          </p>
+          <p class="chapter-desc" style="margin-bottom: 2rem;">
+            Through research and behavioral analysis, three underlying patterns emerged:
+          </p>
+
+          <!-- Three pattern cards -->
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">01</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Users preferred flexibility over rigid study structures</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">UPSC preparation often involves jumping between subjects, current affairs, revision, and practice tests. Users wanted support that adapted to their preparation style rather than forcing a predefined learning path.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">02</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Answers existed without context</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">While users received useful responses, they struggled to understand how topics connected to the syllabus, their preparation goals, or what they should learn next.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">03</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Preparation features lacked visibility at the right moment</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Important features such as syllabus tracking, progress monitoring, and study planning existed, but users rarely discovered them during their natural workflow.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Redesign Strategy -->
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono">/ REDESIGN STRATEGY</span>
