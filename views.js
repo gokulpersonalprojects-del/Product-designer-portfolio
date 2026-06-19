@@ -20,7 +20,7 @@ export function renderHome() {
       <article class="work-card col-span-2 stagger-el stagger-delay-2" data-project="yooki" onclick="window.location.hash='#/project-1'" role="link" tabindex="0" aria-label="View UPSC AI case study">
         <div class="work-card-media yooki" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden;">
           <div class="card-img-placeholder" style="background: none;">
-            <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
+            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
               <source data-src="./upsc_thumbnail.mp4" type="video/mp4">
             </video>
           </div>
@@ -80,7 +80,7 @@ export function renderHome() {
       <article class="work-card col-span-2 stagger-el stagger-delay-4" data-project="cendrol" onclick="window.location.hash='#/project-2'" role="link" tabindex="0" aria-label="View Cendrol case study">
         <div class="work-card-media cendrol" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden;">
           <div class="card-img-placeholder" style="background: none;">
-            <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
+            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
               <source data-src="./cendrol_thumbnail.mp4" type="video/mp4">
             </video>
           </div>
@@ -760,7 +760,7 @@ export function renderProject1() {
 
                 <!-- Chapter 1 Solution Path Video -->
                 <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-                  <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                     <source data-src="./yooki_chapter1.mp4?v=2" type="video/mp4">
                   </video>
                 </div>
@@ -845,7 +845,7 @@ export function renderProject1() {
 
                 <!-- Chapter 3 Solution Path Video -->
                 <div class="homepage-dashboard-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-                  <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                     <source data-src="./yooki_chapter3.mp4?v=2" type="video/mp4">
                   </video>
                 </div>
@@ -1123,7 +1123,7 @@ export function renderProject2() {
                     Expense submissions were spread across multiple stages, making tracking difficult during active site operations. The experience was redesigned to simplify submission flows and reduce operational friction during reimbursement requests.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video1.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -1135,7 +1135,7 @@ export function renderProject2() {
                     Managing reimbursements across distributed project sites often felt fragmented. The redesigned experience surfaced approval progress, reimbursement status, and pending actions more clearly.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video2.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -1147,7 +1147,7 @@ export function renderProject2() {
                     Engineers often struggled to understand approval status after submitting expenses. The system introduced clearer reimbursement states and approval visibility across the workflow.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video3.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -1172,7 +1172,7 @@ export function renderProject2() {
                     The earlier workflow lacked clear progression between submission, approval, and reimbursement stages. We introduced structured workflow states that helped engineers understand where requests stood within the process.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video4.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -1198,7 +1198,7 @@ export function renderProject2() {
                     Managing reimbursements across distributed project sites often felt fragmented. The redesigned experience surfaced approval progress, reimbursement status, and pending actions more clearly.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video5.mp4" type="video/mp4">
                     </video>
                   </div>
@@ -1223,7 +1223,7 @@ export function renderProject2() {
                     The experience was designed to support quicker tracking, easier navigation, and reduced workflow friction across operational environments. Clearer layouts, status visibility, and structured interaction patterns improved scannability during day-to-day operations.
                   </p>
                   <div class="project-media-wrapper" style="margin: 1.5rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                    <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
                       <source data-src="./cendrol_video6.mp4" type="video/mp4">
                     </video>
                   </div>
