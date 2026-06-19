@@ -761,7 +761,7 @@ export function renderProject1() {
                 <!-- Chapter 1 Solution Path Video -->
                 <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
                   <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./yooki_chapter1.mp4" type="video/mp4">
+                    <source data-src="./yooki_chapter1.mp4?v=2" type="video/mp4">
                   </video>
                 </div>
               </section>
@@ -846,7 +846,7 @@ export function renderProject1() {
                 <!-- Chapter 3 Solution Path Video -->
                 <div class="homepage-dashboard-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
                   <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./yooki_chapter3.mp4" type="video/mp4">
+                    <source data-src="./yooki_chapter3.mp4?v=2" type="video/mp4">
                   </video>
                 </div>
               </section>
