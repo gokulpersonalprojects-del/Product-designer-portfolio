@@ -1343,19 +1343,7 @@ export function renderProject3() {
         </div>
       </div>
 
-      <!-- Hero Video Walkthrough (Pinned at the beginning) -->
-      <section class="body-chapter stagger-el stagger-delay-2" style="padding-top: 0; margin-bottom: 3rem;">
-        <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000; box-shadow: var(--shadow-lg);">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/60vHCVEFNEg?rel=0&modestbranding=1&color=white"
-            title="Bank of Palestine — KYC Simplification Case Study"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-          ></iframe>
-        </div>
-      </section>
+
 
       <!-- Core Statement Nudge -->
       <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
@@ -1992,24 +1980,7 @@ export function renderProject3() {
           </div>
         </section>
 
-        <!-- Detailed Walkthrough Video (Pinned at the middle/end) -->
-        <section class="body-chapter" style="padding-top: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-color); margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ WALKTHROUGH DEMO</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Interactive Video Walkthrough</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            Watch the video walk-through below to see how the redesigned mobile onboarding process operates end-to-end, managing regulatory compliance checks seamlessly.
-          </p>
-          <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000; box-shadow: var(--shadow-md);">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/36uU3LF_if0?rel=0&modestbranding=1&color=white"
-              title="Bank of Palestine — KYC Detailed Walkthrough"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-            ></iframe>
-          </div>
-        </section>
+
 
         <!-- Validating the Solution -->
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
