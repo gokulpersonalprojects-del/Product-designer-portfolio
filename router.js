@@ -192,9 +192,25 @@ function triggerViewMount(path) {
 // Router Event Listeners
 window.addEventListener('hashchange', handleRouting);
 window.addEventListener('DOMContentLoaded', () => {
-  // If there's no hash on load, default to home page
+  // If there's no hash on load, map static page name to the correct route hash
   if (!window.location.hash) {
-    window.location.hash = '#/';
+    const pathMap = {
+      'yooki.html': '#/project-1',
+      'cendrol.html': '#/project-2',
+      'bop.html': '#/project-3',
+      'brand-stack.html': '#/brand-stack',
+      'project-5.html': '#/project-5',
+      'project-6.html': '#/project-6',
+      'project-7.html': '#/project-7',
+      'project-8.html': '#/project-8',
+      'project-9.html': '#/project-9'
+    };
+    const pathname = window.location.pathname.split('/').pop() || '';
+    if (pathMap[pathname]) {
+      window.location.hash = pathMap[pathname];
+    } else {
+      window.location.hash = '#/';
+    }
   } else {
     handleRouting();
   }
