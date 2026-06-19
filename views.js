@@ -1404,7 +1404,12 @@ export function renderProject3() {
                 <span>Compliance Hidden Inside the Journey</span>
               </summary>
               <div class="bop-accordion-content">
-                The onboarding flow combined multiple banking requirements into a single experience. Personal information, compliance questions, account preferences, and document uploads were presented as one continuous flow. From a customer's perspective, it was difficult to understand why certain information was being requested or which sections were legally required.
+                <p style="margin: 0 0 1rem 0;">
+                  The onboarding flow combined multiple banking requirements into a single experience. Personal information, compliance questions, account preferences, and document uploads were presented as one continuous flow. From a customer's perspective, it was difficult to understand why certain information was being requested or which sections were legally required.
+                </p>
+                <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); max-width: 500px; margin-top: 0.5rem;">
+                  <img src="./bop_compliance_hidden.jpg" alt="Compliance Hidden Inside the Journey Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+                </div>
               </div>
             </details>
             <details class="bop-accordion-item">
