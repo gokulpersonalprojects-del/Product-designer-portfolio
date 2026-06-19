@@ -1318,90 +1318,167 @@ export function renderProject3() {
     <article class="project-detail">
       <header class="project-header stagger-el stagger-delay-1">
         <span class="label font-mono project-tag" style="color: var(--color-bop)">MOBILE FINTECH / KYC REDESIGN</span>
-        <h1 class="project-headline font-serif">Bank of Palestine: Simplifying Complex KYC Process</h1>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 500;">Transforming a Branch-Assisted Process into a Guided Digital Experience</h1>
       </header>
 
-      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2.25rem;">
-        <div class="intro-context-grid">
-          
-          <div class="intro-context-card context-theme">
-            <div>
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">01 / THE CONTEXT</span>
-              <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Legacy Onboarding Friction</h3>
-            </div>
-            <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-              Opening a bank account remotely was historically blocked by compliance barriers, requiring customers to fill massive paper forms and make in-person branch visits.
-            </p>
-          </div>
+      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2rem; border-bottom: none; padding-bottom: 0;">
+        <p class="project-intro-text" style="max-width: 800px; font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+          Bank of Palestine aimed to make account opening more accessible by bringing a traditionally branch-assisted process into a customer-facing digital experience. However, onboarding a new customer in banking involves far more than collecting basic information. Identity verification, compliance checks, document validation, and security requirements all play a critical role in the process.
+        </p>
+      </div>
 
-          <div class="intro-context-card context-theme">
-            <div>
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">02 / THE COMPLIANCE CONSTRAINT</span>
-              <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Mandated Regulatory Audits</h3>
-            </div>
-            <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-              Palestinian Central Bank regulations require active identity checks against government registries, biometric liveness validation, and contact verification.
-            </p>
-          </div>
-
-          <div class="intro-context-card solution-theme">
-            <div>
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); letter-spacing: 0.05em; text-transform: uppercase;">03 / THE DESIGN GOAL</span>
-              <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Momentum Over Complexity</h3>
-            </div>
-            <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-              Rather than attempting to remove mandated fields, we focused on reducing friction through progressive disclosures, automated entries, and instant inline feedback.
-            </p>
-          </div>
-
+      <!-- Highlights Section -->
+      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 2.5rem;">
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Faster</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Onboarding experience</div>
+        </div>
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Reduced</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Perceived complexity</div>
+        </div>
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Clearer</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Application tracking</div>
         </div>
       </div>
 
+      <!-- Hero Video Walkthrough (Pinned at the beginning) -->
+      <section class="body-chapter stagger-el stagger-delay-2" style="padding-top: 0; margin-bottom: 3rem;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000; box-shadow: var(--shadow-lg);">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/60vHCVEFNEg?rel=0&modestbranding=1&color=white"
+            title="Bank of Palestine — KYC Simplification Case Study"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Core Statement Nudge -->
+      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
+        "Opening a bank account should build financial access, not create barriers to it."
+      </div>
+
       <div class="project-body stagger-el stagger-delay-3">
-        
-        <!-- Product Video -->
-        <section class="body-chapter" style="padding-top: 0; margin-bottom: 1.5rem;">
-          <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000;">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/60vHCVEFNEg?rel=0&modestbranding=1&color=white"
-              title="Bank of Palestine — KYC Simplification Case Study"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-            ></iframe>
+        <!-- The Problem -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE PROBLEM</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Friction of Branch-Assisted Onboarding</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              Opening a bank account has traditionally been a branch-assisted experience. Customers relied on bank representatives to explain requirements, verify documents, correct mistakes, and guide them through mandatory compliance procedures. While this approach helped ensure security and regulatory compliance, it also meant that much of the onboarding complexity was absorbed by bank staff rather than the customer.
+            </p>
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              As Bank of Palestine expanded its digital services, the onboarding process was moved online. However, the experience largely replicated the existing banking workflow instead of adapting it for self-service use.
+            </p>
+          </div>
+          <div class="text-nudge font-serif" style="text-align: left; margin: 2rem 0 1rem; max-width: 100%; font-size: 1.25rem; line-height: 1.4; color: var(--text-primary); border-left: 3px solid var(--color-bop); padding-left: 1.25rem;">
+            The challenge was not to remove complexity from the process, but to help customers successfully navigate that complexity on their own.
           </div>
         </section>
 
-        <!-- Compliance Challenge Section -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE CHALLENGE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Designing for Momentum Under Strict Regulation</h2>
-          <p class="chapter-desc">
-            In remote banking onboarding, regulatory compliance cannot be bypassed. The designer's job is not to reduce complexity by removing necessary security checks, but to minimize friction. The legacy flow had three critical design vulnerabilities:
+        <!-- Experience Audit -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ EXPERIENCE AUDIT</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Mapping Steps to Find Friction</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            To understand where friction existed, I analyzed the existing onboarding journey and mapped the steps customers needed to complete before opening an account. The review revealed that the experience was designed around internal banking processes rather than customer understanding. While each step served a valid operational or compliance purpose, the overall journey felt lengthy, fragmented, and difficult to navigate independently.
           </p>
-          <ul class="about-list" style="margin-top: 1.25rem; display: grid; grid-template-columns: 1fr; gap: 1rem;">
-            <li class="about-list-item" style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
-              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 600; color: var(--text-primary)">National ID OCR Alignments</h4>
-              <p style="margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--text-secondary)">Users repeatedly failed to upload their physical ID cards due to reflection glare, off-angle captures, or parsing timeout errors.</p>
-            </li>
-            <li class="about-list-item" style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
-              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 600; color: var(--text-primary)">Registry Sync Latency</h4>
-              <p style="margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--text-secondary)">Querying governmental identity databases introduced a 10-15 second network delay, during which users assumed the app had crashed and exited.</p>
-            </li>
-            <li class="about-list-item" style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color);">
-              <h4 style="margin: 0; font-size: 0.95rem; font-weight: 600; color: var(--text-primary)">Biometric Liveness Drop-offs</h4>
-              <p style="margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--text-secondary)">Identity mismatches between government registry photos and liveness selfie captures forced users out of the system, causing high drop-off rates.</p>
-            </li>
-          </ul>
+
+          <!-- Friction Areas Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Information Overload</h4>
+              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                The onboarding process consisted of 12 individual steps presented with equal visual importance. Customers were required to move through multiple screens without a clear understanding of how the information was organized or how much effort remained.
+              </p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Compliance Hidden Inside the Journey</h4>
+              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                The onboarding flow combined multiple banking requirements into a single experience. Personal information, compliance questions, account preferences, and document uploads were presented as one continuous flow. From a customer's perspective, it was difficult to understand why certain information was being requested or which sections were legally required.
+              </p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">A Digital Version of a Paper Form</h4>
+              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                The experience focused on collecting information rather than guiding users through account opening. Customers moved from one form screen to another, entering details and uploading documents without receiving much contextual guidance. The system successfully gathered information but provided limited support for completing the journey.
+              </p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Expectation vs Reality</h4>
+              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                Many users assumed account creation happened immediately after submission, while the actual process involved document reviews, verification, compliance checks, and activation.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <!-- Dynamic Onboarding Flowchart Simulator Section -->
+        <!-- Key Insights & Opportunity Areas -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ KEY INSIGHTS</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Key Insights &amp; Opportunity Areas</h2>
+          
+          <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; margin-top: 1rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Key Insights</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">1.0 Complexity Was Necessary</strong>
+                  Opening a bank account required KYC verification, document validation, compliance checks, and security reviews. These requirements could not be removed without compromising regulatory obligations.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">2.0 The Experience Was Built Around Banking Processes</strong>
+                  The onboarding flow reflected how the bank collected information internally rather than how customers understood account opening.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">3.0 Guidance Disappeared When Branch Assistance Disappeared</strong>
+                  In branches, staff explained requirements, corrected mistakes, and answered questions. The digital experience transferred responsibilities to customers without providing equivalent support.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">4.0 Expectations Didn't Match Reality</strong>
+                  Customers assumed submitting an application meant opening an account. The actual process involved document reviews, verification, compliance checks, and activation.
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Opportunity Areas</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Reduce Perceived Complexity</strong>
+                  Help users understand progress and effort.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Provide Guidance Throughout the Journey</strong>
+                  Replace branch assistance with contextual support.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Improve Transparency</strong>
+                  Make banking processes visible and understandable.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Align Expectations With Reality</strong>
+                  Clearly communicate what happens before and after submission.
+                </li>
+                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Support Real-World Completion</strong>
+                  Design for interruptions, document retrieval, and multi-session onboarding.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Onboarding Journey Map Section -->
         <section class="body-chapter bop-flowchart-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop);">/ THE INTERACTION MODEL</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Interactive Onboarding Pipeline</h2>
+          <span class="chapter-num font-mono" style="color: var(--color-bop);">/ ONBOARDING JOURNEY MAP</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Mapping the Onboarding Journey</h2>
           <p class="chapter-desc" style="margin-bottom: 1.25rem;">
-            To resolve friction while satisfying audits, we mapped every decision state. Select a scenario button below to trace how the digital experience guides users through compliance checks, handles database queries, and introduces in-app fallback loops when automatic validations fail.
+            Before redesigning the experience, I mapped the complete onboarding workflow to understand how customer actions, compliance requirements, verification steps, and backend banking processes interacted with each other. Select a scenario button below to trace how the digital experience guides users through compliance checks.
           </p>
 
           <div class="bop-flowchart-card">
@@ -1559,14 +1636,370 @@ export function renderProject3() {
           </div>
         </section>
 
-        <!-- Design Strategy Breakout Nudge -->
-        <div class="text-nudge stagger-el" style="color: var(--color-bop);">
-          When compliance cannot be simplified, the designer's job is to design for momentum.
-        </div>
+        <!-- Information Architecture & Compliance Sandbox Section -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ INFORMATION ARCHITECTURE</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Redesigning the Information Architecture</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            The onboarding journey contained multiple compliance requirements, verification steps, and account setup tasks that were presented as individual steps with little structure. While the information being collected was necessary, the way it was organized made the process feel longer and more complex than it actually was.
+          </p>
 
-        <!-- Product Video 2 -->
-        <section class="body-chapter" style="padding-top: 2.5rem; padding-bottom: 0; margin-bottom: 0;">
-          <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000;">
+          <div class="bop-compliance-sandbox">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+              <div>
+                <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.25rem;">01.A / COMPLIANCE ENGINE</span>
+                <h3 class="font-serif" style="font-size: 1.35rem; font-weight: 500; margin: 0; color: var(--text-primary);">KYC Requirements &amp; Mapping</h3>
+              </div>
+              
+              <!-- View Toggle Tabs -->
+              <div class="bop-sandbox-toggle" style="display: flex; gap: 0.4rem; padding: 0.2rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
+                <button class="bop-toggle-btn active" data-view="refined" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: var(--bg-card); font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-primary); transition: all 0.2s; box-shadow: var(--shadow-sm);">Refined Mapping</button>
+                <button class="bop-toggle-btn" data-view="sketch" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: transparent; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-secondary); transition: all 0.2s;">Initial Sketchpad</button>
+              </div>
+            </div>
+
+            <!-- Refined View Container -->
+            <div id="bop-compliance-refined-view" style="display: block;">
+              <p class="chapter-desc" style="font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); margin-bottom: 1rem;">
+                Under Palestinian Central Bank regulations, opening an active account requires collecting dense data checks. Below is an interactive map detailing Gokul's functional restructuring: select any compliance requirement on the left to see what information the app fetches from the telecom-linked government registry and which PMA guidelines apply.
+              </p>
+
+              <div class="bop-compliance-grid">
+              <!-- Left column: 13 steps -->
+              <div class="bop-compliance-steps" id="bop-compliance-steps-list">
+                <div class="bop-compliance-step-item active" data-step="1">
+                  <span class="step-num">01</span>
+                  <span class="step-text">Identity verification</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="2">
+                  <span class="step-num">02</span>
+                  <span class="step-text">Eligibility test</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="3">
+                  <span class="step-num">03</span>
+                  <span class="step-text">Existing account holder check</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="4">
+                  <span class="step-num">04</span>
+                  <span class="step-text">Add new account to my name</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="5">
+                  <span class="step-num">05</span>
+                  <span class="step-text">More about me (PEP check)</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="6">
+                  <span class="step-num">06</span>
+                  <span class="step-text">FATCA / Nationality check</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="7">
+                  <span class="step-num">07</span>
+                  <span class="step-text">Nominee &amp; spouse details</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="8">
+                  <span class="step-num">08</span>
+                  <span class="step-text">My address proof</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="9">
+                  <span class="step-num">09</span>
+                  <span class="step-text">Fund &amp; wealth info</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="10">
+                  <span class="step-num">10</span>
+                  <span class="step-text">Power of attorney</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="11">
+                  <span class="step-num">11</span>
+                  <span class="step-text">New account details allocation</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="12">
+                  <span class="step-num">12</span>
+                  <span class="step-text">E-services setup</span>
+                </div>
+                <div class="bop-compliance-step-item" data-step="13">
+                  <span class="step-num">13</span>
+                  <span class="step-text">Signature canvas</span>
+                </div>
+              </div>
+
+              <!-- Right column: bento mapping -->
+              <div class="bop-compliance-right">
+                
+                <!-- PMA Regulation Banner -->
+                <div class="bop-pma-alert">
+                  <strong>PMA Regulatory Mandate:</strong> Standard fully functional bank accounts cannot be opened in Palestine without valid KYC (Know Your Customer) documents.
+                </div>
+
+                <!-- Grid representing app database/fetching -->
+                <div>
+                  <div class="bop-bento-section-title">Database Sync (Auto-Fetched via Phone)</div>
+                  <div class="bop-bento-layout">
+                    <div class="bop-bento-card" data-fetch-card="id">
+                      <span class="card-title">Customer Identification</span>
+                      <span class="card-desc">Full Name, Palestinian ID &amp; Photo</span>
+                    </div>
+                    <div class="bop-bento-card" data-fetch-card="accounts">
+                      <span class="card-title">Account Details</span>
+                      <span class="card-desc">Linked Accounts &amp; Active Balances</span>
+                    </div>
+                    <div class="bop-bento-card" data-fetch-card="cards">
+                      <span class="card-title">Card Information</span>
+                      <span class="card-desc">Active Card Status &amp; Spending Limits</span>
+                    </div>
+                    <div class="bop-bento-card" data-fetch-card="history">
+                      <span class="card-title">Transaction History</span>
+                      <span class="card-desc">Recent Transfers, Deposits &amp; Payments</span>
+                    </div>
+                    <div class="bop-bento-card" data-fetch-card="profile">
+                      <span class="card-title">Registered Profile</span>
+                      <span class="card-desc">National Address, Email &amp; Registry Info</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Grid representing regulatory rules -->
+                <div>
+                  <div class="bop-bento-section-title">PMA Compliance Framework</div>
+                  <div class="bop-bento-layout">
+                    <div class="bop-bento-card" data-rule-card="mandatory">
+                      <span class="card-title">Mandatory KYC</span>
+                      <span class="card-desc">Account creation is blocked until KYC checks pass.</span>
+                    </div>
+                    <div class="bop-bento-card" data-rule-card="docs">
+                      <span class="card-title">Identity Proof</span>
+                      <span class="card-desc">Requires local ID, Jerusalem ID, or foreign Passport.</span>
+                    </div>
+                    <div class="bop-bento-card" data-rule-card="updates">
+                      <span class="card-title">Periodic Updates</span>
+                      <span class="card-desc">KYC documents must refresh every 1–2 years.</span>
+                    </div>
+                    <div class="bop-bento-card" data-rule-card="risk">
+                      <span class="card-title">Risk-Based Check</span>
+                      <span class="card-desc">High-risk PEP clients trigger Enhanced Due Diligence.</span>
+                    </div>
+                    <div class="bop-bento-card" data-rule-card="types">
+                      <span class="card-title">Every Citizen Account</span>
+                      <span class="card-desc">No minimum balance limit, but full KYC is still required.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dynamic Explanation Box -->
+                <div class="bop-explanation-box">
+                  <span class="exp-title" id="bop-exp-title">01 / Identity verification</span>
+                  <span class="exp-text" id="bop-exp-text">
+                    Handled progressively via the National ID OCR scan + liveness checks. Links to Customer Identification (Full Name, National ID Number).
+                  </span>
+                </div>
+
+              </div>
+              </div>
+            </div> <!-- End of Refined View Container -->
+
+            <!-- Sketch View Container -->
+            <div id="bop-compliance-sketch-view" style="display: none; animation: fadeIn 0.3s ease-out;">
+              <div class="bop-sketch-grid" style="display: grid; grid-template-columns: 1.15fr 1.05fr; gap: 1.75rem; min-height: 520px; font-family: var(--font-sans);">
+                
+                <!-- Left Side: Notepad Sheet -->
+                <div class="bop-notepad" style="background: hsl(14, 100%, 98%); border: 1px solid rgba(224, 114, 88, 0.2); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); padding: 1.5rem 1.5rem 1.5rem 2.25rem; position: relative; overflow: hidden; background-image: linear-gradient(rgba(224, 114, 88, 0.1) 1px, transparent 1px); background-size: 100% 2.1rem; line-height: 2.1rem;">
+                  <!-- Notepad binder holes at the top -->
+                  <div class="notepad-holes" style="position: absolute; top: 0.5rem; left: 0; right: 0; display: flex; justify-content: space-around; padding: 0 1rem; pointer-events: none; opacity: 0.6;">
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                  </div>
+                  
+                  <!-- Red vertical margin line -->
+                  <div style="position: absolute; left: 1.75rem; top: 0; bottom: 0; width: 1px; background: rgba(224, 114, 88, 0.45); pointer-events: none;"></div>
+                  
+                  <div class="notepad-content" style="font-family: 'Kalam', 'Architects Daughter', 'Comic Sans MS', cursive, sans-serif; font-style: italic; color: #2e2825; font-size: 0.82rem; padding-top: 0.75rem; line-height: 2.1rem;">
+                    <h4 style="font-family: inherit; font-size: 1.05rem; font-weight: bold; margin-bottom: 1rem; color: #b8432a; border-bottom: 1.5px dashed rgba(224, 114, 88, 0.3); padding-bottom: 0.25rem; font-style: inherit; line-height: normal;">Basic steps involved - functionality</h4>
+                    
+                    <ul style="list-style-type: disc; padding-left: 0.5rem; margin-bottom: 1.5rem; font-family: inherit; font-style: inherit; line-height: 2.1rem;">
+                      <li>Identity verification - who am I?</li>
+                      <li>Eligibility test - blacklisted or not</li>
+                      <li>Existing account holder /not</li>
+                      <li>Add a new account to my name</li>
+                      <li>more about me - employability, source of income, risk factors, PEP</li>
+                      <li>Depending on my nationality - FATCA is req</li>
+                      <li>My spouse / nominee details</li>
+                      <li>My address proof</li>
+                      <li>Fund/ wealth info</li>
+                      <li>Power of attorney</li>
+                      <li>New account details</li>
+                      <li>E services</li>
+                      <li>signature</li>
+                    </ul>
+                    
+                    <div style="font-family: inherit; font-weight: bold; color: #b8432a; font-size: 0.88rem; border-top: 1.5px dashed rgba(224, 114, 88, 0.3); padding-top: 0.4rem; line-height: normal; font-style: inherit;">
+                      Completing kyc = creating new bank account
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Right Side: Dark Boxes Deck -->
+                <div class="bop-sketch-right" style="display: flex; flex-direction: column; gap: 1rem;">
+                  
+                  <!-- Box 1: PMA Regulation -->
+                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.8rem; line-height: 1.5;">
+                    <p style="color: #929298; margin: 0; font-size: 0.76rem; font-family: var(--font-mono); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">01 / REGULATION STATEMENT</p>
+                    Based on regulations set by the <span style="color: #ff7626; font-weight: 600; border-bottom: 1px dotted #ff7626;">Palestine Monetary Authority (PMA)</span> and policies of local banks, it is <strong style="color: #fff;">not possible</strong> to create a standard, fully functional bank account <strong style="color: #fff;">without KYC (Know Your Customer) documents</strong> in Palestine.
+                  </div>
+                  
+                  <!-- Box 2: Phone Link Data -->
+                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
+                    <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">02 / PHONE NUMBER FETCH MAP</p>
+                    <strong style="color: #fff; font-size: 0.82rem; display: block; margin-bottom: 0.5rem; border-bottom: 1px solid #2d2d30; padding-bottom: 0.25rem;">What the App Fetches/Links to Your Phone Number:</strong>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
+                      <li><strong style="color: #fff;">• Customer Identification:</strong> Your full name and Palestine National Identification Number.</li>
+                      <li><strong style="color: #fff;">• Account Details:</strong> Linked bank account numbers, balances, and account activity (deposits, withdrawals, transfers).</li>
+                      <li><strong style="color: #fff;">• Card Information:</strong> Active/inactive card status, cardholder name, and card limits.</li>
+                      <li><strong style="color: #fff;">• Transaction History:</strong> Recent transactions and payment history.</li>
+                      <li><strong style="color: #fff;">• Registered Profile:</strong> Address, email, and other personal information linked to your bank profile.</li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Box 3: Compliance Mandates -->
+                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
+                    <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">03 / COMPLIANCE PARAMETERS</p>
+                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
+                      <li><strong style="color: #fff;">• Mandatory:</strong> You cannot open a functional, active account without completing KYC.</li>
+                      <li><strong style="color: #fff;">• Identity Documents:</strong> The primary document is your Palestinian ID (or Jerusalem ID/Passport for foreigners).</li>
+                      <li><strong style="color: #fff;">• Periodic Updates:</strong> KYC is not a one-time thing. You must update your KYC documents regularly (e.g., every 1–2 years depending on risk level).</li>
+                      <li><strong style="color: #fff;">• Risk-Based Approach:</strong> High-risk clients (like Politically Exposed Persons - PEPs) may undergo "Enhanced Due Diligence" (EDD), which requires deeper background checks.</li>
+                      <li><strong style="color: #fff;">• Account Types:</strong> Specialized accounts like the "Account for Every Citizen" still require KYC, even if they have no minimum balance requirements.</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div> <!-- End of Sketch View Container -->
+          </div>
+        </section>
+
+        <!-- Redesign Strategy -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ DESIGN STRATEGY</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Guided Customer Journeys for Complex Audits</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem;">
+            The audit revealed that the challenge was not the number of requirements users had to complete, but how those requirements were presented. Banking regulations, identity verification, and compliance checks were essential parts of the onboarding process and could not be removed.
+          </p>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            Instead of simplifying the requirements themselves, the redesign focused on simplifying the experience of completing them. The goal was to transform onboarding from a bank-centric workflow into a guided customer journey that felt structured, transparent, and achievable. Finally, the product should encourage continuous learning rather than one-time interactions.
+          </p>
+        </section>
+
+        <!-- First Rejected Draft -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ FIRST DRAFT ITERATION</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">First Rejected Draft</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem;">
+            Our first approach focused on creating a unified onboarding experience by reducing the number of visible steps and consolidating multiple processes into a single streamlined flow. The idea was to make account opening feel faster and more modern by minimizing transitions between screens and presenting onboarding as one continuous journey.
+          </p>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            The unified approach also introduced operational challenges. Certain verification activities depended on information collected earlier in the journey, while some compliance requirements required separate handling, review processes, and exception scenarios.
+          </p>
+          
+          <!-- Mockups of rejected flow using screens -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
+            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
+              <img src="./bop_screen2.png" alt="Requirements screen draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+            </div>
+            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
+              <img src="./bop_screen3.png" alt="Form entries draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+            </div>
+            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
+              <img src="./bop_screen4.png" alt="Verification check draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <!-- Accepted Design -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE ACCEPTED DESIGN</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Designing for Confidence and Transparency</h2>
+          
+          <!-- 1. Reduce Perceived Complexity -->
+          <div style="margin-top: 2rem;">
+            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Reduce Perceived Complexity</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.25rem;">
+              The existing experience presented onboarding as a long sequence of independent steps. By organizing related tasks into meaningful phases, users could focus on one objective at a time rather than the entire process.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.0rem;">
+              <div style="padding: 1.25rem; background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE</span>
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                  A continuous 12-step sequence of forms, identity uploads, and compliance questions presented with equal visual weight, causing massive drop-offs when users faced unexpected requests midway.
+                </p>
+              </div>
+              <div style="padding: 1.25rem; background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; display: block; margin-bottom: 0.5rem;">AFTER (REDESIGN)</span>
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                  Organized into 5 structured phases (Registration, Verification, ID Scanning, Liveness, and Account Selection) that establish momentum and save progress if users pause.
+                </p>
+              </div>
+            </div>
+            <p class="chapter-desc" style="font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-top: -0.5rem; margin-bottom: 2rem;">
+              We had multiple ways to go forward including a multi-stepper form, but that gets affected if people leave the process midway and can cause confusions.
+            </p>
+          </div>
+
+          <!-- 2. Replace Branch Guidance Digitally -->
+          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Replace Branch Guidance Digitally</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+              Customers previously relied on branch staff to explain requirements, answer questions, and help them complete forms. The redesigned experience provides guidance directly within the interface through contextual explanations, progress indicators, and clear next steps. Complex processes and documents are explained to the user, and updates are notified immediately to maintain a smooth workflow.
+            </p>
+
+            <div class="interactive-flow-sandbox" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.5rem; font-weight: bold; letter-spacing: 0.05em;">INTERACTIVE MOBILE ONBOARDING SIMULATOR (CLICK TO ONBOARD)</span>
+              <div class="kyc-simulator-container" style="max-width: 320px; margin: 1.5rem auto; border: 1.5px solid var(--border-color); border-radius: 20px; overflow: hidden; background: var(--bg-secondary); box-shadow: var(--shadow-md);">
+                <div id="kyc-screen-content" style="padding: 1.5rem; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+                  <!-- Content will be injected dynamically by views.js initProject3Sandbox() -->
+                </div>
+              </div>
+              <p id="kyc-simulator-status" class="font-mono" style="font-size: 0.8rem; text-align: center; color: var(--color-bop); margin: 0.5rem 0 0;">
+                💡 Enter mobile and ID number to begin remote verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Make Banking Processes Transparent -->
+          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Make Banking Processes Transparent</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+              Many users assumed account creation happened immediately after submission, while the actual process involved reviews and verification. The redesign aimed to make every stage visible, helping users understand what was happening and what to expect next.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center;">
+              <div>
+                <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 0.95rem;">
+                  By introducing clear in-app status tracking, users no longer guess their verification state. If an automatic check requires manual bank agent review:
+                </p>
+                <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1rem; margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">
+                  <li>Users are notified of the exact document being verified.</li>
+                  <li>An expected activation timeline is clearly shown.</li>
+                  <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
+                </ul>
+              </div>
+              <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
+                <img src="./bop_screen5.png" alt="Transparent status tracking screen" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Detailed Walkthrough Video (Pinned at the middle/end) -->
+        <section class="body-chapter" style="padding-top: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-color); margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ WALKTHROUGH DEMO</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Interactive Video Walkthrough</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            Watch the video walk-through below to see how the redesigned mobile onboarding process operates end-to-end, managing regulatory compliance checks seamlessly.
+          </p>
+          <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); background: #000; box-shadow: var(--shadow-md);">
             <iframe
               src="https://www.youtube-nocookie.com/embed/36uU3LF_if0?rel=0&modestbranding=1&color=white"
               title="Bank of Palestine — KYC Detailed Walkthrough"
@@ -1578,424 +2011,33 @@ export function renderProject3() {
           </div>
         </section>
 
-        <!-- Solution Path Section Wrapper -->
-        <div class="solution-path-section">
-          <!-- Solution Path Tabs -->
-          <div class="solution-path-container">
-            <span class="chapter-num font-mono" style="color: var(--color-bop); font-size: 0.75rem; letter-spacing: 0.05em;">/ THE SOLUTION PATH</span>
-            <div class="solution-tabs">
-              <button class="solution-tab-btn active" data-chapter="1">
-                <span class="tab-num">CHAPTER 01</span>
-                <span class="tab-title">The Friction of Traditional Onboarding</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="2">
-                <span class="tab-num">CHAPTER 02</span>
-                <span class="tab-title">Streamlining Verification &amp; Trust</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="3">
-                <span class="tab-num">CHAPTER 03</span>
-                <span class="tab-title">Operational Impact &amp; Growth</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Solution Chapters -->
-          <div class="solution-chapters-container">
-            <!-- Chapter 1 -->
-            <div class="solution-chapter-content active" data-chapter-content="1">
-              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
-                <span class="chapter-num font-mono" style="color: var(--color-bop)">CHAPTER 1</span>
-                <h2 class="chapter-title font-serif">The Friction of Traditional Onboarding</h2>
-                
-                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
-                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Progressive Disclosures</h3>
-                  <p class="chapter-desc" style="margin-top: 0.5rem;">
-                    Legacy onboarding required customers to fill massive forms with redundant data. The new experience introduces progressive disclosure: splitting inputs into logical chunks (Phone & Email, Palestinian ID Proof, and Selfie Capture) to ensure users understand the required credentials upfront.
-                  </p>
-
-                  <!-- Interactive Compliance Mapping Deck -->
-                  <div class="bop-compliance-sandbox" style="margin-top: 2rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
-                      <div>
-                        <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.25rem;">01.A / COMPLIANCE ENGINE</span>
-                        <h3 class="font-serif" style="font-size: 1.35rem; font-weight: 500; margin: 0; color: var(--text-primary);">KYC Requirements &amp; Mapping</h3>
-                      </div>
-                      
-                      <!-- View Toggle Tabs -->
-                      <div class="bop-sandbox-toggle" style="display: flex; gap: 0.4rem; padding: 0.2rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
-                        <button class="bop-toggle-btn active" data-view="refined" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: var(--bg-card); font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-primary); transition: all 0.2s; box-shadow: var(--shadow-sm);">Refined Mapping</button>
-                        <button class="bop-toggle-btn" data-view="sketch" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: transparent; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-secondary); transition: all 0.2s;">Initial Sketchpad</button>
-                      </div>
-                    </div>
-
-                    <!-- Refined View Container -->
-                    <div id="bop-compliance-refined-view" style="display: block;">
-                      <p class="chapter-desc" style="font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); margin-bottom: 1rem;">
-                        Under Palestinian Central Bank regulations, opening an active account requires collecting dense data checks. Below is an interactive map detailing Gokul's functional restructuring: select any handwritten compliance requirement on the left to see what information the app fetches from the telecom-linked government registry and which PMA guidelines apply.
-                      </p>
-
-                      <div class="bop-compliance-grid">
-                      <!-- Left column: 13 steps -->
-                      <div class="bop-compliance-steps" id="bop-compliance-steps-list">
-                        <div class="bop-compliance-step-item active" data-step="1">
-                          <span class="step-num">01</span>
-                          <span class="step-text">Identity verification</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="2">
-                          <span class="step-num">02</span>
-                          <span class="step-text">Eligibility test</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="3">
-                          <span class="step-num">03</span>
-                          <span class="step-text">Existing account holder check</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="4">
-                          <span class="step-num">04</span>
-                          <span class="step-text">Add new account to my name</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="5">
-                          <span class="step-num">05</span>
-                          <span class="step-text">More about me (PEP check)</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="6">
-                          <span class="step-num">06</span>
-                          <span class="step-text">FATCA / Nationality check</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="7">
-                          <span class="step-num">07</span>
-                          <span class="step-text">Nominee &amp; spouse details</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="8">
-                          <span class="step-num">08</span>
-                          <span class="step-text">My address proof</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="9">
-                          <span class="step-num">09</span>
-                          <span class="step-text">Fund &amp; wealth info</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="10">
-                          <span class="step-num">10</span>
-                          <span class="step-text">Power of attorney</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="11">
-                          <span class="step-num">11</span>
-                          <span class="step-text">New account details allocation</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="12">
-                          <span class="step-num">12</span>
-                          <span class="step-text">E-services setup</span>
-                        </div>
-                        <div class="bop-compliance-step-item" data-step="13">
-                          <span class="step-num">13</span>
-                          <span class="step-text">Signature canvas</span>
-                        </div>
-                      </div>
-
-                      <!-- Right column: bento mapping -->
-                      <div class="bop-compliance-right">
-                        
-                        <!-- PMA Regulation Banner -->
-                        <div class="bop-pma-alert">
-                          <strong>PMA Regulatory Mandate:</strong> Standard fully functional bank accounts cannot be opened in Palestine without valid KYC (Know Your Customer) documents.
-                        </div>
-
-                        <!-- Grid representing app database/fetching -->
-                        <div>
-                          <div class="bop-bento-section-title">Database Sync (Auto-Fetched via Phone)</div>
-                          <div class="bop-bento-layout">
-                            <div class="bop-bento-card" data-fetch-card="id">
-                              <span class="card-title">Customer Identification</span>
-                              <span class="card-desc">Full Name, Palestinian ID &amp; Photo</span>
-                            </div>
-                            <div class="bop-bento-card" data-fetch-card="accounts">
-                              <span class="card-title">Account Details</span>
-                              <span class="card-desc">Linked Accounts &amp; Active Balances</span>
-                            </div>
-                            <div class="bop-bento-card" data-fetch-card="cards">
-                              <span class="card-title">Card Information</span>
-                              <span class="card-desc">Active Card Status &amp; Spending Limits</span>
-                            </div>
-                            <div class="bop-bento-card" data-fetch-card="history">
-                              <span class="card-title">Transaction History</span>
-                              <span class="card-desc">Recent Transfers, Deposits &amp; Payments</span>
-                            </div>
-                            <div class="bop-bento-card" data-fetch-card="profile">
-                              <span class="card-title">Registered Profile</span>
-                              <span class="card-desc">National Address, Email &amp; Registry Info</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Grid representing regulatory rules -->
-                        <div>
-                          <div class="bop-bento-section-title">PMA Compliance Framework</div>
-                          <div class="bop-bento-layout">
-                            <div class="bop-bento-card" data-rule-card="mandatory">
-                              <span class="card-title">Mandatory KYC</span>
-                              <span class="card-desc">Account creation is blocked until KYC checks pass.</span>
-                            </div>
-                            <div class="bop-bento-card" data-rule-card="docs">
-                              <span class="card-title">Identity Proof</span>
-                              <span class="card-desc">Requires local ID, Jerusalem ID, or foreign Passport.</span>
-                            </div>
-                            <div class="bop-bento-card" data-rule-card="updates">
-                              <span class="card-title">Periodic Updates</span>
-                              <span class="card-desc">KYC documents must refresh every 1–2 years.</span>
-                            </div>
-                            <div class="bop-bento-card" data-rule-card="risk">
-                              <span class="card-title">Risk-Based Check</span>
-                              <span class="card-desc">High-risk PEP clients trigger Enhanced Due Diligence.</span>
-                            </div>
-                            <div class="bop-bento-card" data-rule-card="types">
-                              <span class="card-title">Every Citizen Account</span>
-                              <span class="card-desc">No minimum balance limit, but full KYC is still required.</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Dynamic Explanation Box -->
-                        <div class="bop-explanation-box">
-                          <span class="exp-title" id="bop-exp-title">01 / Identity verification</span>
-                          <span class="exp-text" id="bop-exp-text">
-                            Handled progressively via the National ID OCR scan + liveness checks. Links to Customer Identification (Full Name, National ID Number).
-                          </span>
-                        </div>
-
-                      </div>
-                    </div> <!-- End of Refined View Container -->
-
-                    <!-- Sketch View Container -->
-                    <div id="bop-compliance-sketch-view" style="display: none; animation: fadeIn 0.3s ease-out;">
-                      <div class="bop-sketch-grid" style="display: grid; grid-template-columns: 1.15fr 1.05fr; gap: 1.75rem; min-height: 520px; font-family: var(--font-sans);">
-                        
-                        <!-- Left Side: Notepad Sheet -->
-                        <div class="bop-notepad" style="background: hsl(14, 100%, 98%); border: 1px solid rgba(224, 114, 88, 0.2); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); padding: 1.5rem 1.5rem 1.5rem 2.25rem; position: relative; overflow: hidden; background-image: linear-gradient(rgba(224, 114, 88, 0.1) 1px, transparent 1px); background-size: 100% 2.1rem; line-height: 2.1rem;">
-                          <!-- Notepad binder holes at the top -->
-                          <div class="notepad-holes" style="position: absolute; top: 0.5rem; left: 0; right: 0; display: flex; justify-content: space-around; padding: 0 1rem; pointer-events: none; opacity: 0.6;">
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                          </div>
-                          
-                          <!-- Red vertical margin line -->
-                          <div style="position: absolute; left: 1.75rem; top: 0; bottom: 0; width: 1px; background: rgba(224, 114, 88, 0.45); pointer-events: none;"></div>
-                          
-                          <div class="notepad-content" style="font-family: 'Kalam', 'Architects Daughter', 'Comic Sans MS', cursive, sans-serif; font-style: italic; color: #2e2825; font-size: 0.82rem; padding-top: 0.75rem; line-height: 2.1rem;">
-                            <h4 style="font-family: inherit; font-size: 1.05rem; font-weight: bold; margin-bottom: 1rem; color: #b8432a; border-bottom: 1.5px dashed rgba(224, 114, 88, 0.3); padding-bottom: 0.25rem; font-style: inherit; line-height: normal;">Basic steps involved - functionality</h4>
-                            
-                            <ul style="list-style-type: disc; padding-left: 0.5rem; margin-bottom: 1.5rem; font-family: inherit; font-style: inherit; line-height: 2.1rem;">
-                              <li>Identity verification - who am I?</li>
-                              <li>Eligibility test - blacklisted or not</li>
-                              <li>Existing account holder /not</li>
-                              <li>Add a new account to my name</li>
-                              <li>more about me - employability, source of income, risk factors, PEP</li>
-                              <li>Depending on my nationality - FATCA is req</li>
-                              <li>My spouse / nominee details</li>
-                              <li>My address proof</li>
-                              <li>Fund/ wealth info</li>
-                              <li>Power of attorney</li>
-                              <li>New account details</li>
-                              <li>E services</li>
-                              <li>signature</li>
-                            </ul>
-                            
-                            <div style="font-family: inherit; font-weight: bold; color: #b8432a; font-size: 0.88rem; border-top: 1.5px dashed rgba(224, 114, 88, 0.3); padding-top: 0.4rem; line-height: normal; font-style: inherit;">
-                              Completing kyc = creating new bank account
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <!-- Right Side: Dark Boxes Deck -->
-                        <div class="bop-sketch-right" style="display: flex; flex-direction: column; gap: 1rem;">
-                          
-                          <!-- Box 1: PMA Regulation -->
-                          <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.8rem; line-height: 1.5;">
-                            <p style="color: #929298; margin: 0; font-size: 0.76rem; font-family: var(--font-mono); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">01 / REGULATION STATEMENT</p>
-                            Based on regulations set by the <span style="color: #ff7626; font-weight: 600; border-bottom: 1px dotted #ff7626;">Palestine Monetary Authority (PMA)</span> and policies of local banks, it is <strong style="color: #fff;">not possible</strong> to create a standard, fully functional bank account <strong style="color: #fff;">without KYC (Know Your Customer) documents</strong> in Palestine.
-                          </div>
-                          
-                          <!-- Box 2: Phone Link Data -->
-                          <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
-                            <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">02 / PHONE NUMBER FETCH MAP</p>
-                            <strong style="color: #fff; font-size: 0.82rem; display: block; margin-bottom: 0.5rem; border-bottom: 1px solid #2d2d30; padding-bottom: 0.25rem;">What the App Fetches/Links to Your Phone Number:</strong>
-                            <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
-                              <li><strong style="color: #fff;">• Customer Identification:</strong> Your full name and Palestine National Identification Number.</li>
-                              <li><strong style="color: #fff;">• Account Details:</strong> Linked bank account numbers, balances, and account activity (deposits, withdrawals, transfers).</li>
-                              <li><strong style="color: #fff;">• Card Information:</strong> Active/inactive card status, cardholder name, and card limits.</li>
-                              <li><strong style="color: #fff;">• Transaction History:</strong> Recent transactions and payment history.</li>
-                              <li><strong style="color: #fff;">• Registered Profile:</strong> Address, email, and other personal information linked to your bank profile.</li>
-                            </ul>
-                          </div>
-                          
-                          <!-- Box 3: Compliance Mandates -->
-                          <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
-                            <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">03 / COMPLIANCE PARAMETERS</p>
-                            <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
-                              <li><strong style="color: #fff;">• Mandatory:</strong> You cannot open a functional, active account without completing KYC.</li>
-                              <li><strong style="color: #fff;">• Identity Documents:</strong> The primary document is your Palestinian ID (or Jerusalem ID/Passport for foreigners).</li>
-                              <li><strong style="color: #fff;">• Periodic Updates:</strong> KYC is not a one-time thing. You must update your KYC documents regularly (e.g., every 1–2 years depending on risk level).</li>
-                              <li><strong style="color: #fff;">• Risk-Based Approach:</strong> High-risk clients (like Politically Exposed Persons - PEPs) may undergo "Enhanced Due Diligence" (EDD), which requires deeper background checks.</li>
-                              <li><strong style="color: #fff;">• Account Types:</strong> Specialized accounts like the "Account for Every Citizen" still require KYC, even if they have no minimum balance requirements.</li>
-                            </ul>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div> <!-- End of Sketch View Container -->
-                  </div>
-
-
-                </div>
-              </section>
-            </div>
-
-            <!-- Chapter 2 -->
-            <div class="solution-chapter-content" data-chapter-content="2">
-              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
-                <span class="chapter-num font-mono" style="color: var(--color-bop)">CHAPTER 2</span>
-                <h2 class="chapter-title font-serif">Streamlining Verification &amp; Trust</h2>
-                
-                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
-                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Building Interface Reassurance</h3>
-                  <p class="chapter-desc" style="margin-top: 0.5rem;">
-                    To secure account creation while keeping it swift, we structured seamless OTP (One-Time Password) entry interfaces and progressive account selection. By displaying immediate inline feedback and clear error states, the system maintains a high sense of progress and confidence.
-                  </p>
-
-                  <!-- Interactive KYC Simulator Sandbox -->
-                  <div class="interactive-flow-sandbox" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
-                    <span class="font-mono label" style="font-size: 0.65rem;">INTERACTIVE KYC FLOW SIMULATOR (CLICK TO ONBOARD)</span>
-                    <div class="kyc-simulator-container" style="max-width: 320px; margin: 1.5rem auto; border: 1.5px solid var(--border-color); border-radius: 20px; overflow: hidden; background: var(--bg-secondary); box-shadow: var(--shadow-md);">
-                      <div id="kyc-screen-content" style="padding: 1.5rem; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <!-- Content will be injected dynamically -->
-                      </div>
-                    </div>
-                    <p id="kyc-simulator-status" class="font-mono" style="font-size: 0.8rem; text-align: center; color: var(--color-bop); margin: 0.5rem 0 0;">
-                      💡 Click through the simulator to experience the simplified onboarding flow!
-                    </p>
-                  </div>
-
-
-                </div>
-              </section>
-            </div>
-
-            <!-- Chapter 3 -->
-            <div class="solution-chapter-content" data-chapter-content="3">
-              <section class="body-chapter" style="padding-bottom: 0;">
-                <span class="chapter-num font-mono" style="color: var(--color-bop)">CHAPTER 3</span>
-                <h2 class="chapter-title font-serif">Operational Impact &amp; Growth</h2>
-                
-                <div class="chapter-sub-section" style="margin-top: 1.5rem;">
-                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Quantifiable Design Outcomes</h3>
-                  <p class="chapter-desc" style="margin-top: 0.5rem;">
-                    Simplifying the form hierarchy and introducing modern biometric credentials (Face ID / Touch ID) reduced total verification time from 12 minutes to under 2 minutes. Onboarding completion rates increased by 85%, accelerating customer acquisition across distributed regions.
-                  </p>
-                </div>
-
-                <div class="chapter-sub-section" style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-                  <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Global Expansion &amp; Digital Readiness</h3>
-                  <p class="chapter-desc" style="margin-top: 0.5rem;">
-                    Digital transformation and simplified remote onboarding lay the groundwork for Bank of Palestine's global expansion. In a historic milestone, the bank received In-Principle Approval (IPA) from the Financial Services Regulatory Authority (FSRA) of Abu Dhabi Global Market (ADGM) to obtain a Category 1 banking license.
-                  </p>
-                  
-                  <!-- ADGM Announcement Card -->
-                  <div class="adgm-announcement-card" style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 1rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
-                      <div>
-                        <span class="font-mono label" style="font-size: 0.6rem; color: var(--color-bop); letter-spacing: 0.05em;">NEWS ANNOUNCEMENT / ADGM CENTER</span>
-                        <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin: 0.25rem 0 0; line-height: 1.2;">BOP Expands Globally After Receiving CAT1 IPA from ADGM</h4>
-                      </div>
-                      <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); background: var(--bg-card); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid var(--border-color); white-space: nowrap;">H2 2026 OPERATIONAL</span>
-                    </div>
-                    
-                    <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-                      The Category 1 (CAT1) License from the FSRA of ADGM enables Bank of Palestine Group to launch its international entity, <strong>Bank of Palestine – Global Ltd.</strong>, led by CEO Linda Tarazi. This expansion allows the bank to accept deposits and arrange deals in investments, directly targeting the global Palestinian diaspora.
-                    </p>
-                    
-                    <blockquote style="font-style: italic; border-left: 3px solid var(--color-bop); padding-left: 1rem; margin: 0.5rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45;">
-                      “This is a historic milestone for Bank of Palestine, ushering in a new era of global reach, digital excellence, and future-proof banking and wealth management.”
-                      <span style="display: block; font-style: normal; font-size: 0.7rem; font-weight: bold; margin-top: 0.25rem; color: var(--text-secondary);">— Hashim Shawa, Chairman of Bank of Palestine Group</span>
-                    </blockquote>
-                    
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem;">
-                      <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted);">Launchpad: Abu Dhabi Global Market (ADGM)</span>
-                      <a href="https://www.adgm.com/media/announcements/bank-of-palestine-expands-globally-after-receiving-an-ipa-for-a-full-banking-license-from-adgm" target="_blank" rel="noopener" class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 600; text-decoration: underline; transition: color 0.2s;">
-                        READ FULL ANNOUNCEMENT ↗
-                      </a>
-                    </div>
-                  </div>
-              </section>
-            </div>
-          </div>
-        </div>
-
-        <!-- Conclusion Section -->
-        <section class="body-chapter stagger-el" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop); font-size: 0.75rem; letter-spacing: 0.08em;">/ CONCLUSION</span>
-          <p class="chapter-desc" style="margin-top: 0.75rem; margin-bottom: 2.5rem; max-width: 600px;">
-            The remote KYC redesign transformed a fragmented compliance checklist into a seamless, secure, and user-centric onboarding experience.
+        <!-- Validating the Solution -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ VALIDATION</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Validating the Solution</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem;">
+            After redesigning the onboarding experience, the solution was evaluated against the challenges identified during the audit. The objective was to determine whether the new structure successfully addressed the complexity, uncertainty, and guidance gaps present in the original experience.
           </p>
-
-          <!-- Insight Cards Grid -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-
-            <!-- Card 1 -->
-            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.75rem;">
-              <div style="display: flex; align-items: center; gap: 0.6rem;">
-                <span style="font-size: 1.4rem; line-height: 1;">🛡️</span>
-                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">01 / REGULATION</span>
-              </div>
-              <p style="margin: 0; font-size: 0.97rem; font-weight: 600; color: var(--color-bop); line-height: 1.45;">Compliance doesn't mean compromising on user experience.</p>
-              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">The team worked within strict PMA regulatory constraints. Rather than trying to remove mandated fields, we simplified data entry via automated governmental registry queries and clean progressive steps.</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.75rem;">
-              <div style="display: flex; align-items: center; gap: 0.6rem;">
-                <span style="font-size: 1.4rem; line-height: 1;">⚡</span>
-                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">02 / AUTOMATION</span>
-              </div>
-              <p style="margin: 0; font-size: 0.97rem; font-weight: 600; color: var(--color-bop); line-height: 1.45;">Make friction invisible through intelligent technology.</p>
-              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">Integrating document OCR scanning and real-time biometric liveness checks reduced remote account setup times from 12 minutes to under 2 minutes, minimizing drop-offs.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.75rem;">
-              <div style="display: flex; align-items: center; gap: 0.6rem;">
-                <span style="font-size: 1.4rem; line-height: 1;">🤝</span>
-                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">03 / TRANSPARENCY</span>
-              </div>
-              <p style="margin: 0; font-size: 0.97rem; font-weight: 600; color: var(--color-bop); line-height: 1.45;">Security and confidence require micro-feedback.</p>
-              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">Providing clean, step-by-step guidance and inline feedback during biometric processing built user trust, resolving concerns about sharing sensitive identification details remotely.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.75rem;">
-              <div style="display: flex; align-items: center; gap: 0.6rem;">
-                <span style="font-size: 1.4rem; line-height: 1;">✨</span>
-                <span class="font-mono" style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.08em;">04 / ACCESSIBILITY</span>
-              </div>
-              <p style="margin: 0; font-size: 0.97rem; font-weight: 600; color: var(--color-bop); line-height: 1.45;">Universal access is a fundamental financial requirement.</p>
-              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">Designing with WCAG AAA compliant color contrast and high-luminance active states ensured the app remained usable by all customer demographics across both dark and light modes.</p>
-            </div>
-
-          </div>
-
-          <!-- Card 5 - Full width -->
-          <div style="margin-top: 1rem; padding: 1.75rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%); border: 1px solid var(--color-bop); border-radius: var(--border-radius-lg); display: flex; gap: 1.5rem; align-items: flex-start;">
-            <span style="font-size: 1.8rem; line-height: 1; flex-shrink: 0; margin-top: 0.15rem;">📈</span>
-            <div>
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-bop); letter-spacing: 0.08em;">05 / IMPACT</span>
-              <p style="margin: 0.4rem 0 0.5rem; font-size: 0.97rem; font-weight: 600; color: var(--color-bop); line-height: 1.45;">A solid digital-first foundation enables global growth.</p>
-              <p style="margin: 0; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">Optimizing the remote KYC engine was the cornerstone of Bank of Palestine's global expansion, leading directly to regulatory approvals (ADGM IPA CAT1) and connecting the diaspora to regional operations.</p>
-            </div>
-          </div>
-
+          <p class="chapter-desc" style="margin-bottom: 0;">
+            Rather than focusing on reducing regulatory requirements, the validation focused on improving how users experienced those requirements throughout the journey.
+          </p>
         </section>
 
+        <!-- Reflection & Learnings -->
+        <section class="body-chapter" style="padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ LEARNINGS &amp; OUTCOMES</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Reflection &amp; Learnings</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem;">
+            This project began with what seemed like a straightforward objective: digitize the account opening experience and reduce dependence on branch visits. However, as I explored the onboarding journey, I realized that the challenge was far more complex than redesigning forms or reducing the number of steps.
+          </p>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            One of the biggest learnings was that complexity and friction are not the same thing. Banking onboarding is inherently complex because of regulatory requirements, identity verification, security checks, and compliance obligations. These requirements could not simply be removed or hidden. The real challenge was helping users understand and navigate that complexity without feeling overwhelmed.
+          </p>
+
+          <div class="text-nudge font-serif" style="text-align: center; margin: 2rem auto 0; max-width: 650px; font-size: 1.6rem; line-height: 1.4; color: var(--color-bop); border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+            Good onboarding doesn't eliminate complexity.<br><span style="color: var(--text-primary); font-weight: 500;">It helps users navigate it with confidence.</span>
+          </div>
+        </section>
       </div>
     </article>
   `;
