@@ -1384,32 +1384,40 @@ export function renderProject3() {
             To understand where friction existed, I analyzed the existing onboarding journey and mapped the steps customers needed to complete before opening an account. The review revealed that the experience was designed around internal banking processes rather than customer understanding. While each step served a valid operational or compliance purpose, the overall journey felt lengthy, fragmented, and difficult to navigate independently.
           </p>
 
-          <!-- Friction Areas Grid -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Information Overload</h4>
-              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+          <!-- Friction Areas Accordion -->
+          <div class="bop-accordion">
+            <details class="bop-accordion-item" open>
+              <summary class="bop-accordion-header">
+                <span>Information Overload</span>
+              </summary>
+              <div class="bop-accordion-content">
                 The onboarding process consisted of 12 individual steps presented with equal visual importance. Customers were required to move through multiple screens without a clear understanding of how the information was organized or how much effort remained.
-              </p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Compliance Hidden Inside the Journey</h4>
-              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+              </div>
+            </details>
+            <details class="bop-accordion-item">
+              <summary class="bop-accordion-header">
+                <span>Compliance Hidden Inside the Journey</span>
+              </summary>
+              <div class="bop-accordion-content">
                 The onboarding flow combined multiple banking requirements into a single experience. Personal information, compliance questions, account preferences, and document uploads were presented as one continuous flow. From a customer's perspective, it was difficult to understand why certain information was being requested or which sections were legally required.
-              </p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">A Digital Version of a Paper Form</h4>
-              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+              </div>
+            </details>
+            <details class="bop-accordion-item">
+              <summary class="bop-accordion-header">
+                <span>A Digital Version of a Paper Form</span>
+              </summary>
+              <div class="bop-accordion-content">
                 The experience focused on collecting information rather than guiding users through account opening. Customers moved from one form screen to another, entering details and uploading documents without receiving much contextual guidance. The system successfully gathered information but provided limited support for completing the journey.
-              </p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-primary);">Expectation vs Reality</h4>
-              <p style="margin: 0.5rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+              </div>
+            </details>
+            <details class="bop-accordion-item">
+              <summary class="bop-accordion-header">
+                <span>Expectation vs Reality</span>
+              </summary>
+              <div class="bop-accordion-content">
                 Many users assumed account creation happened immediately after submission, while the actual process involved document reviews, verification, compliance checks, and activation.
-              </p>
-            </div>
+              </div>
+            </details>
           </div>
         </section>
 
