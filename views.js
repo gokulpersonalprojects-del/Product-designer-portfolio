@@ -342,7 +342,7 @@ export function renderProject1() {
       </div>
 
       <!-- Metrics Section -->
-      <div class="metrics-grid stagger-el stagger-delay-2" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0;">
+      <div class="yooki-header-metrics stagger-el stagger-delay-2">
         <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
           <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">40%</div>
           <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Increase in subscription conversion</div>
@@ -465,7 +465,7 @@ export function renderProject1() {
           </div>
 
           <!-- Metrics row -->
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 2rem;">
+          <div class="yooki-research-grid">
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center;">
               <div class="font-mono" style="font-size: 2.25rem; font-weight: 700; color: var(--color-brand); line-height: 1;">87%</div>
               <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.4rem; letter-spacing: 0.03em; text-transform: uppercase;">Task Success Rate</div>
@@ -636,7 +636,7 @@ export function renderProject1() {
             We explored multiple approaches before deciding on the final direction.
           </p>
           
-          <div class="directions-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
+          <div class="directions-grid">
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 1</span>
@@ -739,7 +739,7 @@ export function renderProject1() {
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="decision-grid">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
                     <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
                     <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users got answers but didn't know where topics fit within the UPSC syllabus.</p>
@@ -777,7 +777,7 @@ export function renderProject1() {
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="decision-grid">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
                     <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
                     <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users rarely explored beyond the answer they received.</p>
@@ -824,7 +824,7 @@ export function renderProject1() {
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="decision-grid">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
                     <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
                     <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">The homepage focused on asking questions rather than supporting preparation.</p>
@@ -862,7 +862,7 @@ export function renderProject1() {
             Before releasing the redesign, we defined success across three areas:
           </p>
 
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1rem; margin-bottom: 1rem;">
+          <div class="success-metrics-grid">
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem;">
               <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Engagement</span>
               <ul style="margin: 0; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem;">
