@@ -695,3 +695,42 @@ function initPreloader() {
     }, { once: true });
   }, T_EXIT);
 }
+
+// ==========================================================================
+// LAZY VIDEO LOADER
+// Loads [data-lazy-video] videos only when they enter the viewport.
+// This avoids downloading large MP4 files (chapter1 ~13MB, chapter3 ~32MB)
+// on page load. Videos play automatically when visible and pause when hidden.
+// Call this after each SPA route render that contains chapter videos.
+// ==========================================================================
+export function initLazyVideos() {
+  const videos = document.querySelectorAll('video[data-lazy-video]');
+  if (!videos.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+
+      if (entry.isIntersecting) {
+        // Load src if not yet loaded
+        if (!video.dataset.loaded) {
+          const source = video.querySelector('source[data-src]');
+          if (source) {
+            source.src = source.dataset.src;
+            video.load();
+          }
+          video.dataset.loaded = 'true';
+        }
+        // Play when in viewport
+        video.play().catch(() => {});
+      } else {
+        // Pause when out of viewport to save CPU/battery
+        video.pause();
+      }
+    });
+  }, {
+    threshold: 0.25   // trigger when 25% of the video is visible
+  });
+
+  videos.forEach(video => observer.observe(video));
+}

@@ -2,6 +2,7 @@
  * views.js
  * Contains HTML templates for all portfolio routes and handles dynamic sandbox interaction states.
  */
+import { initLazyVideos } from './animation.js';
 
 // ==========================================================================
 // HOME VIEW
@@ -382,7 +383,7 @@ export function renderProject1() {
             </p>
           </div>
           <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./yooki_problem.png" alt="Disconnect between goals and usage diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <img src="./yooki_problem.webp" alt="Disconnect between goals and usage diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
@@ -441,7 +442,7 @@ export function renderProject1() {
             </div>
           </div>
           <div class="research-findings-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./yooki_research.png" alt="Research findings: Limitations of pure chatbot interface diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <img src="./yooki_research.webp" alt="Research findings: Limitations of pure chatbot interface diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
@@ -457,7 +458,7 @@ export function renderProject1() {
           </p>
 
           <div class="user-journey-image-wrapper" style="margin-bottom: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./yooki_journey.png" alt="UPSC Aspirant User Journey Map" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <img src="./yooki_journey.webp" alt="UPSC Aspirant User Journey Map" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
           
           <div class="opportunity-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
@@ -492,7 +493,7 @@ export function renderProject1() {
             The existing experience revolved around asking questions. To support a more structured preparation journey, we reorganized the product around learning, progress, and exploration.
           </p>
           <div class="ia-flow-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-            <img src="./yooki_ia.png" alt="New Information Architecture Flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <img src="./yooki_ia.webp" alt="New Information Architecture Flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
@@ -517,7 +518,7 @@ export function renderProject1() {
             </div>
           </div>
           <div class="redesign-strategy-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./yooki_flowchart_visible.png" alt="Redesign strategy flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <img src="./yooki_flowchart_visible.webp" alt="Redesign strategy flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
@@ -625,8 +626,8 @@ export function renderProject1() {
 
                 <!-- Chapter 1 Solution Path Video -->
                 <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-                  <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source src="./yooki_chapter1.mp4" type="video/mp4">
+                  <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./yooki_chapter1.mp4" type="video/mp4">
                   </video>
                 </div>
               </section>
@@ -710,8 +711,8 @@ export function renderProject1() {
 
                 <!-- Chapter 3 Solution Path Video -->
                 <div class="homepage-dashboard-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-                  <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source src="./yooki_chapter3.mp4" type="video/mp4">
+                  <video data-lazy-video loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./yooki_chapter3.mp4" type="video/mp4">
                   </video>
                 </div>
               </section>
@@ -733,7 +734,7 @@ export function renderProject1() {
               </p>
             </div>
             <div class="validation-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-              <img src="./yooki_pilot.png" alt="Validation Pilot Release Metrics Charts" style="width: 100%; height: auto; display: block;" loading="lazy">
+              <img src="./yooki_pilot.webp" alt="Validation Pilot Release Metrics Charts" style="width: 100%; height: auto; display: block;" loading="lazy">
             </div>
           </div>
         </section>
@@ -3455,6 +3456,7 @@ document.addEventListener('viewMounted', (event) => {
     initBrandStack();
   } else if (path === '/project-1') {
     initProject1Sandbox();
+    initLazyVideos();
   } else if (path === '/project-2') {
     initProject2Sandbox();
     initCendrolScrollAnimation();
