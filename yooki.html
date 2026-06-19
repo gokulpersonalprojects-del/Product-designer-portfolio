@@ -866,28 +866,44 @@
   <script type="module" src="views.js"></script>
   <script type="module" src="router.js"></script>
   <script type="module" src="animation.js"></script>
-
-  <!-- Lazy video loader for chapter videos (static page version) -->
+  <!-- Lazy video loader: triggers on tab click (IntersectionObserver alone
+       won't fire for videos inside hidden display:none tab panels) -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var videos = document.querySelectorAll('video[data-lazy-video]');
-      if (!videos.length) return;
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          var video = entry.target;
-          if (entry.isIntersecting) {
-            if (!video.dataset.loaded) {
-              var source = video.querySelector('source[data-src]');
-              if (source) { source.src = source.dataset.src; video.load(); }
-              video.dataset.loaded = 'true';
+      function loadVideoInPanel(panel) {
+        var video = panel.querySelector('video[data-lazy-video]');
+        if (!video) return;
+        if (!video.dataset.loaded) {
+          var source = video.querySelector('source[data-src]');
+          if (source) { source.src = source.dataset.src; video.load(); }
+          video.dataset.loaded = 'true';
+        }
+        video.play().catch(function () {});
+      }
+      function pauseVideoInPanel(panel) {
+        var video = panel.querySelector('video[data-lazy-video]');
+        if (video && !video.paused) video.pause();
+      }
+
+      var tabBtns = document.querySelectorAll('.solution-tab-btn');
+      var chapterContents = document.querySelectorAll('.solution-chapter-content');
+
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = btn.getAttribute('data-chapter');
+          chapterContents.forEach(function (panel) {
+            if (panel.getAttribute('data-chapter-content') === target) {
+              loadVideoInPanel(panel);
+            } else {
+              pauseVideoInPanel(panel);
             }
-            video.play().catch(function () {});
-          } else {
-            video.pause();
-          }
+          });
         });
-      }, { threshold: 0.25 });
-      videos.forEach(function (v) { observer.observe(v); });
+      });
+
+      // Auto-load the initially-active panel (Chapter 1)
+      var activePanel = document.querySelector('.solution-chapter-content.active');
+      if (activePanel) loadVideoInPanel(activePanel);
     });
   </script>
 

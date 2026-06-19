@@ -3375,6 +3375,29 @@ export function initSolutionTabs() {
   const tabBtns = container.querySelectorAll('.solution-tab-btn');
   const chapterContents = container.querySelectorAll('.solution-chapter-content');
 
+  /**
+   * Load and play a lazy video inside a newly-visible tab panel.
+   * Videos use data-src / data-lazy-video to defer network requests.
+   */
+  function loadVideoInPanel(panel) {
+    const video = panel.querySelector('video[data-lazy-video]');
+    if (!video) return;
+    if (!video.dataset.loaded) {
+      const source = video.querySelector('source[data-src]');
+      if (source) {
+        source.src = source.dataset.src;
+        video.load();
+      }
+      video.dataset.loaded = 'true';
+    }
+    video.play().catch(() => {});
+  }
+
+  function pauseVideoInPanel(panel) {
+    const video = panel.querySelector('video[data-lazy-video]');
+    if (video && !video.paused) video.pause();
+  }
+
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const targetChapter = btn.getAttribute('data-chapter');
@@ -3391,8 +3414,10 @@ export function initSolutionTabs() {
       chapterContents.forEach(content => {
         if (content.getAttribute('data-chapter-content') === targetChapter) {
           content.classList.add('active');
+          loadVideoInPanel(content);   // ← load/play on tab open
         } else {
           content.classList.remove('active');
+          pauseVideoInPanel(content);  // ← pause on tab hide
         }
       });
 
@@ -3405,7 +3430,12 @@ export function initSolutionTabs() {
       }
     });
   });
+
+  // Auto-load video in the initially-active tab (chapter 1 is default)
+  const activePanel = container.querySelector('.solution-chapter-content.active');
+  if (activePanel) loadVideoInPanel(activePanel);
 }
+
 
 /**
  * Category filter buttons on the Work list page
