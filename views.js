@@ -1342,6 +1342,14 @@ export function renderProject3() {
           <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Application tracking</div>
         </div>
       </div>
+
+      <!-- Hero Mockup Video -->
+      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
+        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+          <source src="./bop_hero_video.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <!-- Core Statement Nudge -->
       <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
         "Opening a bank account should build financial access, not create barriers to it."
