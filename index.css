@@ -4552,6 +4552,97 @@ body.phone-popup-open {
 }
 
 /* ==========================================================================
+   BANK OF PALESTINE KYC TIMELINE STEPPER
+   ========================================================================== */
+
+.bop-timeline-container {
+  margin-top: 1rem;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.bop-timeline-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.bop-timeline-container::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+.bop-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-width: 900px;
+  padding: 0 1rem;
+}
+
+.bop-timeline-line {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border-color);
+  z-index: 1;
+}
+
+.bop-timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.bop-timeline-node {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast) ease;
+}
+
+.bop-timeline-step.active .bop-timeline-node {
+  background: #ffffff;
+  border-color: var(--color-bop);
+  color: var(--color-bop);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
+}
+
+.bop-timeline-label {
+  margin-top: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 80px;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.bop-timeline-step.active .bop-timeline-label {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ==========================================================================
    BANK OF PALESTINE KYC FLOWCHART SIMULATOR
    ========================================================================== */
 
