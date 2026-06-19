@@ -630,10 +630,10 @@ function initPreloader() {
   // Lock scroll
   document.body.classList.add('preloading');
 
-  const QUOTE = 'From rolling rocks to intelligent systems, design has always been humanity\'s way of making movement easier.';
+  const QUOTE = 'From rolling rocks to intelligent systems, design has always been humanity\'s way of product design.';
 
   // Words that get an orange highlight
-  const HIGHLIGHTS = new Set(['rolling', 'rocks', 'intelligent', 'systems,', 'design', 'movement', 'easier.']);
+  const HIGHLIGHTS = new Set(['rolling', 'rocks', 'intelligent', 'systems,', 'design', 'product', 'design.']);
 
   // ── Sequence timings (ms) ────────────────────────────────
   const T_MORPH        = 600;   // rock → tyre morph starts
