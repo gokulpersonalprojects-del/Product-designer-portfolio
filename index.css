@@ -4477,53 +4477,6 @@ body.phone-popup-open {
 
 
 /* ==========================================================================
-   BANK OF PALESTINE KYC HERO PDF LINK
-   ========================================================================== */
-
-.bop-pdf-link-container {
-  display: flex;
-  justify-content: center;
-  margin-top: -1rem;
-  margin-bottom: 3.5rem;
-}
-
-.bop-pdf-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1.75rem;
-  border: 1px solid var(--color-bop);
-  border-radius: var(--border-radius-lg);
-  color: var(--color-bop);
-  background: transparent;
-  text-decoration: none;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  transition: all var(--transition-fast) ease;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.bop-pdf-link:hover {
-  background: var(--color-bop);
-  color: var(--color-on-bop);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-bop-hover);
-}
-
-.bop-pdf-link span.arrow {
-  display: inline-block;
-  transition: transform var(--transition-fast) ease;
-}
-
-.bop-pdf-link:hover span.arrow {
-  transform: translate(2px, -2px);
-}
-
-/* ==========================================================================
    BANK OF PALESTINE KYC FLOWCHART SIMULATOR
    ========================================================================== */
 
