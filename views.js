@@ -51,7 +51,9 @@ export function renderHome() {
       <article class="work-card col-span-1 stagger-el stagger-delay-3" data-project="bop" onclick="window.location.hash='#/project-3'" role="link" tabindex="0" aria-label="View Bank of Palestine case study">
         <div class="work-card-media bop" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden;">
           <div class="card-img-placeholder" style="background: none;">
-            <img src="./bop_thumbnail.png" alt="Bank of Palestine KYC Simplification Showcase" style="width: 100%; height: 100%; object-fit: cover;">
+            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
+              <source data-src="./bop_thumbnail.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
         <div class="work-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem;">
