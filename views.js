@@ -376,7 +376,7 @@ export function renderProject1() {
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono">/ THE PROBLEM</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Disconnect Between Goals and Usage</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem;">
+          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
             <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
               As the product grew, a gap started to appear between the platform's goal and the way people were using it. Most users visited Yooki with a specific question in mind. Once they found the answer they needed, their journey often ended there.
             </p>
@@ -404,20 +404,20 @@ export function renderProject1() {
           </p>
           
           <!-- Research Approach Tags Grid -->
-          <div class="methodology-tags" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); text-align: center;">
+          <div class="methodology-tags methodology-tags-grid">
+            <div class="methodology-tag-card">
               <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">USABILITY TEST</span>
               <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Maze Testing</div>
             </div>
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); text-align: center;">
+            <div class="methodology-tag-card">
               <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">ANALYTICS</span>
               <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">User Behavior</div>
             </div>
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); text-align: center;">
+            <div class="methodology-tag-card">
               <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">DESK RESEARCH</span>
               <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Domain Research</div>
             </div>
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); text-align: center;">
+            <div class="methodology-tag-card">
               <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">COMPETITIVE AUDIT</span>
               <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Market Analysis</div>
             </div>
@@ -430,7 +430,7 @@ export function renderProject1() {
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Maze Testing with UPSC Aspirants</h2>
 
           <!-- Study meta row -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="responsive-grid-2" style="gap: 1.5rem; margin-bottom: 2rem;">
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
               <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">PARTICIPANTS</span>
               <div class="font-serif" style="font-size: 2rem; font-weight: 500; color: var(--text-primary); line-height: 1;">8</div>
@@ -446,7 +446,7 @@ export function renderProject1() {
           <!-- Tasks -->
           <div style="margin-bottom: 2rem;">
             <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.75rem;">TASKS GIVEN</span>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <div class="responsive-grid-2" style="gap: 0.75rem;">
               <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
                 <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">01</span>
                 <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Find an answer to a preparation-related question</span>
@@ -495,7 +495,7 @@ export function renderProject1() {
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono">/ RESEARCH FINDINGS</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Limitations of a Pure Chatbot Interface</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem; align-items: center;">
+          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
             <div>
               <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
                 Most users came to the platform with a specific question, got the answer they needed, and left shortly after. While the chatbot was delivering value, many of the preparation focused features remained unexplored.
@@ -530,7 +530,7 @@ export function renderProject1() {
             <img src="./yooki_journey.webp" alt="UPSC Aspirant User Journey Map" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
           
-          <div class="opportunity-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div class="opportunity-grid opportunity-grid-layout" style="gap: 1.25rem;">
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
               <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">1.0 OPPORTUNITY</div>
               <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Connect Answers to Syllabus Progress</h4>
@@ -609,7 +609,7 @@ export function renderProject1() {
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono">/ REDESIGN STRATEGY</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Shifting the Experience Paradigm</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem;">
+          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
             <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
               Instead of redesigning the chatbot, we decided to rethink the role it played within the product. The goal was to move from an answer first experience to a preparation first experience, where every interaction helps users make progress toward completing the syllabus.
             </p>
@@ -899,7 +899,7 @@ export function renderProject1() {
         <section class="body-chapter" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 2rem; margin-bottom: 0;">
           <span class="chapter-num font-mono">/ VALIDATING THE SOLUTION</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Pilot Release Results</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem; align-items: center;">
+          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
             <div>
               <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
                 After implementing the changes, we conducted a pilot release to understand how users responded to the new experience and whether the redesign addressed the original challenges.
@@ -1362,7 +1362,7 @@ export function renderProject3() {
         <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE PROBLEM</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Friction of Branch-Assisted Onboarding</h2>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem;">
+          <div class="bop-two-col" style="gap: 2rem; margin-top: 0.5rem;">
             <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
               Opening a bank account has traditionally been a branch-assisted experience. Customers relied on bank representatives to explain requirements, verify documents, correct mistakes, and guide them through mandatory compliance procedures. While this approach helped ensure security and regulatory compliance, it also meant that much of the onboarding complexity was absorbed by bank staff rather than the customer.
             </p>
@@ -1502,7 +1502,7 @@ export function renderProject3() {
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ KEY INSIGHTS</span>
           <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Key Insights &amp; Opportunity Areas</h2>
           
-          <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; margin-top: 1rem;">
+          <div class="bop-insights-grid" style="gap: 2rem; margin-top: 1rem;">
             <div>
               <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Key Insights</h3>
               <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; list-style-type: none; margin: 0;">
@@ -1877,7 +1877,7 @@ export function renderProject3() {
 
             <!-- Sketch View Container -->
             <div id="bop-compliance-sketch-view" style="display: none; animation: fadeIn 0.3s ease-out;">
-              <div class="bop-sketch-grid" style="display: grid; grid-template-columns: 1.15fr 1.05fr; gap: 1.75rem; min-height: 520px; font-family: var(--font-sans);">
+              <div class="bop-sketch-grid bop-sketch-grid-layout" style="gap: 1.75rem; min-height: 520px; font-family: var(--font-sans);">
                 
                 <!-- Left Side: Notepad Sheet -->
                 <div class="bop-notepad" style="background: hsl(14, 100%, 98%); border: 1px solid rgba(224, 114, 88, 0.2); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); padding: 1.5rem 1.5rem 1.5rem 2.25rem; position: relative; overflow: hidden; background-image: linear-gradient(rgba(224, 114, 88, 0.1) 1px, transparent 1px); background-size: 100% 2.1rem; line-height: 2.1rem;">
@@ -2030,7 +2030,7 @@ export function renderProject3() {
               The existing experience presented onboarding as a long sequence of independent steps. By organizing related tasks into meaningful phases, users could focus on one objective at a time rather than the entire process.
             </p>
             
-            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.0rem;">
+            <div class="bop-comparison-grid" style="margin-bottom: 2.0rem;">
               <div style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE</span>
@@ -2088,7 +2088,7 @@ export function renderProject3() {
               <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
             </ul>
 
-            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="bop-comparison-grid" style="margin-bottom: 1.5rem;">
               <div style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE (BRANCH PORTAL)</span>
@@ -2609,7 +2609,7 @@ export function renderAIWorkshop() {
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem; align-items: stretch;" class="sandbox-inner-grid">
+        <div class="sandbox-inner-grid-layout sandbox-inner-grid">
           <!-- Terminal Panel -->
           <div class="terminal-window" style="margin: 0; display: flex; flex-direction: column; justify-content: space-between;">
             <div class="terminal-header">
@@ -2647,7 +2647,7 @@ export function renderAIWorkshop() {
             <span style="font-size: 0.6rem; padding: 0.25rem 0.5rem; background: var(--color-success-light); color: var(--color-success); border-radius: 6px; font-weight: 600; font-family: var(--font-mono);">SYSTEMS ACTIVE</span>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="responsive-grid-2" style="gap: 1rem;">
             
             <!-- Metric Card 1 (Normal) -->
             <div style="background: var(--bg-card); padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.25rem; text-align: left;">
@@ -4160,7 +4160,7 @@ export function renderProject9() {
         
         <!-- Tabbed Navigation using solution switcher styles -->
         <div class="solution-path-container" style="margin-bottom: 1rem;">
-          <div class="solution-tabs" style="grid-template-columns: repeat(4, 1fr); gap: 0.55rem; width: 100%;">
+          <div class="solution-tabs four-tabs" style="gap: 0.55rem; width: 100%;">
             <button class="solution-tab-btn active" data-chapter="1" style="padding: 0.65rem 0.25rem;">
               <span class="tab-num">CHAPTER 01</span>
               <span class="tab-title" style="font-size: 0.8rem;">UX Case Study</span>
