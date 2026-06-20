@@ -2038,8 +2038,8 @@ export function renderProject3() {
                     A continuous 12-step sequence of forms, identity uploads, and compliance questions presented with equal visual weight, causing massive drop-offs when users faced unexpected requests midway.
                   </p>
                 </div>
-                <div style="background: rgba(0, 0, 0, 0.2); border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_after.png" alt="Before: 12 continuous steps" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <div style="border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
+                  <img src="./bop_reduce_complexity_after.png" alt="Before: 12 continuous steps" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
               <div style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
@@ -2049,8 +2049,8 @@ export function renderProject3() {
                     Organized into 5 structured phases (Registration, Verification, ID Scanning, Liveness, and Account Selection) that establish momentum and save progress if users pause.
                   </p>
                 </div>
-                <div style="background: rgba(0, 0, 0, 0.2); border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_before.png" alt="After: 5 structured phases" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <div style="border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
+                  <img src="./bop_reduce_complexity_before.png" alt="After: 5 structured phases" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
             </div>
@@ -2096,8 +2096,8 @@ export function renderProject3() {
                     Status details were hidden in internal back-office tables, leaving both branch agents and customers waiting in the dark about verification blockages.
                   </p>
                 </div>
-                <div style="background: rgba(0, 0, 0, 0.2); border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_transparent_before.png" alt="Before: Hidden status tracking" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <div style="border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
+                  <img src="./bop_transparent_before.png" alt="Before: Hidden status tracking" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
               <div style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
@@ -2107,8 +2107,8 @@ export function renderProject3() {
                     Clear, in-app real-time status tracking widget that notifies the user exactly what document is being verified and displays the expected timeline.
                   </p>
                 </div>
-                <div style="background: rgba(0, 0, 0, 0.2); border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_transparent_after.png" alt="After: In-app status tracking widget" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <div style="border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
+                  <img src="./bop_transparent_after.png" alt="After: In-app status tracking widget" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
             </div>
