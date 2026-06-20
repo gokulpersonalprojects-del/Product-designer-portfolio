@@ -2042,7 +2042,7 @@ export function renderProject3() {
               The existing experience presented onboarding as a long sequence of independent steps. By organizing related tasks into meaningful phases, users could focus on one objective at a time rather than the entire process.
             </p>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.0rem;">
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.0rem;">
               <div style="padding: 1.25rem; background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE</span>
@@ -2100,7 +2100,7 @@ export function renderProject3() {
               <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
             </ul>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1.5rem;">
               <div style="padding: 1.25rem; background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE (BRANCH PORTAL)</span>
