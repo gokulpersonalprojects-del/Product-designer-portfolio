@@ -7353,6 +7353,162 @@ html.dark .trusted-logo:hover img {
   }
 }
 
+/* Bank of Palestine Rejected Draft Carousel */
+.bop-carousel-container {
+  position: relative;
+  max-width: 480px;
+  margin: 2rem auto;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.bop-carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 
+.bop-carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 300%;
+}
 
+.bop-carousel-slide {
+  width: 33.333%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.bop-carousel-slide img {
+  width: auto;
+  height: 480px;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.35));
+  transition: transform 0.3s ease;
+}
+
+.bop-carousel-caption {
+  margin-top: 1.5rem;
+  text-align: center;
+  min-height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bop-carousel-caption .caption-tag {
+  font-size: 0.7rem;
+  color: var(--color-bop);
+  font-weight: 600;
+  display: block;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.bop-carousel-caption .caption-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.bop-carousel-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+  padding: 0;
+}
+
+.bop-carousel-arrow:hover {
+  border-color: var(--color-bop);
+  color: #fff;
+  background: rgba(186, 12, 47, 0.1);
+}
+
+.bop-carousel-arrow:focus-visible {
+  outline: 2px solid var(--color-bop);
+  outline-offset: 2px;
+}
+
+.bop-carousel-arrow.prev {
+  left: 1rem;
+}
+
+.bop-carousel-arrow.next {
+  right: 1rem;
+}
+
+.bop-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.bop-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.bop-carousel-dot.active {
+  background: var(--color-bop);
+  transform: scale(1.2);
+}
+
+.bop-carousel-dot:hover:not(.active) {
+  background: var(--text-muted);
+}
+
+@media (max-width: 576px) {
+  .bop-carousel-container {
+    max-width: 100%;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .bop-carousel-slide img {
+    height: 380px;
+  }
+  .bop-carousel-arrow {
+    width: 32px;
+    height: 32px;
+    top: 38%;
+  }
+  .bop-carousel-arrow.prev {
+    left: 0.5rem;
+  }
+  .bop-carousel-arrow.next {
+    right: 0.5rem;
+  }
+}

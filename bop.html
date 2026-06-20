@@ -961,17 +961,51 @@
           <p class="chapter-desc" style="margin-bottom: 1.5rem;">
             The unified approach also introduced operational challenges. Certain verification activities depended on information collected earlier in the journey, while some compliance requirements required separate handling, review processes, and exception scenarios.
           </p>
-          
-          <!-- Mockups of rejected flow using screens -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 1.5rem; margin-bottom: 1rem;">
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
-              <img src="./bop_screen2.png" alt="Requirements screen draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+          <!-- Mockups of rejected flow using an interactive carousel -->
+          <div class="bop-carousel-container">
+            <!-- Carousel Track/Viewport -->
+            <div class="bop-carousel-track-wrapper">
+              <div class="bop-carousel-track" id="bop-rejected-carousel-track">
+                <!-- Slide 1 -->
+                <div class="bop-carousel-slide">
+                  <img src="./bop_screen2.png" alt="Requirements screen draft" loading="lazy">
+                  <div class="bop-carousel-caption">
+                    <span class="caption-tag font-mono">01 / REQUIREMENTS CHECKLIST</span>
+                    <p class="caption-desc">Prerequisite checklist forcing users to read terms upfront.</p>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="bop-carousel-slide">
+                  <img src="./bop_screen3.png" alt="Form entries draft" loading="lazy">
+                  <div class="bop-carousel-caption">
+                    <span class="caption-tag font-mono">02 / PHONE &amp; EMAIL CAPTURE</span>
+                    <p class="caption-desc">Unified entry form containing multiple high-friction fields.</p>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="bop-carousel-slide">
+                  <img src="./bop_screen4.png" alt="Verification check draft" loading="lazy">
+                  <div class="bop-carousel-caption">
+                    <span class="caption-tag font-mono">03 / TELECOM OTP VERIFICATION</span>
+                    <p class="caption-desc">Standard timed SMS verification code entry interface.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
-              <img src="./bop_screen3.png" alt="Form entries draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
-            </div>
-            <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
-              <img src="./bop_screen4.png" alt="Verification check draft" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+            
+            <!-- Arrows -->
+            <button type="button" class="bop-carousel-arrow prev" id="bop-rejected-carousel-prev" aria-label="Previous slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button type="button" class="bop-carousel-arrow next" id="bop-rejected-carousel-next" aria-label="Next slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            
+            <!-- Indicators -->
+            <div class="bop-carousel-indicators" id="bop-rejected-carousel-indicators">
+              <button type="button" class="bop-carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+              <button type="button" class="bop-carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
+              <button type="button" class="bop-carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
             </div>
           </div>
         </section>
