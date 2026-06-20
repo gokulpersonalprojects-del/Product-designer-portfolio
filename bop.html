@@ -1036,19 +1036,38 @@
               Many users assumed account creation happened immediately after submission, while the actual process involved reviews and verification. The redesign aimed to make every stage visible, helping users understand what was happening and what to expect next.
             </p>
             
-            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center;">
-              <div>
-                <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 0.95rem;">
-                  By introducing clear in-app status tracking, users no longer guess their verification state. If an automatic check requires manual bank agent review:
-                </p>
-                <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1rem; margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">
-                  <li>Users are notified of the exact document being verified.</li>
-                  <li>An expected activation timeline is clearly shown.</li>
-                  <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
-                </ul>
+            <p class="chapter-desc" style="margin-bottom: 1.25rem;">
+              By introducing clear in-app status tracking, users no longer guess their verification state. If an automatic check requires manual bank agent review:
+            </p>
+            
+            <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem; margin: 0 0 2rem 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">
+              <li>Users are notified of the exact document being verified.</li>
+              <li>An expected activation timeline is clearly shown.</li>
+              <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
+            </ul>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div style="padding: 1.25rem; background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE (BRANCH PORTAL)</span>
+                  <p style="margin: 0 0 1rem 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                    Status details were hidden in internal back-office tables, leaving both branch agents and customers waiting in the dark about verification blockages.
+                  </p>
+                </div>
+                <div style="border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid rgba(235, 87, 87, 0.1); background: rgba(0, 0, 0, 0.2); margin-top: auto;">
+                  <img src="./bop_transparent_before.png" alt="Before: Hidden status tracking" style="width: 100%; height: auto; display: block;" loading="lazy">
+                </div>
               </div>
-              <div style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; justify-content: center;">
-                <img src="./bop_screen5.png" alt="Transparent status tracking screen" style="width: auto; height: 280px; display: block; object-fit: contain;" loading="lazy">
+              <div style="padding: 1.25rem; background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; display: block; margin-bottom: 0.5rem;">AFTER (REDESIGN STATUS SCREEN)</span>
+                  <p style="margin: 0 0 1rem 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
+                    Clear, in-app real-time status tracking widget that notifies the user exactly what document is being verified and displays the expected timeline.
+                  </p>
+                </div>
+                <div style="border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid rgba(52, 199, 89, 0.1); background: rgba(0, 0, 0, 0.2); margin-top: auto;">
+                  <img src="./bop_transparent_after.png" alt="After: In-app status tracking widget" style="width: 100%; height: auto; display: block;" loading="lazy">
+                </div>
               </div>
             </div>
           </div>
