@@ -1741,7 +1741,7 @@ export function renderProject3() {
             <!-- Refined View Container -->
             <div id="bop-compliance-refined-view" style="display: block;">
               <p class="chapter-desc" style="font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); margin-bottom: 1rem;">
-                Under Palestinian Central Bank regulations, opening an active account requires collecting dense data checks. Below is an interactive map detailing Gokul's functional restructuring: select any compliance requirement on the left to see what information the app fetches from the telecom-linked government registry and which PMA guidelines apply.
+                Under Palestinian Central Bank regulations, opening an active account requires collecting dense data checks. Below is an interactive map detailing my functional restructuring: select any compliance requirement on the left to see what information the app fetches from the telecom-linked government registry and which PMA guidelines apply.
               </p>
 
               <div class="bop-compliance-grid">
