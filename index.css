@@ -7707,6 +7707,11 @@ html.dark .trusted-logo:hover img {
     border-top: 1px dashed var(--border-color);
     padding-top: 0.5rem;
   }
+  
+  .filter-bar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
 
 
