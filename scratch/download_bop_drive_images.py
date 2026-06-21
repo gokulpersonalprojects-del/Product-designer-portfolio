@@ -5,7 +5,7 @@ import os
 images = [
     ("19aSIq-cih6Yg2amofAvmihTw0BjJok2T", "bop_problem_image.png"),
     ("1qKVtPBQmdH7D784IRkweadVHZT9gZKs4",  "bop_rejected_draft.png"),
-    ("1Us3t27TUtELMYsE1G2LbCZcS-QGOX1Nl",  "bop_transparent_before.png"),
+    ("1ZL-LbrNXwQwc3bG26ocqqeFeeWPl1qQ7",  "bop_transparent_before.png"),
     ("1YiM2lEkEnnrN2rQeaZWq57I3rwcT-rOx",  "bop_reduce_complexity_before.png"),
     ("1i7crdJhbLoJBWRzFWpQePSRRzCh4dxyU",  "bop_reduce_complexity_after.png"),
     ("1XbC0XrpzHm8PG2ISCdTL89MWXadX6tqC",  "bop_simulator_replacement.png"),
