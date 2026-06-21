@@ -4,9 +4,7 @@ import os
 # Drive file IDs mapped to local destination filenames
 images = [
     ("19aSIq-cih6Yg2amofAvmihTw0BjJok2T", "bop_problem_image.png"),
-    ("1L_OHkvRM44SLbKaEAy8Jx4OfmWeYMdUk",  "bop_screen2.png"),
-    ("1UOEb7mRH-BMtqddIbvApv_rw01dVLpdB",  "bop_screen3.png"),
-    ("1szDSPDWTBNHJ0SbG_bnhiwjce_3wawKV",  "bop_screen4.png"),
+    ("1qKVtPBQmdH7D784IRkweadVHZT9gZKs4",  "bop_rejected_draft.png"),
     ("1Us3t27TUtELMYsE1G2LbCZcS-QGOX1Nl",  "bop_transparent_before.png"),
     ("1ZGHB1YhFm83ED89a0BAPrZWKA4ralmE9",  "bop_reduce_complexity_before.png"),
 ]

@@ -1981,40 +1981,9 @@ export function renderProject3() {
           <p class="chapter-desc" style="margin-bottom: 1.5rem;">
             The unified approach also introduced operational challenges. Certain verification activities depended on information collected earlier in the journey, while some compliance requirements required separate handling, review processes, and exception scenarios.
           </p>
-          <!-- Mockups of rejected flow using an interactive carousel -->
-          <div class="bop-carousel-container">
-            <!-- Carousel Track/Viewport -->
-            <div class="bop-carousel-track-wrapper">
-              <div class="bop-carousel-track" id="bop-rejected-carousel-track">
-                <!-- Slide 1 -->
-                <div class="bop-carousel-slide">
-                  <img src="./bop_screen2.png" alt="Requirements screen draft" loading="lazy">
-                </div>
-                <!-- Slide 2 -->
-                <div class="bop-carousel-slide">
-                  <img src="./bop_screen3.png" alt="Form entries draft" loading="lazy">
-                </div>
-                <!-- Slide 3 -->
-                <div class="bop-carousel-slide">
-                  <img src="./bop_screen4.png" alt="Verification check draft" loading="lazy">
-                </div>
-              </div>
-            </div>
-            
-            <!-- Arrows -->
-            <button type="button" class="bop-carousel-arrow prev" id="bop-rejected-carousel-prev" aria-label="Previous slide">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            </button>
-            <button type="button" class="bop-carousel-arrow next" id="bop-rejected-carousel-next" aria-label="Next slide">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            
-            <!-- Indicators -->
-            <div class="bop-carousel-indicators" id="bop-rejected-carousel-indicators">
-              <button type="button" class="bop-carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
-              <button type="button" class="bop-carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
-              <button type="button" class="bop-carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
-            </div>
+          <!-- Mockups of rejected flow using wide screens flow diagram -->
+          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img src="./bop_rejected_draft.png" alt="First Rejected Draft Mobile Onboarding Flow" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
@@ -3432,60 +3401,6 @@ export function initCendrolScrollAnimation() {
 /**
  * Project 3 (Bank of Palestine) First Rejected Draft Mockups Carousel Controller
  */
-export function initProject3Carousel() {
-  const track = document.getElementById('bop-rejected-carousel-track');
-  const prevBtn = document.getElementById('bop-rejected-carousel-prev');
-  const nextBtn = document.getElementById('bop-rejected-carousel-next');
-  const indicatorsContainer = document.getElementById('bop-rejected-carousel-indicators');
-  
-  if (!track || !prevBtn || !nextBtn || !indicatorsContainer) return;
-
-  const slides = Array.from(track.children);
-  const dots = Array.from(indicatorsContainer.children);
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    track.style.transform = `translateX(-${currentIndex * (100 / slides.length)}%)`;
-    dots.forEach((dot, idx) => {
-      if (idx === currentIndex) {
-        dot.classList.add('active');
-      } else {
-        dot.classList.remove('active');
-      }
-    });
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  }
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  dots.forEach((dot, idx) => {
-    dot.addEventListener('click', () => {
-      currentIndex = idx;
-      updateCarousel();
-    });
-  });
-
-  const container = track.closest('.bop-carousel-container');
-  if (container) {
-    container.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        prevSlide();
-      } else if (e.key === 'ArrowRight') {
-        nextSlide();
-      }
-    });
-  }
-}
 
 /**
  * Project 3 (Bank of Palestine) KYC Mobile onboarding phone simulator
@@ -3876,7 +3791,6 @@ document.addEventListener('viewMounted', (event) => {
     initProject3Sandbox();
     initProject3Flowchart();
     initProject3ComplianceDeck();
-    initProject3Carousel();
   } else if (path === '/project-4') {
     initProject4Sandbox();
   }
