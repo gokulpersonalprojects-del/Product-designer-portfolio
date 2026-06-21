@@ -6,7 +6,7 @@ images = [
     ("19aSIq-cih6Yg2amofAvmihTw0BjJok2T", "bop_problem_image.png"),
     ("1qKVtPBQmdH7D784IRkweadVHZT9gZKs4",  "bop_rejected_draft.png"),
     ("1Us3t27TUtELMYsE1G2LbCZcS-QGOX1Nl",  "bop_transparent_before.png"),
-    ("1ZGHB1YhFm83ED89a0BAPrZWKA4ralmE9",  "bop_reduce_complexity_before.png"),
+    ("1YiM2lEkEnnrN2rQeaZWq57I3rwcT-rOx",  "bop_reduce_complexity_before.png"),
 ]
 
 dest_dir = os.path.join(os.path.dirname(__file__), "..")
