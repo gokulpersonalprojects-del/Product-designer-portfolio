@@ -2039,7 +2039,7 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_after.png" alt="Before: 12 continuous steps" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img src="./bop_reduce_complexity_before.png" alt="Before: 12 continuous steps" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
               <div style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
@@ -2050,7 +2050,7 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_before.png" alt="After: 5 structured phases" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img src="./bop_reduce_complexity_after.png" alt="After: 5 structured phases" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
             </div>
