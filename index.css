@@ -7588,15 +7588,10 @@ html.dark .trusted-logo:hover img {
 }
 
 .bop-comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2rem;
-}
-@media (max-width: 768px) {
-  .bop-comparison-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .methodology-tags-grid {
