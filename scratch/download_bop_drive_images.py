@@ -8,6 +8,7 @@ images = [
     ("1Us3t27TUtELMYsE1G2LbCZcS-QGOX1Nl",  "bop_transparent_before.png"),
     ("1YiM2lEkEnnrN2rQeaZWq57I3rwcT-rOx",  "bop_reduce_complexity_before.png"),
     ("1i7crdJhbLoJBWRzFWpQePSRRzCh4dxyU",  "bop_reduce_complexity_after.png"),
+    ("1XbC0XrpzHm8PG2ISCdTL89MWXadX6tqC",  "bop_simulator_replacement.png"),
 ]
 
 dest_dir = os.path.join(os.path.dirname(__file__), "..")
