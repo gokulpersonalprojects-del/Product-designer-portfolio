@@ -281,400 +281,384 @@
       <!-- Dynamic Page View Container -->
       <div id="app-view" class="view-transition-container">
 
-    <article class="project-detail">
-      <header class="project-header stagger-el stagger-delay-1">
-        <span class="label font-mono project-tag" style="color: var(--color-brand)">AI INTERACTION DESIGN / CASE STUDY</span>
-        <h1 class="project-headline font-serif" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 500;">Turning Yooki from a Backup Tool into a Daily Learning Companion</h1>
+    <article class="project-detail" style="max-width: 960px; margin: 0 auto; padding: 2rem 1rem;">
+      <!-- Premium Editorial Header -->
+      <header class="project-header stagger-el stagger-delay-1" style="margin-bottom: 5.5rem; text-align: left;">
+        <span class="label font-mono project-tag" style="color: var(--color-brand); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.75rem;">AI INTERACTION DESIGN / CASE STUDY</span>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.08; font-weight: 400; margin-top: 0.75rem; letter-spacing: -0.02em; color: var(--text-primary);">
+          From Query to Curriculum: Redesigning Yooki's Conversational AI from a Doubt-Solver to a Daily Study Habit
+        </h1>
       </header>
 
-      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2rem; border-bottom: none; padding-bottom: 0;">
-        <p class="project-intro-text" style="max-width: 800px; font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
-          Yooki was built to help UPSC aspirants prepare for one of India's toughest exams using AI. However, research showed that most users were not using the platform as part of their preparation journey. Instead, they treated it as a place to quickly solve doubts before returning to other study resources.
+      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 5rem; border-bottom: none; padding-bottom: 0;">
+        <p class="project-intro-text font-serif" style="max-width: 780px; font-size: clamp(1.25rem, 2.5vw, 1.55rem); line-height: 1.45; color: var(--text-primary); margin: 0; font-weight: 300;">
+          Most UPSC aspirants weren't struggling to find facts. They were struggling to navigate the cognitive overwhelm of a 3-year preparation syllabus. This is the story of how we uncovered the transactional trap of conversational interfaces and restructured Yooki to guide aspirants through their learning journey.
         </p>
       </div>
 
-      <!-- Metrics Section -->
-      <div class="yooki-header-metrics stagger-el stagger-delay-2">
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">40%</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Increase in subscription conversion</div>
+      <!-- Metrics Section with Premium Card Styling -->
+      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 6rem; gap: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 3rem; font-weight: 700; color: var(--color-brand); line-height: 1;">40%</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Increase in subscription conversion rate</div>
         </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">50%+</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Users adopted to the learning flow</div>
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 3rem; font-weight: 700; color: var(--color-brand); line-height: 1;">50%+</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Daily adoption rate of syllabus tracking flows</div>
         </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 1.35rem; font-weight: 700; color: var(--color-brand); line-height: 1.2; text-transform: uppercase;">Higher engagement</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">With syllabus and tracking progress and study planning</div>
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 1.4rem; font-weight: 700; color: var(--color-brand); line-height: 1.2; text-transform: uppercase;">Habit Shift</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Users transitioned from single query search to syllabus progress mapping</div>
         </div>
       </div>
 
       <!-- Hero Mockup Video -->
-      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
+      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 7rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
         <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
           <source src="./upsc_thumbnail.mp4" type="video/mp4">
         </video>
       </div>
 
       <!-- Core Statement Nudge -->
-      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
-        Users weren't preparing with Yooki.<br><span style="color: var(--color-accent); font-weight: 500;">They were using it as a backup tool.</span>
+      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 7rem auto; max-width: 760px; font-size: 2.2rem; line-height: 1.35; color: var(--text-primary); padding: 0 1.5rem;">
+        Answering queries is a technical triumph.<br><span style="color: var(--color-accent); font-weight: 400; font-style: italic;">But supporting learning is a human, behavioral challenge.</span>
       </div>
 
       <div class="project-body stagger-el stagger-delay-3">
-        <!-- The Problem -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ THE PROBLEM</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Disconnect Between Goals and Usage</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              As the product grew, a gap started to appear between the platform's goal and the way people were using it. Most users visited Yooki with a specific question in mind. Once they found the answer they needed, their journey often ended there.
+        <!-- 1. The Chatbot Paradox -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ THE TENSION</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Chatbot Paradox: When a 90% Success Rate Hides a Retention Crisis</h2>
+          
+          <div class="responsive-grid-2" style="margin-bottom: 3.5rem; gap: 2rem; max-width: 100%; margin-left: auto; margin-right: auto;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+              Yooki was an engineering marvel. It answered complex polity and history questions with high accuracy. The CSAT score was high; yet, our engagement dashboard was alarming. Users arrived with a burning question, received a clear answer, and disappeared immediately. 
             </p>
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              This meant that many of the platform's learning features remained unnoticed. Users rarely explored the syllabus, tracked their progress, or continued learning beyond their original query. As a result, engagement remained limited, users had little reason to return regularly, and the platform struggled to become a meaningful part of their study routine.
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+              The chatbot was acting as a transactional lookup widget—a backup generator when study notes failed. It wasn't serving as a learning companion. By solving doubts instantaneously, Yooki was making it too easy for users to leave.
             </p>
           </div>
-          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+
+          <!-- Problem Image with spacing -->
+          <div class="problem-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card); margin-bottom: 3rem;">
             <img src="./yooki_problem.webp" alt="Disconnect between goals and usage diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
-        </section>
 
-        <!-- Research -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ RESEARCH</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Understanding the UPSC Preparation Journey</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            Before exploring solutions, I wanted to understand both the UPSC preparation journey and how users were interacting with Yooki.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            Since I was new to the UPSC domain, I began by studying the examination process, preparation methods, and the challenges aspirants face while managing a vast and complex syllabus. This helped me understand what successful preparation looks like and where learners often struggle.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            To understand how users were using the product, I conducted Maze usability testing and analyzed user behavior across the platform. The goal was to learn how aspirants approached Yooki, which features they interacted with, where they stopped their journey, and what prevented them from exploring the platform further.
-          </p>
-          
-          <!-- Research Approach Tags Grid -->
-          <div class="methodology-tags methodology-tags-grid">
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">USABILITY TEST</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Maze Testing</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">ANALYTICS</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">User Behavior</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">DESK RESEARCH</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Domain Research</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">COMPETITIVE AUDIT</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Market Analysis</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Maze Usability Testing Data -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ USABILITY TESTING</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Maze Testing with UPSC Aspirants</h2>
-
-          <!-- Study meta row -->
-          <div class="responsive-grid-2" style="gap: 1.5rem; margin-bottom: 2rem;">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">PARTICIPANTS</span>
-              <div class="font-serif" style="font-size: 2rem; font-weight: 500; color: var(--text-primary); line-height: 1;">8</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">UPSC aspirants</div>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">FORMAT</span>
-              <div class="font-serif" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">Moderated</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Maze usability testing</div>
-            </div>
-          </div>
-
-          <!-- Tasks -->
-          <div style="margin-bottom: 2rem;">
-            <span class="font-mono" style="font-size: 0.6rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.75rem;">TASKS GIVEN</span>
-            <div class="responsive-grid-2" style="gap: 0.75rem;">
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">01</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Find an answer to a preparation-related question</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">02</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Explore the syllabus section</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">03</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Find recommended topics to study next</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">04</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Track progress on a completed topic</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Metrics row -->
-          <div class="yooki-research-grid">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center;">
-              <div class="font-mono" style="font-size: 2.25rem; font-weight: 700; color: var(--color-brand); line-height: 1;">87%</div>
-              <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.4rem; letter-spacing: 0.03em; text-transform: uppercase;">Task Success Rate</div>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center;">
-              <div class="font-mono" style="font-size: 2.25rem; font-weight: 700; color: var(--color-brand); line-height: 1;">4.2<span style="font-size: 1.1rem; font-weight: 500;">m</span></div>
-              <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.4rem; letter-spacing: 0.03em; text-transform: uppercase;">Avg. Session Duration</div>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center;">
-              <div class="font-mono" style="font-size: 2.25rem; font-weight: 700; color: var(--color-brand); line-height: 1;">8</div>
-              <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.4rem; letter-spacing: 0.03em; text-transform: uppercase;">Participants</div>
-            </div>
-          </div>
-
-          <!-- Key observation callout -->
-          <div style="padding: 1.5rem; background: rgba(255,109,0,0.04); border-left: 3px solid var(--color-accent); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-            <span class="font-mono" style="font-size: 0.6rem; color: var(--color-accent); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">KEY OBSERVATION</span>
-            <p style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; color: var(--text-primary); line-height: 1.5; margin: 0; font-style: italic;">
-              "Most participants successfully found answers but rarely explored beyond the chatbot experience."
+          <!-- Narrative Insight Card -->
+          <div style="padding: 2.25rem; background: var(--bg-secondary); border-left: 4px solid var(--color-brand); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; margin-top: 2rem;">
+            <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">THE PARADOX</span>
+            <p style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 400; color: var(--text-primary); line-height: 1.5; margin: 0.5rem 0 0; font-style: italic;">
+              "Traditional UX teaches us to reduce friction and get users to their goal as fast as possible. But in Yooki, getting the user to the answer too quickly ended the interaction, destroying any opportunity to build a daily study routine."
             </p>
           </div>
         </section>
 
-        <!-- Research Findings -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ RESEARCH FINDINGS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Limitations of a Pure Chatbot Interface</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
-            <div>
-              <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                Most users came to the platform with a specific question, got the answer they needed, and left shortly after. While the chatbot was delivering value, many of the preparation focused features remained unexplored.
-              </p>
-              <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                Users were looking for direction, context, and a clearer understanding of what to study next. This suggested that answering questions alone was not enough to support their preparation journey.
-              </p>
+        <!-- 2. Research / Challenging the Better Chatbot Assumption -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ RESEARCH &amp; REVELATIONS</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Challenging the "Better Chatbot" Assumption</h2>
+          
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Initially, the product direction leaned toward optimizing the chatbot: training better models, introducing suggestion chips, or making chat history easier to search. 
+            </p>
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              To test this, we conducted moderated Maze usability testing with 8 active UPSC aspirants. The sessions revealed a deeper friction: **the interface wasn't the obstacle; the cognitive load of the exam was.** Aspirants had mind maps on their walls, stacks of books on their tables, and spreadsheets tracking syllabus percentages. They didn't need another chat dialogue box—they needed a system that mapped Yooki to their real study room layout.
+            </p>
+          </div>
+
+          <!-- Research Approach Tags Grid -->
+          <div class="methodology-tags methodology-tags-grid" style="margin-bottom: 3.5rem;">
+            <div class="methodology-tag-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Usability Testing</span>
+              <div class="font-serif" style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary);">Maze Moderated Studies</div>
             </div>
-            <div class="user-quote-callout" style="display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 1.5rem; border-left-color: var(--color-accent); min-height: 140px; background: rgba(255,109,0,0.02); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-              <div style="font-family: var(--font-serif); font-size: 1.45rem; font-weight: 500; color: var(--text-primary); line-height: 1.35; font-style: italic;">
-                "The chatbot solved doubts. It didn't build learning habits."
+            <div class="methodology-tag-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Cognitive Mapping</span>
+              <div class="font-serif" style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary);">Aspirant Habits Audit</div>
+            </div>
+            <div class="methodology-tag-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Domain Research</span>
+              <div class="font-serif" style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary);">Exam Syllabus Complexity</div>
+            </div>
+            <div class="methodology-tag-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Data Diagnostics</span>
+              <div class="font-serif" style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary);">Behavioral Drop-offs</div>
+            </div>
+          </div>
+
+          <!-- Study stats block -->
+          <div class="responsive-grid-2" style="gap: 1.5rem; margin-bottom: 3rem;">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE TARGET AUDIENCE</span>
+              <div class="font-serif" style="font-size: 2.2rem; font-weight: 500; color: var(--text-primary); line-height: 1;">8 UPSC Aspirants</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.45;">Deep-dive moderated sessions mapping daily anxiety &amp; preparation behaviors.</div>
+            </div>
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">RESEARCH FOCUS</span>
+              <div class="font-serif" style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">Context Integration</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.45;">Testing how questions arise during active syllabus mapping rather than isolated search actions.</div>
+            </div>
+          </div>
+
+          <!-- Tasks Given -->
+          <div style="margin-bottom: 3.5rem;">
+            <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 1rem; text-transform: uppercase;">Tasks Given in Maze Testing</span>
+            <div class="responsive-grid-2" style="gap: 1rem;">
+              <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--color-brand); font-weight: 700; min-width: 1.5rem; padding-top: 0.1rem;">01</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">Resolve a complex history doubt using the AI assistant</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--color-brand); font-weight: 700; min-width: 1.5rem; padding-top: 0.1rem;">02</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">Relate the resolved doubt back to the main General Studies syllabus</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--color-brand); font-weight: 700; min-width: 1.5rem; padding-top: 0.1rem;">03</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">Determine the next logical topic to study based on progress</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.8rem; color: var(--color-brand); font-weight: 700; min-width: 1.5rem; padding-top: 0.1rem;">04</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">Update prep status and log review metrics for that topic</span>
               </div>
             </div>
           </div>
-          <div class="research-findings-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+
+          <!-- Research metrics & diagram -->
+          <div class="yooki-research-grid" style="margin-bottom: 3.5rem; gap: 1.5rem;">
+            <div style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 2.8rem; font-weight: 700; color: var(--color-brand); line-height: 1;">87%</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Task Success Rate (Chat)</div>
+            </div>
+            <div style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 2.8rem; font-weight: 700; color: var(--color-brand); line-height: 1;">4.2<span style="font-size: 1.2rem; font-weight: 500;">m</span></div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Avg. Session Duration</div>
+            </div>
+            <div style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 2.8rem; font-weight: 700; color: var(--color-brand); line-height: 1;">12%</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">Syllabus Feature Discovery</div>
+            </div>
+          </div>
+
+          <div class="research-findings-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card); margin-bottom: 3rem;">
             <img src="./yooki_research.webp" alt="Research findings: Limitations of pure chatbot interface diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
+
+          <!-- Insight callout -->
+          <div style="padding: 2.25rem; background: rgba(255,109,0,0.03); border-left: 4px solid var(--color-accent); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; margin-top: 2rem;">
+            <span class="font-mono" style="font-size: 0.7rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">CRITICAL DISCOVERY</span>
+            <p style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 400; color: var(--text-primary); line-height: 1.5; margin: 0.5rem 0 0; font-style: italic;">
+              "Aspirants were suffering from 'syllabus anxiety'. Finding a single answer relieved query pressure temporarily, but it didn't solve the underlying problem of structuring their next 30 days of study."
+            </p>
+          </div>
         </section>
 
-        <!-- User Journey & Opportunities -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ USER JOURNEY &amp; OPPORTUNITIES</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Identifying High-Impact Focus Areas</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            The journey revealed a simple pattern. Users arrived with a doubt, received an answer, and continued their preparation elsewhere. The chatbot successfully solved immediate problems but failed to encourage deeper engagement.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            The research made it clear that the challenge was not about helping users find answers. The challenge was helping them continue learning after finding those answers. By looking at user behavior and journey patterns, I identified four opportunities that could help Yooki become a more meaningful part of the preparation process.
-          </p>
+        <!-- 3. User Journey & Opportunities -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ THE TURNING POINT</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Turning Point: Shifting from Answers to Alignment</h2>
+          
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Mapping out the general user journey revealed the breakdown. Users visited Yooki during moments of friction—while reading a book or revising. Once Yooki answered the doubt, the user returned to their study room ecosystem. There was no bridge keeping them on the platform.
+            </p>
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              This insight shifted our priorities. We stopped focusing on improving chatbot responses. Instead, **we focused on building the bridge: connecting the transactional chat interaction directly to their visual progress tracker.**
+            </p>
+          </div>
 
-          <div class="user-journey-image-wrapper" style="margin-bottom: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+          <div class="user-journey-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card); margin-bottom: 4rem;">
             <img src="./yooki_journey.webp" alt="UPSC Aspirant User Journey Map" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
-          
-          <div class="opportunity-grid opportunity-grid-layout" style="gap: 1.25rem;">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+
+          <!-- Opportunity Grid -->
+          <div class="opportunity-grid opportunity-grid-layout" style="gap: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
               <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">1.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Connect Answers to Syllabus Progress</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Help users understand where a topic fits within the UPSC syllabus and what they should learn next.</p>
+              <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0; color: var(--text-primary);">Syllabus Contextualization</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Embed every chat answer within the visual syllabus hierarchy, instantly showing the user its significance.</p>
             </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
               <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">2.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Improve Feature Discovery</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Make learning tools easier to find and explore beyond the chatbot.</p>
+              <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0; color: var(--text-primary);">Habit-Driving Nudges</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Transition users from a simple "resolved" status to recommended next actions based on their current progress.</p>
             </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
               <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">3.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Provide Study Direction</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Guide users with recommendations and clear next steps in their preparation.</p>
+              <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0; color: var(--text-primary);">Progress Dashboard</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Reposition the chatbot as one feature inside a broader preparation cockpit that visualizes study coverage.</p>
             </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
               <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">4.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Create Learning Loops</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Encourage users to continue learning instead of leaving after finding an answer.</p>
+              <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0; color: var(--text-primary);">Associative Exploration</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Expose cross-subject concept links (e.g., how History links to Economics) to encourage broader learning paths.</p>
             </div>
           </div>
         </section>
 
-        <!-- Information Architecture -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ INFORMATION ARCHITECTURE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Structuring the Learning Journey</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            The existing experience revolved around asking questions. To support a more structured preparation journey, we reorganized the product around learning, progress, and exploration.
-          </p>
+        <!-- 4. Information Architecture / Structuring for Calm -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ SYSTEM ARCHITECTURE</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Designing for Cognitive Calm</h2>
+          
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              With hundreds of syllabus topics, simply listing them would overwhelm aspirants. We structured the IA to group content under high-level subjects (Polity, History, Economics, Environment) and mapped the AI dialogue box as an associative overlay rather than a standalone container.
+            </p>
+          </div>
+
           <div class="ia-flow-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
             <img src="./yooki_ia.webp" alt="New Information Architecture Flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
-        <!-- Understanding the Root Cause -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ ROOT CAUSE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Understanding the Root Cause</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            While users were engaging with the chatbot, the problem wasn't a lack of information. The deeper issue was that users viewed Yooki as a transactional tool rather than a preparation platform.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 2rem;">
-            Through research and behavioral analysis, three underlying patterns emerged:
-          </p>
+        <!-- 5. Root Cause -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ DIAGNOSTICS</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Root Cause: Answering Questions is Not the Same as Guiding Learners</h2>
+          
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary);">
+              Why were users leaving despite receiving great answers? Deep analysis of drop-off points and interview transcripts exposed three critical structural issues:
+            </p>
+          </div>
 
-          <!-- Three pattern cards -->
-          <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">01</div>
+          <!-- Stylized Cards for Root Causes -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; gap: 1.5rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 1.8rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2.5rem; padding-top: 0.1rem;">01</div>
               <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Users preferred flexibility over rigid study structures</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">UPSC preparation often involves jumping between subjects, current affairs, revision, and practice tests. Users wanted support that adapted to their preparation style rather than forcing a predefined learning path.</p>
+                <h4 class="font-serif" style="font-size: 1.3rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary); letter-spacing: -0.01em;">The Rigid Track Bias</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Traditional learning apps force a linear subject order. However, UPSC aspirants study dynamically—jumping between news stories, current events, and theory. The app structure resisted this natural movement.</p>
               </div>
             </div>
 
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">02</div>
+            <div style="display: flex; gap: 1.5rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 1.8rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2.5rem; padding-top: 0.1rem;">02</div>
               <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Answers existed without context</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">While users received useful responses, they struggled to understand how topics connected to the syllabus, their preparation goals, or what they should learn next.</p>
+                <h4 class="font-serif" style="font-size: 1.3rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary); letter-spacing: -0.01em;">Information Without Position</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Every AI response solved a doubt but remained isolated. Users couldn't see the context—which General Studies paper it belonged to, or how it impacted their syllabus completion targets.</p>
               </div>
             </div>
 
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">03</div>
+            <div style="display: flex; gap: 1.5rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start; box-shadow: var(--shadow-sm);">
+              <div class="font-mono" style="font-size: 1.8rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2.5rem; padding-top: 0.1rem;">03</div>
               <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Preparation features lacked visibility at the right moment</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Important features such as syllabus tracking, progress monitoring, and study planning existed, but users rarely discovered them during their natural workflow.</p>
+                <h4 class="font-serif" style="font-size: 1.3rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary); letter-spacing: -0.01em;">The Conversation-First Interface Illusion</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">By presenting a clean ChatGPT-style interface on launch, Yooki gave the impression that it was just a doubt box. Users never discovered that they could track, plan, or map progress inside the app.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Redesign Strategy -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ REDESIGN STRATEGY</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Shifting the Experience Paradigm</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              Instead of redesigning the chatbot, we decided to rethink the role it played within the product. The goal was to move from an answer first experience to a preparation first experience, where every interaction helps users make progress toward completing the syllabus.
+        <!-- 6. Paradigm Shift -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ THE STRATEGY</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Strategy: Transforming Chat from a Destination into a Gateway</h2>
+          
+          <div class="responsive-grid-2" style="margin-bottom: 3.5rem; gap: 2rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+              We shifted Yooki's paradigm: instead of treating chat as the primary screen, **we built a preparation ecosystem where conversational inputs serve as entry points to structured learning.**
             </p>
-            <div>
-              <p class="chapter-desc" style="margin: 0 0 0.5rem; font-weight: 500; color: var(--text-primary); font-size: 1.05rem;">
-                To achieve this, the experience was redesigned around four principles:
-              </p>
-              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
-                <li>First, every answer should lead to further learning.</li>
-                <li>Second, important features should be easier to discover.</li>
-                <li>Third, users should always know what to study next.</li>
-                <li>Finally, the product should encourage continuous learning rather than one time interactions.</li>
-              </ul>
-            </div>
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+              Every time an aspirant asks a question, Yooki answers the query, highlights its position within the syllabus tree, and prompts them with custom next actions. This turns conversational queries into structured study habits.
+            </p>
           </div>
-          <div class="redesign-strategy-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+
+          <div class="redesign-strategy-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
             <img src="./yooki_flowchart_visible.webp" alt="Redesign strategy flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
-        <!-- Exploring Directions -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ EXPLORING DIRECTIONS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Evaluating Alternative Approaches</h2>
-          <p class="chapter-desc" style="margin-bottom: 2rem;">
-            We explored multiple approaches before deciding on the final direction.
+        <!-- 7. Exploring Directions -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ HARD CHOICES</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Hard Choices: Rigid Curriculums vs. Sandbox Exploration</h2>
+          
+          <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 3.5rem; max-width: 780px;">
+            We evaluated three primary system designs. Balancing business goals, engineering constraints, and study habits required making compromises:
           </p>
           
-          <div class="directions-grid">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="directions-grid" style="gap: 2rem;">
+            <!-- Direction 1 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.5rem; box-shadow: var(--shadow-sm);">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 1</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Force a structured learning path</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  This would encourage syllabus completion and preparation consistency.
+                <h4 class="font-serif" style="font-size: 1.3rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Linear Study Track</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.75rem; margin-bottom: 0;">
+                  Lock users into a step-by-step curriculum path to ensure syllabus coverage.
                 </p>
               </div>
-              <div style="padding: 1rem; background: rgba(255,59,48,0.05); border: 1px solid rgba(255,59,48,0.15); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.6rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Research suggested users valued flexibility. Introducing a rigid flow could create friction and reduce the speed that made the chatbot valuable in the first place.</p>
+              <div style="padding: 1.25rem; background: rgba(255,59,48,0.03); border: 1px solid rgba(255,59,48,0.1); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem; text-transform: uppercase;">Why we rejected it</span>
+                <p style="font-size: 0.85rem; line-height: 1.55; color: var(--text-secondary); margin: 0;">Aspirants rejected the rigid schedule during testing. UPSC preparation is highly personal; forcing users down a strict path created immediate friction and drop-offs.</p>
               </div>
             </div>
             
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
+            <!-- Direction 2 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.5rem; box-shadow: var(--shadow-sm);">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 2</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Add recommendations on top of the existing experience</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  This would improve content discovery without changing the core workflow.
+                <h4 class="font-serif" style="font-size: 1.3rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Recommendation Overlay</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.75rem; margin-bottom: 0;">
+                  Add dynamic recommendation cards on top of the existing chat interface.
                 </p>
               </div>
-              <div style="padding: 1rem; background: rgba(255,109,0,0.05); border: 1px solid rgba(255,109,0,0.15); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.6rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Recommendations alone would increase visibility, but they wouldn't solve the deeper problem of connecting learning activities into a continuous preparation journey.</p>
+              <div style="padding: 1.25rem; background: rgba(255,109,0,0.03); border: 1px solid rgba(255,109,0,0.1); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem; text-transform: uppercase;">Why we rejected it</span>
+                <p style="font-size: 0.85rem; line-height: 1.55; color: var(--text-secondary); margin: 0;">It acted as a superficial band-aid. Users ignored the carousel recommendations because they lacked a visual connection to their overall preparation goals.</p>
               </div>
             </div>
             
-            <div style="padding: 1.25rem; background: rgba(138,43,226,0.04); border: 1px solid var(--color-brand); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem; box-shadow: 0 8px 20px rgba(138,43,226,0.03);">
+            <!-- Direction 3 (Selected) -->
+            <div style="padding: 2rem; background: rgba(138,43,226,0.02); border: 1px solid var(--color-brand); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.5rem; box-shadow: 0 10px 30px rgba(138,43,226,0.02);">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">APPROACH 3 · SELECTED</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Use the chatbot as an entry point to learning</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  This approach preserved the platform's strongest behavior while creating pathways toward syllabus exploration, planning, and progress tracking.
+                <h4 class="font-serif" style="font-size: 1.35rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.01em;">The Chat-to-Syllabus Bridge</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.75rem; margin-bottom: 0;">
+                  Use conversational queries as portals that display progress, contextual suggestions, and next actions.
                 </p>
               </div>
+              
               <!-- Stakeholder Considerations -->
-              <div style="border-top: 1px dashed rgba(138,43,226,0.15); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">Stakeholder Considerations</span>
-                <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-                  While discussing potential solutions, stakeholders raised several concerns:
-                </p>
-                <div style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0.25rem;">
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Maintaining chatbot adoption</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">The chatbot was already the platform's most frequently used feature. Any redesign that disrupted this behavior risked reducing overall engagement.</p>
+              <div style="border-top: 1px dashed rgba(138,43,226,0.15); padding-top: 1.25rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">Stakeholder Compromises</span>
+                <div style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0.25rem;">
+                  <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                    <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Disrupting the core hook</span>
+                    <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">The chatbot drove our initial adoption. We compromised by keeping the chat input bar prominent on launch, but transformed the response panels into interactive progress sheets.</p>
                   </div>
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Feature discoverability without complexity</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">Adding more preparation tools could overwhelm users if introduced too aggressively.</p>
-                  </div>
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Business growth</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">The solution needed to encourage adoption of premium learning features while continuing to deliver value through the chatbot experience.</p>
+                  <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                    <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Engineering constraint</span>
+                    <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Mapping raw text queries to structured syllabus nodes in real-time required strict classifier models. We designed soft-mapping UI states to handle edge-case queries elegantly.</p>
                   </div>
                 </div>
-                <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0; font-style: italic;">
-                  These considerations helped shape a strategy that enhanced the learning journey without disrupting existing user behavior.
-                </p>
               </div>
 
-              <div style="padding: 1rem; background: rgba(52,199,89,0.05); border: 1px solid rgba(52,199,89,0.18); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.6rem; color: #34c759; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">SELECTED BECAUSE</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">It balanced user needs, learning outcomes, and business goals.</p>
+              <div style="padding: 1rem; background: rgba(52,199,89,0.04); border: 1px solid rgba(52,199,89,0.15); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem; text-transform: uppercase;">THE VERDICT</span>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Balances immediate doubt-solving speed with structured long-term habits.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Solution Path Section Wrapper -->
-        <div class="solution-path-section">
-          <!-- Solution Path Tabs -->
-          <div class="solution-path-container">
-            <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.05em;">/ THE SOLUTION PATH</span>
-            <div class="solution-tabs">
+        <!-- 8. Solution Path (Tabs Container) -->
+        <div class="solution-path-section" style="margin-top: 5.5rem; margin-bottom: 5.5rem;">
+          <div class="solution-path-container" style="margin-bottom: 2.5rem;">
+            <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.08em; font-weight: bold; text-transform: uppercase;">/ THE SOLUTION IN ACTION</span>
+            <div class="solution-tabs" style="margin-top: 1rem;">
               <button class="solution-tab-btn active" data-chapter="1">
-                <span class="tab-num">CHAPTER 01</span>
+                <span class="tab-num font-mono">01</span>
                 <span class="tab-title">Connecting Answers to the Syllabus</span>
               </button>
               <button class="solution-tab-btn" data-chapter="2">
-                <span class="tab-num">CHAPTER 02</span>
-                <span class="tab-title">Making Discovery Intent Driven</span>
+                <span class="tab-num font-mono">02</span>
+                <span class="tab-title">Intent-Driven Discovery</span>
               </button>
               <button class="solution-tab-btn" data-chapter="3">
-                <span class="tab-num">CHAPTER 03</span>
-                <span class="tab-title">Redesigning the Homepage Around Prep</span>
+                <span class="tab-num font-mono">03</span>
+                <span class="tab-title">Redesigning the Homepage Dashboard</span>
               </button>
             </div>
           </div>
@@ -683,37 +667,38 @@
           <div class="solution-chapters-container">
             <!-- Chapter 1 -->
             <div class="solution-chapter-content active" data-chapter-content="1">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 1</span>
-                <h2 class="chapter-title font-serif">Connecting Answers to the Syllabus</h2>
-                <p class="chapter-desc">
-                  We connected AI responses directly to the syllabus. Every answer became an entry point into deeper exploration by showing its position within the syllabus and surfacing related topics that users could learn next.
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 01</span>
+                <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Contextual Syllabus Mapping</h3>
+                
+                <p class="chapter-desc" style="max-width: 680px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2rem;">
+                  We transformed Yooki's conversational outputs into structured sheets. Every time an aspirant receives an answer, the AI displays a mini syllabus tree pointing to General Studies papers, showing what percentage of that subject they have completed, and highlighting their knowledge gaps.
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div class="decision-grid">
+                <div class="decision-grid" style="margin-bottom: 2.5rem;">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users got answers but didn't know where topics fit within the UPSC syllabus.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Answering polity queries resolved immediate doubts but left users blind to where that topic sits in the broader syllabus.</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">We connected AI responses with syllabus context and related topics.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Inject a progress mini-map directly above chatbot responses, highlighting coverage status (e.g., 61% completed).</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users needed guidance, not just answers.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Provides immediate visual feedback that connects their chat habits directly to syllabus progress.</p>
                   </div>
                 </div>
 
-                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 1.5rem;">
+                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 2rem;">
                   "We hypothesized that users left because answers existed in isolation. By connecting answers to syllabus progress, we aimed to increase feature discovery and encourage deeper engagement."
                 </div>
 
-                <!-- Chapter 1 Solution Path Video -->
+                <!-- Video 1 -->
                 <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
                   <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./yooki_chapter1.mp4?v=2" type="video/mp4">
+                    <source data-src="./yooki_chapter1.mp4" type="video/mp4">
                   </video>
                 </div>
               </section>
@@ -721,26 +706,27 @@
 
             <!-- Chapter 2 -->
             <div class="solution-chapter-content" data-chapter-content="2">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 2</span>
-                <h2 class="chapter-title font-serif">Making Discovery Intent Driven</h2>
-                <p class="chapter-desc">
-                  Instead of expecting users to actively search for more content, we introduced a discovery layer directly within the learning experience. Whenever a user received an answer, Yooki would surface related topics, connected concepts, and recommended areas to explore next.
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 02</span>
+                <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Intent-Driven Discovery &amp; Nudges</h3>
+                
+                <p class="chapter-desc" style="max-width: 680px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2rem;">
+                  Instead of displaying static recommendation carousels, we designed contextual prompts that appear when an answer is resolved. Yooki cross-references their study history to suggest high-value concepts that link subjects logically (e.g. how a पॉलिटी concept links to an इकोनॉमी issue).
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div class="decision-grid">
+                <div class="decision-grid" style="margin-bottom: 2.5rem;">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users rarely explored beyond the answer they received.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users didn't know what related sub-topics were relevant to their doubt, resulting in immediate session exits.</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">We introduced related topics and contextual recommendations.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Analyze their GS papers coverage gap in real-time, displaying custom next-action links at the bottom of the chat response sheet.</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Discovery should happen naturally without requiring another search.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It leverages their immediate curiosity to redirect them back into structured study routines.</p>
                   </div>
                 </div>
 
@@ -749,8 +735,9 @@
                 </div>
 
                 <!-- Interactive AI Sandbox -->
-                <div class="interactive-flow-sandbox" style="margin-top: 1.5rem;">
-                  <div class="ai-dialogue-sandbox" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+                <div class="interactive-flow-sandbox" style="margin-top: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
+                  <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); display: block; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">INTERACTIVE CONVERSATIONAL PROTO</span>
+                  <div class="ai-dialogue-sandbox" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
                     <div class="chat-bubble user" id="ai-user-bubble" style="background: rgba(138,43,226,0.06); border: 1px solid rgba(138,43,226,0.15); color: var(--text-primary); padding: 0.75rem 1rem; border-radius: 12px 12px 0 12px; align-self: flex-end; max-width: 85%; font-size: 0.88rem; line-height: 1.45;">
                       Select a question below to ask Yooki AI...
                     </div>
@@ -768,26 +755,27 @@
 
             <!-- Chapter 3 -->
             <div class="solution-chapter-content" data-chapter-content="3">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 3</span>
-                <h2 class="chapter-title font-serif">Redesigning the Homepage Around Preparation</h2>
-                <p class="chapter-desc">
-                  We reimagined the homepage as a preparation dashboard. Instead of centering the experience around a conversation, the homepage now focused on learning progress, syllabus coverage, recommendations, and next actions.
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+                <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 03</span>
+                <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Redesigning the Homepage Dashboard</h3>
+                
+                <p class="chapter-desc" style="max-width: 680px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2rem;">
+                  We completely replaced the generic chat-only homepage with a personalized prep dashboard. Users immediately see their overall syllabus completion bars, upcoming revision cards, and subject-level trackers.
                 </p>
                 
                 <!-- Decision Grid Table -->
-                <div class="decision-grid">
+                <div class="decision-grid" style="margin-bottom: 2.5rem;">
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">The homepage focused on asking questions rather than supporting preparation.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">An open chat dialogue window implies a single task (question-answering), hiding other learning tools completely.</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">We redesigned it into a preparation dashboard with progress and recommendations.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Redesign the homepage into a preparation hub that visualizes progress and maps chat inputs directly within it.</p>
                   </div>
                   <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Users needed direction and visibility into their preparation.</p>
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Provides a persistent sense of progress, transforming the product from a search box into a daily tracker.</p>
                   </div>
                 </div>
 
@@ -795,10 +783,10 @@
                   "We hypothesized that the initial another chatgpt style home page made the users think it was the only capability of the application."
                 </div>
 
-                <!-- Chapter 3 Solution Path Video -->
+                <!-- Video 3 -->
                 <div class="homepage-dashboard-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
                   <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./yooki_chapter3.mp4?v=2" type="video/mp4">
+                    <source data-src="./yooki_chapter3.mp4" type="video/mp4">
                   </video>
                 </div>
               </section>
@@ -806,76 +794,75 @@
           </div>
         </div>
 
-        <!-- Success Metrics -->
-        <section class="body-chapter" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 2rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ SUCCESS METRICS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Success Metrics</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            Before releasing the redesign, we defined success across three areas:
-          </p>
+        <!-- 9. Success Metrics -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ GOAL SETTING</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Defining Success Beyond Speed</h2>
+          
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary);">
+              Our original chat metrics optimized for query response speed. For the redesign, we established a different group of indicators to measure actual study integration:
+            </p>
+          </div>
 
-          <div class="success-metrics-grid">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem;">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Engagement</span>
-              <ul style="margin: 0; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem;">
-                <li>More users exploring beyond the chatbot</li>
-                <li>Increased interaction with syllabus and planning features</li>
+          <div class="success-metrics-grid" style="gap: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Habitual Retention</span>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.35rem;">
+                <li>Increase repeat daily study room logins</li>
+                <li>Verify interaction with General Studies syllabus nodes</li>
               </ul>
             </div>
             
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem;">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Learning Behavior</span>
-              <ul style="margin: 0; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem;">
-                <li>Increased progression through related topics</li>
-                <li>Higher adoption of preparation-focused workflows</li>
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Learning Depth</span>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.35rem;">
+                <li>Track path progression across related topics</li>
+                <li>Reduce quick doubt-and-exit session drops</li>
               </ul>
             </div>
 
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem;">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Business Impact</span>
-              <ul style="margin: 0; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem;">
-                <li>Increased subscription conversion</li>
-                <li>Increased retention and repeat visits</li>
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.5rem; box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">Conversion Metrics</span>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.35rem;">
+                <li>Increase conversion to our premium study dashboard</li>
+                <li>Validate adoption of progress-mapping features</li>
               </ul>
             </div>
           </div>
-
-          <p class="chapter-desc" style="margin-top: 1.5rem; font-style: italic;">
-            The redesign would be considered successful if users moved from one-time question solving toward continuous preparation behaviors.
-          </p>
         </section>
 
-        <!-- Validating the Solution -->
-        <section class="body-chapter" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 2rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ VALIDATING THE SOLUTION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Pilot Release Results</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
-            <div>
-              <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                After implementing the changes, we conducted a pilot release to understand how users responded to the new experience and whether the redesign addressed the original challenges.
-              </p>
-              <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                The redesigned experience encouraged users to move beyond single interactions and participate in a more structured preparation journey. Features that previously saw limited adoption became a regular part of how users interacted with the platform.
-              </p>
-            </div>
+        <!-- 10. Validating the Solution -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ THE OUTCOMES</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Beyond Chat Satisfaction: Validating Daily Habits</h2>
+          
+          <div class="responsive-grid-2" style="margin-bottom: 3.5rem; gap: 2rem; align-items: center;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+              Following a pilot release to our beta testers, the behavioral shift was immediate. Users stopped treating Yooki as a simple search box. Instead of closing the tab after getting an answer, they actively used the syllabus context to plan their next review target.
+            </p>
+            
             <div class="validation-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
               <img src="./yooki_pilot.webp" alt="Validation Pilot Release Metrics Charts" style="width: 100%; height: auto; display: block;" loading="lazy">
             </div>
           </div>
         </section>
 
-        <!-- Reflection & Learnings -->
-        <section class="body-chapter" style="border-top: 1px solid var(--border-color); padding-top: 2.5rem; margin-top: 2rem; padding-bottom: 2rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ REFLECTION &amp; LEARNINGS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Key Takeaways</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            This project started with a simple assumption: if users had access to AI powered answers, they would naturally use Yooki as part of their preparation journey. However, the research revealed that solving doubts and supporting preparation are two very different problems.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            One of the biggest lessons from this project was that successful features do not always create successful products. The chatbot was performing well at answering questions, yet the product struggled with retention, engagement, and conversion. Looking beyond feature level metrics helped uncover the larger behavioral problem that users were facing.
-          </p>
+        <!-- 11. Reflection & Learnings -->
+        <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ REFLECTION</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Lessons from the AI Frontier: Chat is Just the CLI</h2>
           
-          <div class="user-quote-callout font-serif" style="font-size: 1.6rem; line-height: 1.35; padding: 2rem; border-left-width: 4px; border-left-color: var(--color-brand); background: rgba(138,43,226,0.02); border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; margin-top: 1rem; font-style: normal;">
+          <div style="max-width: 780px; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              This project started with a simple assumption: if users had access to AI-powered answers, they would naturally use Yooki as part of their preparation journey. However, the research revealed that solving doubts and supporting preparation are two very different problems.
+            </p>
+            <p class="chapter-desc" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              One of the biggest lessons from this project was that successful features do not always create successful products. The chatbot was performing well at answering questions, yet the product struggled with retention, engagement, and conversion. Looking beyond feature-level metrics helped uncover the larger behavioral problem that users were facing.
+            </p>
+          </div>
+          
+          <div class="user-quote-callout font-serif" style="font-size: clamp(1.35rem, 2.5vw, 1.8rem); line-height: 1.35; padding: 2.5rem; border-left-width: 4px; border-left-color: var(--color-brand); background: rgba(138,43,226,0.02); border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; margin-top: 2rem; font-style: normal; font-weight: 300;">
             "Designing better answers was never the solution.<br><span style="color: var(--color-brand); font-weight: 600;">Designing a clearer learning journey was.</span>"
           </div>
         </section>
