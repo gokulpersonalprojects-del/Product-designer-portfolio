@@ -887,8 +887,8 @@ export function renderProject1() {
           <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-brand); letter-spacing: 0.05em;">/ THE OUTCOMES</span>
           <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Beyond Chat Satisfaction: Validating Daily Habits</h2>
           
-          <div class="responsive-grid-2" style="margin-bottom: 3.5rem; gap: 2rem; align-items: center;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
+          <div style="display: flex; flex-direction: column; gap: 2.5rem; margin-bottom: 3.5rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); max-width: 680px;">
               Following a pilot release to our beta testers, the behavioral shift was immediate. Users stopped treating Yooki as a simple search box. Instead of closing the tab after getting an answer, they actively used the syllabus context to plan their next review target.
             </p>
             
