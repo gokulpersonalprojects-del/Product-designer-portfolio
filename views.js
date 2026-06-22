@@ -942,53 +942,63 @@ export function renderProject2() {
   return `
     <article class="project-detail">
       <header class="project-header stagger-el stagger-delay-1">
-        <span class="label font-mono project-tag" style="color: var(--color-brand)">FIELD OPERATIONS / WORKFLOW DESIGN</span>
-        <h1 class="project-headline font-serif">Helping Engineers Get Their Money Back—Faster</h1>
+        <span class="label font-mono project-tag" style="color: var(--color-brand)">FIELD OPERATIONS / WORKFLOW DESIGN / CASE STUDY</span>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 500;">Helping Engineers Get Their Money Back—Faster</h1>
       </header>
 
-      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; border-bottom: none; margin-bottom: 1rem; padding-bottom: 0;">
-        <p class="project-intro-text" style="max-width: 800px; font-style: italic; color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.15rem; line-height: 1.55;">
-          “Our guys are spending their children's school fee money on nuts and bolts.”
-          <span style="display: block; font-size: 0.85rem; color: var(--text-muted); font-style: normal; margin-top: 0.5rem; font-family: var(--font-mono);">— April, 2024</span>
+      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2rem; border-bottom: none; padding-bottom: 0;">
+        <p class="project-intro-text" style="max-width: 800px; font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+          Cendrol Construct Bangalore wanted to streamline how on-site construction engineers claim reimbursements for urgent, out-of-pocket material purchases. The goal was to replace a slow, manual paper-based workflow with an automated digital experience that gets engineers paid faster.
         </p>
       </div>
 
-      <div class="project-body stagger-el stagger-delay-3">
-
-        <!-- Core Highlights Grid -->
-        <div class="bop-comparison-grid" style="margin-bottom: 2.5rem;">
-          <div style="padding: 1.25rem; background: rgba(138, 92, 246, 0.03); border: 1px solid rgba(138, 92, 246, 0.15); border-radius: var(--border-radius-md);">
-            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">REALTIME STATUS</span>
-            <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
-              Know the status of the reimbursement from time to time in real-time.
-            </p>
-          </div>
-          <div style="padding: 1.25rem; background: rgba(138, 92, 246, 0.03); border: 1px solid rgba(138, 92, 246, 0.15); border-radius: var(--border-radius-md);">
-            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">TRUSTED</span>
-            <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
-              Foolproof way to show proof of purchase through instant invoice scans and snaps of purchased materials.
-            </p>
-          </div>
-          <div style="padding: 1.25rem; background: rgba(138, 92, 246, 0.03); border: 1px solid rgba(138, 92, 246, 0.15); border-radius: var(--border-radius-md);">
-            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">DATABASE ENHANCEMENT</span>
-            <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
-              Enhanced data collection through adding of additional materials for a stage or category of construction.
-            </p>
-          </div>
+      <!-- Metrics Section -->
+      <div class="yooki-header-metrics stagger-el stagger-delay-2">
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">14 to 4 Days</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Average reimbursement time</div>
         </div>
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">31% to 8%</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Expense claim error rates</div>
+        </div>
+        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">60%</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Reduction in site inventory delays</div>
+        </div>
+      </div>
 
-        <!-- Section: Overview -->
-        <section class="body-chapter" style="padding-top: 0; margin-top: 0; border-top: none;">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ OVERVIEW</span>
-          <p class="chapter-desc" style="margin-top: 1rem;">
-            Rajesh, a seasoned site engineer at Cendrol Construct Bangalore, stands at a hardware store at 7 PM on a Tuesday evening. The project deadline is tomorrow, but they're missing critical fasteners that arrived defective this morning. The vendor won't deliver such a small quantity, and the accounting department closed hours ago. Rajesh reaches for his wallet, knowing he'll be out ₹3,000 of his own money with no guarantee of when he'll see it back.
-          </p>
-          <p class="chapter-desc">
-            This wasn't an isolated incident—it was the daily reality for engineers across 50+ construction sites, and it was slowly breaking both their spirits and their bank accounts.
-          </p>
+      <!-- Hero Mockup Video -->
+      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
+        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
+          <source src="./cendrol_thumbnail.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Core Statement Nudge -->
+      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
+        Engineers were spending their own money on site materials.<br><span style="color: var(--color-accent); font-weight: 500;">And waiting weeks to get paid back.</span>
+      </div>
+
+      <div class="project-body stagger-el stagger-delay-3">
+        <!-- The Problem -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ THE PROBLEM</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Disconnect Between Field Needs and Finance Audits</h2>
+          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              Rajesh, a seasoned site engineer at Cendrol Construct Bangalore, stands at a hardware store at 7 PM on a Tuesday evening. The project deadline is tomorrow, but they're missing critical fasteners that arrived defective this morning. The vendor won't deliver such a small quantity, and the accounting department closed hours ago. Rajesh reaches for his wallet, knowing he'll be out ₹3,000 of his own money with no guarantee of when he'll see it back.
+            </p>
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              This wasn't an isolated incident—it was the daily reality for engineers across 50+ construction sites. The manual, paper-based reimbursement process forced good engineers to choose between keeping project timelines on track and their own personal financial stability.
+            </p>
+          </div>
+          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img src="./cendrol_legacy_paperwork.png" alt="Legacy paperwork and manual audit chaos" style="width: 100%; height: auto; display: block;" loading="lazy">
+          </div>
         </section>
 
-        <!-- Section: Product Highlights (Sticky Scroll Animation) -->
+        <!-- Product Highlights (Sticky Scroll Animation) -->
         <section class="cendrol-scroll-section">
           <!-- Left side: Sticky Visuals Container -->
           <div class="cendrol-scroll-sticky">
@@ -1036,215 +1046,485 @@ export function renderProject2() {
           </div>
         </section>
 
-        <!-- Section: Diving Deep Into the Problem -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ DIVING DEEP INTO THE PROBLEM</span>
-          <p class="chapter-desc" style="margin-top: 1rem;">
-            Armed with curiosity and a notepad, I began what felt like detective work. I talked to anyone who would listen—project managers sharing war stories over coffee, accountants drowning in illegible handwritten receipts, and most importantly, the engineers themselves. Each conversation revealed another layer of the problem.
+        <!-- Research -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ RESEARCH</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Investigating the Claims Ecosystem</h2>
+          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
+            Armed with curiosity and a notepad, I began what felt like detective work. I talked to anyone who would listen—project managers sharing war stories over coffee, accountants drowning in illegible handwritten receipts, and site engineers working under grueling field pressures.
           </p>
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “We want to pay them faster,” the chief accountant explained, “but when we can't read the amount or the vendor name, what can we do?”
-          </div>
-        </section>
-
-        <!-- Section: The Constraint That Almost Broke My Heart -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ THE CONSTRAINT</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">The Constraint That Almost Broke My Heart</h2>
-          <p class="chapter-desc">
-            Then came the moment that every designer dreads. Pooja looked at me sympathetically and delivered the news:
-          </p>
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “We need this fast. The app already exists, our people use it daily, so no extensive research needed. Just design the solution.”
-          </div>
-          <p class="chapter-desc">
-            As someone who believed research was the foundation of good design, this felt like being asked to build a house without checking the soil. But sometimes, real-world projects don't wait for perfect processes.
-          </p>
-        </section>
-
-        <!-- Section: Analysis & Structure -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ ANALYSIS &amp; STRUCTURE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">Mapping the Journey of Pain</h2>
-          <p class="chapter-desc">
-            To map the landscape, we detailed the exact steps an engineer had to take just to get reimbursed. It was a journey of friction:
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            I conducted field studies, rode along with engineers to vendor shops, and observed the chaotic process of preserving physical paper receipts in dusty, wet construction environments.
           </p>
           
-          <ul style="display: flex; flex-direction: column; gap: 0.65rem; padding-left: 1.25rem; margin: 1.5rem 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
-            <li><strong>1. Material Urgency:</strong> Realize they needed construction materials urgently on site.</li>
-            <li><strong>2. Out-of-Pocket Transit:</strong> Drive to vendors using their own personal vehicle fuel.</li>
-            <li><strong>3. Personal Cash Flow:</strong> Pay with personal money (often borrowed from colleagues).</li>
-            <li><strong>4. Physical Preservation:</strong> Keep paper receipts safe from dust, water, and tears (prayer required).</li>
-            <li><strong>5. Manual Entry:</strong> Fill handwritten expense forms during lunch breaks.</li>
-            <li><strong>6. Black Hole Submission:</strong> Submit forms to accounting and play the waiting game.</li>
-            <li><strong>7. Continuous Chasing:</strong> Follow up repeatedly, feeling like they were begging for their own money.</li>
-          </ul>
-
-          <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-top: 2rem; margin-bottom: 0.5rem;">Finding the Heroes and Villains</h3>
-          <p class="chapter-desc">
-            The heroes were obvious—hardworking engineers putting projects before personal financial comfort. But the villains weren't people; they were processes. The villain was a system that forced good people into impossible choices between project success and personal financial stability.
-          </p>
+          <!-- Research Approach Tags Grid -->
+          <div class="methodology-tags methodology-tags-grid">
+            <div class="methodology-tag-card">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">FIELD RESEARCH</span>
+              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Site Visits</div>
+            </div>
+            <div class="methodology-tag-card">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">USER INTERVIEWS</span>
+              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Engineer Conversations</div>
+            </div>
+            <div class="methodology-tag-card">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">PROCESS MAPPING</span>
+              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Workflow Audits</div>
+            </div>
+            <div class="methodology-tag-card">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">STAKEHOLDER SYNC</span>
+              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Finance Team Reviews</div>
+            </div>
+          </div>
         </section>
 
-        <!-- Section: Sketching Hope -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ SKETCHING HOPE</span>
-          <p class="chapter-desc" style="margin-top: 1rem;">
-            Armed with sticky notes and a whiteboard, I began sketching what felt like designing a financial lifeline. The solution needed to be three things: <strong>fast</strong> (engineers couldn't afford delays), <strong>foolproof</strong> (construction sites aren't known for perfect lighting and clean hands), and <strong>transparent</strong> (no more black hole submissions).
+        <!-- Research Insights -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ RESEARCH INSIGHTS</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Conversations with the Frontline</h2>
+
+          <!-- Study meta row -->
+          <div class="responsive-grid-2" style="gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">PARTICIPANTS</span>
+              <div class="font-serif" style="font-size: 2rem; font-weight: 500; color: var(--text-primary); line-height: 1;">12</div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">On-site site engineers</div>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">FORMAT</span>
+              <div class="font-serif" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">Moderated Onsite</div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Contextual inquiry & interview</div>
+            </div>
+          </div>
+
+          <!-- Tasks/Friction Points -->
+          <div style="margin-bottom: 2rem;">
+            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.75rem;">KEY NARRATIVE STEPS OBSERVED</span>
+            <div class="responsive-grid-2" style="gap: 0.75rem;">
+              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">01</span>
+                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Preserving paper receipts from dirt, water, and tears</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">02</span>
+                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Manually writing expense sheets during lunch breaks</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">03</span>
+                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Submitting claims into a "black hole" tracking process</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">04</span>
+                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Chasing accounting staff to verify reimbursement status</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key observation callout -->
+          <div style="padding: 1.5rem; background: rgba(255,109,0,0.04); border-left: 3px solid var(--color-accent); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
+            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-accent); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">KEY OBSERVATION</span>
+            <p style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; color: var(--text-primary); line-height: 1.5; margin: 0; font-style: italic;">
+              “We want to pay them faster, but when we can't read the amount or the vendor name on physical paper receipts, what can we do?” — Central accountant
+            </p>
+          </div>
+        </section>
+
+        <!-- Research Findings -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ RESEARCH FINDINGS</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Friction in the Document Collection</h2>
+          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
+            <div>
+              <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+                Site environments are hostile to paper documents. Rain, grease, and dust destroy receipts before they ever reach the central office. 
+              </p>
+              <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+                Additionally, the lack of real-time confirmation fuels anxiety, leading to constant phone follow-ups and operational friction between field operations and back-office accounting.
+              </p>
+            </div>
+            <div class="user-quote-callout" style="display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 1.5rem; border-left-color: var(--color-accent); min-height: 140px; background: rgba(255,109,0,0.02); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
+              <div style="font-family: var(--font-serif); font-size: 1.45rem; font-weight: 500; color: var(--text-primary); line-height: 1.35; font-style: italic;">
+                "Physical collection was slow. Digital extraction was missing."
+              </div>
+            </div>
+          </div>
+          <div class="research-findings-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img src="./cendrol_network_offline.png" alt="Network offline and field connectivity constraints illustration" style="width: 100%; height: auto; display: block;" loading="lazy">
+          </div>
+        </section>
+
+        <!-- User Journey & Opportunities -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ JOURNEY &amp; OPPORTUNITIES</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Identifying High-Impact Focus Areas</h2>
+          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
+            By mapping the journey of friction (from realizing material urgency, transit, paying with personal cash, preservation, manual entry, to black-hole waiting), we identified opportunities to replace paperwork with automation.
           </p>
-          <p class="chapter-desc">
-            I started with paper sketches that looked more like treasure maps than wireframes. Each sketch told a story:
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            The core challenge was building a transparent channel between field engineers and the finance desk. I identified four opportunities to rebuild trust.
           </p>
 
-          <!-- Workflow Steps Widget -->
-          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); padding: 1.5rem; margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
-            <span class="font-mono label" style="font-size: 0.65rem;">REIMBURSEMENT WORKFLOW PATH</span>
-            <div class="cendrol-flow-path">
-              <div class="cendrol-flow-step">
-                Engineer realizes need
+          <div class="user-journey-image-wrapper" style="margin-bottom: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img src="./cendrol_digital_literacy.png" alt="Digital literacy and UI simplicity strategy diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+          </div>
+          
+          <div class="opportunity-grid opportunity-grid-layout" style="gap: 1.25rem;">
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">1.0 OPPORTUNITY</div>
+              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Simplify Capture</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Enable one-tap photo uploads of receipts directly at vendor stores to prevent invoice loss.</p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">2.0 OPPORTUNITY</div>
+              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Build Trust</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Introduce OCR receipt data extraction and material photo verification to validate purchases.</p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">3.0 OPPORTUNITY</div>
+              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Real-time Tracking</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Expose clear approval state timelines to give engineers transparency over their money.</p>
+            </div>
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
+              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">4.0 OPPORTUNITY</div>
+              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Integrate Downstream</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Sync claims seamlessly with the legacy ERP dashboard without database fragmentation.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Information Architecture -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ INFORMATION ARCHITECTURE</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Structuring the Reimbursement Flow</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+            To replace paperwork with rapid flows, we structured the approval chain to automatically link field uploads, compliance audits, and bank deposits.
+          </p>
+          <div class="ia-flow-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
+            <img src="./cendrol_approval_chain.png" alt="Reimbursement Approval Chain Flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
+          </div>
+        </section>
+
+        <!-- Understanding the Root Cause -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ ROOT CAUSE</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Why Reimbursements Were Stuck in a Loop</h2>
+          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
+            While field engineers wanted their cash back instantly, the central finance desk had to protect the company from accounting errors and potential fraud.
+          </p>
+          <p class="chapter-desc" style="margin-bottom: 2rem;">
+            Through workflow audits and onsite feedback, three patterns of friction emerged:
+          </p>
+
+          <!-- Three pattern cards -->
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">01</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Receipt damage and manual input errors</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Crumpled and dirty physical receipts led to illegible vendor details and claim amounts, prompting instant rejection from back-office desks.</p>
               </div>
-              <div class="cendrol-flow-arrow">&rarr;</div>
-              <div class="cendrol-flow-step">
-                Takes photo of receipt
+            </div>
+
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">02</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Audit gaps and validation delays</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Without photo proof of purchased items, accounting teams spent hours calling site managers to verify if materials actually arrived on site.</p>
               </div>
-              <div class="cendrol-flow-arrow">&rarr;</div>
-              <div class="cendrol-flow-step">
-                Submit with one tap
-              </div>
-              <div class="cendrol-flow-arrow">&rarr;</div>
-              <div class="cendrol-flow-step">
-                Track status in real-time
-              </div>
-              <div class="cendrol-flow-arrow">&rarr;</div>
-              <div class="cendrol-flow-step active">
-                Get paid faster
+            </div>
+
+            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
+              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">03</div>
+              <div>
+                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">No status visibility (The "Black Hole")</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Once forms were submitted, site managers had no way to track approval progression, creating massive anxiety and constant follow-up calls.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Section: Validation & Wireframing -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ VALIDATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">The Validation That Built Confidence</h2>
-          <p class="chapter-desc">
-            For the first time since starting this project, I felt like we were onto something. Pooja immediately approved moving to digital wireframes, and I felt the momentum shifting from skepticism to possibility.
-          </p>
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “The existing design system became my vocabulary, and I carefully crafted each screen to feel familiar yet revolutionary — engineers would no longer be victims of a broken system; they'd be users of an elegant solution.”
+        <!-- Redesign Strategy -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ REDESIGN STRATEGY</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Shifting the Experience Paradigm</h2>
+          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              Instead of forcing heavy bureaucratic forms, we redesigned the workflow to leverage OCR data extraction and real-time state tracking. 
+            </p>
+            <div>
+              <p class="chapter-desc" style="margin: 0 0 0.5rem; font-weight: 500; color: var(--text-primary); font-size: 1.05rem;">
+                The strategy was defined by four principles:
+              </p>
+              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>One-tap receipt capture at point of purchase.</li>
+                <li>OCR automated field populates to bypass manual typing.</li>
+                <li>Contextual photo uploads of materials to build instant audit trust.</li>
+                <li>Visible status tracking to keep the field engineer informed.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="redesign-strategy-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img src="./cendrol_system_integration.png" alt="System integration and automated data flow diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
-        <!-- Section: Detailed Design -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ DETAILED DESIGN</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">Crafting the Perfect Solution</h2>
-          <p class="chapter-desc">
-            Using my mid-fidelity prototype, I walked everyone through Rajesh's new story. Instead of reaching for his wallet in despair, he'd open the app, snap a photo of the receipt, watch the app magically extract merchant details and amounts, tap submit, and immediately see "Submitted for Approval" with a timeline.
+        <!-- Exploring Directions -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ EXPLORING DIRECTIONS</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Evaluating Alternative Approaches</h2>
+          <p class="chapter-desc" style="margin-bottom: 2rem;">
+            We weighed different approaches to find the right balance between fraud prevention and user speed.
           </p>
-
-          <!-- Integration of Video 1 (Submissions) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video1.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-top: 2rem;">Then Questions Started Flying</h3>
           
-          <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem; margin: 1rem 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">
-            <li><em>“What about fake receipts?”</em></li>
-            <li><em>“Can the backend handle OCR?”</em></li>
-            <li><em>“What if they lose phone signal?”</em></li>
-          </ul>
-
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “Engineers could potentially create fraudulent bills with vendor cooperation, someone pointed out. This was our plot twist—the solution that would help honest engineers could also enable dishonest ones. We needed to build trust mechanisms without creating bureaucratic overhead.”
-          </div>
-
-          <!-- Integration of Video 4 (Approval stages) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video4.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <!-- Interactive Sandbox state flow timeline widget -->
-          <div class="interactive-flow-sandbox" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
-            <span class="font-mono label" style="font-size: 0.65rem;">INTERACTIVE SANDBOX: STATE TIMELINE</span>
-            <div class="state-flow-sandbox" id="state-sandbox">
-              <div class="state-step active" data-step="1">Submitted</div>
-              <div class="state-step" data-step="2">Audited</div>
-              <div class="state-step" data-step="3">Approved</div>
-              <div class="state-step" data-step="4">Reimbursed</div>
+          <div class="directions-grid">
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 1</span>
+                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Rigid manual accounting approval forms</h4>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
+                  Force engineers to fill out detailed fields manually and wait for offline handoffs.
+                </p>
+              </div>
+              <div style="padding: 1rem; background: rgba(255,59,48,0.05); border: 1px solid rgba(255,59,48,0.15); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.6rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Site engineers work under tight schedules and often lack time or computer access. It would increase submission delay and site inventory backlogs.</p>
+              </div>
             </div>
-            <p id="state-status-msg" class="font-mono" style="font-size: 0.825rem; margin-top: 1.25rem; color: var(--color-brand); text-align: center;">
-              Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.
+            
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 2</span>
+                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Separate accounting portal for engineers</h4>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
+                  Build a dedicated desktop web app for submitting expense claims post-facto.
+                </p>
+              </div>
+              <div style="padding: 1rem; background: rgba(255,109,0,0.05); border: 1px solid rgba(255,109,0,0.15); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">It wouldn't solve the core issue of immediate capture, leaving receipts vulnerable to damage on-site before getting home or to the office.</p>
+              </div>
+            </div>
+            
+            <div style="padding: 1.25rem; background: rgba(138,43,226,0.04); border: 1px solid var(--color-brand); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem; box-shadow: 0 8px 20px rgba(138,43,226,0.03);">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">APPROACH 3 · SELECTED</span>
+                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Mobile OCR Capture &amp; Photo Trust Verification</h4>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
+                  Utilize the engineer's existing mobile app to snap invoice photos, auto-fill fields, verify purchases contextually, and track approval states.
+                </p>
+              </div>
+              <!-- Stakeholder Considerations -->
+              <div style="border-top: 1px dashed rgba(138,43,226,0.15); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">Stakeholder Considerations</span>
+                <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
+                  The design constraints were tightly defined:
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0.25rem;">
+                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
+                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Rapid Turnaround &amp; Existing App Ecosystem</span>
+                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">The project had a short timeline and the app already existed. We had to design within the existing framework without breaking daily developer habits.</p>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
+                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Preventing Abuse and Fraud</span>
+                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">We needed to build trust verification (matching photos of materials on site) to stop billing duplication or fake invoices.</p>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
+                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Network and Offline Challenges</span>
+                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">On-site operations face connectivity blackouts, so local draft caching was critical.</p>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 1rem; background: rgba(52,199,89,0.05); border: 1px solid rgba(52,199,89,0.18); border-radius: var(--border-radius-md);">
+                <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">SELECTED BECAUSE</span>
+                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">It minimized input friction on-site while providing robust proof mechanisms to accounting.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solution Path Section Wrapper -->
+        <div class="solution-path-section">
+          <!-- Solution Path Tabs -->
+          <div class="solution-path-container">
+            <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.05em;">/ THE SOLUTION PATH</span>
+            <div class="solution-tabs">
+              <button class="solution-tab-btn active" data-chapter="1">
+                <span class="tab-num">CHAPTER 01</span>
+                <span class="tab-title">One-Tap Receipt Capture</span>
+              </button>
+              <button class="solution-tab-btn" data-chapter="2">
+                <span class="tab-num">CHAPTER 02</span>
+                <span class="tab-title">Contextual Trust Verification</span>
+              </button>
+              <button class="solution-tab-btn" data-chapter="3">
+                <span class="tab-num">CHAPTER 03</span>
+                <span class="tab-title">Real-Time State Tracking</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Solution Chapters -->
+          <div class="solution-chapters-container">
+            <!-- Chapter 1 -->
+            <div class="solution-chapter-content active" data-chapter-content="1">
+              <section class="body-chapter">
+                <span class="chapter-num font-mono">CHAPTER 1</span>
+                <h2 class="chapter-title font-serif">One-Tap Receipt Capture</h2>
+                <p class="chapter-desc">
+                  Instead of filling detailed forms during busy shifts, engineers just snap a photo of their physical invoice. The OCR scanner automatically extracts vendor names, amounts, and dates, minimizing field input typing.
+                </p>
+                
+                <!-- Decision Grid Table -->
+                <div class="decision-grid">
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Site engineers lacked time and keyboard comfort to enter receipts manually.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">OCR image scanner extracts invoice details automatically.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It completely removes manual data entry, preventing paperwork backlog.</p>
+                  </div>
+                </div>
+
+                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 1.5rem;">
+                  "We hypothesized that minimizing on-site text entry would accelerate submission rates by eliminating form completion fatigue."
+                </div>
+
+                <!-- Video 1 (Submissions) -->
+                <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./cendrol_video1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </section>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="solution-chapter-content" data-chapter-content="2">
+              <section class="body-chapter">
+                <span class="chapter-num font-mono">CHAPTER 2</span>
+                <h2 class="chapter-title font-serif">Contextual Trust Verification</h2>
+                <p class="chapter-desc">
+                  To prevent fraudulent billing, we designed contextual validation flows requiring engineers to submit photo proof of the materials actually arriving on site, linking receipt extraction directly to project inventory.
+                </p>
+                
+                <!-- Decision Grid Table -->
+                <div class="decision-grid">
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Finance teams needed physical verification to prevent billing duplicates.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Linked invoice submission with mandatory material snaps and ERP tracking.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It builds trust, allowing accountants to approve claims instantly without calls.</p>
+                  </div>
+                </div>
+
+                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 2rem;">
+                  "We needed to prevent abuse without introducing bureaucracy. Combining material photo checks was our key plot twist."
+                </div>
+
+                <!-- Video 2 (Admin tracking) -->
+                <div class="chapter2-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-bottom: 1.5rem;">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./cendrol_video2.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <!-- Video 3 (Visibility states) -->
+                <div class="chapter2-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./cendrol_video3.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </section>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="solution-chapter-content" data-chapter-content="3">
+              <section class="body-chapter">
+                <span class="chapter-num font-mono">CHAPTER 3</span>
+                <h2 class="chapter-title font-serif">Real-Time State Tracking</h2>
+                <p class="chapter-desc">
+                  To eliminate the anxiety of "black-hole" submissions, we designed transparent status state timelines showing exactly which auditing phase the engineer's claim is currently traversing.
+                </p>
+                
+                <!-- Decision Grid Table -->
+                <div class="decision-grid">
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Engineers had zero visibility, prompting redundant follow-ups.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Implemented a real-time status tracker and timeline stepper.</p>
+                  </div>
+                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It keeps engineers informed at every step, removing tracking anxiety.</p>
+                  </div>
+                </div>
+
+                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 2rem;">
+                  "Status transparency gave site engineers instant relief, turning a source of daily anxiety into a transparent, trusted process."
+                </div>
+
+                <!-- Video 4 (Approval stages) -->
+                <div class="chapter3-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-bottom: 1.5rem;">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./cendrol_video4.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <!-- Interactive Sandbox state flow timeline widget -->
+                <div class="interactive-flow-sandbox" style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
+                  <span class="font-mono label" style="font-size: 0.65rem;">INTERACTIVE SANDBOX: STATE TIMELINE</span>
+                  <div class="state-flow-sandbox" id="state-sandbox">
+                    <div class="state-step active" data-step="1">Submitted</div>
+                    <div class="state-step" data-step="2">Audited</div>
+                    <div class="state-step" data-step="3">Approved</div>
+                    <div class="state-step" data-step="4">Reimbursed</div>
+                  </div>
+                  <p id="state-status-msg" class="font-mono" style="font-size: 0.825rem; margin-top: 1.25rem; color: var(--color-brand); text-align: center;">
+                    Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.
+                  </p>
+                </div>
+
+                <!-- Video 5 (Reimbursement progress) -->
+                <div class="chapter3-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-top: 1.5rem;">
+                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                    <source data-src="./cendrol_video5.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Real-World Test -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono">/ OUTCOMES &amp; VALIDATION</span>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Real-World Test</h2>
+          
+          <div class="responsive-grid-2" style="margin-top: 0.5rem; margin-bottom: 2rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              The pilot test began with three volunteer site engineers. For two weeks, they used the mobile OCR capture feature for every single out-of-pocket material purchase.
+            </p>
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+              The outcomes were clear. Rebuilding trust between engineering and accounting desks reduced validation cycles and eliminated the invoice backlog entirely.
             </p>
           </div>
 
-          <!-- Integration of Video 5 (Reimbursement progress) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video5.mp4" type="video/mp4">
-            </video>
-          </div>
-        </section>
-
-        <!-- Section: Pixel-Perfect Storytelling -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ PIXEL-PERFECT STORYTELLING</span>
-          <p class="chapter-desc" style="margin-top: 1rem;">
-            The design system became my co-author, ensuring consistency while I introduced new components. Progress bars became hope indicators. Status badges became transparency tools. Camera interfaces became magic wands that would transform crumpled receipts into structured data.
-          </p>
-
-          <!-- Integration of Video 2 (Admin tracking) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video2.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <p class="chapter-desc">
-            The founder leaned back in his chair. <em>“This is elegant,”</em> he said slowly. <em>“But what about edge cases? What about abuse? What about the things we haven't thought of?”</em> His questions weren't criticisms; they were the inquiries of someone who'd seen promising solutions fail in the real world.
-          </p>
-          <p class="chapter-desc">
-            My response came from the heart: <strong>“We can't solve every problem on day one. But we can solve the biggest problem—engineers using their own money and waiting weeks for reimbursement. Let's start there and learn.”</strong>
-          </p>
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “Let's do a pilot test. Give me three volunteers and show me this works in the real world.”
-          </div>
-        </section>
-
-        <!-- Section: From Pixels to Code -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ PRODUCTION DEVELOPMENT</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">From Pixels to Code</h2>
-          <p class="chapter-desc">
-            Working with developers felt like being an architect watching builders construct your dream home. Every day brought new questions: <em>“What happens if the OCR fails?” “How should error states behave?” “What if someone submits the same receipt twice?”</em>
-          </p>
-          <p class="chapter-desc">
-            Each question was an opportunity to refine the story. We added graceful failure modes, clear error messages, and duplicate detection. The app wasn't just getting features; it was getting wisdom.
-          </p>
-
-          <!-- Integration of Video 3 (Visibility states) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </section>
-
-        <!-- Section: Real-World Test -->
-        <section class="body-chapter">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ THE PILOT TEST</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">The Real-World Test</h2>
-          <p class="chapter-desc">
-            The pilot test began with three volunteer engineers who'd been most vocal about reimbursement problems. They became our beta testers, our canaries in the coal mine, our real-world validators. For two weeks, they used the new feature for every out-of-pocket purchase.
-          </p>
-
           <!-- Outcomes Metrics Grid -->
-          <div class="yooki-header-metrics" style="margin-bottom: 2.5rem; margin-top: 2rem;">
+          <div class="yooki-header-metrics" style="margin-bottom: 2.5rem;">
             <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
               <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1;">14 to 4 Days</div>
               <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Average reimbursement time</div>
@@ -1260,7 +1540,7 @@ export function renderProject2() {
             <span class="quote-author">— Beta tester engineer feedback</span>
           </div>
 
-          <!-- Integration of Video 6 (Operational metrics in action) -->
+          <!-- Video 6 (Operational metrics in action) -->
           <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
             <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
               <source data-src="./cendrol_video6.mp4" type="video/mp4">
@@ -1273,15 +1553,15 @@ export function renderProject2() {
           </p>
         </section>
 
-        <!-- Section: Lessons from the Trenches -->
+        <!-- Lessons Learned -->
         <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
           <span class="chapter-num font-mono" style="color: var(--color-brand)">/ LESSONS LEARNED</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">Lessons from the Trenches</h2>
+          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Lessons from the Trenches</h2>
           <p class="chapter-desc">
             This project taught me that great UX design isn't always about following perfect processes—sometimes it's about adapting to real-world constraints while maintaining focus on user needs. Working under tight deadlines and research limitations, I learned to find story elements in every stakeholder conversation and treat each constraint as a plot device rather than an obstacle.
           </p>
           <p class="chapter-desc">
-            The most rewarding aspect wasn't the technical achievement or design accolades—it was knowing that somewhere in Bangalore, an engineer like Rajesh can buy urgent materials without the financial anxiety that once kept him awake at night. That's the kind of story worth telling, and the kind of problem worth solving.
+            The most rewarding aspect wasn't the technical achievement or design accolades—it was knowing that somewhere in Bangalore, an engineer like Rajesh can buy urgent materials without the financial anxiety that once kept him awake at night. That's the kind of story worth telling.
           </p>
           
           <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 2.5rem; margin-bottom: 1.5rem; font-style: italic;">
