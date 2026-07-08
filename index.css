@@ -1,11 +1,13 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
+
 /* ==========================================================================
    DESIGN SYSTEM & THEME TOKENS
    ========================================================================== */
 
 :root {
   /* HSL Colors */
-  --orange-accent: 22, 100%, 57%;    /* #ff7626 */
-  --purple-accent: 258, 100%, 70%;  /* #9966ff */
+  --orange-accent: 255, 75%, 72%;    /* Soft accessible Lavender in dark mode */
+  --purple-accent: 220, 50%, 68%;    /* Soft accessible Slate-Blue in dark mode */
   
   /* Shared sizes */
   --border-radius-lg: 24px;
@@ -19,8 +21,8 @@
   --spacing-xl: 4.4rem;      /* 79.2px */
   --spacing-xxl: 6.6rem;     /* 118.8px */
 
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'Geist Mono', SFMono-Regular, Consolas, monospace;
 
   /* Transition timings */
@@ -31,104 +33,104 @@
 
 /* Light Theme Variables */
 html.light {
-  --bg-primary: hsl(0, 0%, 100%);
-  --bg-secondary: hsl(0, 0%, 97%);
-  --bg-tertiary: hsl(0, 0%, 95%);
-  --bg-card: hsl(0, 0%, 100%);
-  --bg-toggle: hsl(0, 0%, 95%);
+  --bg-primary: hsl(220, 20%, 97%);      /* Soft eye-friendly gray-blue */
+  --bg-secondary: hsl(220, 15%, 92%);    /* Soft slate background */
+  --bg-tertiary: hsl(220, 12%, 88%);
+  --bg-card: hsl(220, 20%, 97%);
+  --bg-toggle: hsl(220, 15%, 90%);
   
-  --text-primary: hsl(0, 0%, 5%);       /* AAA compliant contrast: 18.2:1 against white */
-  --text-secondary: hsl(0, 0%, 20%);     /* AAA compliant contrast: 11.5:1 against white */
-  --text-muted: hsl(0, 0%, 32%);         /* AAA compliant contrast: 7.1:1 against white */
+  --text-primary: hsl(220, 25%, 12%);     /* High contrast, soft on eyes */
+  --text-secondary: hsl(220, 15%, 32%);   /* High contrast secondary */
+  --text-muted: hsl(220, 12%, 44%);       /* Accessible muted text */
   
-  --border-color: rgba(0, 0, 0, 0.08);
-  --border-hover: rgba(0, 0, 0, 0.16);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --border-hover: rgba(15, 23, 42, 0.16);
   
-  --color-accent: hsl(22, 95%, 32%);     /* AAA compliant contrast: 7.1:1 against white */
-  --color-brand: hsl(258, 70%, 45%);     /* AAA compliant contrast: 7.2:1 against white */
-  --color-bop: hsl(327, 95%, 26%);       /* AAA compliant contrast: 9.8:1 against white */
-  --color-accent-light: hsla(22, 95%, 32%, 0.08);
+  --color-accent: hsl(255, 60%, 45%);     /* Primary Accent (Soft Indigo) */
+  --color-brand: hsl(220, 50%, 40%);      /* Secondary Accent (Slate Blue) */
+  --color-bop: hsl(255, 60%, 45%);
+  --color-accent-light: hsla(255, 60%, 45%, 0.08);
   
   --color-on-accent: #ffffff;
   --color-on-brand: #ffffff;
   --color-on-bop: #ffffff;
   
-  --color-success: hsl(142, 95%, 22%);   /* AAA compliant contrast: 10.9:1 against white */
-  --color-success-light: hsla(142, 95%, 22%, 0.08);
+  --color-success: hsl(142, 70%, 25%);   /* Eye-friendly success green */
+  --color-success-light: hsla(142, 70%, 25%, 0.08);
   --color-on-success: #ffffff;
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
-  --shadow-focus: 0 0 0 3px hsla(22, 95%, 32%, 0.3);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.06);
+  --shadow-focus: 0 0 0 3px hsla(255, 60%, 45%, 0.3);
   
-  --shadow-accent: 0 3px 10px hsla(22, 95%, 32%, 0.25);
-  --shadow-accent-hover: 0 5px 16px hsla(22, 95%, 32%, 0.35);
-  --shadow-brand: 0 3px 10px hsla(258, 70%, 45%, 0.25);
-  --shadow-brand-hover: 0 5px 16px hsla(258, 70%, 45%, 0.35);
-  --shadow-bop: 0 3px 10px hsla(327, 95%, 26%, 0.25);
-  --shadow-bop-hover: 0 5px 16px hsla(327, 95%, 26%, 0.35);
+  --shadow-accent: 0 3px 10px hsla(255, 60%, 45%, 0.15);
+  --shadow-accent-hover: 0 5px 16px hsla(255, 60%, 45%, 0.25);
+  --shadow-brand: 0 3px 10px hsla(220, 50%, 40%, 0.15);
+  --shadow-brand-hover: 0 5px 16px hsla(220, 50%, 40%, 0.25);
+  --shadow-bop: 0 3px 10px hsla(255, 60%, 45%, 0.15);
+  --shadow-bop-hover: 0 5px 16px hsla(255, 60%, 45%, 0.25);
 
   /* Bento Card Hover Accents */
-  --color-accent-experience: hsl(22, 95%, 32%);
-  --color-accent-mba: hsl(340, 90%, 36%);
+  --color-accent-experience: hsl(255, 60%, 45%);
+  --color-accent-mba: hsl(340, 60%, 45%);
 
   /* Focus Deck active HSL components */
-  --active-ai: 22, 95%, 32%;
-  --active-saas: 258, 70%, 45%;
-  --active-fintech: 200, 95%, 32%;
-  --active-build: 145, 95%, 28%;
-  --active-mba: 340, 90%, 36%;
+  --active-ai: 255, 60%, 45%;
+  --active-saas: 220, 50%, 40%;
+  --active-fintech: 200, 60%, 45%;
+  --active-build: 145, 50%, 40%;
+  --active-mba: 340, 55%, 45%;
 }
 
 /* Dark Theme Variables */
 html.dark {
-  --bg-primary: hsl(0, 0%, 4%);
-  --bg-secondary: hsl(0, 0%, 8%);
-  --bg-tertiary: hsl(0, 0%, 12%);
-  --bg-card: hsl(0, 0%, 8%);
-  --bg-toggle: hsl(0, 0%, 15%);
+  --bg-primary: hsl(220, 15%, 8%);        /* Soft Slate-Black background, gentle on eyes */
+  --bg-secondary: hsl(220, 12%, 12%);     /* Deep gray-slate sidebar/containers */
+  --bg-tertiary: hsl(220, 10%, 15%);
+  --bg-card: hsl(220, 12%, 12%);
+  --bg-toggle: hsl(220, 10%, 18%);
   
-  --text-primary: hsl(0, 0%, 98%);      /* Off-white #f5f5f5 */
-  --text-secondary: hsl(0, 0%, 72%);    /* Readable gray #b8b8b8 */
-  --text-muted: hsl(0, 0%, 50%);
+  --text-primary: hsl(220, 10%, 90%);      /* Soft off-white */
+  --text-secondary: hsl(220, 10%, 72%);    /* Readable light gray */
+  --text-muted: hsl(220, 8%, 55%);
   
   --border-color: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(255, 255, 255, 0.16);
   
-  --color-accent: hsl(var(--orange-accent));
-  --color-brand: hsl(var(--purple-accent));
-  --color-bop: hsl(327, 100%, 65%);     /* AAA compliant contrast: 8.16:1 against dark bg */
+  --color-accent: hsl(var(--orange-accent)); /* Soft Pastel Lavender */
+  --color-brand: hsl(var(--purple-accent));  /* Soft Slate-Blue */
+  --color-bop: hsl(var(--orange-accent));
   --color-accent-light: hsla(var(--orange-accent), 0.12);
   
-  --color-on-accent: hsl(0, 0%, 4%);
-  --color-on-brand: hsl(0, 0%, 4%);
-  --color-on-bop: hsl(0, 0%, 4%);
+  --color-on-accent: hsl(220, 15%, 8%);
+  --color-on-brand: hsl(220, 15%, 8%);
+  --color-on-bop: hsl(220, 15%, 8%);
   
-  --color-success: hsl(142, 85%, 55%);   /* AAA compliant contrast: 8.8:1 against dark bg */
-  --color-success-light: hsla(142, 85%, 55%, 0.12);
-  --color-on-success: hsl(0, 0%, 4%);
+  --color-success: hsl(142, 60%, 55%);    /* Soft accessible green */
+  --color-success-light: hsla(142, 60%, 55%, 0.12);
+  --color-on-success: hsl(220, 15%, 8%);
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.3);
   --shadow-focus: 0 0 0 3px hsla(var(--orange-accent), 0.5);
   
-  --shadow-accent: 0 3px 10px hsla(var(--orange-accent), 0.25);
+  --shadow-accent: 0 3px 10px hsla(var(--orange-accent), 0.15);
   --shadow-accent-hover: 0 5px 16px hsla(var(--orange-accent), 0.35);
-  --shadow-brand: 0 3px 10px hsla(var(--purple-accent), 0.25);
+  --shadow-brand: 0 3px 10px hsla(var(--purple-accent), 0.15);
   --shadow-brand-hover: 0 5px 16px hsla(var(--purple-accent), 0.35);
-  --shadow-bop: 0 3px 10px hsla(327, 100%, 65%, 0.25);
-  --shadow-bop-hover: 0 5px 16px hsla(327, 100%, 65%, 0.35);
+  --shadow-bop: 0 3px 10px hsla(var(--orange-accent), 0.15);
+  --shadow-bop-hover: 0 5px 16px hsla(var(--orange-accent), 0.25);
 
   /* Bento Card Hover Accents */
   --color-accent-experience: hsl(var(--orange-accent));
-  --color-accent-mba: hsl(340, 95%, 60%);
+  --color-accent-mba: hsl(340, 70%, 70%);
 
   /* Focus Deck active HSL components */
   --active-ai: var(--orange-accent);
   --active-saas: var(--purple-accent);
-  --active-fintech: 200, 100%, 65%;
-  --active-build: 145, 85%, 55%;
-  --active-mba: 340, 95%, 65%;
+  --active-fintech: 200, 70%, 70%;
+  --active-build: 145, 60%, 65%;
+  --active-mba: 340, 70%, 70%;
 }
 
 /* ==========================================================================
