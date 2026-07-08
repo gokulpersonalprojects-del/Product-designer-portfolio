@@ -1854,42 +1854,6 @@ export function renderProject1Sidebar() {
       </a>
     </div>
 
-    <!-- Specs as Background-Card List -->
-    <div class="sidebar-background-card sidebar-fade-in">
-      <span class="background-card-title font-mono">PROJECT SPECS</span>
-      <div class="background-list-items">
-        <!-- Role -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Role</span>
-            <span class="bg-item-value font-sans">Product Designer</span>
-          </div>
-        </div>
-        <!-- Timeline -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Timeline</span>
-            <span class="bg-item-value font-sans">6 Months (2025)</span>
-          </div>
-        </div>
-        <!-- Core Concepts -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Core Concepts</span>
-            <span class="bg-item-value font-sans">Syllabus Mapping <span class="bullet-sep">•</span> Interactive Prototypes <span class="bullet-sep">•</span> Maze Usability Testing</span>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Branded CTA Card -->
     ${sidebarActionGrid}
