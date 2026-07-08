@@ -360,7 +360,7 @@ export function renderProject1() {
           </div>
           <div>
             <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Platform</span>
-            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--color-brand); font-weight: 600;">Mobile App (iOS & Android)</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--color-brand); font-weight: 600;">Web</span>
           </div>
         </div>
       </header>
