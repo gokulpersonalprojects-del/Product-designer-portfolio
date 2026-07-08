@@ -26,7 +26,12 @@ export function renderHome() {
           </div>
         </div>
         <div class="work-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem;">
-          <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-accent);">AI INTERACTION DESIGN / CASE STUDY</span>
+          <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-accent);">AI INTERACTION DESIGN / CASE STUDY</span>
+            <span class="recent-badge font-mono" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.6rem; font-weight: 700; color: var(--color-accent); border: 1px solid var(--border-color); padding: 0.15rem 0.45rem; border-radius: 100px; text-transform: uppercase; background: var(--bg-secondary); letter-spacing: 0.05em;">
+              Most Recent
+            </span>
+          </div>
           <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Turning Yooki from a Backup Tool into a Daily Learning Companion</h3>
           <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Redesigning a doubt-solving chatbot into an associative learning ecosystem that connects answers to syllabus, drives feature discovery, and builds daily study habits.</p>
           
@@ -114,31 +119,35 @@ export function renderHome() {
         </div>
       </article>
 
-      <!-- Card 4: Aura AI Case Study (spans 1 col) -->
-      <article class="work-card col-span-1 stagger-el stagger-delay-5 inactive" data-project="aura">
-        <div class="work-card-media aura" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden; position: relative;">
-          <div class="coming-soon-badge font-mono">Coming Soon</div>
+      <!-- Card 4: Netflix E-Shopping Case Study (spans 1 col) -->
+      <article class="work-card col-span-1 stagger-el stagger-delay-5" data-project="netflix" onclick="window.open('https://www.behance.net/gallery/191765225/Netflix-E-Shopping-UX-Casestudy-UI-Design', '_blank')" role="link" tabindex="0" aria-label="View Netflix E-Shopping UX case study on Behance" style="cursor: pointer;">
+        <div class="work-card-media netflix" style="height: 270px; border-bottom: 1px solid var(--border-color); border-radius: 0; overflow: hidden; position: relative;">
           <div class="card-img-placeholder" style="background: none;">
-            <img src="./aura_thumbnail.png" alt="Aura AI Prompt-to-Interface Editor Showcase" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="./netflix_thumbnail.png" alt="Netflix E-Shopping UX Case Study — Integrating E-Commerce into Streaming" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+          </div>
+          <!-- External link indicator -->
+          <div style="position: absolute; top: 0.6rem; right: 0.6rem; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 0.25rem 0.45rem; display: flex; align-items: center; gap: 0.3rem;">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <span style="font-family: var(--font-mono); font-size: 0.5rem; color: rgba(255,255,255,0.8); letter-spacing: 0.05em; text-transform: uppercase;">Behance</span>
           </div>
         </div>
         <div class="work-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem;">
-          <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-brand);">AI SYSTEMS / DESIGN TOOL</span>
-          <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Aura AI: Grounding Generative UI in Design Tokens</h3>
-          <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Maintaining layout context and user trust during generative UI loops by mapping LLM outputs directly to structured design tokens.</p>
+          <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-accent);">E-COMMERCE / UX CASE STUDY</span>
+          <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Netflix E-Shopping: Integrating Commerce into Streaming</h3>
+          <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Designing a seamless in-app e-commerce experience for Netflix — letting viewers purchase official merchandise and show-inspired products without leaving the player.</p>
           
           <div class="card-metrics-row" style="margin-top: 0.25rem;">
             <div class="card-metric-item">
-              <span class="metric-num">210ms</span>
-              <span class="metric-label">Generation Latency</span>
+              <span class="metric-num">+42%</span>
+              <span class="metric-label">Purchase Intent</span>
             </div>
             <div class="card-metric-item">
-              <span class="metric-num">Pass (AA)</span>
-              <span class="metric-label">WCAG Accessibility</span>
+              <span class="metric-num">&lt; 45s</span>
+              <span class="metric-label">Checkout Flow</span>
             </div>
             <div class="card-metric-item">
-              <span class="metric-num">95%</span>
-              <span class="metric-label">User Retention</span>
+              <span class="metric-num">91%</span>
+              <span class="metric-label">Feature Adoption</span>
             </div>
           </div>
         </div>
@@ -1051,10 +1060,10 @@ export function renderProject2() {
 // ==========================================================================
 export function renderProject3() {
   return `
-    <article class="project-detail animate-fade-in">
-      <header class="project-header stagger-el stagger-delay-1" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 3.5rem;">
-        <span class="label font-mono project-tag" style="color: var(--color-bop); font-size: 0.75rem; letter-spacing: 0.08em; font-weight: bold; text-transform: uppercase;">MOBILE FINTECH / KYC REDESIGN</span>
-        <h1 class="project-headline font-serif" style="font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; font-weight: 400; letter-spacing: -0.02em; margin-top: 0.5rem; margin-bottom: 2rem;">Transforming a Branch-Assisted Process into a Guided Digital Experience</h1>
+    <article class="project-detail animate-fade-in" style="max-width: 960px; margin: 0 auto; padding: 2rem 1rem;">
+      <header class="project-header stagger-el stagger-delay-1" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 3.5rem; text-align: left;">
+        <span class="label font-mono project-tag" style="color: var(--color-bop); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.75rem;">MOBILE FINTECH / KYC REDESIGN</span>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.08; font-weight: 400; margin-top: 0.75rem; letter-spacing: -0.02em; color: var(--text-primary); margin-bottom: 2rem;">Transforming a Branch-Assisted Process into a Guided Digital Experience</h1>
         
         <!-- Premium Horizontal Metadata strip -->
         <div class="project-metadata-strip" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; margin-top: 2rem;">
@@ -1078,39 +1087,39 @@ export function renderProject3() {
       </header>
 
       <!-- Highlights Section -->
-      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 3.5rem;">
-        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
-          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Faster</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Onboarding experience</div>
+      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 6rem; gap: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 3rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Faster</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Onboarding experience</div>
         </div>
-        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
-          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Reduced</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Perceived complexity</div>
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 3rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Reduced</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Perceived complexity</div>
         </div>
-        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
-          <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Clearer</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Application tracking</div>
+        <div class="metric-card" style="padding: 2.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: left; display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; box-shadow: var(--shadow-sm);">
+          <div class="metric-value font-mono" style="font-size: 3rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Clearer</div>
+          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; font-weight: 500; margin-top: 1rem;">Application tracking</div>
         </div>
       </div>
 
       <!-- Hero Mockup Video -->
-      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3.5rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
+      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 7rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
         <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
           <source src="./bop_hero_video.mp4" type="video/mp4">
         </video>
       </div>
 
       <!-- Core Statement Nudge -->
-      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3.5rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--color-bop);">
-        "Opening a bank account should build financial access,<br><span style="color: var(--text-primary); font-weight: 500;">not create barriers to it."</span>
+      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 7rem auto; max-width: 760px; font-size: 2.2rem; line-height: 1.35; color: var(--color-bop); padding: 0 1.5rem;">
+        "Opening a bank account should build financial access,<br><span style="color: var(--text-primary); font-weight: 400; font-style: italic;">not create barriers to it."</span>
       </div>
 
       <div class="project-body stagger-el stagger-delay-3">
         <!-- The Problem -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE TENSION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">The Friction of Branch-Assisted Onboarding</h2>
-          <div class="bop-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 0.5rem; margin-bottom: 2rem;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ THE TENSION</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Friction of Branch-Assisted Onboarding</h2>
+          <div class="responsive-grid-2" style="margin-bottom: 3.5rem; gap: 2rem; max-width: 100%; margin-left: auto; margin-right: auto;">
             <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
               Opening a bank account has traditionally been a branch-assisted experience. Customers relied on bank representatives to explain requirements, verify documents, correct mistakes, and guide them through mandatory compliance procedures. While this approach helped ensure security and regulatory compliance, it also meant that much of the onboarding complexity was absorbed by bank staff rather than the customer.
             </p>
@@ -1121,15 +1130,15 @@ export function renderProject3() {
           <div class="text-nudge font-serif" style="text-align: left; margin: 2rem 0 2rem; max-width: 100%; font-size: 1.35rem; line-height: 1.45; color: var(--text-primary); border-left: 3px solid var(--color-bop); padding-left: 1.5rem; font-style: italic;">
             The challenge was not to remove complexity from the process, but to help customers successfully navigate that complexity on their own.
           </div>
-          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-            <img src="./bop_problem_image.png" alt="Branch-Assisted vs Digital Onboarding Friction" style="width: 100%; height: auto; display: block;" loading="lazy">
+          <div class="problem-image-wrapper bop-zoom-card" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
+            <img class="zoom-image" src="./bop_problem_image.png" alt="Branch-Assisted vs Digital Onboarding Friction" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
         <!-- Experience Audit (Flattened Accordion) -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ EXPERIENCE AUDIT</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Mapping Steps to Find Friction</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ EXPERIENCE AUDIT</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Mapping Steps to Find Friction</h2>
           <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
             To understand where friction existed, I analyzed the existing onboarding journey and mapped the steps customers needed to complete before opening an account. The review revealed that the experience was designed around internal banking processes rather than customer understanding. While each step served a valid operational or compliance purpose, the overall journey felt lengthy, fragmented, and difficult to navigate independently.
           </p>
@@ -1203,7 +1212,7 @@ export function renderProject3() {
             </div>
 
             <!-- Friction Area 2 -->
-            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div class="responsive-grid-2 bop-zoom-card" style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); gap: 2rem; align-items: center;">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 02</span>
                 <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">Compliance Hidden Inside the Journey</h3>
@@ -1212,12 +1221,12 @@ export function renderProject3() {
                 </p>
               </div>
               <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
-                <img src="./bop_compliance_hidden.jpg" alt="Compliance Hidden Inside the Journey Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <img class="zoom-image" src="./bop_compliance_hidden.jpg" alt="Compliance Hidden Inside the Journey Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
               </div>
             </div>
 
             <!-- Friction Area 3 -->
-            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div class="responsive-grid-2 bop-zoom-card" style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); gap: 2rem; align-items: center;">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 03</span>
                 <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">A Digital Version of a Paper Form</h3>
@@ -1226,12 +1235,12 @@ export function renderProject3() {
                 </p>
               </div>
               <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
-                <img src="./bop_digital_paper.png" alt="A Digital Version of a Paper Form Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <img class="zoom-image" src="./bop_digital_paper.png" alt="A Digital Version of a Paper Form Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
               </div>
             </div>
 
             <!-- Friction Area 4 -->
-            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div class="responsive-grid-2 bop-zoom-card" style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); gap: 2rem; align-items: center;">
               <div>
                 <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 04</span>
                 <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">Expectation vs Reality</h3>
@@ -1240,18 +1249,18 @@ export function renderProject3() {
                 </p>
               </div>
               <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
-                <img src="./bop_expectation_reality.png" alt="Expectation vs Reality Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+                <img class="zoom-image" src="./bop_expectation_reality.png" alt="Expectation vs Reality Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
               </div>
             </div>
           </div>
         </section>
 
         <!-- Key Insights & Opportunity Areas -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ KEY INSIGHTS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Key Insights &amp; Opportunity Areas</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ KEY INSIGHTS</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Key Insights &amp; Opportunity Areas</h2>
           
-          <div class="bop-insights-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
+          <div class="bop-insights-grid" style="gap: 2rem; margin-top: 1.5rem;">
             <div>
               <h3 style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1.25rem; font-family: var(--font-serif);">Key Research Insights</h3>
               <ul style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0; list-style-type: none; margin: 0;">
@@ -1299,9 +1308,9 @@ export function renderProject3() {
         </section>
 
         <!-- Onboarding Journey Map Section (Zero Interaction) -->
-        <section class="body-chapter bop-flowchart-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop);">/ ONBOARDING JOURNEY MAP</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Mapping the Onboarding Journey</h2>
+        <section class="body-chapter bop-flowchart-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ ONBOARDING JOURNEY MAP</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Mapping the Onboarding Journey</h2>
           <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
             Before redesigning the experience, I mapped the complete onboarding workflow to understand how customer actions, compliance requirements, verification steps, and backend banking processes interacted with each other. Below is the system flow mapping.
           </p>
@@ -1402,7 +1411,7 @@ export function renderProject3() {
           </div>
 
           <!-- Fully Visible Step Details Grid (Zero Interaction) -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div class="responsive-grid-2" style="gap: 1.5rem;">
             <!-- Step 1 -->
             <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
               <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">01 / Start Onboarding &amp; Credentials</h4>
@@ -1444,7 +1453,7 @@ export function renderProject3() {
           <!-- Exception Flow Callouts (Zero Interaction) -->
           <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(var(--active-fintech), 0.03); border: 1px solid rgba(var(--active-fintech), 0.15); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1rem;">
             <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">EXCEPTION &amp; FALLBACK CHANNELS</span>
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+            <div class="responsive-grid-3" style="gap: 1.5rem;">
               <div>
                 <h5 class="font-sans" style="margin: 0 0 0.25rem 0; font-size: 0.95rem; font-weight: bold; color: var(--text-primary);">Exception 3B: Foreign Passport</h5>
                 <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">FATCA, CRS declarations are triggered. Users scan passport pages instead of local IDs, queued for manual review.</p>
@@ -1462,9 +1471,9 @@ export function renderProject3() {
         </section>
 
         <!-- Information Architecture Section (Zero Interaction) -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ INFORMATION ARCHITECTURE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Redesigning the Information Architecture</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ INFORMATION ARCHITECTURE</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Redesigning the Information Architecture</h2>
           <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 3rem;">
             The onboarding journey contained multiple compliance requirements, verification steps, and account setup tasks that were presented as individual steps with little structure. While the information being collected was necessary, the way it was organized made the process feel longer and more complex than it actually was.
           </p>
@@ -1516,7 +1525,7 @@ export function renderProject3() {
                 <strong>PMA Regulatory Mandate:</strong> Standard fully functional bank accounts cannot be opened in Palestine without valid KYC (Know Your Customer) documents verified against central ministry registries.
               </div>
 
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+              <div class="responsive-grid-2" style="gap: 2rem;">
                 <!-- Sync Bento Grid -->
                 <div>
                   <div class="bop-bento-section-title" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 700;">Government Registry Databases (Linked via Mobile)</div>
@@ -1588,9 +1597,9 @@ export function renderProject3() {
         </section>
 
         <!-- Redesign Strategy -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ DESIGN STRATEGY</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Guided Customer Journeys for Complex Audits</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ DESIGN STRATEGY</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Guided Customer Journeys for Complex Audits</h2>
           <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             The audit revealed that the challenge was not the number of requirements users had to complete, but how those requirements were presented. Banking regulations, identity verification, and compliance checks were essential parts of the onboarding process and could not be removed.
           </p>
@@ -1600,9 +1609,9 @@ export function renderProject3() {
         </section>
 
         <!-- First Rejected Draft -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ FIRST DRAFT ITERATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">First Rejected Draft</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ FIRST DRAFT ITERATION</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">First Rejected Draft</h2>
           <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             Our first approach focused on creating a unified onboarding experience by reducing the number of visible steps and consolidating multiple processes into a single streamlined flow. The idea was to make account opening feel faster and more modern by minimizing transitions between screens and presenting onboarding as one continuous journey.
           </p>
@@ -1610,15 +1619,15 @@ export function renderProject3() {
             The unified approach also introduced operational challenges. Certain verification activities depended on information collected earlier in the journey, while some compliance requirements required separate handling, review processes, and exception scenarios.
           </p>
           <!-- Mockups of rejected flow using wide screens flow diagram -->
-          <div class="problem-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./bop_rejected_draft.png" alt="First Rejected Draft Mobile Onboarding Flow" style="width: 100%; height: auto; display: block;" loading="lazy">
+          <div class="problem-image-wrapper bop-zoom-card" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+            <img class="zoom-image" src="./bop_rejected_draft.png" alt="First Rejected Draft Mobile Onboarding Flow" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
         <!-- Accepted Design -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE ACCEPTED DESIGN</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Designing for Confidence and Transparency</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ THE ACCEPTED DESIGN</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Designing for Confidence and Transparency</h2>
           
           <!-- 1. Reduce Perceived Complexity -->
           <div style="margin-top: 2rem;">
@@ -1627,8 +1636,8 @@ export function renderProject3() {
               The existing experience presented onboarding as a long sequence of independent steps. By organizing related tasks into meaningful phases, users could focus on one objective at a time rather than the entire process.
             </p>
             
-            <div class="bop-comparison-grid" style="margin-bottom: 1.5rem;">
-              <div style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
+            <div class="responsive-grid-2" style="margin-bottom: 1.5rem; gap: 1.5rem;">
+              <div class="bop-zoom-card" style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE</span>
                   <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
@@ -1636,10 +1645,10 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_before.png" alt="Before: 12 continuous steps" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img class="zoom-image" src="./bop_reduce_complexity_before.png" alt="Before: 12 continuous steps" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
-              <div style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
+              <div class="bop-zoom-card" style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; display: block; margin-bottom: 0.5rem;">AFTER (REDESIGN)</span>
                   <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
@@ -1647,7 +1656,7 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_reduce_complexity_after.png" alt="After: 5 structured phases" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img class="zoom-image" src="./bop_reduce_complexity_after.png" alt="After: 5 structured phases" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
             </div>
@@ -1663,8 +1672,8 @@ export function renderProject3() {
               Customers previously relied on branch staff to explain requirements, answer questions, and help them complete forms. The redesigned experience provides guidance directly within the interface through contextual explanations, progress indicators, and clear next steps. Complex processes and documents are explained to the user, and updates are notified immediately to maintain a smooth workflow.
             </p>
 
-            <div class="problem-image-wrapper" style="margin-top: 2rem; background: var(--bg-card); border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-              <img src="./bop_simulator_replacement.png?v=2" alt="Interactive Mobile Onboarding Simulator Mockup" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div class="problem-image-wrapper bop-zoom-card" style="margin-top: 2rem; background: var(--bg-card); border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <img class="zoom-image" src="./bop_simulator_replacement.png?v=2" alt="Interactive Mobile Onboarding Simulator Mockup" style="width: 100%; height: auto; display: block;" loading="lazy">
             </div>
           </div>
 
@@ -1685,8 +1694,8 @@ export function renderProject3() {
               <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
             </ul>
 
-            <div class="bop-comparison-grid" style="margin-bottom: 1.5rem;">
-              <div style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
+            <div class="responsive-grid-2" style="margin-bottom: 1.5rem; gap: 1.5rem;">
+              <div class="bop-zoom-card" style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE (BRANCH PORTAL)</span>
                   <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
@@ -1694,10 +1703,10 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(235, 87, 87, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_transparent_before.png" alt="Before: Hidden status tracking" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img class="zoom-image" src="./bop_transparent_before.png" alt="Before: Hidden status tracking" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
-              <div style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
+              <div class="bop-zoom-card" style="background: rgba(52, 199, 89, 0.03); border: 1px solid rgba(52, 199, 89, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; display: block; margin-bottom: 0.5rem;">AFTER (REDESIGN STATUS SCREEN)</span>
                   <p style="margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary);">
@@ -1705,7 +1714,7 @@ export function renderProject3() {
                   </p>
                 </div>
                 <div style="border-top: 1px solid rgba(52, 199, 89, 0.1); width: 100%; margin-top: auto;">
-                  <img src="./bop_transparent_after.png" alt="After: In-app status tracking widget" style="width: 100% !important; height: auto; display: block;" loading="lazy">
+                  <img class="zoom-image" src="./bop_transparent_after.png" alt="After: In-app status tracking widget" style="width: 100% !important; height: auto; display: block;" loading="lazy">
                 </div>
               </div>
             </div>
@@ -1713,9 +1722,9 @@ export function renderProject3() {
         </section>
 
         <!-- Stakeholder Compromises Block -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ HARD CHOICES</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">The Hard Choices: Security vs. Seamless Flow</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ HARD CHOICES</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">The Hard Choices: Security vs. Seamless Flow</h2>
           <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
             Balancing national banking regulations with a friction-free, customer-facing self-service app required key compromises:
           </p>
@@ -1745,9 +1754,9 @@ export function renderProject3() {
         </section>
 
         <!-- Validating the Solution -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ VALIDATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Validating the Solution</h2>
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 5.5rem; margin-bottom: 5.5rem;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ VALIDATION</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Validating the Solution</h2>
           <p class="chapter-desc" style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             After redesigning the onboarding experience, the solution was evaluated against the challenges identified during the audit. The objective was to determine whether the new structure successfully addressed the complexity, uncertainty, and guidance gaps present in the original experience.
           </p>
@@ -1757,9 +1766,9 @@ export function renderProject3() {
         </section>
 
         <!-- Reflection & Learnings -->
-        <section class="body-chapter" style="padding-bottom: 3.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ LEARNINGS &amp; OUTCOMES</span>
-          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Reflection &amp; Learnings</h2>
+        <section class="body-chapter" style="padding-bottom: 5.5rem; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="font-weight: 600; color: var(--color-bop); letter-spacing: 0.05em;">/ LEARNINGS &amp; OUTCOMES</span>
+          <h2 class="chapter-title font-serif" style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-top: 0.5rem; line-height: 1.15; font-weight: 400; margin-bottom: 2rem;">Reflection &amp; Learnings</h2>
           <p class="chapter-desc" style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             This project began with what seemed like a straightforward objective: digitize the account opening experience and reduce dependence on branch visits. However, as I explored the onboarding journey, I realized that the challenge was far more complex than redesigning forms or reducing the number of steps.
           </p>
@@ -1854,6 +1863,9 @@ export function renderProject1Sidebar() {
       </a>
     </div>
 
+
+    <!-- Table of Contents Container -->
+    <div id="yooki-toc-container"></div>
 
     <!-- Branded CTA Card -->
     ${sidebarActionGrid}
@@ -1963,42 +1975,8 @@ export function renderProject3Sidebar() {
       </a>
     </div>
 
-    <!-- Specs as Background-Card List -->
-    <div class="sidebar-background-card sidebar-fade-in">
-      <span class="background-card-title font-mono">PROJECT SPECS</span>
-      <div class="background-list-items">
-        <!-- Role -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Role</span>
-            <span class="bg-item-value font-sans">UX Designer</span>
-          </div>
-        </div>
-        <!-- Timeline -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Timeline</span>
-            <span class="bg-item-value font-sans">4 Months (2025)</span>
-          </div>
-        </div>
-        <!-- Context -->
-        <div class="bg-list-item">
-          <div class="bg-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-          </div>
-          <div class="bg-item-content">
-            <span class="bg-item-label font-sans">Context</span>
-            <span class="bg-item-value font-sans">Mobile Banking <span class="bullet-sep">•</span> Identity Verification (KYC) <span class="bullet-sep">•</span> FinTech</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Table of Contents Container -->
+    <div id="bop-toc-container"></div>
 
     <!-- Branded CTA Card -->
     ${sidebarActionGrid}
@@ -2659,6 +2637,262 @@ function initProject3Flowchart() {
 // ==========================================================================
 
 /**
+ * Project 1 (Yooki) Dynamic Table of Contents Generator
+ */
+export function initProject1TOC() {
+  const container = document.getElementById('yooki-toc-container');
+  if (!container) return;
+
+  const body = document.querySelector('.project-body');
+  if (!body) return;
+
+  // Select all .body-chapter elements with a .chapter-num child
+  const sections = Array.from(body.querySelectorAll('.body-chapter')).filter(sec => {
+    return sec.querySelector('.chapter-num');
+  });
+
+  if (sections.length === 0) {
+    container.style.display = 'none';
+    return;
+  }
+
+  let tocHTML = `
+    <div class="toc-container">
+      <span class="toc-title font-mono">Table of Contents</span>
+      <div class="toc-list">
+  `;
+
+  const sectionData = [];
+
+  sections.forEach((sec, idx) => {
+    const chapterNumEl = sec.querySelector('.chapter-num');
+    if (!chapterNumEl) return;
+
+    // Clean up label by removing '/' and spaces
+    let label = chapterNumEl.textContent.replace(/\//g, '').trim();
+    
+    // Generate clean ID from label
+    let id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (!id) id = `yooki-sec-${idx}`;
+    
+    // Set ID on section element
+    sec.id = id;
+
+    // Keep TOC label readable
+    const tocLabel = label;
+
+    tocHTML += `
+      <a class="toc-item font-mono" data-target="${id}">${tocLabel}</a>
+    `;
+
+    sectionData.push({
+      id: id,
+      element: sec
+    });
+  });
+
+  tocHTML += `
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = tocHTML;
+
+  // Smooth scroll logic
+  const items = container.querySelectorAll('.toc-item');
+  items.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = item.getAttribute('data-target');
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        // Find scroll top offset (accounting for the header heights)
+        const headerOffset = 90;
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Active state scroll handler
+  function updateActiveTOC() {
+    const scrollPosition = window.scrollY + 140; // detection offset
+    let activeId = null;
+
+    for (let i = 0; i < sectionData.length; i++) {
+      const sec = sectionData[i];
+      const top = sec.element.offsetTop;
+      const height = sec.element.offsetHeight;
+
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        activeId = sec.id;
+        break;
+      }
+    }
+
+    if (window.scrollY < 120 && sectionData.length > 0) {
+      activeId = sectionData[0].id;
+    }
+
+    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 60 && sectionData.length > 0) {
+      activeId = sectionData[sectionData.length - 1].id;
+    }
+
+    items.forEach(item => {
+      const target = item.getAttribute('data-target');
+      if (target === activeId) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveTOC);
+  updateActiveTOC();
+
+  // Cleanup on view unmount
+  const cleanup = () => {
+    window.removeEventListener('scroll', updateActiveTOC);
+    document.removeEventListener('viewMounted', cleanup);
+  };
+  document.addEventListener('viewMounted', cleanup);
+}
+
+/**
+ * Project 3 (BOP) Dynamic Table of Contents Generator
+ */
+export function initProject3TOC() {
+  const container = document.getElementById('bop-toc-container');
+  if (!container) return;
+
+  const body = document.querySelector('.project-body');
+  if (!body) return;
+
+  // Select all .body-chapter elements with a .chapter-num child
+  const sections = Array.from(body.querySelectorAll('.body-chapter')).filter(sec => {
+    return sec.querySelector('.chapter-num');
+  });
+
+  if (sections.length === 0) {
+    container.style.display = 'none';
+    return;
+  }
+
+  let tocHTML = `
+    <div class="toc-container">
+      <span class="toc-title font-mono">Table of Contents</span>
+      <div class="toc-list">
+  `;
+
+  const sectionData = [];
+
+  sections.forEach((sec, idx) => {
+    const chapterNumEl = sec.querySelector('.chapter-num');
+    if (!chapterNumEl) return;
+
+    // Clean up label by removing '/' and spaces
+    let label = chapterNumEl.textContent.replace(/\//g, '').trim();
+    
+    // Generate clean ID from label
+    let id = label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (!id) id = `bop-sec-${idx}`;
+    
+    // Set ID on section element
+    sec.id = id;
+
+    // Keep TOC label readable
+    const tocLabel = label;
+
+    tocHTML += `
+      <a class="toc-item font-mono" data-target="${id}">${tocLabel}</a>
+    `;
+
+    sectionData.push({
+      id: id,
+      element: sec
+    });
+  });
+
+  tocHTML += `
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = tocHTML;
+
+  // Smooth scroll logic
+  const items = container.querySelectorAll('.toc-item');
+  items.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = item.getAttribute('data-target');
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        // Find scroll top offset (accounting for the header heights)
+        const headerOffset = 90;
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Active state scroll handler
+  function updateActiveTOC() {
+    const scrollPosition = window.scrollY + 140; // detection offset
+    let activeId = null;
+
+    for (let i = 0; i < sectionData.length; i++) {
+      const sec = sectionData[i];
+      const top = sec.element.offsetTop;
+      const height = sec.element.offsetHeight;
+
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        activeId = sec.id;
+        break;
+      }
+    }
+
+    if (window.scrollY < 120 && sectionData.length > 0) {
+      activeId = sectionData[0].id;
+    }
+
+    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 60 && sectionData.length > 0) {
+      activeId = sectionData[sectionData.length - 1].id;
+    }
+
+    items.forEach(item => {
+      const target = item.getAttribute('data-target');
+      if (target === activeId) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveTOC);
+  updateActiveTOC();
+
+  // Cleanup on view unmount
+  const cleanup = () => {
+    window.removeEventListener('scroll', updateActiveTOC);
+    document.removeEventListener('viewMounted', cleanup);
+  };
+  document.addEventListener('viewMounted', cleanup);
+}
+
+/**
  * Project 1 (Yooki) Syllabus map and AI sandbox controls
  */
 export function initProject1Sandbox() {
@@ -3190,6 +3424,7 @@ document.addEventListener('viewMounted', (event) => {
     initBrandStack();
   } else if (path === '/project-1') {
     initProject1Sandbox();
+    initProject1TOC();
   } else if (path === '/project-2') {
     initProject2Sandbox();
     initCendrolScrollAnimation();
@@ -3197,6 +3432,7 @@ document.addEventListener('viewMounted', (event) => {
     initProject3Sandbox();
     initProject3Flowchart();
     initProject3ComplianceDeck();
+    initProject3TOC();
   } else if (path === '/project-4') {
     initProject4Sandbox();
   }

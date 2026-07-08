@@ -7779,4 +7779,120 @@ html.dark .trusted-logo:hover img {
   }
 }
 
+/* ==========================================================================
+   TABLE OF CONTENTS (TOC) STYLING
+   ========================================================================== */
+.toc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.toc-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  position: relative;
+  border-left: 2px solid var(--border-color);
+  padding-left: 1.25rem;
+  margin-left: 0.25rem;
+}
+
+.toc-item {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: block;
+  position: relative;
+  line-height: 1.4;
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.toc-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1.25rem - 2px);
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  transform-origin: center;
+}
+
+.toc-item:hover {
+  color: var(--text-primary);
+  transform: translateX(2px);
+}
+
+.toc-item.active {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.toc-item.active::before {
+  background-color: var(--color-brand);
+  transform: translateY(-50%) scale(1);
+  box-shadow: 0 0 8px var(--color-brand);
+}
+
+/* Hide on mobile since the sidebar collapses to the top */
+@media (max-width: 1024px) {
+  .toc-container {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   BANK OF PALESTINE HOVER ZOOM EFFECTS
+   ========================================================================== */
+.bop-zoom-card {
+  position: relative;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  cursor: zoom-in;
+}
+
+.bop-zoom-card:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: var(--shadow-md), 0 16px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-bop) !important;
+  z-index: 10;
+}
+
+.bop-zoom-card .zoom-image {
+  transition: transform var(--transition-smooth);
+  will-change: transform;
+}
+
+.bop-zoom-card:hover .zoom-image {
+  transform: scale(1.12);
+}
+
+
 

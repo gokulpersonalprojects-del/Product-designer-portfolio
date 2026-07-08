@@ -187,16 +187,16 @@ function initFocusDeck() {
     ai: {
       title: "AI Systems & Agent Experiences",
       desc: "Designing conversational interfaces, syllabus mapping systems, generative UI workflows and agent-assisted user experiences.",
-      projects: ["Yooki AI", "Aura AI"],
+      projects: ["Yooki AI"],
       color: "var(--active-ai)",
-      projectIds: ["yooki", "aura"]
+      projectIds: ["yooki"]
     },
     saas: {
-      title: "SaaS Platform Architecture",
-      desc: "Creating scalable B2B admin consoles, flexible grid systems, dynamic analytics dashboards, and role-based access control flows.",
-      projects: ["Aura AI"],
+      title: "B2C & E-Commerce Design",
+      desc: "Crafting consumer-facing shopping flows, in-app commerce integrations, and seamless checkout experiences for streaming and entertainment platforms.",
+      projects: ["Netflix E-Shopping"],
       color: "var(--active-saas)",
-      projectIds: ["aura"]
+      projectIds: ["netflix"]
     },
     fintech: {
       title: "FinTech & Payment Systems",
@@ -365,12 +365,12 @@ function initBioCredentialsInteraction() {
 
   const projectHighlights = {
     // Quick Credentials
-    experience: ["yooki", "bop", "cendrol", "aura"],
-    mba: ["yooki", "bop", "cendrol", "aura"],
-    btech: ["yooki", "aura"],
+    experience: ["yooki", "bop", "cendrol", "netflix"],
+    mba: ["yooki", "bop", "cendrol", "netflix"],
+    btech: ["yooki", "netflix"],
     // Recruiter strengths
-    complex: ["yooki", "bop", "cendrol", "aura"],
-    business: ["yooki", "bop", "cendrol", "aura"]
+    complex: ["yooki", "bop", "cendrol", "netflix"],
+    business: ["yooki", "bop", "cendrol", "netflix"]
   };
 
   function highlight(statKey) {
