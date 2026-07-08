@@ -88,7 +88,12 @@ export function renderHome() {
           </div>
         </div>
         <div class="work-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem;">
-          <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-brand);">FIELD OPERATIONS / WORKFLOW DESIGN</span>
+          <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <span class="label font-mono" style="font-size: 0.65rem; color: var(--color-brand); margin: 0;">FIELD OPERATIONS / WORKFLOW DESIGN</span>
+            <span class="nda-badge font-mono" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.6rem; font-weight: 700; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.15rem 0.4rem; border-radius: 100px; text-transform: uppercase; background: var(--bg-secondary);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-brand);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> UNDER NDA
+            </span>
+          </div>
           <h3 class="card-title font-serif" style="font-size: 1.35rem; margin-top: 0.15rem; font-weight: 500;">Cendrol: Automating Expense Claims for Field Engineers</h3>
           <p class="font-sans" style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.45;">Reimagining how on-site engineers track, submit, and manage expense claims to eliminate invoice validation lag and site inventory delays.</p>
           
@@ -191,7 +196,7 @@ export function renderWork() {
       <a href="#/project-2" class="project-row stagger-el stagger-delay-5" data-category="ops" aria-label="Cendrol Case Study">
         <div class="project-meta-left">
           <span class="project-tag-pill font-mono">Operations</span>
-          <h3 class="project-row-title font-serif">Cendrol: Streamlining Expense Workflows for On-Site Engineers</h3>
+          <h3 class="project-row-title font-serif">Cendrol: Streamlining Expense Workflows for On-Site Engineers <span class="coming-soon-tag font-mono" style="font-size: 0.6rem; padding: 0.15rem 0.4rem; border: 1px solid var(--border-color); border-radius: 4px; margin-left: 0.75rem; color: var(--text-muted); font-weight: normal; vertical-align: middle; text-transform: uppercase;">Under NDA</span></h3>
         </div>
         <div class="project-meta-right">
           <span>Product Design</span>
@@ -333,11 +338,31 @@ export function renderProject1() {
   return `
     <article class="project-detail" style="max-width: 960px; margin: 0 auto; padding: 2rem 1rem;">
       <!-- Premium Editorial Header -->
-      <header class="project-header stagger-el stagger-delay-1" style="margin-bottom: 5.5rem; text-align: left;">
+      <header class="project-header stagger-el stagger-delay-1" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 3.5rem; text-align: left;">
         <span class="label font-mono project-tag" style="color: var(--color-brand); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.75rem;">AI INTERACTION DESIGN / CASE STUDY</span>
-        <h1 class="project-headline font-serif" style="font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.08; font-weight: 400; margin-top: 0.75rem; letter-spacing: -0.02em; color: var(--text-primary);">
+        <h1 class="project-headline font-serif" style="font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.08; font-weight: 400; margin-top: 0.75rem; letter-spacing: -0.02em; color: var(--text-primary); margin-bottom: 2rem;">
           From Query to Curriculum: Redesigning Yooki's Conversational AI from a Doubt-Solver to a Daily Study Habit
         </h1>
+
+        <!-- Metadata Strip -->
+        <div class="project-metadata-strip" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; margin-top: 2rem;">
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Role</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">Lead UX Designer & AI Researcher</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Timeline</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">4 Months (2024–25)</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Deliverables</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">AI Flows, IA, Prototypes, Pilots</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Platform</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--color-brand); font-weight: 600;">Mobile App (iOS & Android)</span>
+          </div>
+        </div>
       </header>
 
       <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 5rem; border-bottom: none; padding-bottom: 0;">
@@ -669,54 +694,44 @@ export function renderProject1() {
                   Use conversational queries as portals that display progress, contextual suggestions, and next actions.
                 </p>
               </div>
+            </div>
+          </div>
+
+          <!-- Stakeholder Compromises Block -->
+          <div style="margin-top: 2rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div>
+              <span class="font-mono" style="font-size: 0.7rem; color: #8e9ab0; letter-spacing: 0.08em; display: block; text-transform: uppercase; font-weight: 700; margin-bottom: 1.25rem;">Stakeholder Compromises</span>
               
-              <!-- Stakeholder Considerations -->
-              <div style="border-top: 1px dashed rgba(138,43,226,0.15); padding-top: 1.25rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">Stakeholder Compromises</span>
-                <div style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0.25rem;">
-                  <div style="display: flex; flex-direction: column; gap: 0.2rem;">
-                    <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Disrupting the core hook</span>
-                    <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">The chatbot drove our initial adoption. We compromised by keeping the chat input bar prominent on launch, but transformed the response panels into interactive progress sheets.</p>
-                  </div>
-                  <div style="display: flex; flex-direction: column; gap: 0.2rem;">
-                    <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Engineering constraint</span>
-                    <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Mapping raw text queries to structured syllabus nodes in real-time required strict classifier models. We designed soft-mapping UI states to handle edge-case queries elegantly.</p>
-                  </div>
+              <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                  <h4 class="font-sans" style="font-size: 1.1rem; font-weight: 700; margin: 0; color: var(--text-primary); letter-spacing: -0.01em;">Disrupting the core hook</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">The chatbot drove our initial adoption. We compromised by keeping the chat input bar prominent on launch, but transformed the response panels into interactive progress sheets.</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                  <h4 class="font-sans" style="font-size: 1.1rem; font-weight: 700; margin: 0; color: var(--text-primary); letter-spacing: -0.01em;">Engineering constraint</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Mapping raw text queries to structured syllabus nodes in real-time required strict classifier models. We designed soft-mapping UI states to handle edge-case queries elegantly.</p>
                 </div>
               </div>
+            </div>
 
-              <div style="padding: 1rem; background: rgba(52,199,89,0.04); border: 1px solid rgba(52,199,89,0.15); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem; text-transform: uppercase;">THE VERDICT</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Balances immediate doubt-solving speed with structured long-term habits.</p>
-              </div>
+            <div style="padding: 1.25rem; background: rgba(52,199,89,0.02); border: 1px solid rgba(52,199,89,0.15); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE VERDICT</span>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Balances immediate doubt-solving speed with structured long-term habits.</p>
             </div>
           </div>
         </section>
 
-        <!-- 8. Solution Path (Tabs Container) -->
+        <!-- 8. Solution Path (Vertical Scrolling Layout) -->
         <div class="solution-path-section" style="margin-top: 5.5rem; margin-bottom: 5.5rem;">
-          <div class="solution-path-container" style="margin-bottom: 2.5rem;">
+          <div class="solution-path-container" style="margin-bottom: 3.5rem;">
             <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.08em; font-weight: bold; text-transform: uppercase;">/ THE SOLUTION IN ACTION</span>
-            <div class="solution-tabs" style="margin-top: 1rem;">
-              <button class="solution-tab-btn active" data-chapter="1">
-                <span class="tab-num font-mono">01</span>
-                <span class="tab-title">Connecting Answers to the Syllabus</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="2">
-                <span class="tab-num font-mono">02</span>
-                <span class="tab-title">Intent-Driven Discovery</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="3">
-                <span class="tab-num font-mono">03</span>
-                <span class="tab-title">Redesigning the Homepage Dashboard</span>
-              </button>
-            </div>
           </div>
 
-          <!-- Solution Chapters -->
-          <div class="solution-chapters-container">
+          <!-- Solution Chapters (Scrolling Flow) -->
+          <div class="solution-chapters-container" style="display: flex; flex-direction: column; gap: 5.5rem;">
             <!-- Chapter 1 -->
-            <div class="solution-chapter-content active" data-chapter-content="1">
+            <div class="solution-chapter-content" style="display: block; opacity: 1; transform: translateY(0);">
               <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
                 <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 01</span>
                 <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Contextual Syllabus Mapping</h3>
@@ -755,8 +770,8 @@ export function renderProject1() {
             </div>
 
             <!-- Chapter 2 -->
-            <div class="solution-chapter-content" data-chapter-content="2">
-              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+            <div class="solution-chapter-content" style="display: block; opacity: 1; transform: translateY(0);">
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0; border-top: 1px solid var(--border-color); padding-top: 4rem;">
                 <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 02</span>
                 <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Intent-Driven Discovery &amp; Nudges</h3>
                 
@@ -804,8 +819,8 @@ export function renderProject1() {
             </div>
 
             <!-- Chapter 3 -->
-            <div class="solution-chapter-content" data-chapter-content="3">
-              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+            <div class="solution-chapter-content" style="display: block; opacity: 1; transform: translateY(0);">
+              <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0; border-top: 1px solid var(--border-color); padding-top: 4rem;">
                 <span class="chapter-num font-mono" style="color: var(--color-brand)">CHAPTER 03</span>
                 <h3 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Redesigning the Homepage Dashboard</h3>
                 
@@ -922,640 +937,110 @@ export function renderProject1() {
   `;
 }
 
-// ==========================================================================
-// PROJECT 2 (CENDROL CONSTRUCT)
-// ==========================================================================
 export function renderProject2() {
   return `
-    <article class="project-detail">
-      <header class="project-header stagger-el stagger-delay-1">
-        <span class="label font-mono project-tag" style="color: var(--color-brand)">FIELD OPERATIONS / WORKFLOW DESIGN / CASE STUDY</span>
-        <h1 class="project-headline font-serif" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 500;">Helping Engineers Get Their Money Back—Faster</h1>
+    <article class="project-detail animate-fade-in">
+      <header class="project-header stagger-el stagger-delay-1" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 3.5rem;">
+        <span class="label font-mono project-tag" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.08em; font-weight: bold; text-transform: uppercase;">FIELD OPERATIONS / WORKFLOW AUTOMATION</span>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; font-weight: 400; letter-spacing: -0.02em; margin-top: 0.5rem; margin-bottom: 2rem;">Cendrol: Automating Expense Claims for Field Engineers</h1>
+        
+        <!-- Premium Horizontal Metadata strip -->
+        <div class="project-metadata-strip" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; margin-top: 2rem;">
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Role</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">Lead UX Researcher & Designer</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Timeline</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">3 Months (2024)</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Deliverables</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">Workflow Maps, Offline UX, Wireframes</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Status</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--color-brand); font-weight: 600;">🔒 Protected under NDA</span>
+          </div>
+        </div>
       </header>
 
-      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2rem; border-bottom: none; padding-bottom: 0;">
-        <p class="project-intro-text" style="max-width: 800px; font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
-          Cendrol Construct Bangalore wanted to streamline how on-site construction engineers claim reimbursements for urgent, out-of-pocket material purchases. The goal was to replace a slow, manual paper-based workflow with an automated digital experience that gets engineers paid faster.
+      <!-- NDA Glassmorphism Lock Card -->
+      <div class="nda-lock-card stagger-el stagger-delay-2" style="padding: 3rem 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); margin-bottom: 3.5rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+        <div class="lock-icon-wrapper" style="width: 72px; height: 72px; border-radius: 50%; background: rgba(142, 90, 255, 0.08); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(142, 90, 255, 0.2); box-shadow: 0 0 20px rgba(142, 90, 255, 0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h2 class="font-serif" style="font-size: 1.75rem; font-weight: 400; color: var(--text-primary); margin: 0;">Case Study Discussed on Request Only</h2>
+        <p class="font-sans" style="max-width: 600px; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+          This project is protected by a Non-Disclosure Agreement (NDA). To comply with confidentiality obligations, the detailed design flows, internal operations workflows, and application interfaces cannot be displayed publicly.
         </p>
-      </div>
-
-      <!-- Metrics Section -->
-      <div class="yooki-header-metrics stagger-el stagger-delay-2">
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">14 to 4 Days</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Average reimbursement time</div>
-        </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">31% to 8%</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Expense claim error rates</div>
-        </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-          <div class="metric-value font-mono" style="font-size: 2.5rem; font-weight: 700; color: var(--color-brand); line-height: 1;">60%</div>
-          <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Reduction in site inventory delays</div>
-        </div>
-      </div>
-
-      <!-- Hero Mockup Video -->
-      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
-        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
-          <source src="./cendrol_thumbnail.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <!-- Core Statement Nudge -->
-      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--text-primary);">
         Engineers were spending their own money on site materials.<br><span style="color: var(--color-accent); font-weight: 500;">And waiting weeks to get paid back.</span>
       </div>
+      </div>
 
+      <!-- High-Level Outcomes Block -->
       <div class="project-body stagger-el stagger-delay-3">
-        <!-- The Problem -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ THE PROBLEM</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Disconnect Between Field Needs and Finance Audits</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              Rajesh, a seasoned site engineer at Cendrol Construct Bangalore, stands at a hardware store at 7 PM on a Tuesday evening. The project deadline is tomorrow, but they're missing critical fasteners that arrived defective this morning. The vendor won't deliver such a small quantity, and the accounting department closed hours ago. Rajesh reaches for his wallet, knowing he'll be out ₹3,000 of his own money with no guarantee of when he'll see it back.
-            </p>
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              This wasn't an isolated incident—it was the daily reality for engineers across 50+ construction sites. The manual, paper-based reimbursement process forced good engineers to choose between keeping project timelines on track and their own personal financial stability.
-            </p>
-          </div>
-          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./cendrol_legacy_paperwork.png" alt="Legacy paperwork and manual audit chaos" style="width: 100%; height: auto; display: block;" loading="lazy">
-          </div>
-        </section>
-
-        <!-- Product Highlights (Sticky Scroll Animation) -->
-        <section class="cendrol-scroll-section">
-          <!-- Left side: Sticky Visuals Container -->
-          <div class="cendrol-scroll-sticky">
-            <div class="cendrol-visuals-container" style="background: #ffffff; border: 1px solid var(--border-color);">
-              <div class="cendrol-visual-item active" style="background: #ffffff;">
-                <img src="./cendrol_realtime.png" alt="Realtime Status" style="width: 100%; height: 100%; object-fit: contain;">
-              </div>
-              <div class="cendrol-visual-item" style="background: #ffffff;">
-                <img src="./cendrol_trusted.png" alt="Trusted Claims" style="width: 100%; height: 100%; object-fit: contain;">
-              </div>
-              <div class="cendrol-visual-item" style="background: #ffffff;">
-                <img src="./cendrol_database.png" alt="Database Enhancement" style="width: 100%; height: 100%; object-fit: contain;">
-              </div>
-            </div>
-          </div>
-
-          <!-- Right side: Scrolling Narrative Container -->
-          <div class="cendrol-narrative-container">
-            <!-- Step 1: Realtime Status -->
-            <div class="cendrol-narrative-step active">
-              <span class="cendrol-step-badge">01 / TRANSPARENCY</span>
-              <h3 class="cendrol-step-title">Realtime Status</h3>
-              <p class="cendrol-step-desc">
-                Know the status of the reimbursement from time to time in real-time. Exposing real-time tracking states stopped repetitive status inquiries via calls and chats.
-              </p>
-            </div>
-            
-            <!-- Step 2: Trusted -->
-            <div class="cendrol-narrative-step">
-              <span class="cendrol-step-badge">02 / VERIFICATION</span>
-              <h3 class="cendrol-step-title">Trusted Claims</h3>
-              <p class="cendrol-step-desc">
-                A foolproof way to show proof of purchase through instant invoice scans and snaps of purchased materials. Reduces auditing back-and-forth between field and finance.
-              </p>
-            </div>
-            
-            <!-- Step 3: Database Enhancement -->
-            <div class="cendrol-narrative-step">
-              <span class="cendrol-step-badge">03 / SCALABILITY</span>
-              <h3 class="cendrol-step-title">Database Enhancement</h3>
-              <p class="cendrol-step-desc">
-                Enhanced data collection through adding of additional materials for a stage or category of construction. Helps project managers forecast budget overrides accurately.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Research -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ RESEARCH</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Investigating the Claims Ecosystem</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            Armed with curiosity and a notepad, I began what felt like detective work. I talked to anyone who would listen—project managers sharing war stories over coffee, accountants drowning in illegible handwritten receipts, and site engineers working under grueling field pressures.
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
+          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ THE IMPACT</span>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">High-Level Project Outcomes</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
+            Despite the confidentiality of the design layouts, the business and operational impact of the automation system can be shared. Re-engineering the expense validation process led to measurable improvements in efficiency:
           </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            I conducted field studies, rode along with engineers to vendor shops, and observed the chaotic process of preserving physical paper receipts in dusty, wet construction environments.
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1; margin-bottom: 0.5rem;">3 Days</div>
+              <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Reimbursement Cycle<br>(Down from 14 days)</div>
+            </div>
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1; margin-bottom: 0.5rem;">-60%</div>
+              <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Inventory Delays<br>(Improved site operations)</div>
+            </div>
+            <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; box-shadow: var(--shadow-sm);">
+              <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1; margin-bottom: 0.5rem;">-50%</div>
+              <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Audit Time<br>(Reduced financial overhead)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What We Can Discuss Section -->
+        <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
+          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ TALK POINTS</span>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">What We Can Discuss on a Call</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
+            If you are interested in the details of this project, I can walk you through the following topics during a private review session:
           </p>
-          
-          <!-- Research Approach Tags Grid -->
-          <div class="methodology-tags methodology-tags-grid">
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">FIELD RESEARCH</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Site Visits</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">USER INTERVIEWS</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Engineer Conversations</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">PROCESS MAPPING</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Workflow Audits</div>
-            </div>
-            <div class="methodology-tag-card">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">STAKEHOLDER SYNC</span>
-              <div class="font-serif" style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">Finance Team Reviews</div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Research Insights -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ RESEARCH INSIGHTS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Conversations with the Frontline</h2>
-
-          <!-- Study meta row -->
-          <div class="responsive-grid-2" style="gap: 1.5rem; margin-bottom: 2rem;">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">PARTICIPANTS</span>
-              <div class="font-serif" style="font-size: 2rem; font-weight: 500; color: var(--text-primary); line-height: 1;">12</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">On-site site engineers</div>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg);">
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">FORMAT</span>
-              <div class="font-serif" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary); line-height: 1.3;">Moderated Onsite</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Contextual inquiry & interview</div>
-            </div>
-          </div>
-
-          <!-- Tasks/Friction Points -->
-          <div style="margin-bottom: 2rem;">
-            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.75rem;">KEY NARRATIVE STEPS OBSERVED</span>
-            <div class="responsive-grid-2" style="gap: 0.75rem;">
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">01</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Preserving paper receipts from dirt, water, and tears</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">02</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Manually writing expense sheets during lunch breaks</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">03</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Submitting claims into a "black hole" tracking process</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.7rem; color: var(--color-brand); font-weight: 700; min-width: 1.25rem; padding-top: 0.1rem;">04</span>
-                <span style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.45;">Chasing accounting staff to verify reimbursement status</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Key observation callout -->
-          <div style="padding: 1.5rem; background: rgba(255,109,0,0.04); border-left: 3px solid var(--color-accent); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-accent); font-weight: 600; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">KEY OBSERVATION</span>
-            <p style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; color: var(--text-primary); line-height: 1.5; margin: 0; font-style: italic;">
-              “We want to pay them faster, but when we can't read the amount or the vendor name on physical paper receipts, what can we do?” — Central accountant
-            </p>
-          </div>
-        </section>
-
-        <!-- Research Findings -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ RESEARCH FINDINGS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Friction in the Document Collection</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem; align-items: center;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
             <div>
-              <p class="chapter-desc" style="margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                Site environments are hostile to paper documents. Rain, grease, and dust destroy receipts before they ever reach the central office. 
-              </p>
-              <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-                Additionally, the lack of real-time confirmation fuels anxiety, leading to constant phone follow-ups and operational friction between field operations and back-office accounting.
-              </p>
+              <ul style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">1. On-Site Contextual Inquiry</strong>
+                  How I shadowed civil engineers on active construction sites in Bangalore to observe their daily billing challenges under dust, heat, and physical fatigue.
+                </li>
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">2. Offline-First Design Strategy</strong>
+                  Building a robust upload system that handles extremely poor internet connectivity in basement construction levels without losing receipt uploads.
+                </li>
+              </ul>
             </div>
-            <div class="user-quote-callout" style="display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 1.5rem; border-left-color: var(--color-accent); min-height: 140px; background: rgba(255,109,0,0.02); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-              <div style="font-family: var(--font-serif); font-size: 1.45rem; font-weight: 500; color: var(--text-primary); line-height: 1.35; font-style: italic;">
-                "Physical collection was slow. Digital extraction was missing."
-              </div>
-            </div>
-          </div>
-          <div class="research-findings-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./cendrol_network_offline.png" alt="Network offline and field connectivity constraints illustration" style="width: 100%; height: auto; display: block;" loading="lazy">
-          </div>
-        </section>
-
-        <!-- User Journey & Opportunities -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ JOURNEY &amp; OPPORTUNITIES</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Identifying High-Impact Focus Areas</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            By mapping the journey of friction (from realizing material urgency, transit, paying with personal cash, preservation, manual entry, to black-hole waiting), we identified opportunities to replace paperwork with automation.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            The core challenge was building a transparent channel between field engineers and the finance desk. I identified four opportunities to rebuild trust.
-          </p>
-
-          <div class="user-journey-image-wrapper" style="margin-bottom: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./cendrol_digital_literacy.png" alt="Digital literacy and UI simplicity strategy diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
-          </div>
-          
-          <div class="opportunity-grid opportunity-grid-layout" style="gap: 1.25rem;">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
-              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">1.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Simplify Capture</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Enable one-tap photo uploads of receipts directly at vendor stores to prevent invoice loss.</p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
-              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">2.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Build Trust</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Introduce OCR receipt data extraction and material photo verification to validate purchases.</p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
-              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">3.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Real-time Tracking</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Expose clear approval state timelines to give engineers transparency over their money.</p>
-            </div>
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 0.4rem;">
-              <div class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: bold; letter-spacing: 0.05em;">4.0 OPPORTUNITY</div>
-              <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--text-primary);">Integrate Downstream</h4>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Sync claims seamlessly with the legacy ERP dashboard without database fragmentation.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Information Architecture -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ INFORMATION ARCHITECTURE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Structuring the Reimbursement Flow</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
-            To replace paperwork with rapid flows, we structured the approval chain to automatically link field uploads, compliance audits, and bank deposits.
-          </p>
-          <div class="ia-flow-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-            <img src="./cendrol_approval_chain.png" alt="Reimbursement Approval Chain Flowchart" style="width: 100%; height: auto; display: block;" loading="lazy">
-          </div>
-        </section>
-
-        <!-- Understanding the Root Cause -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ ROOT CAUSE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Why Reimbursements Were Stuck in a Loop</h2>
-          <p class="chapter-desc" style="margin-bottom: 0.5rem;">
-            While field engineers wanted their cash back instantly, the central finance desk had to protect the company from accounting errors and potential fraud.
-          </p>
-          <p class="chapter-desc" style="margin-bottom: 2rem;">
-            Through workflow audits and onsite feedback, three patterns of friction emerged:
-          </p>
-
-          <!-- Three pattern cards -->
-          <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">01</div>
-              <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Receipt damage and manual input errors</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Crumpled and dirty physical receipts led to illegible vendor details and claim amounts, prompting instant rejection from back-office desks.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">02</div>
-              <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">Audit gaps and validation delays</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Without photo proof of purchased items, accounting teams spent hours calling site managers to verify if materials actually arrived on site.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1.25rem; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); align-items: flex-start;">
-              <div class="font-mono" style="font-size: 1.5rem; font-weight: 700; color: var(--color-brand); line-height: 1; min-width: 2rem; padding-top: 0.15rem;">03</div>
-              <div>
-                <h4 class="font-serif" style="font-size: 1.1rem; font-weight: 500; margin: 0 0 0.5rem; color: var(--text-primary);">No status visibility (The "Black Hole")</h4>
-                <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Once forms were submitted, site managers had no way to track approval progression, creating massive anxiety and constant follow-up calls.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Redesign Strategy -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ REDESIGN STRATEGY</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Shifting the Experience Paradigm</h2>
-          <div class="responsive-grid-2" style="margin-top: 0.5rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              Instead of forcing heavy bureaucratic forms, we redesigned the workflow to leverage OCR data extraction and real-time state tracking. 
-            </p>
             <div>
-              <p class="chapter-desc" style="margin: 0 0 0.5rem; font-weight: 500; color: var(--text-primary); font-size: 1.05rem;">
-                The strategy was defined by four principles:
-              </p>
-              <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
-                <li>One-tap receipt capture at point of purchase.</li>
-                <li>OCR automated field populates to bypass manual typing.</li>
-                <li>Contextual photo uploads of materials to build instant audit trust.</li>
-                <li>Visible status tracking to keep the field engineer informed.</li>
+              <ul style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">3. Complex Status Ecosystems</strong>
+                  Mapping the 7 distinct approval states an invoice goes through between site engineer, site manager, auditor, and head office finance.
+                </li>
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">4. Friction-Free Receipt Upload</strong>
+                  Leveraging intelligent OCR scan guidelines to prevent engineers from uploading blurred, cropped, or unreadable invoice pictures.
+                </li>
               </ul>
             </div>
           </div>
-          <div class="redesign-strategy-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <img src="./cendrol_system_integration.png" alt="System integration and automated data flow diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
-          </div>
         </section>
-
-        <!-- Exploring Directions -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ EXPLORING DIRECTIONS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Evaluating Alternative Approaches</h2>
-          <p class="chapter-desc" style="margin-bottom: 2rem;">
-            We weighed different approaches to find the right balance between fraud prevention and user speed.
-          </p>
-          
-          <div class="directions-grid">
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
-              <div>
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 1</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Rigid manual accounting approval forms</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  Force engineers to fill out detailed fields manually and wait for offline handoffs.
-                </p>
-              </div>
-              <div style="padding: 1rem; background: rgba(255,59,48,0.05); border: 1px solid rgba(255,59,48,0.15); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.6rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Site engineers work under tight schedules and often lack time or computer access. It would increase submission delay and site inventory backlogs.</p>
-              </div>
-            </div>
-            
-            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem;">
-              <div>
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;">APPROACH 2</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Separate accounting portal for engineers</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  Build a dedicated desktop web app for submitting expense claims post-facto.
-                </p>
-              </div>
-              <div style="padding: 1rem; background: rgba(255,109,0,0.05); border: 1px solid rgba(255,109,0,0.15); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-accent); font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">WHY WE DIDN'T CHOOSE IT</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">It wouldn't solve the core issue of immediate capture, leaving receipts vulnerable to damage on-site before getting home or to the office.</p>
-              </div>
-            </div>
-            
-            <div style="padding: 1.25rem; background: rgba(138,43,226,0.04); border: 1px solid var(--color-brand); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.25rem; box-shadow: 0 8px 20px rgba(138,43,226,0.03);">
-              <div>
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">APPROACH 3 · SELECTED</span>
-                <h4 class="font-serif" style="font-size: 1.15rem; font-weight: 500; margin: 0.4rem 0 0; color: var(--text-primary); line-height: 1.2;">Mobile OCR Capture &amp; Photo Trust Verification</h4>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.6rem; margin-bottom: 0;">
-                  Utilize the engineer's existing mobile app to snap invoice photos, auto-fill fields, verify purchases contextually, and track approval states.
-                </p>
-              </div>
-              <!-- Stakeholder Considerations -->
-              <div style="border-top: 1px dashed rgba(138,43,226,0.15); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); letter-spacing: 0.05em; text-transform: uppercase; font-weight: bold;">Stakeholder Considerations</span>
-                <p style="font-size: 0.825rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">
-                  The design constraints were tightly defined:
-                </p>
-                <div style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0.25rem;">
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Rapid Turnaround &amp; Existing App Ecosystem</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">The project had a short timeline and the app already existed. We had to design within the existing framework without breaking daily developer habits.</p>
-                  </div>
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Preventing Abuse and Fraud</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">We needed to build trust verification (matching photos of materials on site) to stop billing duplication or fake invoices.</p>
-                  </div>
-                  <div style="display: flex; flex-direction: column; gap: 0.15rem;">
-                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">Network and Offline Challenges</span>
-                    <p style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin: 0;">On-site operations face connectivity blackouts, so local draft caching was critical.</p>
-                  </div>
-                </div>
-              </div>
-              <div style="padding: 1rem; background: rgba(52,199,89,0.05); border: 1px solid rgba(52,199,89,0.18); border-radius: var(--border-radius-md);">
-                <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">SELECTED BECAUSE</span>
-                <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">It minimized input friction on-site while providing robust proof mechanisms to accounting.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Solution Path Section Wrapper -->
-        <div class="solution-path-section">
-          <!-- Solution Path Tabs -->
-          <div class="solution-path-container">
-            <span class="chapter-num font-mono" style="color: var(--color-brand); font-size: 0.75rem; letter-spacing: 0.05em;">/ THE SOLUTION PATH</span>
-            <div class="solution-tabs">
-              <button class="solution-tab-btn active" data-chapter="1">
-                <span class="tab-num">CHAPTER 01</span>
-                <span class="tab-title">One-Tap Receipt Capture</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="2">
-                <span class="tab-num">CHAPTER 02</span>
-                <span class="tab-title">Contextual Trust Verification</span>
-              </button>
-              <button class="solution-tab-btn" data-chapter="3">
-                <span class="tab-num">CHAPTER 03</span>
-                <span class="tab-title">Real-Time State Tracking</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Solution Chapters -->
-          <div class="solution-chapters-container">
-            <!-- Chapter 1 -->
-            <div class="solution-chapter-content active" data-chapter-content="1">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 1</span>
-                <h2 class="chapter-title font-serif">One-Tap Receipt Capture</h2>
-                <p class="chapter-desc">
-                  Instead of filling detailed forms during busy shifts, engineers just snap a photo of their physical invoice. The OCR scanner automatically extracts vendor names, amounts, and dates, minimizing field input typing.
-                </p>
-                
-                <!-- Decision Grid Table -->
-                <div class="decision-grid">
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Site engineers lacked time and keyboard comfort to enter receipts manually.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">OCR image scanner extracts invoice details automatically.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It completely removes manual data entry, preventing paperwork backlog.</p>
-                  </div>
-                </div>
-
-                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 1.5rem;">
-                  "We hypothesized that minimizing on-site text entry would accelerate submission rates by eliminating form completion fatigue."
-                </div>
-
-                <!-- Video 1 (Submissions) -->
-                <div class="chapter1-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./cendrol_video1.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </section>
-            </div>
-
-            <!-- Chapter 2 -->
-            <div class="solution-chapter-content" data-chapter-content="2">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 2</span>
-                <h2 class="chapter-title font-serif">Contextual Trust Verification</h2>
-                <p class="chapter-desc">
-                  To prevent fraudulent billing, we designed contextual validation flows requiring engineers to submit photo proof of the materials actually arriving on site, linking receipt extraction directly to project inventory.
-                </p>
-                
-                <!-- Decision Grid Table -->
-                <div class="decision-grid">
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Finance teams needed physical verification to prevent billing duplicates.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Linked invoice submission with mandatory material snaps and ERP tracking.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It builds trust, allowing accountants to approve claims instantly without calls.</p>
-                  </div>
-                </div>
-
-                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 2rem;">
-                  "We needed to prevent abuse without introducing bureaucracy. Combining material photo checks was our key plot twist."
-                </div>
-
-                <!-- Video 2 (Admin tracking) -->
-                <div class="chapter2-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-bottom: 1.5rem;">
-                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./cendrol_video2.mp4" type="video/mp4">
-                  </video>
-                </div>
-
-                <!-- Video 3 (Visibility states) -->
-                <div class="chapter2-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
-                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./cendrol_video3.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </section>
-            </div>
-
-            <!-- Chapter 3 -->
-            <div class="solution-chapter-content" data-chapter-content="3">
-              <section class="body-chapter">
-                <span class="chapter-num font-mono">CHAPTER 3</span>
-                <h2 class="chapter-title font-serif">Real-Time State Tracking</h2>
-                <p class="chapter-desc">
-                  To eliminate the anxiety of "black-hole" submissions, we designed transparent status state timelines showing exactly which auditing phase the engineer's claim is currently traversing.
-                </p>
-                
-                <!-- Decision Grid Table -->
-                <div class="decision-grid">
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #ff3b30; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">PROBLEM</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Engineers had zero visibility, prompting redundant follow-ups.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: var(--color-brand); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">DESIGN DECISION</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">Implemented a real-time status tracker and timeline stepper.</p>
-                  </div>
-                  <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
-                    <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">WHY WE CHOSE IT</span>
-                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55;">It keeps engineers informed at every step, removing tracking anxiety.</p>
-                  </div>
-                </div>
-
-                <div class="user-quote-callout" style="margin-top: 1.5rem; font-size: 1.25rem; line-height: 1.45; margin-bottom: 2rem;">
-                  "Status transparency gave site engineers instant relief, turning a source of daily anxiety into a transparent, trusted process."
-                </div>
-
-                <!-- Video 4 (Approval stages) -->
-                <div class="chapter3-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-bottom: 1.5rem;">
-                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./cendrol_video4.mp4" type="video/mp4">
-                  </video>
-                </div>
-
-                <!-- Interactive Sandbox state flow timeline widget -->
-                <div class="interactive-flow-sandbox" style="margin: 1.5rem 0; padding: 1.5rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
-                  <span class="font-mono label" style="font-size: 0.65rem;">INTERACTIVE SANDBOX: STATE TIMELINE</span>
-                  <div class="state-flow-sandbox" id="state-sandbox">
-                    <div class="state-step active" data-step="1">Submitted</div>
-                    <div class="state-step" data-step="2">Audited</div>
-                    <div class="state-step" data-step="3">Approved</div>
-                    <div class="state-step" data-step="4">Reimbursed</div>
-                  </div>
-                  <p id="state-status-msg" class="font-mono" style="font-size: 0.825rem; margin-top: 1.25rem; color: var(--color-brand); text-align: center;">
-                    Stage 1 (Submitted): Your invoice images have been submitted and are queued for central accounting desk audits.
-                  </p>
-                </div>
-
-                <!-- Video 5 (Reimbursement progress) -->
-                <div class="chapter3-solution-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card); margin-top: 1.5rem;">
-                  <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-                    <source data-src="./cendrol_video5.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-
-        <!-- Section: Real-World Test -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono">/ OUTCOMES &amp; VALIDATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Real-World Test</h2>
-          
-          <div class="responsive-grid-2" style="margin-top: 0.5rem; margin-bottom: 2rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              The pilot test began with three volunteer site engineers. For two weeks, they used the mobile OCR capture feature for every single out-of-pocket material purchase.
-            </p>
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
-              The outcomes were clear. Rebuilding trust between engineering and accounting desks reduced validation cycles and eliminated the invoice backlog entirely.
-            </p>
-          </div>
-
-          <!-- Outcomes Metrics Grid -->
-          <div class="yooki-header-metrics" style="margin-bottom: 2.5rem;">
-            <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-              <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1;">14 to 4 Days</div>
-              <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Average reimbursement time</div>
-            </div>
-            <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
-              <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-brand); line-height: 1;">31% to 8%</div>
-              <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Expense claim error rates</div>
-            </div>
-          </div>
-
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 1.5rem; margin-bottom: 1.5rem;">
-            “I actually sleep better now. I'm not constantly worried about when I'll get my money back.”
-            <span class="quote-author">— Beta tester engineer feedback</span>
-          </div>
-
-          <!-- Video 6 (Operational metrics in action) -->
-          <div class="project-media-wrapper" style="margin: 2rem 0; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
-            <video data-lazy-video autoplay loop muted playsinline preload="none" style="width: 100%; height: auto; display: block; object-fit: cover;">
-              <source data-src="./cendrol_video6.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-top: 2rem; margin-bottom: 0.5rem;">The Victory Lap</h3>
-          <p class="chapter-desc">
-            The final presentation to the founder felt like a movie epilogue. We had data, testimonials, and proof of concept. But more importantly, we had transformed a source of daily stress into a point of pride.
-          </p>
-        </section>
-
-        <!-- Lessons Learned -->
-        <section class="body-chapter" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-brand)">/ LESSONS LEARNED</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Lessons from the Trenches</h2>
-          <p class="chapter-desc">
-            This project taught me that great UX design isn't always about following perfect processes—sometimes it's about adapting to real-world constraints while maintaining focus on user needs. Working under tight deadlines and research limitations, I learned to find story elements in every stakeholder conversation and treat each constraint as a plot device rather than an obstacle.
-          </p>
-          <p class="chapter-desc">
-            The most rewarding aspect wasn't the technical achievement or design accolades—it was knowing that somewhere in Bangalore, an engineer like Rajesh can buy urgent materials without the financial anxiety that once kept him awake at night. That's the kind of story worth telling.
-          </p>
-          
-          <div class="user-quote-callout" style="border-left: 4px solid var(--color-brand); margin-top: 2.5rem; margin-bottom: 1.5rem; font-style: italic;">
-            “Sometimes the best UX stories aren't about revolutionary interfaces or groundbreaking research—they're about ordinary people getting extraordinary relief from everyday problems. This was one of those stories, and I'm grateful to have been its narrator.”
-          </div>
-        </section>
-
       </div>
     </article>
   `;
@@ -1566,689 +1051,583 @@ export function renderProject2() {
 // ==========================================================================
 export function renderProject3() {
   return `
-    <article class="project-detail">
-      <header class="project-header stagger-el stagger-delay-1">
-        <span class="label font-mono project-tag" style="color: var(--color-bop)">MOBILE FINTECH / KYC REDESIGN</span>
-        <h1 class="project-headline font-serif" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 500;">Transforming a Branch-Assisted Process into a Guided Digital Experience</h1>
+    <article class="project-detail animate-fade-in">
+      <header class="project-header stagger-el stagger-delay-1" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 3.5rem;">
+        <span class="label font-mono project-tag" style="color: var(--color-bop); font-size: 0.75rem; letter-spacing: 0.08em; font-weight: bold; text-transform: uppercase;">MOBILE FINTECH / KYC REDESIGN</span>
+        <h1 class="project-headline font-serif" style="font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; font-weight: 400; letter-spacing: -0.02em; margin-top: 0.5rem; margin-bottom: 2rem;">Transforming a Branch-Assisted Process into a Guided Digital Experience</h1>
+        
+        <!-- Premium Horizontal Metadata strip -->
+        <div class="project-metadata-strip" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; margin-top: 2rem;">
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Role</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">UX Designer & Researcher</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Timeline</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">4 Months (2025)</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Deliverables</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">User Journeys, Flowcharts, Wireframes, Testing</span>
+          </div>
+          <div>
+            <span class="meta-label font-mono" style="display: block; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 0.25rem;">Context</span>
+            <span class="meta-value font-sans" style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500;">Mobile Banking, Financial Inclusion</span>
+          </div>
+        </div>
       </header>
 
-      <div class="project-intro-grid stagger-el stagger-delay-2" style="grid-template-columns: 1fr; margin-bottom: 2rem; border-bottom: none; padding-bottom: 0;">
-        <p class="project-intro-text" style="max-width: 800px; font-size: 1.125rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
-          Bank of Palestine aimed to make account opening more accessible by bringing a traditionally branch-assisted process into a customer-facing digital experience. However, onboarding a new customer in banking involves far more than collecting basic information. Identity verification, compliance checks, document validation, and security requirements all play a critical role in the process.
-        </p>
-      </div>
-
       <!-- Highlights Section -->
-      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 2.5rem;">
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+      <div class="yooki-header-metrics stagger-el stagger-delay-2" style="margin-bottom: 3.5rem;">
+        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
           <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Faster</div>
           <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Onboarding experience</div>
         </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
           <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Reduced</div>
           <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Perceived complexity</div>
         </div>
-        <div class="metric-card" style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px;">
+        <div class="metric-card" style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); text-align: center; backdrop-filter: blur(10px); display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; min-height: 120px; box-shadow: var(--shadow-sm);">
           <div class="metric-value font-mono" style="font-size: 2.2rem; font-weight: 700; color: var(--color-bop); line-height: 1;">Clearer</div>
           <div class="metric-label font-sans" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.3;">Application tracking</div>
         </div>
       </div>
 
       <!-- Hero Mockup Video -->
-      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
+      <div class="hero-image-wrapper stagger-el stagger-delay-2" style="margin-bottom: 3.5rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); background: var(--bg-card);">
         <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block; object-fit: cover;">
           <source src="./bop_hero_video.mp4" type="video/mp4">
         </video>
       </div>
 
       <!-- Core Statement Nudge -->
-      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--color-bop);">
+      <div class="text-nudge font-serif stagger-el" style="text-align: center; margin: 3.5rem auto; max-width: 650px; font-size: 1.75rem; line-height: 1.4; color: var(--color-bop);">
         "Opening a bank account should build financial access,<br><span style="color: var(--text-primary); font-weight: 500;">not create barriers to it."</span>
       </div>
 
       <div class="project-body stagger-el stagger-delay-3">
         <!-- The Problem -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
-          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE PROBLEM</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">The Friction of Branch-Assisted Onboarding</h2>
-          <div class="bop-two-col" style="gap: 2rem; margin-top: 0.5rem;">
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE TENSION</span>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">The Friction of Branch-Assisted Onboarding</h2>
+          <div class="bop-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 0.5rem; margin-bottom: 2rem;">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
               Opening a bank account has traditionally been a branch-assisted experience. Customers relied on bank representatives to explain requirements, verify documents, correct mistakes, and guide them through mandatory compliance procedures. While this approach helped ensure security and regulatory compliance, it also meant that much of the onboarding complexity was absorbed by bank staff rather than the customer.
             </p>
-            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary);">
+            <p class="chapter-desc" style="margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
               As Bank of Palestine expanded its digital services, the onboarding process was moved online. However, the experience largely replicated the existing banking workflow instead of adapting it for self-service use.
             </p>
           </div>
-          <div class="text-nudge font-serif" style="text-align: left; margin: 2rem 0 1rem; max-width: 100%; font-size: 1.25rem; line-height: 1.4; color: var(--text-primary); border-left: 3px solid var(--color-bop); padding-left: 1.25rem;">
+          <div class="text-nudge font-serif" style="text-align: left; margin: 2rem 0 2rem; max-width: 100%; font-size: 1.35rem; line-height: 1.45; color: var(--text-primary); border-left: 3px solid var(--color-bop); padding-left: 1.5rem; font-style: italic;">
             The challenge was not to remove complexity from the process, but to help customers successfully navigate that complexity on their own.
           </div>
-          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); background: var(--bg-card);">
             <img src="./bop_problem_image.png" alt="Branch-Assisted vs Digital Onboarding Friction" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
-        <!-- Experience Audit -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <!-- Experience Audit (Flattened Accordion) -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ EXPERIENCE AUDIT</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Mapping Steps to Find Friction</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Mapping Steps to Find Friction</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
             To understand where friction existed, I analyzed the existing onboarding journey and mapped the steps customers needed to complete before opening an account. The review revealed that the experience was designed around internal banking processes rather than customer understanding. While each step served a valid operational or compliance purpose, the overall journey felt lengthy, fragmented, and difficult to navigate independently.
           </p>
 
-          <!-- Friction Areas Accordion -->
-          <div class="bop-accordion">
-            <details class="bop-accordion-item" open>
-              <summary class="bop-accordion-header">
-                <span>Information Overload</span>
-              </summary>
-              <div class="bop-accordion-content">
-                <p style="margin: 0 0 1rem 0;">
-                  The onboarding process consisted of 12 individual steps presented with equal visual importance. Customers were required to move through multiple screens without a clear understanding of how the information was organized or how much effort remained.
-                </p>
-                <div class="bop-timeline-container">
-                  <div class="bop-timeline">
-                    <div class="bop-timeline-line"></div>
-                    <div class="bop-timeline-step active">
-                      <div class="bop-timeline-node">1</div>
-                      <div class="bop-timeline-label">Account Opening</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">2</div>
-                      <div class="bop-timeline-label">Customer Info</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">3</div>
-                      <div class="bop-timeline-label">FATCA</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">4</div>
-                      <div class="bop-timeline-label">Address</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">5</div>
-                      <div class="bop-timeline-label">Customer Activity</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">6</div>
-                      <div class="bop-timeline-label">Wealth Info</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">7</div>
-                      <div class="bop-timeline-label">Power of Attorney</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">8</div>
-                      <div class="bop-timeline-label">Account Data</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">9</div>
-                      <div class="bop-timeline-label">E-Service</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">10</div>
-                      <div class="bop-timeline-label">Terms</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">11</div>
-                      <div class="bop-timeline-label">Attachment</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">12</div>
-                      <div class="bop-timeline-label">Signatures</div>
-                    </div>
-                    <div class="bop-timeline-step">
-                      <div class="bop-timeline-node">13</div>
-                      <div class="bop-timeline-label">Comments</div>
-                    </div>
+          <!-- Stacked Friction Cards (Fully Visible) -->
+          <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+            <!-- Friction Area 1 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 01</span>
+              <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">Information Overload</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0 0 1.5rem 0;">
+                The onboarding process consisted of 12 individual steps presented with equal visual importance. Customers were required to move through multiple screens without a clear understanding of how the information was organized or how much effort remained.
+              </p>
+              <div class="bop-timeline-container" style="background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--border-color); overflow-x: auto;">
+                <div class="bop-timeline" style="min-width: 1000px;">
+                  <div class="bop-timeline-line"></div>
+                  <div class="bop-timeline-step active">
+                    <div class="bop-timeline-node">1</div>
+                    <div class="bop-timeline-label">Account Opening</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">2</div>
+                    <div class="bop-timeline-label">Customer Info</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">3</div>
+                    <div class="bop-timeline-label">FATCA</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">4</div>
+                    <div class="bop-timeline-label">Address</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">5</div>
+                    <div class="bop-timeline-label">Customer Activity</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">6</div>
+                    <div class="bop-timeline-label">Wealth Info</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">7</div>
+                    <div class="bop-timeline-label">Power of Attorney</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">8</div>
+                    <div class="bop-timeline-label">Account Data</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">9</div>
+                    <div class="bop-timeline-label">E-Service</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">10</div>
+                    <div class="bop-timeline-label">Terms</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">11</div>
+                    <div class="bop-timeline-label">Attachment</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">12</div>
+                    <div class="bop-timeline-label">Signatures</div>
+                  </div>
+                  <div class="bop-timeline-step">
+                    <div class="bop-timeline-node">13</div>
+                    <div class="bop-timeline-label">Comments</div>
                   </div>
                 </div>
               </div>
-            </details>
-            <details class="bop-accordion-item">
-              <summary class="bop-accordion-header">
-                <span>Compliance Hidden Inside the Journey</span>
-              </summary>
-              <div class="bop-accordion-content">
-                <p style="margin: 0 0 1rem 0;">
+            </div>
+
+            <!-- Friction Area 2 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 02</span>
+                <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">Compliance Hidden Inside the Journey</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
                   The onboarding flow combined multiple banking requirements into a single experience. Personal information, compliance questions, account preferences, and document uploads were presented as one continuous flow. From a customer's perspective, it was difficult to understand why certain information was being requested or which sections were legally required.
                 </p>
-                <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); max-width: 500px; margin-top: 0.5rem;">
-                  <img src="./bop_compliance_hidden.jpg" alt="Compliance Hidden Inside the Journey Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
-                </div>
               </div>
-            </details>
-            <details class="bop-accordion-item">
-              <summary class="bop-accordion-header">
-                <span>A Digital Version of a Paper Form</span>
-              </summary>
-              <div class="bop-accordion-content">
-                <p style="margin: 0 0 1rem 0;">
+              <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
+                <img src="./bop_compliance_hidden.jpg" alt="Compliance Hidden Inside the Journey Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Friction Area 3 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 03</span>
+                <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">A Digital Version of a Paper Form</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
                   The experience focused on collecting information rather than guiding users through account opening. Customers moved from one form screen to another, entering details and uploading documents without receiving much contextual guidance. The system successfully gathered information but provided limited support for completing the journey.
                 </p>
-                <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); max-width: 500px; margin-top: 0.5rem;">
-                  <img src="./bop_digital_paper.png" alt="A Digital Version of a Paper Form Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
-                </div>
               </div>
-            </details>
-            <details class="bop-accordion-item">
-              <summary class="bop-accordion-header">
-                <span>Expectation vs Reality</span>
-              </summary>
-              <div class="bop-accordion-content">
-                <p style="margin: 0 0 1rem 0;">
+              <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
+                <img src="./bop_digital_paper.png" alt="A Digital Version of a Paper Form Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Friction Area 4 -->
+            <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+              <div>
+                <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.75rem; text-transform: uppercase;">FRICTION AREA 04</span>
+                <h3 class="font-serif" style="font-size: 1.4rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem 0;">Expectation vs Reality</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
                   Many users assumed account creation happened immediately after submission, while the actual process involved document reviews, verification, compliance checks, and activation.
                 </p>
-                <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); max-width: 500px; margin-top: 0.5rem;">
-                  <img src="./bop_expectation_reality.png" alt="Expectation vs Reality Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
-                </div>
               </div>
-            </details>
+              <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card); box-shadow: var(--shadow-sm);">
+                <img src="./bop_expectation_reality.png" alt="Expectation vs Reality Diagram" style="width: 100%; height: auto; display: block;" loading="lazy">
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- Key Insights & Opportunity Areas -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ KEY INSIGHTS</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Key Insights &amp; Opportunity Areas</h2>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Key Insights &amp; Opportunity Areas</h2>
           
-          <div class="bop-insights-grid" style="gap: 2rem; margin-top: 1rem;">
+          <div class="bop-insights-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
             <div>
-              <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Key Insights</h3>
-              <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; list-style-type: none; margin: 0;">
-                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">1.0 Complexity Was Necessary</strong>
+              <h3 style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1.25rem; font-family: var(--font-serif);">Key Research Insights</h3>
+              <ul style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">1. Complexity Was Necessary</strong>
                   Opening a bank account required KYC verification, document validation, compliance checks, and security reviews. These requirements could not be removed without compromising regulatory obligations.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">2.0 The Experience Was Built Around Banking Processes</strong>
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">2. The Experience Was Process-Centric</strong>
                   The onboarding flow reflected how the bank collected information internally rather than how customers understood account opening.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">3.0 Guidance Disappeared When Branch Assistance Disappeared</strong>
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">3. Missing Guidance Loop</strong>
                   In branches, staff explained requirements, corrected mistakes, and answered questions. The digital experience transferred responsibilities to customers without providing equivalent support.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">4.0 Expectations Didn't Match Reality</strong>
+                <li style="padding: 1.25rem; background: var(--bg-secondary); border-radius: var(--border-radius-md); border: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">4. Mismatched Expectations</strong>
                   Customers assumed submitting an application meant opening an account. The actual process involved document reviews, verification, compliance checks, and activation.
                 </li>
               </ul>
             </div>
             
             <div>
-              <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Opportunity Areas</h3>
-              <ul style="display: flex; flex-direction: column; gap: 0.75rem; padding-left: 0; list-style-type: none; margin: 0;">
-                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Reduce Perceived Complexity</strong>
-                  Help users understand progress and effort.
+              <h3 style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1.25rem; font-family: var(--font-serif);">Opportunity Areas</h3>
+              <ul style="display: flex; flex-direction: column; gap: 1rem; padding-left: 0; list-style-type: none; margin: 0;">
+                <li style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px var(--border-radius-md) var(--border-radius-md) 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary); box-shadow: var(--shadow-sm);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">Reduce Perceived Complexity</strong>
+                  Help users understand progress and effort through organized, phase-based progression.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Provide Guidance Throughout the Journey</strong>
-                  Replace branch assistance with contextual support.
+                <li style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px var(--border-radius-md) var(--border-radius-md) 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary); box-shadow: var(--shadow-sm);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">Provide Guidance Throughout the Journey</strong>
+                  Replace branch assistance with smart, contextual explanations directly in the fields.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Improve Transparency</strong>
-                  Make banking processes visible and understandable.
+                <li style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px var(--border-radius-md) var(--border-radius-md) 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary); box-shadow: var(--shadow-sm);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">Improve Transparency</strong>
+                  Make banking verification, backend delays, and manual review stages visible and understandable.
                 </li>
-                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Align Expectations With Reality</strong>
-                  Clearly communicate what happens before and after submission.
-                </li>
-                <li style="padding: 0.85rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px 8px 8px 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.45; color: var(--text-secondary);">
-                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.15rem;">Support Real-World Completion</strong>
-                  Design for interruptions, document retrieval, and multi-session onboarding.
+                <li style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--color-bop); border-radius: 4px var(--border-radius-md) var(--border-radius-md) 4px; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); font-size: 0.9rem; line-height: 1.55; color: var(--text-secondary); box-shadow: var(--shadow-sm);">
+                  <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem; font-size: 0.95rem;">Support Real-World Completion</strong>
+                  Design for multi-session completion, allowing users to save progress and return when documents are ready.
                 </li>
               </ul>
             </div>
           </div>
         </section>
 
-        <!-- Onboarding Journey Map Section -->
-        <section class="body-chapter bop-flowchart-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <!-- Onboarding Journey Map Section (Zero Interaction) -->
+        <section class="body-chapter bop-flowchart-section" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop);">/ ONBOARDING JOURNEY MAP</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Mapping the Onboarding Journey</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.25rem;">
-            Before redesigning the experience, I mapped the complete onboarding workflow to understand how customer actions, compliance requirements, verification steps, and backend banking processes interacted with each other. Select a scenario button below to trace how the digital experience guides users through compliance checks.
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Mapping the Onboarding Journey</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
+            Before redesigning the experience, I mapped the complete onboarding workflow to understand how customer actions, compliance requirements, verification steps, and backend banking processes interacted with each other. Below is the system flow mapping.
           </p>
 
-          <div class="bop-flowchart-card">
-            <!-- Controls -->
-            <div class="bop-flowchart-controls">
-              <div class="bop-flowchart-btns">
-                <button class="bop-flowchart-btn active" id="bop-btn-happy" data-path="happy">Happy Path (Local Citizen)</button>
-                <button class="bop-flowchart-btn" id="bop-btn-foreign" data-path="foreign">Exception: Foreign Resident</button>
-                <button class="bop-flowchart-btn" id="bop-btn-registry" data-path="registry">Exception: Registry Fail</button>
-                <button class="bop-flowchart-btn" id="bop-btn-selfie" data-path="selfie">Exception: Selfie Discrepancy</button>
-              </div>
-              <span class="font-mono" style="font-size: 0.65rem; color: var(--text-muted); font-weight: 600;">CLICK SCENARIO OR NODES TO VIEW DETAILS</span>
-            </div>
-
+          <div class="bop-flowchart-card" style="margin-bottom: 3rem;">
             <!-- Scroll Wrapper for Flowchart -->
             <div class="bop-flowchart-scroll-wrapper">
               <div class="bop-flowchart-inner">
-                <!-- SVG Connections Overlay -->
+                <!-- SVG Connections Overlay (Fully active/lit by default) -->
                 <svg class="bop-flow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 320" preserveAspectRatio="none">
-                  
-                  <!-- Connections (Default Gray) -->
-                  <path id="bop-path-start-phone" d="M 60 160 L 170 160" class="bop-flow-path active-happy" />
-                  <path id="bop-path-phone-residency" d="M 170 160 L 280 160" class="bop-flow-path active-happy" />
-                  
-                  <!-- Yes Branch -->
-                  <path id="bop-path-residency-otp" d="M 280 160 C 320 160, 340 70, 400 70" class="bop-flow-path active-happy" />
-                  <path id="bop-path-otp-enterid" d="M 400 70 L 520 70" class="bop-flow-path active-happy" />
-                  <path id="bop-path-enterid-registry" d="M 520 70 L 640 70" class="bop-flow-path active-happy" />
-                  
-                  <!-- Registry Yes Branch -->
-                  <path id="bop-path-registry-ocr" d="M 640 70 L 760 70" class="bop-flow-path active-happy" />
-                  <path id="bop-path-ocr-liveness" d="M 760 70 L 760 160" class="bop-flow-path active-happy" />
-                  <path id="bop-path-liveness-selfie" d="M 760 160 L 870 160" class="bop-flow-path active-happy" />
-                  
-                  <!-- Selfie Yes Branch -->
-                  <path id="bop-path-selfie-vault" d="M 870 160 L 970 160" class="bop-flow-path active-happy" />
+                  <!-- Connections (lit up to show the happy path flow clearly) -->
+                  <path id="bop-path-start-phone" d="M 60 160 L 170 160" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-phone-residency" d="M 170 160 L 280 160" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-residency-otp" d="M 280 160 C 320 160, 340 70, 400 70" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-otp-enterid" d="M 400 70 L 520 70" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-enterid-registry" d="M 520 70 L 640 70" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-registry-ocr" d="M 640 70 L 760 70" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-ocr-liveness" d="M 760 70 L 760 160" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-liveness-selfie" d="M 760 160 L 870 160" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
+                  <path id="bop-path-selfie-vault" d="M 870 160 L 970 160" class="bop-flow-path active-happy" style="stroke-width: 3.5px;" />
 
-                  <!-- No Branch (Foreign Citizen) -->
-                  <path id="bop-path-residency-foreign" d="M 280 160 C 320 160, 340 250, 400 250" class="bop-flow-path-dashed" />
-                  <path id="bop-path-foreign-upload" d="M 400 250 L 520 250" class="bop-flow-path-dashed" />
-                  <path id="bop-path-upload-approval" d="M 520 250 L 640 250" class="bop-flow-path-dashed" />
-                  <path id="bop-path-approval-vault" d="M 640 250 C 780 250, 840 160, 970 160" class="bop-flow-path-dashed" />
+                  <!-- Exception paths in dashed red/accent -->
+                  <path id="bop-path-residency-foreign" d="M 280 160 C 320 160, 340 250, 400 250" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
+                  <path id="bop-path-foreign-upload" d="M 400 250 L 520 250" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
+                  <path id="bop-path-upload-approval" d="M 520 250 L 640 250" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
+                  <path id="bop-path-approval-vault" d="M 640 250 C 780 250, 840 160, 970 160" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
+                  <path id="bop-path-registry-branch" d="M 640 70 L 640 160" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
+                  <path id="bop-path-selfie-video" d="M 870 160 L 870 250" class="bop-flow-path-dashed" style="stroke: var(--color-bop); opacity: 0.6;" />
 
-                  <!-- Registry No Branch (Branch Visit) -->
-                  <path id="bop-path-registry-branch" d="M 640 70 L 640 160" class="bop-flow-path-dashed" />
-
-                  <!-- Selfie No Branch (Video Call) -->
-                  <path id="bop-path-selfie-video" d="M 870 160 L 870 250" class="bop-flow-path-dashed" />
-
-                  <!-- Traveling Flow Dot -->
-                  <circle id="bop-flow-travel-dot" r="5.5" fill="var(--color-success)" style="offset-path: path('M 60 160 L 170 160');" class="bop-flow-dot" />
+                  <!-- Traveling Flow Dot along Happy Path -->
+                  <circle id="bop-flow-travel-dot" r="5.5" fill="var(--color-success)" style="offset-path: path('M 60 160 L 170 160 L 280 160 C 320 160, 340 70, 400 70 L 520 70 L 640 70 L 760 70 L 760 160 L 870 160 L 970 160');" class="bop-flow-dot" />
                 </svg>
 
-                <!-- Nodes Grid (Absolute Positions) -->
+                <!-- Static Nodes Grid -->
                 <div class="bop-nodes-grid">
-                  
-                  <!-- Main Line Nodes -->
-                  <div class="bop-node active-happy" id="bop-node-start" style="left: 60px; top: 160px;" data-node="start">
+                  <div class="bop-node active-happy" style="left: 60px; top: 160px;">
                     <span class="node-num">01 / START</span>
                     <span class="node-title">Start Onboarding</span>
                   </div>
-
-                  <div class="bop-node active-happy" id="bop-node-entry" style="left: 170px; top: 160px;" data-node="entry">
+                  <div class="bop-node active-happy" style="left: 170px; top: 160px;">
                     <span class="node-num">02 / ENTRY</span>
                     <span class="node-title">Phone &amp; Email</span>
                   </div>
-
-                  <!-- Decision Diamond 1: Local Check -->
-                  <div class="bop-node diamond active-happy" id="bop-node-residency" style="left: 280px; top: 160px;" data-node="residency" title="Residency Check">
+                  <div class="bop-node diamond active-happy" style="left: 280px; top: 160px;">
                     <div class="diamond-text">In Palestine?</div>
                   </div>
-
-                  <!-- Happy Path Branch -->
-                  <div class="bop-node active-happy" id="bop-node-otp" style="left: 400px; top: 70px;" data-node="otp">
+                  <div class="bop-node active-happy" style="left: 400px; top: 70px;">
                     <span class="node-num">03 / OTP</span>
                     <span class="node-title">OTP Validation</span>
                   </div>
-
-                  <div class="bop-node active-happy" id="bop-node-enterid" style="left: 520px; top: 70px;" data-node="enterid">
+                  <div class="bop-node active-happy" style="left: 520px; top: 70px;">
                     <span class="node-num">04 / ID</span>
                     <span class="node-title">Enter ID Num</span>
                   </div>
-
-                  <!-- Decision Diamond 2: Registry Match -->
-                  <div class="bop-node diamond active-happy" id="bop-node-registry" style="left: 640px; top: 70px;" data-node="registry" title="Registry Validation">
+                  <div class="bop-node diamond active-happy" style="left: 640px; top: 70px;">
                     <div class="diamond-text">ID Valid?</div>
                   </div>
-
-                  <div class="bop-node active-happy" id="bop-node-ocr" style="left: 760px; top: 70px;" data-node="ocr">
+                  <div class="bop-node active-happy" style="left: 760px; top: 70px;">
                     <span class="node-num">05 / OCR</span>
                     <span class="node-title">OCR ID Scan</span>
                   </div>
-
-                  <div class="bop-node active-happy" id="bop-node-liveness" style="left: 760px; top: 160px;" data-node="liveness">
+                  <div class="bop-node active-happy" style="left: 760px; top: 160px;">
                     <span class="node-num">06 / BIOMETRICS</span>
                     <span class="node-title">Liveness Check</span>
                   </div>
-
-                  <!-- Decision Diamond 3: Selfie Match -->
-                  <div class="bop-node diamond active-happy" id="bop-node-selfie" style="left: 870px; top: 160px;" data-node="selfie" title="Selfie Face Match">
+                  <div class="bop-node diamond active-happy" style="left: 870px; top: 160px;">
                     <div class="diamond-text">Selfie Ok?</div>
                   </div>
-
-                  <div class="bop-node active-happy" id="bop-node-vault" style="left: 970px; top: 160px;" data-node="vault">
+                  <div class="bop-node active-happy" style="left: 970px; top: 160px;">
                     <span class="node-num">07 / VAULT</span>
                     <span class="node-title">Account Created</span>
                   </div>
 
-                  <!-- Exception Path 1: Foreign Citizen -->
-                  <div class="bop-node" id="bop-node-foreign" style="left: 400px; top: 250px;" data-node="foreign">
+                  <!-- Exceptions -->
+                  <div class="bop-node active-exception" style="left: 400px; top: 250px;">
                     <span class="node-num">03B / FORM</span>
                     <span class="node-title">Foreigner Form</span>
                   </div>
-
-                  <div class="bop-node" id="bop-node-upload" style="left: 520px; top: 250px;" data-node="upload">
+                  <div class="bop-node active-exception" style="left: 520px; top: 250px;">
                     <span class="node-num">04B / UPLOAD</span>
                     <span class="node-title">Upload Passport</span>
                   </div>
-
-                  <div class="bop-node" id="bop-node-approval" style="left: 640px; top: 250px;" data-node="approval">
+                  <div class="bop-node active-exception" style="left: 640px; top: 250px;">
                     <span class="node-num">05B / MANUAL</span>
                     <span class="node-title">Manual Review</span>
                   </div>
-
-                  <!-- Exception Path 2: Registry Fail -->
-                  <div class="bop-node" id="bop-node-branch" style="left: 640px; top: 160px;" data-node="branch">
+                  <div class="bop-node active-exception" style="left: 640px; top: 160px;">
                     <span class="node-num">04C / BRANCH</span>
                     <span class="node-title">Visit Branch</span>
                   </div>
-
-                  <!-- Exception Path 3: Selfie Fail -->
-                  <div class="bop-node" id="bop-node-video" style="left: 870px; top: 250px;" data-node="video">
+                  <div class="bop-node active-exception" style="left: 870px; top: 250px;">
                     <span class="node-num">06B / VIDEO</span>
-                    <span class="node-title">Fallback Video Call</span>
+                    <span class="node-title">Fallback Video</span>
                   </div>
-
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Detail Display Overlay Card -->
-            <div class="bop-flowchart-detail-card" id="bop-detail-card">
-              <h4 id="bop-detail-title">Start Onboarding</h4>
-              <div class="detail-grid">
-                <div class="detail-item">
-                  <span class="detail-label">DESIGN DECISION</span>
-                  <div class="detail-val" id="bop-detail-decision">Introduce clear guidelines explaining what documents will be required during the onboarding session, setting proper user expectations and reducing drop-offs.</div>
-                </div>
-                <div class="detail-item">
-                  <span class="detail-label">REGULATORY COMPLIANCE</span>
-                  <div class="detail-val" id="bop-detail-compliance">Pre-onboarding checklist is required to ensure users do not start account creation without a valid ID or a stable network connection.</div>
-                </div>
+          <!-- Fully Visible Step Details Grid (Zero Interaction) -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <!-- Step 1 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">01 / Start Onboarding &amp; Credentials</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">Introduce clear guidelines explaining what documents will be required during the onboarding session, setting proper user expectations and reducing drop-offs.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: geo-restrictions warning and ID checks mandatory before form launch.</span>
+            </div>
+            <!-- Step 2 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">02 / Residency &amp; Contact Verification</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">Background IP and cellular network geolocation checks automatically separate domestic citizens from foreign residents early in the journey.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: AML rules require verified cellular/email node bound to account.</span>
+            </div>
+            <!-- Step 3 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">03 / Identity Lookup &amp; Registry Match</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">Asynchronous backend connection querying MoI government database in under 2 seconds. Reassurance loaders prevent user exit.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: Registers that the input national ID card matches government MoI files.</span>
+            </div>
+            <!-- Step 4 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">04 / OCR ID Document Scan</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">On-device image OCR parsing captures text in real-time. Auto-exposure filters resolve low-light legibility issues.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: Archiving unedited photo files of physical cards linked to customer ledger.</span>
+            </div>
+            <!-- Step 5 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">05 / Liveness Check &amp; Biometrics</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">Interactive camera prompts (blink/turn indicators) with real-time feedback guide perfect face framing.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: Liveness proof is mandatory to avoid spoofing and identity theft.</span>
+            </div>
+            <!-- Step 6 -->
+            <div style="padding: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm);">
+              <h4 class="font-serif" style="margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--text-primary);">06 / Selfie Verification &amp; Account Vault</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 0.75rem 0;">Direct pixel comparison between OCR document image, registry profile photo, and live selfie check.</p>
+              <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); text-transform: uppercase; font-weight: bold; display: block;">COMPLIANCE: Match check is required to ensure the owner of the document is the applicant.</span>
+            </div>
+          </div>
+
+          <!-- Exception Flow Callouts (Zero Interaction) -->
+          <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(var(--active-fintech), 0.03); border: 1px solid rgba(var(--active-fintech), 0.15); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1rem;">
+            <span class="font-mono" style="font-size: 0.65rem; color: var(--color-bop); font-weight: 700; letter-spacing: 0.08em; display: block; text-transform: uppercase;">EXCEPTION &amp; FALLBACK CHANNELS</span>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+              <div>
+                <h5 class="font-sans" style="margin: 0 0 0.25rem 0; font-size: 0.95rem; font-weight: bold; color: var(--text-primary);">Exception 3B: Foreign Passport</h5>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">FATCA, CRS declarations are triggered. Users scan passport pages instead of local IDs, queued for manual review.</p>
+              </div>
+              <div>
+                <h5 class="font-sans" style="margin: 0 0 0.25rem 0; font-size: 0.95rem; font-weight: bold; color: var(--text-primary);">Exception 4C: Registry Fail</h5>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Unmatched records block digital creation. Show local branch map with queue reservations to avoid long physical wait times.</p>
+              </div>
+              <div>
+                <h5 class="font-sans" style="margin: 0 0 0.25rem 0; font-size: 0.95rem; font-weight: bold; color: var(--text-primary);">Exception 6B: Selfie Mismatch</h5>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">If automated comparison scores fall below a strict threshold, launch an in-app secure video call fallback with a live agent.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Information Architecture & Compliance Sandbox Section -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <!-- Information Architecture Section (Zero Interaction) -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ INFORMATION ARCHITECTURE</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Redesigning the Information Architecture</h2>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Redesigning the Information Architecture</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 3rem;">
             The onboarding journey contained multiple compliance requirements, verification steps, and account setup tasks that were presented as individual steps with little structure. While the information being collected was necessary, the way it was organized made the process feel longer and more complex than it actually was.
           </p>
 
-          <div class="bop-compliance-sandbox">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
-              <div>
-                <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.25rem;">01.A / COMPLIANCE ENGINE</span>
-                <h3 class="font-serif" style="font-size: 1.35rem; font-weight: 500; margin: 0; color: var(--text-primary);">KYC Requirements &amp; Mapping</h3>
+          <!-- 1. The Raw Research notepad (Discovery Phase) -->
+          <div style="margin-bottom: 4rem;">
+            <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.75rem;">RESEARCH ARTIFACT · INITIAL DISCOVERY</span>
+            <div class="bop-notepad" style="background: hsl(14, 100%, 98%); border: 1px solid rgba(224, 114, 88, 0.2); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); padding: 2rem 2rem 2rem 3rem; position: relative; overflow: hidden; background-image: linear-gradient(rgba(224, 114, 88, 0.1) 1px, transparent 1px); background-size: 100% 2.1rem; line-height: 2.1rem;">
+              <div class="notepad-holes" style="position: absolute; top: 0.5rem; left: 0; right: 0; display: flex; justify-content: space-around; padding: 0 1rem; pointer-events: none; opacity: 0.6;">
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
               </div>
-              
-              <!-- View Toggle Tabs -->
-              <div class="bop-sandbox-toggle" style="display: flex; gap: 0.4rem; padding: 0.2rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
-                <button class="bop-toggle-btn active" data-view="refined" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: var(--bg-card); font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-primary); transition: all 0.2s; box-shadow: var(--shadow-sm);">Refined Mapping</button>
-                <button class="bop-toggle-btn" data-view="sketch" style="padding: 0.35rem 0.75rem; border-radius: 6px; border: none; background: transparent; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; cursor: pointer; color: var(--text-secondary); transition: all 0.2s;">Initial Sketchpad</button>
+              <div style="position: absolute; left: 2.25rem; top: 0; bottom: 0; width: 1px; background: rgba(224, 114, 88, 0.45); pointer-events: none;"></div>
+              <div class="notepad-content" style="font-family: 'Kalam', 'Architects Daughter', 'Comic Sans MS', cursive, sans-serif; font-style: italic; color: #2e2825; font-size: 0.95rem; padding-top: 0.75rem; line-height: 2.1rem;">
+                <h4 style="font-family: inherit; font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; color: #b8432a; border-bottom: 1.5px dashed rgba(224, 114, 88, 0.3); padding-bottom: 0.25rem; font-style: inherit; line-height: normal;">Basic steps involved - functionality</h4>
+                <ul style="list-style-type: disc; padding-left: 0.5rem; margin-bottom: 1.5rem; font-family: inherit; font-style: inherit; line-height: 2.1rem;">
+                  <li>Identity verification - who am I?</li>
+                  <li>Eligibility test - blacklisted or not</li>
+                  <li>Existing account holder /not</li>
+                  <li>Add a new account to my name</li>
+                  <li>more about me - employability, source of income, risk factors, PEP</li>
+                  <li>Depending on my nationality - FATCA is req</li>
+                  <li>My spouse / nominee details</li>
+                  <li>My address proof</li>
+                  <li>Fund/ wealth info</li>
+                  <li>Power of attorney</li>
+                  <li>New account details</li>
+                  <li>E services</li>
+                  <li>signature</li>
+                </ul>
+                <div style="font-family: inherit; font-weight: bold; color: #b8432a; font-size: 1rem; border-top: 1.5px dashed rgba(224, 114, 88, 0.3); padding-top: 0.4rem; line-height: normal; font-style: inherit;">
+                  Completing kyc = creating new bank account
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- Refined View Container -->
-            <div id="bop-compliance-refined-view" style="display: block;">
-              <p class="chapter-desc" style="font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); margin-bottom: 1rem;">
-                Under Palestinian Central Bank regulations, opening an active account requires collecting dense data checks. Below is an interactive map detailing my functional restructuring: select any compliance requirement on the left to see what information the app fetches from the telecom-linked government registry and which PMA guidelines apply.
-              </p>
-
-              <div class="bop-compliance-grid">
-              <!-- Left column: 13 steps -->
-              <div class="bop-compliance-steps" id="bop-compliance-steps-list">
-                <div class="bop-compliance-step-item active" data-step="1">
-                  <span class="step-num">01</span>
-                  <span class="step-text">Identity verification</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="2">
-                  <span class="step-num">02</span>
-                  <span class="step-text">Eligibility test</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="3">
-                  <span class="step-num">03</span>
-                  <span class="step-text">Existing account holder check</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="4">
-                  <span class="step-num">04</span>
-                  <span class="step-text">Add new account to my name</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="5">
-                  <span class="step-num">05</span>
-                  <span class="step-text">More about me (PEP check)</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="6">
-                  <span class="step-num">06</span>
-                  <span class="step-text">FATCA / Nationality check</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="7">
-                  <span class="step-num">07</span>
-                  <span class="step-text">Nominee &amp; spouse details</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="8">
-                  <span class="step-num">08</span>
-                  <span class="step-text">My address proof</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="9">
-                  <span class="step-num">09</span>
-                  <span class="step-text">Fund &amp; wealth info</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="10">
-                  <span class="step-num">10</span>
-                  <span class="step-text">Power of attorney</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="11">
-                  <span class="step-num">11</span>
-                  <span class="step-text">New account details allocation</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="12">
-                  <span class="step-num">12</span>
-                  <span class="step-text">E-services setup</span>
-                </div>
-                <div class="bop-compliance-step-item" data-step="13">
-                  <span class="step-num">13</span>
-                  <span class="step-text">Signature canvas</span>
-                </div>
+          <!-- 2. Refined Compliance Mapping Bento -->
+          <div>
+            <span class="font-mono label" style="font-size: 0.65rem; color: var(--color-bop); display: block; margin-bottom: 0.75rem;">THE REFINED SYSTEM FRAMEWORK</span>
+            <div class="bop-compliance-sandbox" style="border-radius: var(--border-radius-lg); border: 1px solid var(--border-color); padding: 2rem; background: var(--bg-secondary);">
+              
+              <!-- PMA Regulation alert banner -->
+              <div class="bop-pma-alert" style="margin-bottom: 2rem; padding: 1rem 1.25rem; background: rgba(var(--active-fintech), 0.04); border-left: 4px solid var(--color-bop); font-size: 0.9rem; color: var(--text-primary);">
+                <strong>PMA Regulatory Mandate:</strong> Standard fully functional bank accounts cannot be opened in Palestine without valid KYC (Know Your Customer) documents verified against central ministry registries.
               </div>
 
-              <!-- Right column: bento mapping -->
-              <div class="bop-compliance-right">
-                
-                <!-- PMA Regulation Banner -->
-                <div class="bop-pma-alert">
-                  <strong>PMA Regulatory Mandate:</strong> Standard fully functional bank accounts cannot be opened in Palestine without valid KYC (Know Your Customer) documents.
-                </div>
-
-                <!-- Grid representing app database/fetching -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- Sync Bento Grid -->
                 <div>
-                  <div class="bop-bento-section-title">Database Sync (Auto-Fetched via Phone)</div>
-                  <div class="bop-bento-layout">
-                    <div class="bop-bento-card" data-fetch-card="id">
-                      <span class="card-title">Customer Identification</span>
-                      <span class="card-desc">Full Name, Palestinian ID &amp; Photo</span>
+                  <div class="bop-bento-section-title" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 700;">Government Registry Databases (Linked via Mobile)</div>
+                  <div class="bop-bento-layout" style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-success);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Customer Identification</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">Full Name, Palestine ID Number, Photo</span>
                     </div>
-                    <div class="bop-bento-card" data-fetch-card="accounts">
-                      <span class="card-title">Account Details</span>
-                      <span class="card-desc">Linked Accounts &amp; Active Balances</span>
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-success);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Registered Profile</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">Registered Address, Email &amp; Registry details</span>
                     </div>
-                    <div class="bop-bento-card" data-fetch-card="cards">
-                      <span class="card-title">Card Information</span>
-                      <span class="card-desc">Active Card Status &amp; Spending Limits</span>
-                    </div>
-                    <div class="bop-bento-card" data-fetch-card="history">
-                      <span class="card-title">Transaction History</span>
-                      <span class="card-desc">Recent Transfers, Deposits &amp; Payments</span>
-                    </div>
-                    <div class="bop-bento-card" data-fetch-card="profile">
-                      <span class="card-title">Registered Profile</span>
-                      <span class="card-desc">National Address, Email &amp; Registry Info</span>
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-success);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Core Account Registry</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">Existing Accounts &amp; Active Card Status checks</span>
                     </div>
                   </div>
                 </div>
 
-                <!-- Grid representing regulatory rules -->
+                <!-- PMA Rules Bento Grid -->
                 <div>
-                  <div class="bop-bento-section-title">PMA Compliance Framework</div>
-                  <div class="bop-bento-layout">
-                    <div class="bop-bento-card" data-rule-card="mandatory">
-                      <span class="card-title">Mandatory KYC</span>
-                      <span class="card-desc">Account creation is blocked until KYC checks pass.</span>
+                  <div class="bop-bento-section-title" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 700;">PMA Compliance Directives</div>
+                  <div class="bop-bento-layout" style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-bop);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Mandatory Lock</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">Onboarding blocks automatically if any KYC criteria fail.</span>
                     </div>
-                    <div class="bop-bento-card" data-rule-card="docs">
-                      <span class="card-title">Identity Proof</span>
-                      <span class="card-desc">Requires local ID, Jerusalem ID, or foreign Passport.</span>
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-bop);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Risk-Based Diligence</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">High-risk profiles (e.g. PEPs) trigger Enhanced Due Diligence (EDD) background audits.</span>
                     </div>
-                    <div class="bop-bento-card" data-rule-card="updates">
-                      <span class="card-title">Periodic Updates</span>
-                      <span class="card-desc">KYC documents must refresh every 1–2 years.</span>
-                    </div>
-                    <div class="bop-bento-card" data-rule-card="risk">
-                      <span class="card-title">Risk-Based Check</span>
-                      <span class="card-desc">High-risk PEP clients trigger Enhanced Due Diligence.</span>
-                    </div>
-                    <div class="bop-bento-card" data-rule-card="types">
-                      <span class="card-title">Every Citizen Account</span>
-                      <span class="card-desc">No minimum balance limit, but full KYC is still required.</span>
+                    <div class="bop-bento-card active-map" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border-left: 3px solid var(--color-bop);">
+                      <strong style="font-size: 0.9rem; color: var(--text-primary); display: block;">Jerusalem / Passport Exceptions</strong>
+                      <span style="font-size: 0.8rem; color: var(--text-secondary);">Jerusalem IDs and foreign passports follow dedicated manual validation paths.</span>
                     </div>
                   </div>
-                </div>
-
-                <!-- Dynamic Explanation Box -->
-                <div class="bop-explanation-box">
-                  <span class="exp-title" id="bop-exp-title">01 / Identity verification</span>
-                  <span class="exp-text" id="bop-exp-text">
-                    Handled progressively via the National ID OCR scan + liveness checks. Links to Customer Identification (Full Name, National ID Number).
-                  </span>
-                </div>
-
-              </div>
-              </div>
-            </div> <!-- End of Refined View Container -->
-
-            <!-- Sketch View Container -->
-            <div id="bop-compliance-sketch-view" style="display: none; animation: fadeIn 0.3s ease-out;">
-              <div class="bop-sketch-grid bop-sketch-grid-layout" style="gap: 1.75rem; min-height: 520px; font-family: var(--font-sans);">
-                
-                <!-- Left Side: Notepad Sheet -->
-                <div class="bop-notepad" style="background: hsl(14, 100%, 98%); border: 1px solid rgba(224, 114, 88, 0.2); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); padding: 1.5rem 1.5rem 1.5rem 2.25rem; position: relative; overflow: hidden; background-image: linear-gradient(rgba(224, 114, 88, 0.1) 1px, transparent 1px); background-size: 100% 2.1rem; line-height: 2.1rem;">
-                  <!-- Notepad binder holes at the top -->
-                  <div class="notepad-holes" style="position: absolute; top: 0.5rem; left: 0; right: 0; display: flex; justify-content: space-around; padding: 0 1rem; pointer-events: none; opacity: 0.6;">
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                    <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--bg-primary); border: 1px solid var(--border-color);"></div>
-                  </div>
-                  
-                  <!-- Red vertical margin line -->
-                  <div style="position: absolute; left: 1.75rem; top: 0; bottom: 0; width: 1px; background: rgba(224, 114, 88, 0.45); pointer-events: none;"></div>
-                  
-                  <div class="notepad-content" style="font-family: 'Kalam', 'Architects Daughter', 'Comic Sans MS', cursive, sans-serif; font-style: italic; color: #2e2825; font-size: 0.82rem; padding-top: 0.75rem; line-height: 2.1rem;">
-                    <h4 style="font-family: inherit; font-size: 1.05rem; font-weight: bold; margin-bottom: 1rem; color: #b8432a; border-bottom: 1.5px dashed rgba(224, 114, 88, 0.3); padding-bottom: 0.25rem; font-style: inherit; line-height: normal;">Basic steps involved - functionality</h4>
-                    
-                    <ul style="list-style-type: disc; padding-left: 0.5rem; margin-bottom: 1.5rem; font-family: inherit; font-style: inherit; line-height: 2.1rem;">
-                      <li>Identity verification - who am I?</li>
-                      <li>Eligibility test - blacklisted or not</li>
-                      <li>Existing account holder /not</li>
-                      <li>Add a new account to my name</li>
-                      <li>more about me - employability, source of income, risk factors, PEP</li>
-                      <li>Depending on my nationality - FATCA is req</li>
-                      <li>My spouse / nominee details</li>
-                      <li>My address proof</li>
-                      <li>Fund/ wealth info</li>
-                      <li>Power of attorney</li>
-                      <li>New account details</li>
-                      <li>E services</li>
-                      <li>signature</li>
-                    </ul>
-                    
-                    <div style="font-family: inherit; font-weight: bold; color: #b8432a; font-size: 0.88rem; border-top: 1.5px dashed rgba(224, 114, 88, 0.3); padding-top: 0.4rem; line-height: normal; font-style: inherit;">
-                      Completing kyc = creating new bank account
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Right Side: Dark Boxes Deck -->
-                <div class="bop-sketch-right" style="display: flex; flex-direction: column; gap: 1rem;">
-                  
-                  <!-- Box 1: PMA Regulation -->
-                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.8rem; line-height: 1.5;">
-                    <p style="color: #929298; margin: 0; font-size: 0.76rem; font-family: var(--font-mono); margin-bottom: 0.5rem; letter-spacing: 0.05em; text-transform: uppercase;">01 / REGULATION STATEMENT</p>
-                    Based on regulations set by the <span style="color: #ff7626; font-weight: 600; border-bottom: 1px dotted #ff7626;">Palestine Monetary Authority (PMA)</span> and policies of local banks, it is <strong style="color: #fff;">not possible</strong> to create a standard, fully functional bank account <strong style="color: #fff;">without KYC (Know Your Customer) documents</strong> in Palestine.
-                  </div>
-                  
-                  <!-- Box 2: Phone Link Data -->
-                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
-                    <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">02 / PHONE NUMBER FETCH MAP</p>
-                    <strong style="color: #fff; font-size: 0.82rem; display: block; margin-bottom: 0.5rem; border-bottom: 1px solid #2d2d30; padding-bottom: 0.25rem;">What the App Fetches/Links to Your Phone Number:</strong>
-                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
-                      <li><strong style="color: #fff;">• Customer Identification:</strong> Your full name and Palestine National Identification Number.</li>
-                      <li><strong style="color: #fff;">• Account Details:</strong> Linked bank account numbers, balances, and account activity (deposits, withdrawals, transfers).</li>
-                      <li><strong style="color: #fff;">• Card Information:</strong> Active/inactive card status, cardholder name, and card limits.</li>
-                      <li><strong style="color: #fff;">• Transaction History:</strong> Recent transactions and payment history.</li>
-                      <li><strong style="color: #fff;">• Registered Profile:</strong> Address, email, and other personal information linked to your bank profile.</li>
-                    </ul>
-                  </div>
-                  
-                  <!-- Box 3: Compliance Mandates -->
-                  <div class="bop-raw-box" style="background: #141416; color: #f5f5f7; border-radius: 12px; padding: 1.1rem; border: 1px solid #2d2d30; box-shadow: var(--shadow-sm); font-size: 0.76rem; line-height: 1.45;">
-                    <p style="color: #929298; margin: 0; font-size: 0.72rem; font-family: var(--font-mono); margin-bottom: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase;">03 / COMPLIANCE PARAMETERS</p>
-                    <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 0.45rem; padding-left: 0;">
-                      <li><strong style="color: #fff;">• Mandatory:</strong> You cannot open a functional, active account without completing KYC.</li>
-                      <li><strong style="color: #fff;">• Identity Documents:</strong> The primary document is your Palestinian ID (or Jerusalem ID/Passport for foreigners).</li>
-                      <li><strong style="color: #fff;">• Periodic Updates:</strong> KYC is not a one-time thing. You must update your KYC documents regularly (e.g., every 1–2 years depending on risk level).</li>
-                      <li><strong style="color: #fff;">• Risk-Based Approach:</strong> High-risk clients (like Politically Exposed Persons - PEPs) may undergo "Enhanced Due Diligence" (EDD), which requires deeper background checks.</li>
-                      <li><strong style="color: #fff;">• Account Types:</strong> Specialized accounts like the "Account for Every Citizen" still require KYC, even if they have no minimum balance requirements.</li>
-                    </ul>
-                  </div>
-                  
                 </div>
               </div>
-            </div> <!-- End of Sketch View Container -->
+
+              <!-- Flattened Core KYC Steps -->
+              <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 500; margin: 0 0 1.25rem 0; color: var(--text-primary);">KYC Phase Restructuring (5 Core Phases)</h4>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                  <div style="padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">PHASE 01: Core Registration (Steps 1–3)</strong>
+                    <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Checks eligibility against national blacklists and verifies if the user already holds active accounts immediately upon contact registration.</p>
+                  </div>
+                  <div style="padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">PHASE 02: Biometric Verification (Steps 4–6)</strong>
+                    <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Captures national ID card details via OCR scan and executes blink/liveness biometric checking to prevent identity theft.</p>
+                  </div>
+                  <div style="padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">PHASE 03: Profile Amplification (Steps 7–10)</strong>
+                    <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Gathers residential addresses, nominee structures, PEP declarations, and income sources to establish full audit profiles.</p>
+                  </div>
+                  <div style="padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">PHASE 04: Account Ledger Creation (Step 11)</strong>
+                    <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Provisions account routing numbers, configures ledger profiles, and establishes the user's secure digital vault.</p>
+                  </div>
+                  <div style="padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-md);">
+                    <strong style="font-size: 0.95rem; color: var(--text-primary); display: block; margin-bottom: 0.25rem;">PHASE 05: Cryptographic Consent (Steps 12–13)</strong>
+                    <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Configures mobile services access and completes draws to legally sign off on the onboarding ledger.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
         <!-- Redesign Strategy -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ DESIGN STRATEGY</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Guided Customer Journeys for Complex Audits</h2>
-          <p class="chapter-desc" style="margin-bottom: 1rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Guided Customer Journeys for Complex Audits</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             The audit revealed that the challenge was not the number of requirements users had to complete, but how those requirements were presented. Banking regulations, identity verification, and compliance checks were essential parts of the onboarding process and could not be removed.
           </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <p class="chapter-desc" style="margin-bottom: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             Instead of simplifying the requirements themselves, the redesign focused on simplifying the experience of completing them. The goal was to transform onboarding from a bank-centric workflow into a guided customer journey that felt structured, transparent, and achievable. Finally, the product should encourage continuous learning rather than one-time interactions.
           </p>
         </section>
 
         <!-- First Rejected Draft -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ FIRST DRAFT ITERATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">First Rejected Draft</h2>
-          <p class="chapter-desc" style="margin-bottom: 1rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">First Rejected Draft</h2>
+          <p class="chapter-desc" style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             Our first approach focused on creating a unified onboarding experience by reducing the number of visible steps and consolidating multiple processes into a single streamlined flow. The idea was to make account opening feel faster and more modern by minimizing transitions between screens and presenting onboarding as one continuous journey.
           </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <p class="chapter-desc" style="margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             The unified approach also introduced operational challenges. Certain verification activities depended on information collected earlier in the journey, while some compliance requirements required separate handling, review processes, and exception scenarios.
           </p>
           <!-- Mockups of rejected flow using wide screens flow diagram -->
-          <div class="problem-image-wrapper" style="margin-top: 2rem; border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
+          <div class="problem-image-wrapper" style="border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); background: var(--bg-card);">
             <img src="./bop_rejected_draft.png" alt="First Rejected Draft Mobile Onboarding Flow" style="width: 100%; height: auto; display: block;" loading="lazy">
           </div>
         </section>
 
         <!-- Accepted Design -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ THE ACCEPTED DESIGN</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Designing for Confidence and Transparency</h2>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Designing for Confidence and Transparency</h2>
           
           <!-- 1. Reduce Perceived Complexity -->
           <div style="margin-top: 2rem;">
-            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Reduce Perceived Complexity</h3>
-            <p class="chapter-desc" style="margin-bottom: 1.25rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 500; color: var(--text-primary); margin-bottom: 0.75rem; font-family: var(--font-serif);">Reduce Perceived Complexity</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.65;">
               The existing experience presented onboarding as a long sequence of independent steps. By organizing related tasks into meaningful phases, users could focus on one objective at a time rather than the entire process.
             </p>
             
-            <div class="bop-comparison-grid" style="margin-bottom: 2.0rem;">
+            <div class="bop-comparison-grid" style="margin-bottom: 1.5rem;">
               <div style="background: rgba(235, 87, 87, 0.03); border: 1px solid rgba(235, 87, 87, 0.2); border-radius: var(--border-radius-md); display: flex; flex-direction: column; overflow: hidden;">
                 <div style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
                   <span class="font-mono" style="font-size: 0.65rem; color: #eb5757; font-weight: 700; display: block; margin-bottom: 0.5rem;">BEFORE</span>
@@ -2272,35 +1651,35 @@ export function renderProject3() {
                 </div>
               </div>
             </div>
-            <p class="chapter-desc" style="font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-top: -0.5rem; margin-bottom: 2rem;">
+            <p class="chapter-desc" style="font-size: 0.9rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; margin-bottom: 2.5rem;">
               We had multiple ways to go forward including a multi-stepper form, but that gets affected if people leave the process midway and can cause confusions.
             </p>
           </div>
 
           <!-- 2. Replace Branch Guidance Digitally -->
-          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Replace Branch Guidance Digitally</h3>
-            <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 500; color: var(--text-primary); margin-bottom: 0.75rem; font-family: var(--font-serif);">Replace Branch Guidance Digitally</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.65;">
               Customers previously relied on branch staff to explain requirements, answer questions, and help them complete forms. The redesigned experience provides guidance directly within the interface through contextual explanations, progress indicators, and clear next steps. Complex processes and documents are explained to the user, and updates are notified immediately to maintain a smooth workflow.
             </p>
 
-            <div class="problem-image-wrapper" style="margin-top: 2rem; background: var(--bg-card);">
+            <div class="problem-image-wrapper" style="margin-top: 2rem; background: var(--bg-card); border-radius: var(--border-radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
               <img src="./bop_simulator_replacement.png?v=2" alt="Interactive Mobile Onboarding Simulator Mockup" style="width: 100%; height: auto; display: block;" loading="lazy">
             </div>
           </div>
 
           <!-- 3. Make Banking Processes Transparent -->
-          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
-            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Make Banking Processes Transparent</h3>
-            <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <div style="margin-top: 2.5rem; border-top: 1px solid var(--border-color); padding-top: 2.5rem;">
+            <h3 style="font-size: 1.35rem; font-weight: 500; color: var(--text-primary); margin-bottom: 0.75rem; font-family: var(--font-serif);">Make Banking Processes Transparent</h3>
+            <p class="chapter-desc" style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.65;">
               Many users assumed account creation happened immediately after submission, while the actual process involved reviews and verification. The redesign aimed to make every stage visible, helping users understand what was happening and what to expect next.
             </p>
             
-            <p class="chapter-desc" style="margin-bottom: 1.25rem;">
+            <p class="chapter-desc" style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65;">
               By introducing clear in-app status tracking, users no longer guess their verification state. If an automatic check requires manual bank agent review:
             </p>
             
-            <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem; margin: 0 0 2rem 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">
+            <ul style="display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem; margin: 0 0 2rem 0; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
               <li>Users are notified of the exact document being verified.</li>
               <li>An expected activation timeline is clearly shown.</li>
               <li>Immediate, clickable fallbacks (like a secure in-app video call) are offered if validation fails, keeping the user in the digital stream.</li>
@@ -2333,32 +1712,62 @@ export function renderProject3() {
           </div>
         </section>
 
+        <!-- Stakeholder Compromises Block -->
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
+          <span class="chapter-num font-mono" style="color: var(--color-bop)">/ HARD CHOICES</span>
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">The Hard Choices: Security vs. Seamless Flow</h2>
+          <p class="chapter-desc" style="max-width: 780px; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem;">
+            Balancing national banking regulations with a friction-free, customer-facing self-service app required key compromises:
+          </p>
 
+          <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); display: flex; flex-direction: column; gap: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div>
+              <span class="font-mono" style="font-size: 0.7rem; color: #8e9ab0; letter-spacing: 0.08em; display: block; text-transform: uppercase; font-weight: 700; margin-bottom: 1.25rem;">Stakeholder Compromises</span>
+              
+              <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                  <h4 class="font-sans" style="font-size: 1.1rem; font-weight: 700; margin: 0; color: var(--text-primary); letter-spacing: -0.01em;">Maintaining Manual Exceptions</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">We compromised by preserving manual approval loops for Jerusalem IDs and foreign passports. While this prevented 100% digital automation, it guaranteed compliance with strict international banking audits.</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                  <h4 class="font-sans" style="font-size: 1.1rem; font-weight: 700; margin: 0; color: var(--text-primary); letter-spacing: -0.01em;">Slow Government Registry Latency</h4>
+                  <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Direct sync queries with governmental MoI databases frequently experienced heavy latency. Instead of loading spinners that blocked actions, we allowed the UI to asynchronously poll in the background while the user completed secondary profile forms.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 1.25rem; background: rgba(52,199,89,0.02); border: 1px solid rgba(52,199,89,0.15); border-radius: var(--border-radius-md);">
+              <span class="font-mono" style="font-size: 0.65rem; color: #34c759; font-weight: 700; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">THE VERDICT</span>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">Maintains absolute regulatory compliance while providing a smooth, asynchronous digital journey.</p>
+            </div>
+          </div>
+        </section>
 
         <!-- Validating the Solution -->
-        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="border-bottom: 1px solid var(--border-color); padding-bottom: 3.5rem; margin-bottom: 3.5rem;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ VALIDATION</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Validating the Solution</h2>
-          <p class="chapter-desc" style="margin-bottom: 1rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Validating the Solution</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             After redesigning the onboarding experience, the solution was evaluated against the challenges identified during the audit. The objective was to determine whether the new structure successfully addressed the complexity, uncertainty, and guidance gaps present in the original experience.
           </p>
-          <p class="chapter-desc" style="margin-bottom: 0;">
+          <p class="chapter-desc" style="margin-bottom: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             Rather than focusing on reducing regulatory requirements, the validation focused on improving how users experienced those requirements throughout the journey.
           </p>
         </section>
 
         <!-- Reflection & Learnings -->
-        <section class="body-chapter" style="padding-bottom: 2.5rem; margin-bottom: 0;">
+        <section class="body-chapter" style="padding-bottom: 3.5rem; margin-bottom: 0;">
           <span class="chapter-num font-mono" style="color: var(--color-bop)">/ LEARNINGS &amp; OUTCOMES</span>
-          <h2 class="chapter-title font-serif" style="font-size: 1.8rem; margin-top: 0.25rem;">Reflection &amp; Learnings</h2>
-          <p class="chapter-desc" style="margin-bottom: 1rem;">
+          <h2 class="chapter-title font-serif" style="font-size: 2.2rem; margin-top: 0.25rem; font-weight: 400; margin-bottom: 1.5rem;">Reflection &amp; Learnings</h2>
+          <p class="chapter-desc" style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             This project began with what seemed like a straightforward objective: digitize the account opening experience and reduce dependence on branch visits. However, as I explored the onboarding journey, I realized that the challenge was far more complex than redesigning forms or reducing the number of steps.
           </p>
-          <p class="chapter-desc" style="margin-bottom: 1.5rem;">
+          <p class="chapter-desc" style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary);">
             One of the biggest learnings was that complexity and friction are not the same thing. Banking onboarding is inherently complex because of regulatory requirements, identity verification, security checks, and compliance obligations. These requirements could not simply be removed or hidden. The real challenge was helping users understand and navigate that complexity without feeling overwhelmed.
           </p>
 
-          <div class="text-nudge font-serif" style="text-align: center; margin: 2rem auto 0; max-width: 650px; font-size: 1.6rem; line-height: 1.4; color: var(--color-bop); border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+          <div class="text-nudge font-serif" style="text-align: center; margin: 3rem auto 0; max-width: 650px; font-size: 1.6rem; line-height: 1.45; color: var(--color-bop); border-top: 1px solid var(--border-color); padding-top: 2rem; font-style: italic;">
             Good onboarding doesn't eliminate complexity.<br><span style="color: var(--text-primary); font-weight: 500;">It helps users navigate it with confidence.</span>
           </div>
         </section>
@@ -2403,7 +1812,7 @@ const sidebarActionGrid = `
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             <span class="cta-btn-label font-mono">LinkedIn</span>
           </a>
-          <a href="https://drive.google.com/file/d/1jNhvJK_inSkH2Z615VR_sQ6T0Al_IpH-/view?usp=sharing" class="cta-action-btn" target="_blank" rel="noopener" aria-label="View Resume">
+          <a href="https://drive.google.com/file/d/1TKco7TNxoO6L0V2EC0rYysqIONvKjUIs/view?usp=drive_link" class="cta-action-btn" target="_blank" rel="noopener" aria-label="View Resume">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             <span class="cta-btn-label font-mono">View Resume</span>
           </a>
@@ -2512,8 +1921,9 @@ export function renderProject2Sidebar() {
       <p class="proj-sidebar-desc font-sans">
         Reimagining how on-site engineers track, submit, and manage expense claims to eliminate invoice validation lag and site inventory delays.
       </p>
-      <a href="https://gokulux.framer.website/project-2" target="_blank" rel="noopener" class="project-sidebar-btn project-2-btn">
-        more about company <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
+      <span class="font-mono" style="display: block; font-size: 0.65rem; color: var(--color-brand); font-weight: bold; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">🔒 Protected under NDA</span>
+      <a href="https://www.linkedin.com/in/gokul-s-kaimal-96652b6b/" target="_blank" rel="noopener" class="project-sidebar-btn project-2-btn">
+        discuss on request <span style="font-size: 1.1rem; line-height: 1;">&rarr;</span>
       </a>
     </div>
 
@@ -2810,236 +2220,413 @@ export function renderAIWorkshop() {
 
     <div class="workshop-grid" style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; width: 100%;">
       
-      <!-- Experiment 1: SVG Concept Compiler -->
+      <!-- Experiment: Social Media Metadata Extractor (Browser Extension) -->
       <section class="interactive-flow-sandbox stagger-el stagger-delay-2" style="padding: 1.75rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color);">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
-          <div>
-            <span class="font-mono label" style="font-size: 0.65rem;">EXPERIMENT 01</span>
-            <h2 class="font-serif" style="font-size: 1.65rem; margin-top: 0.25rem; font-weight: 500; color: var(--text-primary);">Generative UI Layout Compiler</h2>
-            <p class="font-sans" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Compiles design tokens directly into responsive components using structured JSON schemas.</p>
+        <div style="margin-bottom: 1.5rem;">
+          <span class="font-mono label" style="font-size: 0.65rem;">LIVE TOOL INTEGRATION</span>
+          <h2 class="font-serif" style="font-size: 1.65rem; margin-top: 0.25rem; font-weight: 500; color: var(--text-primary);">Primary Media Helper & Extractor</h2>
+          <p class="font-sans" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">A browser extension that extracts, audits, and previews video metadata from our primary media website, cutting cross-posting preparation time for social media managers from 15 minutes to under 30 seconds.</p>
+        </div>
+
+        <!-- Workflow Efficiency Compass / Before & After -->
+        <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem; padding: 1.25rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color);">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.9rem;">⚡</span>
+              <span class="font-mono" style="font-size: 0.75rem; font-weight: bold; color: var(--text-primary);">WORKFLOW INTENT & IMPACT</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <span class="font-mono" style="padding: 0.15rem 0.5rem; font-size: 0.65rem; border-radius: 4px; background: rgba(39, 201, 63, 0.12); color: #27c93f; font-weight: 600;">95% TIME SAVED</span>
+              <span class="font-mono" style="padding: 0.15rem 0.5rem; font-size: 0.65rem; border-radius: 4px; background: rgba(138, 43, 226, 0.12); color: var(--color-brand); font-weight: 600;">AUTOMATED METADATA SYNC</span>
+            </div>
           </div>
           
-          <!-- Selector Tabs -->
-          <div class="filter-bar" role="tablist" aria-label="Select layout concept" style="margin-top: 0.25rem;">
-            <button class="filter-btn active" role="tab" aria-selected="true" data-concept="chart" id="ws-btn-chart">Analytics Chart</button>
-            <button class="filter-btn" role="tab" aria-selected="false" data-concept="bento" id="ws-btn-bento">Bento Grid</button>
-            <button class="filter-btn" role="tab" aria-selected="false" data-concept="dock" id="ws-btn-dock">Navbar Dock</button>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+            <!-- Left Side: Manual Copier -->
+            <div style="padding: 1rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.5rem; text-align: left;">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <span class="font-mono" style="font-size: 0.65rem; color: #ff5f56; font-weight: bold; display: flex; align-items: center; gap: 0.3rem;">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #ff5f56;"></span> LEGACY MANUAL MODE
+                </span>
+                <span style="font-size: 0.65rem; color: var(--text-muted);">Duration: ~15 mins per video</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">
+                Previously, social media managers had to manually copy video titles, descriptions, category tags, and custom metadata strings from the primary media platform dashboard. They then had to manually upload thumbnails and adjust tags across multiple social networks. This was slow, repetitive, and prone to typos.
+              </p>
+            </div>
+
+            <!-- Right Side: Extension Extractor -->
+            <div style="padding: 1rem; border-radius: 8px; background: var(--bg-card); border: 1px solid rgba(39, 201, 63, 0.15); display: flex; flex-direction: column; gap: 0.5rem; text-align: left;">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <span class="font-mono" style="font-size: 0.65rem; color: #27c93f; font-weight: bold; display: flex; align-items: center; gap: 0.3rem;">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #27c93f;"></span> HELPER BROWSER EXTENSION
+                </span>
+                <span style="font-size: 0.65rem; color: var(--text-muted);">Duration: &lt; 30 seconds</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">
+                Our integrated browser helper runs directly on the primary media portal, extracting structured metadata instantly in 150ms. It automatically formats the metadata, validates Open Graph/Twitter Card specifications, and renders multi-platform card previews for rapid approval.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="sandbox-inner-grid-layout sandbox-inner-grid">
-          <!-- Terminal Panel -->
-          <div class="terminal-window" style="margin: 0; display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Presets & Input Bar -->
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+            <button class="preset-btn font-mono active" id="ws-preset-sansyl" style="padding: 0.4rem 0.75rem; font-size: 0.7rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-weight: 600; transition: all 0.2s;">Primary Media Hub</button>
+            <button class="preset-btn font-mono" id="ws-preset-youtube" style="padding: 0.4rem 0.75rem; font-size: 0.7rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-weight: 600; transition: all 0.2s;">YouTube Video</button>
+            <button class="preset-btn font-mono" id="ws-preset-twitter" style="padding: 0.4rem 0.75rem; font-size: 0.7rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-weight: 600; transition: all 0.2s;">Twitter/X Post</button>
+          </div>
+          
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="ws-extractor-input" value="https://primemedia-hub.internal/videos/digital-transformation-preview" style="flex: 1; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-family: var(--font-mono); font-size: 0.8rem;" aria-label="Target URL for metadata extraction">
+            <button id="ws-extractor-btn" style="padding: 0.75rem 1.5rem; border: none; border-radius: 8px; background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-accent) 100%); color: #fff; font-weight: bold; font-size: 0.8rem; cursor: pointer; transition: opacity 0.2s;">Extract</button>
+          </div>
+        </div>
+
+        <div class="sandbox-inner-grid-layout sandbox-inner-grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+          <!-- Left Side: Terminal Log Streamer -->
+          <div class="terminal-window" style="margin: 0; min-height: 120px; display: flex; flex-direction: column;">
             <div class="terminal-header">
               <span class="terminal-dot"></span>
               <span class="terminal-dot yellow"></span>
               <span class="terminal-dot green"></span>
-              <span class="terminal-title">token-compiler.sh</span>
+              <span class="terminal-title">media-helper-logs</span>
             </div>
-            <div id="ws-terminal-body" class="terminal-body">
-              <!-- Logs will be streamed here -->
-            </div>
-          </div>
-          
-          <!-- Compilation Output Canvas -->
-          <div style="background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; padding: 1.5rem; min-height: 250px; position: relative;">
-            <div id="ws-canvas-preview" style="width: 100%; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease;">
-              <!-- Output SVG loaded here -->
+            <div id="ws-ext-terminal" class="terminal-body" style="flex: 1; min-height: 110px;">
+              <!-- Logs will print here -->
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Experiment 2: Dynamic Helper Suggestion -->
-      <section class="interactive-flow-sandbox stagger-el stagger-delay-3" style="padding: 1.75rem; background: var(--bg-card); border-radius: var(--border-radius-lg); border: 1px solid var(--border-color); position: relative; overflow: visible;">
-        <div style="margin-bottom: 1.5rem;">
-          <span class="font-mono label" style="font-size: 0.65rem;">EXPERIMENT 02</span>
-          <h2 class="font-serif" style="font-size: 1.65rem; margin-top: 0.25rem; font-weight: 500; color: var(--text-primary);">Adaptive Contextual AI Helper</h2>
-          <p class="font-sans" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Pulsing indicators warn of system anomalies or user friction. Click a dot to launch a glassmorphic suggestion card.</p>
-        </div>
-
-        <!-- Dashboard mockup -->
-        <div style="max-width: 580px; margin: 0 auto; background: var(--bg-secondary); border-radius: 16px; border: 1px solid var(--border-color); padding: 1.5rem; position: relative;" class="dashboard-mock">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1rem;">
-            <span class="font-mono" style="font-size: 0.7rem; font-weight: bold; color: var(--text-primary);">PORTAL PERFORMANCE</span>
-            <span style="font-size: 0.6rem; padding: 0.25rem 0.5rem; background: var(--color-success-light); color: var(--color-success); border-radius: 6px; font-weight: 600; font-family: var(--font-mono);">SYSTEMS ACTIVE</span>
-          </div>
-
-          <div class="responsive-grid-2" style="gap: 1rem;">
-            
-            <!-- Metric Card 1 (Normal) -->
-            <div style="background: var(--bg-card); padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.25rem; text-align: left;">
-              <span class="font-sans" style="font-size: 0.68rem; color: var(--text-secondary);">Daily Operations Active</span>
-              <span class="font-mono" style="font-size: 1.35rem; font-weight: bold; color: var(--text-primary);">1,482</span>
-              <p style="font-size: 0.62rem; color: var(--color-success); margin: 0;">+12% vs last week</p>
-            </div>
-            
-            <!-- Metric Card 2 (Friction Alert) -->
-            <div style="background: var(--bg-card); padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.25rem; text-align: left; position: relative; overflow: visible;">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span class="font-sans" style="font-size: 0.68rem; color: var(--text-secondary);">Funnel Drop-off Rate</span>
-                <!-- Pulsing Alert Dot -->
-                <span id="ws-alert-dot" class="pulsing-glow-dot" aria-label="AI optimization suggestion available" title="Click to view AI suggestion"></span>
+          <!-- Right Side: Interactive Browser Mockup -->
+          <div style="background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; display: flex; flex-direction: column; min-height: 380px; position: relative;">
+            <!-- Browser Title Bar / Address Bar -->
+            <div style="background: var(--bg-card); padding: 0.6rem 1rem; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; gap: 1rem;">
+              <!-- Circles -->
+              <div style="display: flex; gap: 0.35rem;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56; display: inline-block;"></span>
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e; display: inline-block;"></span>
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f; display: inline-block;"></span>
               </div>
-              <span class="font-mono" style="font-size: 1.35rem; font-weight: bold; color: var(--color-accent);">42.8%</span>
-              <p style="font-size: 0.62rem; color: var(--color-accent); margin: 0;">⚠️ Significant peak detected</p>
+              <!-- Address input -->
+              <div style="flex: 1; display: flex; align-items: center; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border-color); padding: 0.25rem 0.75rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px; color: var(--text-muted);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span id="ws-ext-browser-url">https://primemedia-hub.internal/videos/digital-transformation-preview</span>
+              </div>
+              <!-- Extension Action Icon -->
+              <button id="ws-ext-trigger-icon" title="Open Media Extractor Extension" style="border: none; background: transparent; cursor: pointer; color: var(--color-brand); display: flex; align-items: center; justify-content: center; padding: 0.25rem; border-radius: 4px; transition: background 0.2s;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(45deg);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </button>
+            </div>
+
+            <!-- Browser Page Viewport -->
+            <div style="position: relative; flex: 1; padding: 1.5rem; background: var(--bg-card); display: flex; flex-direction: column; gap: 1rem; overflow: hidden;">
               
-              <!-- Glassmorphic Tooltip Card -->
-              <div id="ws-tooltip-card" class="workshop-tooltip">
-                <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.5rem;">
-                  <span style="font-size: 0.75rem;">🤖</span>
-                  <span class="font-mono" style="font-size: 0.65rem; font-weight: bold; color: var(--color-accent);">AI DIAGNOSTIC</span>
-                </div>
-                <p style="margin: 0 0 0.6rem 0; font-size: 0.7rem; color: var(--text-secondary); line-height: 1.3;">Drop-off spiked at the <strong>ID Proof Verification</strong> screen. Recommend swapping current camera overlay instructions for high-contrast guides.</p>
-                <div style="display: flex; gap: 0.4rem;">
-                  <button id="ws-tooltip-apply" style="padding: 0.35rem 0.55rem; border: none; border-radius: 6px; background: var(--color-accent); color: var(--color-on-accent); font-weight: 600; font-size: 0.6rem; cursor: pointer;">Optimize UI</button>
-                  <button id="ws-tooltip-dismiss" style="padding: 0.35rem 0.55rem; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-secondary); font-weight: 600; font-size: 0.6rem; cursor: pointer;">Dismiss</button>
+              <!-- Mock Website Hero and Content wireframe -->
+              <div id="ws-ext-site-content" style="transition: opacity 0.3s; text-align: left;">
+                <div style="width: 80px; height: 16px; background: rgba(138,43,226,0.15); border-radius: 4px; margin-bottom: 0.5rem;"></div>
+                <h3 id="ws-ext-site-title" class="font-serif" style="font-size: 1.25rem; margin: 0 0 0.5rem 0; color: var(--text-primary);">PrimeMedia Hub | Direct Metadata Extraction</h3>
+                <p id="ws-ext-site-desc" style="font-size: 0.75rem; color: var(--text-secondary); margin: 0 0 1rem 0; line-height: 1.4;">Video asset upload and distribution metadata. Optimized for cross-platform content syndication (og:title, og:video, tags).</p>
+                
+                <!-- Large media container mockup -->
+                <div id="ws-ext-site-image" style="width: 100%; height: 120px; border-radius: 8px; background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #201740 100%); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); font-family: var(--font-mono); font-size: 0.65rem; font-weight: bold;">
+                  COVER PREVIEW IMAGE
                 </div>
               </div>
-            </div>
 
+              <!-- Floating Extension Popup overlay (Glassmorphic panel) -->
+              <div id="ws-ext-popup" style="position: absolute; top: 1rem; right: 1rem; width: 280px; bottom: 1rem; background: rgba(30,30,30,0.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: var(--shadow-lg); display: flex; flex-direction: column; transform: translateX(320px); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); z-index: 10;">
+                <!-- Popup Header -->
+                <div style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.15);">
+                  <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="font-size: 0.85rem;">🔌</span>
+                    <span class="font-mono" style="font-size: 0.68rem; font-weight: bold; color: var(--text-primary); letter-spacing: 0.05em;">MEDIA EXTRACTOR</span>
+                  </div>
+                  <!-- Close btn -->
+                  <button id="ws-ext-popup-close" style="border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 0.85rem; padding: 0.2rem;">&times;</button>
+                </div>
+                <!-- Popup Content -->
+                <div style="padding: 1rem; flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+                  
+                  <!-- Metatags checklist -->
+                  <div>
+                    <span class="font-mono" style="font-size: 0.55rem; color: var(--text-muted); text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 0.4rem;">Metatags Check</span>
+                    <div style="display: flex; flex-direction: column; gap: 0.35rem;" id="ws-ext-popup-checklist">
+                      <!-- Checkboxes dynamically populated -->
+                    </div>
+                  </div>
+
+                  <!-- Social media card preview mockup -->
+                  <div>
+                    <span class="font-mono" style="font-size: 0.55rem; color: var(--text-muted); text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 0.4rem;">LinkedIn Card Preview</span>
+                    <div style="border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); overflow: hidden;">
+                      <!-- Mini Image -->
+                      <div id="ws-ext-popup-card-image" style="height: 60px; background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #201740 100%);"></div>
+                      <!-- Text -->
+                      <div style="padding: 0.5rem; font-size: 0.65rem; display: flex; flex-direction: column; gap: 0.2rem;">
+                        <span id="ws-ext-popup-card-domain" style="font-size: 0.55rem; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">primemedia-hub.internal</span>
+                        <strong id="ws-ext-popup-card-title" style="color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; display: block;">PrimeMedia Hub | Direct Extraction</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Audit Results table -->
+                  <div>
+                    <span class="font-mono" style="font-size: 0.55rem; color: var(--text-muted); text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 0.4rem;">Validation Checks</span>
+                    <div style="display: flex; flex-direction: column; gap: 0.35rem;" id="ws-ext-popup-validation">
+                      <!-- Dynamically populated -->
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
-
-
 
     </div>
   `;
 }
 
 export function initAIWorkshopSandbox() {
-  const btnChart = document.getElementById('ws-btn-chart');
-  const btnBento = document.getElementById('ws-btn-bento');
-  const btnDock = document.getElementById('ws-btn-dock');
-  const terminal = document.getElementById('ws-terminal-body');
-  const canvas = document.getElementById('ws-canvas-preview');
-  
-  const alertDot = document.getElementById('ws-alert-dot');
-  const tooltipCard = document.getElementById('ws-tooltip-card');
-  const btnApply = document.getElementById('ws-tooltip-apply');
-  const btnDismiss = document.getElementById('ws-tooltip-dismiss');
-  
-  if (!canvas || !terminal) return;
+  const extPresetSansyl = document.getElementById('ws-preset-sansyl');
+  if (!extPresetSansyl) return;
 
-  // SVG Concept Designs
-  const concepts = {
-    chart: `
-      <svg width="220" height="150" viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
-        <rect width="220" height="150" rx="10" fill="var(--bg-card)" stroke="var(--border-color)"/>
-        <path d="M20 120 L60 80 L100 95 L140 50 L180 70 L200 30" stroke="var(--color-brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M20 120 L60 80 L100 95 L140 50 L180 70 L200 30 L200 130 L20 130 Z" fill="url(#chart-gradient)" opacity="0.1"/>
-        <circle cx="200" cy="30" r="4" fill="var(--color-accent)"/>
-        <defs>
-          <linearGradient id="chart-gradient" x1="110" y1="30" x2="110" y2="130" gradientUnits="userSpaceOnUse">
-            <stop stop-color="var(--color-brand)"/>
-            <stop offset="1" stop-color="var(--color-brand)" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-      </svg>
-    `,
-    bento: `
-      <svg width="220" height="150" viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
-        <rect width="220" height="150" rx="10" fill="var(--bg-card)" stroke="var(--border-color)"/>
-        <rect x="15" y="15" width="90" height="60" rx="6" fill="var(--bg-secondary)" stroke="var(--border-color)"/>
-        <rect x="115" y="15" width="90" height="120" rx="6" fill="var(--bg-secondary)" stroke="var(--border-color)"/>
-        <rect x="15" y="85" width="90" height="50" rx="6" fill="var(--bg-secondary)" stroke="var(--border-color)"/>
-        <circle cx="60" cy="45" r="8" fill="var(--color-brand)" opacity="0.2"/>
-        <circle cx="160" cy="75" r="8" fill="var(--color-accent)" opacity="0.2"/>
-      </svg>
-    `,
-    dock: `
-      <svg width="220" height="150" viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
-        <rect width="220" height="150" rx="10" fill="var(--bg-card)" stroke="var(--border-color)"/>
-        <rect x="25" y="55" width="170" height="40" rx="20" fill="var(--bg-secondary)" stroke="var(--border-color)" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
-        <circle cx="55" cy="75" r="12" fill="var(--color-brand)"/>
-        <circle cx="95" cy="75" r="12" fill="var(--border-hover)"/>
-        <circle cx="135" cy="75" r="12" fill="var(--border-hover)"/>
-        <circle cx="165" cy="75" r="12" fill="var(--color-accent)"/>
-      </svg>
-    `
+  // Experiment 3: Metadata Extractor Controller
+  const extPresetYoutube = document.getElementById('ws-preset-youtube');
+  const extPresetTwitter = document.getElementById('ws-preset-twitter');
+  const extBtn = document.getElementById('ws-extractor-btn');
+  const extInput = document.getElementById('ws-extractor-input');
+  
+  const extBrowserUrl = document.getElementById('ws-ext-browser-url');
+  const extSiteTitle = document.getElementById('ws-ext-site-title');
+  const extSiteDesc = document.getElementById('ws-ext-site-desc');
+  const extSiteImage = document.getElementById('ws-ext-site-image');
+  
+  const extTerminal = document.getElementById('ws-ext-terminal');
+  const extPopup = document.getElementById('ws-ext-popup');
+  const extPopupClose = document.getElementById('ws-ext-popup-close');
+  const extTriggerIcon = document.getElementById('ws-ext-trigger-icon');
+  
+  const extPopupChecklist = document.getElementById('ws-ext-popup-checklist');
+  const extPopupCardImage = document.getElementById('ws-ext-popup-card-image');
+  const extPopupCardTitle = document.getElementById('ws-ext-popup-card-title');
+  const extPopupCardDomain = document.getElementById('ws-ext-popup-card-domain');
+  const extPopupValidation = document.getElementById('ws-ext-popup-validation');
+
+  const extPresets = {
+    sansyl: {
+      url: 'https://primemedia-hub.internal/videos/digital-transformation-preview',
+      title: 'PrimeMedia Hub | Direct Metadata Extraction',
+      description: 'Video asset upload and distribution metadata. Optimized for cross-platform content syndication (og:title, og:video, tags).',
+      imageBg: 'linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #201740 100%)',
+      domain: 'primemedia-hub.internal',
+      tags: [
+        { name: 'og:title', found: true, val: 'PrimeMedia Hub | Direct Extraction' },
+        { name: 'og:description', found: true, val: 'Video asset upload and distribution...' },
+        { name: 'og:image', found: true, val: 'cover_preview.png' },
+        { name: 'twitter:card', found: true, val: 'summary_large_image' }
+      ],
+      validation: [
+        { name: 'og:title Length', status: 'pass', detail: '37 chars (Optimal)' },
+        { name: 'og:description Length', status: 'pass', detail: '110 chars (Optimal)' },
+        { name: 'Alt Text Attribute', status: 'pass', detail: 'Found: "Media cover image"' },
+        { name: 'SSL Security', status: 'pass', detail: 'Secure connection verified' }
+      ],
+      logs: [
+        { text: '$ run media-extractor --url="https://primemedia-hub.internal/videos/digital-transformation-preview"', type: 'cmd' },
+        { text: '🔍 Initializing metadata extraction audit...', type: 'info' },
+        { text: '🌐 Connecting to PrimeMedia Asset Manager API...', type: 'info' },
+        { text: '✨ Extracted 12 media tag nodes, category index, and high-res video thumbnails', type: 'info' },
+        { text: '✅ Cross-platform syndication validation check: Passed', type: 'success' },
+        { text: '🚀 Sync package generated for Buffer/Hootsuite APIs', type: 'success' }
+      ]
+    },
+    youtube: {
+      url: 'https://youtube.com/watch?v=ai-ux-future',
+      title: 'The Future of Generative UI Design Systems',
+      description: 'Deep dive into streaming components, JSON compilation, and adaptive user interfaces.',
+      imageBg: 'linear-gradient(135deg, #e52d27 0%, #b31217 100%)',
+      domain: 'youtube.com',
+      tags: [
+        { name: 'og:title', found: true, val: 'The Future of Generative UI' },
+        { name: 'og:description', found: true, val: 'Deep dive into streaming...' },
+        { name: 'og:image', found: true, val: 'thumb.jpg' },
+        { name: 'twitter:card', found: true, val: 'summary_large_image' }
+      ],
+      validation: [
+        { name: 'og:title Length', status: 'pass', detail: '36 chars (Optimal)' },
+        { name: 'og:description Length', status: 'pass', detail: '84 chars (Optimal)' },
+        { name: 'Alt Text Attribute', status: 'warning', detail: 'Missing og:image:alt tag attribute' },
+        { name: 'SSL Security', status: 'pass', detail: 'Secure connection verified' }
+      ],
+      logs: [
+        { text: '$ run media-extractor --url="https://youtube.com/watch?v=ai-ux-future"', type: 'cmd' },
+        { text: '🔍 Initializing metadata extraction audit...', type: 'info' },
+        { text: '🌐 Parsing HTML document from youtube.com...', type: 'info' },
+        { text: '✨ Extracted Open Graph & Twitter Card schema nodes', type: 'info' },
+        { text: '⚠️ WARNING: Missing alt text parameter for cover image', type: 'cmd' },
+        { text: '🚀 Extension audit finished (0 errors, 1 warning)', type: 'success' }
+      ]
+    },
+    twitter: {
+      url: 'https://x.com/sansylgroup/status/10293847',
+      title: 'PrimeMedia Group on X: "We are live with our new developer console..."',
+      description: 'Announcing the public beta release of Sansyl CLI, facilitating real-time metadata validations and headless builds.',
+      imageBg: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
+      domain: 'x.com',
+      tags: [
+        { name: 'og:title', found: true, val: 'PrimeMedia Group on X: "We are live..."' },
+        { name: 'og:description', found: true, val: 'Announcing the public beta...' },
+        { name: 'og:image', found: true, val: 'hero.jpg' },
+        { name: 'twitter:card', found: true, val: 'summary' }
+      ],
+      validation: [
+        { name: 'og:title Length', status: 'pass', detail: '65 chars (Optimal)' },
+        { name: 'og:description Length', status: 'pass', detail: '112 chars (Optimal)' },
+        { name: 'Alt Text Attribute', status: 'pass', detail: 'Found: "Sansyl console terminal"' },
+        { name: 'SSL Security', status: 'pass', detail: 'Secure connection verified' }
+      ],
+      logs: [
+        { text: '$ run media-extractor --url="https://x.com/sansylgroup/status/10293847"', type: 'cmd' },
+        { text: '🔍 Initializing metadata extraction audit...', type: 'info' },
+        { text: '🌐 Parsing HTML document from x.com...', type: 'info' },
+        { text: '✨ Extracted Open Graph & Twitter Card schema nodes', type: 'info' },
+        { text: '✅ Alt attributes & title lengths validated successfully', type: 'success' },
+        { text: '🚀 Extension audit finished (0 errors, 0 warnings)', type: 'success' }
+      ]
+    }
   };
 
-  const logs = {
-    chart: [
-      { text: '$ run layout-compiler --target="analytics_chart"', type: 'cmd' },
-      { text: '🔍 Parsing JSON schema matching WCAG AAA constraints...', type: 'info' },
-      { text: '✨ Accent token linked: HSL(22, 95%, 32%)', type: 'info' },
-      { text: '🎨 Building SVG nodes & applying linear gradients...', type: 'info' },
-      { text: '🚀 Rendering concept output successfully (Latency: 185ms)', type: 'success' }
-    ],
-    bento: [
-      { text: '$ run layout-compiler --target="bento_grid"', type: 'cmd' },
-      { text: '🔍 Fetching workspace bento metrics & grid templates...', type: 'info' },
-      { text: '✨ Layout token matches: 3-column masonry layout', type: 'info' },
-      { text: '🎨 Rendering bento boxes with variable aspect ratios...', type: 'info' },
-      { text: '🚀 Component compilation complete (Latency: 220ms)', type: 'success' }
-    ],
-    dock: [
-      { text: '$ run layout-compiler --target="navigation_dock"', type: 'cmd' },
-      { text: '🔍 Constructing floating navigation dock tokens...', type: 'info' },
-      { text: '✨ Adding spring transition physics & hover states...', type: 'info' },
-      { text: '🎨 Computing dock alignment & backdrop-filter blur...', type: 'info' },
-      { text: '🚀 Dock layout compiled and injected (Latency: 140ms)', type: 'success' }
-    ]
-  };
+  let activePreset = 'sansyl';
+  let isExtracting = false;
 
-  let isCompiling = false;
+  function loadPreset(presetKey) {
+    if (isExtracting) return;
+    activePreset = presetKey;
+    const preset = extPresets[presetKey];
 
-  function compileLayout(conceptType) {
-    if (isCompiling) return;
-    isCompiling = true;
-
-    // Reset buttons
-    [btnChart, btnBento, btnDock].forEach(btn => {
+    // Update active class on buttons
+    [extPresetSansyl, extPresetYoutube, extPresetTwitter].forEach(btn => {
       if (btn) btn.classList.remove('active');
     });
-    
-    let activeBtn;
-    if (conceptType === 'chart') activeBtn = btnChart;
-    else if (conceptType === 'bento') activeBtn = btnBento;
-    else if (conceptType === 'dock') activeBtn = btnDock;
-    
-    if (activeBtn) activeBtn.classList.add('active');
+    const currentBtn = document.getElementById(`ws-preset-${presetKey}`);
+    if (currentBtn) currentBtn.classList.add('active');
 
-    // Fade out canvas preview
-    canvas.style.opacity = '0';
-    canvas.style.transform = 'scale(0.96)';
+    // Update input field and browser view
+    if (extInput) extInput.value = preset.url;
+    if (extBrowserUrl) extBrowserUrl.textContent = preset.url;
+    if (extSiteTitle) extSiteTitle.textContent = preset.title;
+    if (extSiteDesc) extSiteDesc.textContent = preset.description;
+    if (extSiteImage) {
+      extSiteImage.style.background = preset.imageBg;
+    }
+
+    // Hide extension panel
+    if (extPopup) {
+      extPopup.style.transform = 'translateX(320px)';
+    }
 
     // Empty terminal
-    terminal.innerHTML = '';
+    if (extTerminal) extTerminal.innerHTML = '';
+  }
 
-    const lines = logs[conceptType];
+  function runExtraction() {
+    if (isExtracting) return;
+    isExtracting = true;
+
+    // Reset popup
+    if (extPopup) {
+      extPopup.style.transform = 'translateX(320px)';
+    }
+
+    // Clear logs
+    if (extTerminal) extTerminal.innerHTML = '';
+
+    const preset = extPresets[activePreset];
+    const lines = preset.logs;
     let lineIdx = 0;
 
-    function printNextLine() {
+    function printNextLog() {
       if (lineIdx < lines.length) {
         const line = lines[lineIdx];
         const p = document.createElement('div');
         p.className = `terminal-line ${line.type}`;
         p.textContent = line.text;
-        terminal.appendChild(p);
+        if (extTerminal) extTerminal.appendChild(p);
         
         lineIdx++;
-        setTimeout(printNextLine, 120);
+        setTimeout(printNextLog, 150);
       } else {
-        // Load the compiled SVG after logs complete
+        // Run final presentation and open popup
         setTimeout(() => {
-          canvas.innerHTML = concepts[conceptType];
-          canvas.style.opacity = '1';
-          canvas.style.transform = 'scale(1)';
-          isCompiling = false;
-        }, 100);
+          // Populate checklist
+          if (extPopupChecklist) {
+            extPopupChecklist.innerHTML = preset.tags.map(t => `
+              <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem;">
+                <span style="color: var(--color-success); font-weight: bold;">✓</span>
+                <span style="font-family: var(--font-mono); color: var(--text-secondary);">${t.name}:</span>
+                <span style="color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; max-width: 140px;" title="${t.val}">${t.val}</span>
+              </div>
+            `).join('');
+          }
+
+          // Populate visual card preview
+          if (extPopupCardImage) {
+            extPopupCardImage.style.background = preset.imageBg;
+          }
+          if (extPopupCardDomain) {
+            extPopupCardDomain.textContent = preset.domain;
+          }
+          if (extPopupCardTitle) {
+            extPopupCardTitle.textContent = preset.title;
+          }
+
+          // Populate validations
+          if (extPopupValidation) {
+            extPopupValidation.innerHTML = preset.validation.map(v => `
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.65rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.25rem;">
+                <span style="color: var(--text-secondary);">${v.name}</span>
+                <span style="padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 600; font-size: 0.55rem; ${
+                  v.status === 'pass' 
+                    ? 'background: rgba(39, 201, 63, 0.15); color: #27c93f;' 
+                    : 'background: rgba(255, 189, 46, 0.15); color: #ffbd2e;'
+                }">${v.detail}</span>
+              </div>
+            `).join('');
+          }
+
+          // Open popup
+          if (extPopup) {
+            extPopup.style.transform = 'translateX(0)';
+          }
+          isExtracting = false;
+        }, 200);
       }
     }
 
-    printNextLine();
+    printNextLog();
   }
 
-  // Bind sandbox template buttons
-  if (btnChart) btnChart.addEventListener('click', () => compileLayout('chart'));
-  if (btnBento) btnBento.addEventListener('click', () => compileLayout('bento'));
-  if (btnDock) btnDock.addEventListener('click', () => compileLayout('dock'));
+  // Bind Preset Clickers
+  if (extPresetSansyl) extPresetSansyl.addEventListener('click', () => loadPreset('sansyl'));
+  if (extPresetYoutube) extPresetYoutube.addEventListener('click', () => loadPreset('youtube'));
+  if (extPresetTwitter) extPresetTwitter.addEventListener('click', () => loadPreset('twitter'));
+
+  // Bind Action Buttons
+  if (extBtn) extBtn.addEventListener('click', runExtraction);
+  if (extTriggerIcon) extTriggerIcon.addEventListener('click', runExtraction);
+  
+  if (extPopupClose) {
+    extPopupClose.addEventListener('click', () => {
+      if (extPopup) extPopup.style.transform = 'translateX(320px)';
+    });
+  }
+
+  // Initialize preset views
+  loadPreset('sansyl');
 
   // Tooltip Logic
   if (alertDot && tooltipCard) {
@@ -3090,411 +2677,17 @@ export function initAIWorkshopSandbox() {
  * Project 3 (Bank of Palestine) Interactive Compliance Mapping Deck Controller
  */
 function initProject3ComplianceDeck() {
-  const stepsList = document.getElementById('bop-compliance-steps-list');
-  if (!stepsList) return;
-
-  const stepItems = stepsList.querySelectorAll('.bop-compliance-step-item');
-  const fetchCards = document.querySelectorAll('[data-fetch-card]');
-  const ruleCards = document.querySelectorAll('[data-rule-card]');
-  const expTitle = document.getElementById('bop-exp-title');
-  const expText = document.getElementById('bop-exp-text');
-
-  // Mapping data between steps and cards + explanations
-  const complianceData = {
-    "1": {
-      title: "01 / Identity verification",
-      desc: "Handled progressively via the National ID OCR scan + liveness checks. Binds profile verification directly to government databases.",
-      fetches: ["id"],
-      rules: ["mandatory", "docs"]
-    },
-    "2": {
-      title: "02 / Eligibility test",
-      desc: "Automated real-time background query to check user standing against national AML (Anti-Money Laundering) and CFT blacklist registries.",
-      fetches: ["profile", "history"],
-      rules: ["mandatory", "risk"]
-    },
-    "3": {
-      title: "03 / Existing account holder check",
-      desc: "Automatic query of the bank's core repository immediately after OTP validation to detect existing customer portfolios.",
-      fetches: ["accounts", "cards"],
-      rules: ["mandatory"]
-    },
-    "4": {
-      title: "04 / Add new account to my name",
-      desc: "Instant digital provisioning of sub-accounts directly within the workspace, skipping secondary validation loops.",
-      fetches: ["accounts"],
-      rules: ["mandatory"]
-    },
-    "5": {
-      title: "05 / More about me (PEP check)",
-      desc: "Structured disclosures (employment, income source). Saturated risk profiles (e.g. PEPs) trigger Enhanced Due Diligence (EDD) background audits.",
-      fetches: ["profile", "history"],
-      rules: ["mandatory", "risk"]
-    },
-    "6": {
-      title: "06 / FATCA / Nationality check",
-      desc: "Automated trigger for US compliance (FATCA) if user selects foreign nationality. Requires secondary citizenship profile declarations.",
-      fetches: ["profile"],
-      rules: ["mandatory", "docs"]
-    },
-    "7": {
-      title: "07 / Nominee & spouse details",
-      desc: "Progressive optional fields that allow users to register family ties for succession rights, stored securely under profile vault.",
-      fetches: ["profile"],
-      rules: ["mandatory"]
-    },
-    "8": {
-      title: "08 / My address proof",
-      desc: "Uses geolocation parameters or utility bill OCR scanning to verify physical residential address in compliance with local regulations.",
-      fetches: ["profile"],
-      rules: ["mandatory", "docs"]
-    },
-    "9": {
-      title: "09 / Fund & wealth info",
-      desc: "User selects income range and wealth origin. Binds transaction limits based on standard thresholds to monitor unusual volumes.",
-      fetches: ["history"],
-      rules: ["mandatory", "risk"]
-    },
-    "10": {
-      title: "10 / Power of attorney",
-      desc: "Upload portal to submit authorized notarized documents. Requires manual branch review back-office verification for security.",
-      fetches: ["profile"],
-      rules: ["mandatory", "risk"]
-    },
-    "11": {
-      title: "11 / New account details allocation",
-      desc: "Automated real-time account numbering, routing configurations, and ledger creation inside the bank's secure vault.",
-      fetches: ["accounts"],
-      rules: ["mandatory", "types"]
-    },
-    "12": {
-      title: "12 / E-services setup",
-      desc: "Seamless progressive checkboxes to configure mobile banking tokens, debit cards, e-statements, and transactional notification alerts.",
-      fetches: ["cards", "profile"],
-      rules: ["mandatory"]
-    },
-    "13": {
-      title: "13 / Signature canvas",
-      desc: "A responsive draw-to-sign digital canvas. Cryptographically signs the KYC application using the user's validated profile.",
-      fetches: ["profile", "id"],
-      rules: ["mandatory"]
-    }
-  };
-
-  function updateMapping(stepId) {
-    const data = complianceData[stepId];
-    if (!data) return;
-
-    // Reset items
-    stepItems.forEach(item => {
-      if (item.getAttribute('data-step') === stepId) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-
-    // Reset fetch cards
-    fetchCards.forEach(card => {
-      const fetchKey = card.getAttribute('data-fetch-card');
-      if (data.fetches.includes(fetchKey)) {
-        card.classList.add('active-map');
-      } else {
-        card.classList.remove('active-map');
-      }
-    });
-
-    // Reset rule cards
-    ruleCards.forEach(card => {
-      const ruleKey = card.getAttribute('data-rule-card');
-      if (data.rules.includes(ruleKey)) {
-        card.classList.add('active-map');
-      } else {
-        card.classList.remove('active-map');
-      }
-    });
-
-    // Update explanations
-    if (expTitle) expTitle.textContent = data.title;
-    if (expText) expText.textContent = data.desc;
-  }
-
-  // Bind mouseenter and click triggers for responsiveness
-  stepItems.forEach(item => {
-    const stepId = item.getAttribute('data-step');
-    
-    item.addEventListener('mouseenter', () => updateMapping(stepId));
-    item.addEventListener('click', () => updateMapping(stepId));
-  });
-
-  // Initialize with step 1 active
-  updateMapping("1");
-
-  // View Toggle Tabs
-  const toggleBtns = document.querySelectorAll('.bop-toggle-btn');
-  const refinedView = document.getElementById('bop-compliance-refined-view');
-  const sketchView = document.getElementById('bop-compliance-sketch-view');
-
-  if (toggleBtns && refinedView && sketchView) {
-    toggleBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const view = btn.getAttribute('data-view');
-        
-        toggleBtns.forEach(b => {
-          b.classList.remove('active');
-          b.style.background = 'transparent';
-          b.style.color = 'var(--text-secondary)';
-          b.style.boxShadow = 'none';
-        });
-        
-        btn.classList.add('active');
-        btn.style.background = 'var(--bg-card)';
-        btn.style.color = 'var(--text-primary)';
-        btn.style.boxShadow = 'var(--shadow-sm)';
-        
-        if (view === 'refined') {
-          refinedView.style.display = 'block';
-          sketchView.style.display = 'none';
-        } else {
-          refinedView.style.display = 'none';
-          sketchView.style.display = 'block';
-        }
-      });
-    });
-  }
+  // Static bento layout, no interactive elements required!
 }
 
 /**
  * Project 3 (Bank of Palestine) Compliance Onboarding Flowchart Simulator Controller
  */
 function initProject3Flowchart() {
-  const btnHappy = document.getElementById('bop-btn-happy');
-  const btnForeign = document.getElementById('bop-btn-foreign');
-  const btnRegistry = document.getElementById('bop-btn-registry');
-  const btnSelfie = document.getElementById('bop-btn-selfie');
-  
-  const detailTitle = document.getElementById('bop-detail-title');
-  const detailDecision = document.getElementById('bop-detail-decision');
-  const detailCompliance = document.getElementById('bop-detail-compliance');
-  
   const travelDot = document.getElementById('bop-flow-travel-dot');
-  
-  const nodes = document.querySelectorAll('.bop-node');
-  const paths = document.querySelectorAll('.bop-flow-path, .bop-flow-path-dashed');
-  
-  if (!detailTitle) return;
-
-  const nodeData = {
-    start: {
-      title: "01 / Start Onboarding",
-      decision: "Introduce clear guidelines detailing necessary credentials (government ID, email, physical mobile device) before opening account, preparing users for the process.",
-      compliance: "Mandated checks require warning users about geo-restrictions and verification requirements before transaction entry."
-    },
-    entry: {
-      title: "02 / Contact Entry",
-      decision: "Unified input fields for phone and email with automatic region code detection (+970 / +972) to eliminate validation errors.",
-      compliance: "Anti-Money Laundering (AML) standards require binding a verified communication node to the primary account vault."
-    },
-    residency: {
-      title: "Residency Check (Local check)",
-      decision: "Background IP and cellular network geolocation checks automatically separate domestic citizens from foreign residents early in the journey.",
-      compliance: "Monetary Authority guidelines separate domestic registry lookups from international document audits."
-    },
-    otp: {
-      title: "03 / OTP Validation",
-      decision: "Dual-channel verification via integrated SMS and Email loops. Unified verification states prevent multi-step confusion.",
-      compliance: "Secure access check binds cellular number ownership to government ID ownership records."
-    },
-    enterid: {
-      title: "04 / Enter ID Details",
-      decision: "Clean input boxes with immediate check digit validation (Luhn check) to catch keystroke issues before querying registries.",
-      compliance: "National identification records must be registered against government ledger databases."
-    },
-    registry: {
-      title: "Registry Match (Registry check)",
-      decision: "Asynchronous backend connection querying government database in under 2 seconds. Reassurance loaders prevent user exit.",
-      compliance: "Legally registers that the input ID card exists in the Palestinian Ministry of Interior registry."
-    },
-    ocr: {
-      title: "05 / OCR ID Scan",
-      decision: "On-device image OCR parsing captures text in real-time. Auto-exposure filters resolve low-light legibility issues.",
-      compliance: "Auditing guidelines require a clean, unedited visual copy of the physical identity card to be attached to the digital vault."
-    },
-    liveness: {
-      title: "06 / Liveness Check",
-      decision: "Interactive, gamified camera frames (e.g., blink/turn indicators) with real-time feedback guide perfect framing.",
-      compliance: "Anti-Spoofing and identity fraud regulations require validating that the applicant is physically present."
-    },
-    selfie: {
-      title: "Selfie Face Match",
-      decision: "Direct automated pixel comparison between OCR document image, registry profile photo, and live selfie.",
-      compliance: "Visual match is required to ensure the owner of the document is the applicant currently in the flow."
-    },
-    vault: {
-      title: "07 / Vault Provisioned",
-      decision: "Immediate setup of digital banking debit cards and provisioning of account balances. Instant onboarding success state.",
-      compliance: "Centralized logging sends verification details to regulatory compliance monitoring portals."
-    },
-    foreign: {
-      title: "03B / Foreigner Form",
-      decision: "Dynamic layout showing context-aware fields for foreign passports and residency declarations, avoiding long page form clutter.",
-      compliance: "Foreign passport holders require FATCA, CRS, and international tax identification audits."
-    },
-    upload: {
-      title: "04B / Upload Passport",
-      decision: "Multi-document scanner allows users to capture passport bio-pages and visas in high definition.",
-      compliance: "Regulators require archiving visa details and passport information for non-citizen profiles."
-    },
-    approval: {
-      title: "05B / Manual Review",
-      decision: "Background queuing sends international profiles directly to a specialized bank ops agent queue, reducing wait times.",
-      compliance: "International accounts require manual compliance operations verification before vault creation."
-    },
-    branch: {
-      title: "04C / Visit Branch",
-      decision: "If registry check fails, show map of nearest branches with operating hours. In-app scheduling avoids queue wait-states.",
-      compliance: "Unmatched national records cannot be verified digitally and require standard physical document verification."
-    },
-    video: {
-      title: "06B / Fallback Video Call",
-      decision: "If selfie matching fails, launch an immediate in-app secure video session with a live bank agent, keeping the user digital.",
-      compliance: "Approved human-in-the-loop video authentication satisfies liveness checks when automated facial matching fails."
-    }
-  };
-
-  const pathPaths = {
-    happy: [
-      'bop-path-start-phone', 'bop-path-phone-residency', 'bop-path-residency-otp',
-      'bop-path-otp-enterid', 'bop-path-enterid-registry', 'bop-path-registry-ocr',
-      'bop-path-ocr-liveness', 'bop-path-liveness-selfie', 'bop-path-selfie-vault'
-    ],
-    foreign: [
-      'bop-path-start-phone', 'bop-path-phone-residency', 'bop-path-residency-foreign',
-      'bop-path-foreign-upload', 'bop-path-upload-approval', 'bop-path-approval-vault'
-    ],
-    registry: [
-      'bop-path-start-phone', 'bop-path-phone-residency', 'bop-path-residency-otp',
-      'bop-path-otp-enterid', 'bop-path-enterid-registry', 'bop-path-registry-branch'
-    ],
-    selfie: [
-      'bop-path-start-phone', 'bop-path-phone-residency', 'bop-path-residency-otp',
-      'bop-path-otp-enterid', 'bop-path-enterid-registry', 'bop-path-registry-ocr',
-      'bop-path-ocr-liveness', 'bop-path-liveness-selfie', 'bop-path-selfie-video'
-    ]
-  };
-
-  const pathNodes = {
-    happy: ['start', 'entry', 'residency', 'otp', 'enterid', 'registry', 'ocr', 'liveness', 'selfie', 'vault'],
-    foreign: ['start', 'entry', 'residency', 'foreign', 'upload', 'approval', 'vault'],
-    registry: ['start', 'entry', 'residency', 'otp', 'enterid', 'registry', 'branch'],
-    selfie: ['start', 'entry', 'residency', 'otp', 'enterid', 'registry', 'ocr', 'liveness', 'selfie', 'video']
-  };
-
-  // Traveling Dot Paths definitions
-  const dotPaths = {
-    happy: "M 60 160 L 170 160 L 280 160 C 320 160, 340 70, 400 70 L 520 70 L 640 70 L 760 70 L 760 160 L 870 160 L 970 160",
-    foreign: "M 60 160 L 170 160 L 280 160 C 320 160, 340 250, 400 250 L 520 250 L 640 250 C 780 250, 840 160, 970 160",
-    registry: "M 60 160 L 170 160 L 280 160 C 320 160, 340 70, 400 70 L 520 70 L 640 70 L 640 160",
-    selfie: "M 60 160 L 170 160 L 280 160 C 320 160, 340 70, 400 70 L 520 70 L 640 70 L 760 70 L 760 160 L 870 160 L 870 250"
-  };
-
-  function selectNode(nodeId) {
-    const data = nodeData[nodeId];
-    if (!data) return;
-    
-    // Animate title and descriptions
-    detailTitle.style.opacity = '0';
-    detailDecision.style.opacity = '0';
-    detailCompliance.style.opacity = '0';
-    
-    setTimeout(() => {
-      detailTitle.textContent = data.title;
-      detailDecision.textContent = data.decision;
-      detailCompliance.textContent = data.compliance;
-      
-      detailTitle.style.opacity = '1';
-      detailDecision.style.opacity = '1';
-      detailCompliance.style.opacity = '1';
-    }, 150);
+  if (travelDot) {
+    travelDot.style.animation = 'bopFlowTravel 4.5s linear infinite';
   }
-
-  function applyPath(pathName) {
-    const activeNodes = pathNodes[pathName];
-    const activePaths = pathPaths[pathName];
-    const isHappy = pathName === 'happy';
-    
-    // 1. Update Buttons
-    [btnHappy, btnForeign, btnRegistry, btnSelfie].forEach(btn => {
-      if (btn) btn.classList.remove('active');
-    });
-    const activeBtn = document.getElementById(`bop-btn-${pathName}`);
-    if (activeBtn) activeBtn.classList.add('active');
-    
-    // 2. Highlight Paths
-    paths.forEach(p => {
-      p.classList.remove('active-happy', 'active-exception');
-      if (activePaths.includes(p.id)) {
-        p.classList.add(isHappy ? 'active-happy' : 'active-exception');
-      }
-    });
-    
-    // 3. Highlight Nodes
-    nodes.forEach(n => {
-      n.classList.remove('active-happy', 'active-exception');
-      const nodeId = n.getAttribute('data-node');
-      if (activeNodes.includes(nodeId)) {
-        n.classList.add(isHappy ? 'active-happy' : 'active-exception');
-      }
-    });
-
-    // 4. Update Flow Traveling Dot
-    if (travelDot) {
-      // Force restart animation by resetting offset-path
-      travelDot.style.animation = 'none';
-      travelDot.offsetHeight; // trigger reflow
-      
-      travelDot.style.offsetPath = `path('${dotPaths[pathName]}')`;
-      travelDot.setAttribute('fill', isHappy ? 'var(--color-success)' : 'var(--color-accent)');
-      travelDot.style.display = 'block';
-      travelDot.style.animation = 'bopFlowTravel 4.5s linear infinite';
-    }
-
-    // 5. Select first interesting node of the path
-    if (pathName === 'happy') selectNode('start');
-    else if (pathName === 'foreign') selectNode('foreign');
-    else if (pathName === 'registry') selectNode('branch');
-    else if (pathName === 'selfie') selectNode('video');
-  }
-
-  // Bind scenario buttons
-  const pathBtns = [
-    { btn: btnHappy, name: 'happy' },
-    { btn: btnForeign, name: 'foreign' },
-    { btn: btnRegistry, name: 'registry' },
-    { btn: btnSelfie, name: 'selfie' }
-  ];
-
-  pathBtns.forEach(item => {
-    if (item.btn) {
-      item.btn.addEventListener('click', () => applyPath(item.name));
-    }
-  });
-
-  // Bind nodes click
-  nodes.forEach(node => {
-    node.addEventListener('click', () => {
-      const nodeId = node.getAttribute('data-node');
-      
-      // Remove sub-node selection visuals and highlight clicked one
-      nodes.forEach(n => n.style.fontWeight = 'normal');
-      node.style.fontWeight = 'bold';
-      
-      selectNode(nodeId);
-    });
-  });
-
-  // Set initial state
-  applyPath('happy');
 }
 
 // ==========================================================================
